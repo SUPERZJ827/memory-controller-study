@@ -45,6 +45,11 @@ in model, request protocol, and policy wording, so behavioural differences are n
 24 histories with two discordant QA outcomes; automated QA judging; no human annotation of memory states;
 shared extraction, writer, and reader errors; no DELETE observed; local compute not monetised.
 
+## Licence
+
+The author's own code and original materials are released under the MIT licence (`LICENSE`). Content derived from
+LongMemEval and MemOps keeps its original licence and copyright notices; see `THIRD_PARTY_NOTICES.md`.
+
 ## Author
 
 Jun Zhou, Shanghai Jiao Tong University.
