@@ -1,0 +1,60 @@
+{
+  "schema_version": "phase4-pilot-v2",
+  "question_id": "9bbe84a2",
+  "formal_authorized": false,
+  "development_cap_usd": 1,
+  "source_hashes": {
+    "src/phase4/run_pilot_v2.ts": "103c373285b664eaf6c49f97f9c9aae58b188cd934a60cdf797b1bdba8a64912",
+    "src/phase4/pilot_controllers_v2.ts": "f67463cca68ab3c2ff91b4bc59cb28724684b5c231a2e6497dee13804d90c82a",
+    "src/phase4/pilot_transport_v2.ts": "28a65e90a3f1b6b035b0f3b93ff3484deb1b42dd264d2e5a7cf4ebe29854ffb9",
+    "src/phase4/local_memory_v2.ts": "7e6deb1970eb0af5798e3d2b50988419467e2f6fb70684206bc363297323d408",
+    "src/phase4/budget_guard_v2.ts": "49b37743ad87f03d910fe3f67e0714175b7109394d2fab0a43df316b1963b925",
+    "src/phase4/budget_guard_v2_test.ts": "262377e28acc9265d75cced54781cab259f5ed55db076d4b833796d4eda5fcd4",
+    "src/phase4/ledger.ts": "7ade8c8111ac28a8f67217cc079f15dcd675abe17449bcf80af48e0b905fb40e",
+    "src/phase4/longmemeval_adapter.ts": "801c3d283066882504839bc1c5b501e289395c2e46346274cae669079d9c53ba",
+    "src/jev.ts": "3fe8bc018d5d7df2f53aa03bec9461165358765488d8514bcb3bba5114529535",
+    "phase3/gpt56sol_protocol.json": "7be699ffa443845699a893b10709f7491c39a0ee2abd09fad2dad5f21840185b",
+    "phase4/budget_config_v2.json": "7275948b6b12164f21604a86f65c450a69d4f2712d4488d8181c21eef4b6a80c",
+    "phase4/low_budget_protocol_v2.json": "ba415b8de6e0e9c13eebc1a9c6d859379f392a46a66df52c1eccd4035c564dfc",
+    "phase4/budget_guard_v2_simulation.json": "db45339e65576d93edbc6ce14d09d97bad45e38c8658f8cf61e107de9d53224c",
+    "phase4/local_weights_v2.json": "763576e265fdee1c8b2b5936403525b95ea14483d24d781463aa4d5442431c3e",
+    "PHASE4_PILOT_EXECUTION_V2.md": "3d107c5a60062d626dfc89a79045b0057d3431c16676f4c2c33464c10f5c618c",
+    "vendor/LongMemEval/src/evaluation/evaluate_qa.py": "ecce9c4c79dc89d99534ac17b383a5cbb5b9f0c69ee98adaf0684742e3d95251"
+  },
+  "local": {
+    "chat_model": "Qwen3-8B",
+    "embedding_model": "Qwen3-Embedding-4B",
+    "temperature": 0,
+    "enable_thinking": false,
+    "extraction_max_tokens": 4096,
+    "writer_max_tokens": 768,
+    "answer_max_tokens": 768,
+    "retrieval_k": 10
+  },
+  "paid_models": {
+    "B": "openai/gpt-5.6-sol",
+    "C": "typesafe/jev-1.13",
+    "judge": "openai/gpt-4o-2024-08-06"
+  },
+  "local_service_model_ids": {
+    "chat": "Qwen3-8B",
+    "embedding": "Qwen3-Embedding-4B"
+  },
+  "paid_request_concurrency": 2,
+  "local_chat_concurrency": 1,
+  "retries": 0,
+  "semantic_retries": 0,
+  "ingestion": "All 47 eligible sessions chronological, no truncation; evidence archive plus arm-specific active state. Query inaccessible until ingestion completes.",
+  "accounting": "Local extraction once, full standalone attribution to both arms. Other local calls per-arm. Costs are API bills, not monetized hardware.",
+  "provider_price_caps_per_million": {
+    "B_input": 2,
+    "B_output": 10,
+    "C_input": 0.042,
+    "C_output": 0,
+    "judge_input": 2.5,
+    "judge_output": 10
+  },
+  "reservation": "B/judge: UTF8 request bytes +8192 token formatting envelope, reject >24000; output max512/10. Jev: full32000-token provider context. Judge capacity $0.05 per arm reserved before controllers. No release of unknown charges.",
+  "state_error": "Invalid operation or target: log failure, unchanged active store. Local extraction/rewrite/answer failures stop pilot. No prediction repair.",
+  "fixed_development_only": true
+}

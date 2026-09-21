@@ -1,0 +1,47 @@
+{
+  "status": "STOPPED",
+  "histories_completed": 19,
+  "error": "Error: HTTP 520; retry requires a fresh resumed run; see p4c_2aa09626d60c79ee67a0bd0e730b2825d848b785",
+  "time": "2026-09-21T03:03:03.479Z",
+  "budget": {
+    "halted": false,
+    "total": {
+      "limitMicroUsd": 28000000,
+      "settledMicroUsd": 10831937,
+      "heldMicroUsd": 2688,
+      "unknownMicroUsd": 2688,
+      "committedMicroUsd": 10834625,
+      "availableMicroUsd": 17165375
+    },
+    "pools": {
+      "dev": {
+        "limitMicroUsd": 1000000,
+        "settledMicroUsd": 581250,
+        "heldMicroUsd": 0,
+        "unknownMicroUsd": 0,
+        "availableMicroUsd": 418750
+      },
+      "formal_controllers": {
+        "limitMicroUsd": 24000000,
+        "settledMicroUsd": 10238891,
+        "heldMicroUsd": 2688,
+        "unknownMicroUsd": 2688,
+        "availableMicroUsd": 13758421
+      },
+      "formal_qa": {
+        "limitMicroUsd": 1000000,
+        "settledMicroUsd": 11758,
+        "heldMicroUsd": 0,
+        "unknownMicroUsd": 0,
+        "availableMicroUsd": 988242
+      },
+      "formal_aux": {
+        "limitMicroUsd": 2000000,
+        "settledMicroUsd": 38,
+        "heldMicroUsd": 0,
+        "unknownMicroUsd": 0,
+        "availableMicroUsd": 1999962
+      }
+    }
+  }
+}

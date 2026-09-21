@@ -1,0 +1,34 @@
+{
+  "schema_version": "phase4-full-development-pilot-v14",
+  "development_id": "9bbe84a2",
+  "formal_authorized": false,
+  "extraction": {
+    "sessions": 47,
+    "facts": 310,
+    "manifest_sha256": "d5f49295c8e8fd1d25d5b3e18ddf54296e5e4338488ead80d29c6ec1196d0141",
+    "outcome_sha256": "9a3b136cc67d1f77689e73d4da9a1b18d8728530c5b947909d598a993d45b893"
+  },
+  "arms": {
+    "B": "openai/gpt-5.6-sol decision + local writer",
+    "C": "typesafe/jev-1.13 decision + identical local writer"
+  },
+  "independent_state": true,
+  "controller_concurrency": 2,
+  "local_chat_concurrency": 1,
+  "controller_retries": 0,
+  "invalid_decision": "no active-state mutation; event remains archived",
+  "judge_capacity_reservation_usd_per_arm": 0.05,
+  "source_hashes": {
+    "src/phase4/run_full_pilot_v14.ts": "3c9765f6e89e8b2d604f4c788242b161890723105b078e51f560f462109152f7",
+    "src/phase4/pilot_transport_v2.ts": "28a65e90a3f1b6b035b0f3b93ff3484deb1b42dd264d2e5a7cf4ebe29854ffb9",
+    "src/phase4/pilot_controllers_v2.ts": "f67463cca68ab3c2ff91b4bc59cb28724684b5c231a2e6497dee13804d90c82a",
+    "src/phase4/local_memory_v2.ts": "7e6deb1970eb0af5798e3d2b50988419467e2f6fb70684206bc363297323d408",
+    "src/phase4/local_extractor_v14.ts": "882e5a99725064dd48d5e82fa8361624e55f1deb41d8b51e1315b2b557874112",
+    "phase4/extraction_repair_manifest_v14.json": "d5f49295c8e8fd1d25d5b3e18ddf54296e5e4338488ead80d29c6ec1196d0141",
+    "results/phase4_low_budget_v14/extraction_repair/outcome.json": "9a3b136cc67d1f77689e73d4da9a1b18d8728530c5b947909d598a993d45b893",
+    "phase3/gpt56sol_protocol.json": "7be699ffa443845699a893b10709f7491c39a0ee2abd09fad2dad5f21840185b",
+    "phase4/budget_config_v2.json": "7275948b6b12164f21604a86f65c450a69d4f2712d4488d8181c21eef4b6a80c",
+    "phase4/budget_guard_v2_simulation.json": "db45339e65576d93edbc6ce14d09d97bad45e38c8658f8cf61e107de9d53224c",
+    "phase4/local_weights_v2.json": "763576e265fdee1c8b2b5936403525b95ea14483d24d781463aa4d5442431c3e"
+  }
+}

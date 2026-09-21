@@ -1,0 +1,47 @@
+{
+  "status": "STOPPED",
+  "histories_completed": 3,
+  "error": "Error: TimeoutError: The operation was aborted due to timeout",
+  "time": "2026-09-20T15:39:33.427Z",
+  "budget": {
+    "halted": false,
+    "total": {
+      "limitMicroUsd": 28000000,
+      "settledMicroUsd": 2313600,
+      "heldMicroUsd": 0,
+      "unknownMicroUsd": 0,
+      "committedMicroUsd": 2313600,
+      "availableMicroUsd": 25686400
+    },
+    "pools": {
+      "dev": {
+        "limitMicroUsd": 1000000,
+        "settledMicroUsd": 581250,
+        "heldMicroUsd": 0,
+        "unknownMicroUsd": 0,
+        "availableMicroUsd": 418750
+      },
+      "formal_controllers": {
+        "limitMicroUsd": 24000000,
+        "settledMicroUsd": 1730538,
+        "heldMicroUsd": 0,
+        "unknownMicroUsd": 0,
+        "availableMicroUsd": 22269462
+      },
+      "formal_qa": {
+        "limitMicroUsd": 1000000,
+        "settledMicroUsd": 1812,
+        "heldMicroUsd": 0,
+        "unknownMicroUsd": 0,
+        "availableMicroUsd": 998188
+      },
+      "formal_aux": {
+        "limitMicroUsd": 2000000,
+        "settledMicroUsd": 0,
+        "heldMicroUsd": 0,
+        "unknownMicroUsd": 0,
+        "availableMicroUsd": 2000000
+      }
+    }
+  }
+}

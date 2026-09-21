@@ -1,0 +1,826 @@
+{
+  "schema": "phase4-formal-analysis-v22",
+  "status": "COMPLETE",
+  "source_terminal_finished_at": "2026-09-21T05:24:11.544Z",
+  "arms": {
+    "B": "GPT-5.6 Sol separated decision controller",
+    "C": "Jev typesafe/jev-1.13 separated decision controller"
+  },
+  "sample": {
+    "frozen_histories": 24,
+    "knowledge_update_histories": 21,
+    "abstention_histories": 3,
+    "extracted_fact_decisions_per_arm": 6912,
+    "sessions": 1106
+  },
+  "qa": {
+    "convention": "A null/unparseable official judge grade is counted as incorrect and separately reported.",
+    "overall": {
+      "n": 24,
+      "B": {
+        "correct": 15,
+        "accuracy": 0.625
+      },
+      "C": {
+        "correct": 17,
+        "accuracy": 0.7083333333333334
+      },
+      "delta_C_minus_B": 0.08333333333333333,
+      "delta_C_minus_B_percentage_points": 8.333333333333334,
+      "judge_parse_failures": {
+        "B": 0,
+        "C": 0
+      }
+    },
+    "slices": {
+      "knowledge_update": {
+        "n": 21,
+        "B": {
+          "correct": 15,
+          "accuracy": 0.7142857142857143
+        },
+        "C": {
+          "correct": 17,
+          "accuracy": 0.8095238095238095
+        },
+        "delta_C_minus_B": 0.09523809523809523,
+        "delta_C_minus_B_percentage_points": 9.523809523809524,
+        "judge_parse_failures": {
+          "B": 0,
+          "C": 0
+        }
+      },
+      "abstention": {
+        "n": 3,
+        "B": {
+          "correct": 0,
+          "accuracy": 0
+        },
+        "C": {
+          "correct": 0,
+          "accuracy": 0
+        },
+        "delta_C_minus_B": 0,
+        "delta_C_minus_B_percentage_points": 0,
+        "judge_parse_failures": {
+          "B": 0,
+          "C": 0
+        }
+      }
+    },
+    "paired_table": {
+      "both_correct": 15,
+      "B_only_correct": 0,
+      "C_only_correct": 2,
+      "both_wrong": 7
+    },
+    "bootstrap": {
+      "method": "paired percentile bootstrap; linear-interpolated empirical quantiles",
+      "estimand": "C accuracy minus B accuracy",
+      "resamples": 20000,
+      "seed": 20260920,
+      "ci95": [
+        0,
+        0.20833333333333334
+      ],
+      "ci95_percentage_points": [
+        0,
+        20.833333333333336
+      ]
+    },
+    "mcnemar": {
+      "discordant": 2,
+      "p_value_two_sided_exact": 0.5
+    }
+  },
+  "fact_level": {
+    "arms": {
+      "B": {
+        "overall": {
+          "cases": 6912,
+          "operations": {
+            "ADD": 1783,
+            "UPDATE": 387,
+            "DELETE": 0,
+            "NOOP": 4742,
+            "INVALID_OR_OTHER": 0
+          },
+          "valid_predictions": 6912,
+          "invalid_predictions": 0,
+          "execution_errors": 2,
+          "predicted_mutations": 2170,
+          "successful_mutation_applications": 2168,
+          "predicted_mutation_rate": 0.31394675925925924
+        },
+        "by_evidence_kind": {
+          "current": {
+            "cases": 2769,
+            "operations": {
+              "ADD": 1015,
+              "UPDATE": 185,
+              "DELETE": 0,
+              "NOOP": 1569,
+              "INVALID_OR_OTHER": 0
+            },
+            "valid_predictions": 2769,
+            "invalid_predictions": 0,
+            "execution_errors": 1,
+            "predicted_mutations": 1200,
+            "successful_mutation_applications": 1199,
+            "predicted_mutation_rate": 0.4333694474539545
+          },
+          "historical": {
+            "cases": 1298,
+            "operations": {
+              "ADD": 446,
+              "UPDATE": 126,
+              "DELETE": 0,
+              "NOOP": 726,
+              "INVALID_OR_OTHER": 0
+            },
+            "valid_predictions": 1298,
+            "invalid_predictions": 0,
+            "execution_errors": 1,
+            "predicted_mutations": 572,
+            "successful_mutation_applications": 571,
+            "predicted_mutation_rate": 0.4406779661016949
+          },
+          "retracted": {
+            "cases": 2,
+            "operations": {
+              "ADD": 0,
+              "UPDATE": 0,
+              "DELETE": 0,
+              "NOOP": 2,
+              "INVALID_OR_OTHER": 0
+            },
+            "valid_predictions": 2,
+            "invalid_predictions": 0,
+            "execution_errors": 0,
+            "predicted_mutations": 0,
+            "successful_mutation_applications": 0,
+            "predicted_mutation_rate": 0
+          },
+          "tentative": {
+            "cases": 2843,
+            "operations": {
+              "ADD": 322,
+              "UPDATE": 76,
+              "DELETE": 0,
+              "NOOP": 2445,
+              "INVALID_OR_OTHER": 0
+            },
+            "valid_predictions": 2843,
+            "invalid_predictions": 0,
+            "execution_errors": 0,
+            "predicted_mutations": 398,
+            "successful_mutation_applications": 398,
+            "predicted_mutation_rate": 0.13999296517762927
+          }
+        }
+      },
+      "C": {
+        "overall": {
+          "cases": 6912,
+          "operations": {
+            "ADD": 3162,
+            "UPDATE": 154,
+            "DELETE": 0,
+            "NOOP": 3596,
+            "INVALID_OR_OTHER": 0
+          },
+          "valid_predictions": 6912,
+          "invalid_predictions": 0,
+          "execution_errors": 2,
+          "predicted_mutations": 3316,
+          "successful_mutation_applications": 3314,
+          "predicted_mutation_rate": 0.47974537037037035
+        },
+        "by_evidence_kind": {
+          "current": {
+            "cases": 2769,
+            "operations": {
+              "ADD": 1531,
+              "UPDATE": 70,
+              "DELETE": 0,
+              "NOOP": 1168,
+              "INVALID_OR_OTHER": 0
+            },
+            "valid_predictions": 2769,
+            "invalid_predictions": 0,
+            "execution_errors": 1,
+            "predicted_mutations": 1601,
+            "successful_mutation_applications": 1600,
+            "predicted_mutation_rate": 0.5781870711448176
+          },
+          "historical": {
+            "cases": 1298,
+            "operations": {
+              "ADD": 746,
+              "UPDATE": 56,
+              "DELETE": 0,
+              "NOOP": 496,
+              "INVALID_OR_OTHER": 0
+            },
+            "valid_predictions": 1298,
+            "invalid_predictions": 0,
+            "execution_errors": 1,
+            "predicted_mutations": 802,
+            "successful_mutation_applications": 801,
+            "predicted_mutation_rate": 0.6178736517719569
+          },
+          "retracted": {
+            "cases": 2,
+            "operations": {
+              "ADD": 0,
+              "UPDATE": 0,
+              "DELETE": 0,
+              "NOOP": 2,
+              "INVALID_OR_OTHER": 0
+            },
+            "valid_predictions": 2,
+            "invalid_predictions": 0,
+            "execution_errors": 0,
+            "predicted_mutations": 0,
+            "successful_mutation_applications": 0,
+            "predicted_mutation_rate": 0
+          },
+          "tentative": {
+            "cases": 2843,
+            "operations": {
+              "ADD": 885,
+              "UPDATE": 28,
+              "DELETE": 0,
+              "NOOP": 1930,
+              "INVALID_OR_OTHER": 0
+            },
+            "valid_predictions": 2843,
+            "invalid_predictions": 0,
+            "execution_errors": 0,
+            "predicted_mutations": 913,
+            "successful_mutation_applications": 913,
+            "predicted_mutation_rate": 0.3211396412240591
+          }
+        }
+      }
+    },
+    "agreement": {
+      "cases": 6912,
+      "operation_agreement_count": 4979,
+      "operation_agreement_rate": 0.7203414351851852,
+      "mutation_vs_noop_agreement_count": 5264,
+      "mutation_vs_noop_agreement_rate": 0.7615740740740741,
+      "operation_confusion_B_rows_C_columns": {
+        "NOOP": {
+          "NOOP": 3345,
+          "ADD": 1347,
+          "UPDATE": 50
+        },
+        "ADD": {
+          "ADD": 1559,
+          "NOOP": 195,
+          "UPDATE": 29
+        },
+        "UPDATE": {
+          "ADD": 256,
+          "NOOP": 56,
+          "UPDATE": 75
+        }
+      },
+      "target_agreement_not_reported": "B and C maintain independent states, so their memory IDs are not comparable."
+    }
+  },
+  "final_active_state": {
+    "warning": "These are state-size/descriptive summaries, not gold state accuracy.",
+    "B": {
+      "active_count_by_history": {
+        "n": 24,
+        "mean": 74.20833333333333,
+        "median": 74,
+        "p90": 90.39999999999999,
+        "min": 53,
+        "max": 110
+      },
+      "total_active": 1781
+    },
+    "C": {
+      "active_count_by_history": {
+        "n": 24,
+        "mean": 131.66666666666666,
+        "median": 130.5,
+        "p90": 160.29999999999998,
+        "min": 87,
+        "max": 172
+      },
+      "total_active": 3160
+    },
+    "paired_C_minus_B_active_count": {
+      "n": 24,
+      "mean": 57.458333333333336,
+      "median": 60,
+      "p90": 77,
+      "min": 13,
+      "max": 84
+    },
+    "histories_C_more_active": 24,
+    "histories_equal_active": 0,
+    "histories_B_more_active": 0
+  },
+  "controller": {
+    "by_arm": {
+      "B": {
+        "decisions": 6912,
+        "successful_api_calls": 6912,
+        "failed_api_attempts": 0,
+        "tokens": {
+          "input": 4423301,
+          "output": 370658,
+          "reasoning": 230791,
+          "cached_input": 0
+        },
+        "provider_cost_usd_successful_calls": 12.553182000000067,
+        "provider_cost_usd_all_attempts": 12.553182000000056,
+        "decision_latency_ms": {
+          "n": 6912,
+          "mean": 2420.9782553327527,
+          "median": 2324.766345999844,
+          "p90": 3562.461419899949,
+          "min": 997.4067920000525,
+          "max": 47121.65010500047
+        },
+        "latency_definition": "One GPT decision call per trajectory+step."
+      },
+      "C": {
+        "decisions": 6912,
+        "successful_api_calls": 7066,
+        "failed_api_attempts": 3,
+        "tokens": {
+          "input": 6247405,
+          "output": 337866,
+          "reasoning": 0,
+          "cached_input": 0
+        },
+        "provider_cost_usd_successful_calls": 0.2623910100000003,
+        "provider_cost_usd_all_attempts": 0.2623910100000003,
+        "decision_latency_ms": {
+          "n": 6912,
+          "mean": 417.03700276808826,
+          "median": 391.62822700012475,
+          "p90": 483.59608060000465,
+          "min": 308.0953399995342,
+          "max": 5217.036273000296
+        },
+        "latency_definition": "Jev operation latency plus target latency when a target call was required."
+      }
+    },
+    "controller_only_cost_comparison": {
+      "B_usd": 12.553182000000056,
+      "C_usd": 0.2623910100000003,
+      "B_over_C_ratio": 47.841509509034026,
+      "C_savings_fraction_vs_B": 0.979097649504325,
+      "scope_warning": "This comparison covers decision-controller calls only; it is not a full memory-system cost ratio."
+    }
+  },
+  "calls": {
+    "by_scope_stage_provider_model": [
+      {
+        "scope": "B",
+        "stage": "answer_generation",
+        "provider": "local-vLLM",
+        "model": "Qwen3-8B",
+        "attempts": 24,
+        "successes": 24,
+        "errors": 0,
+        "running": 0,
+        "input_tokens_all_attempts": 29923,
+        "output_tokens_all_attempts": 185,
+        "reasoning_tokens_all_attempts": 0,
+        "cached_input_tokens_all_attempts": 0,
+        "physical_cost_usd_all_attempts": 0,
+        "successful_call_latency_ms": {
+          "n": 24,
+          "mean": 333.1516598749925,
+          "median": 311.9940179998521,
+          "p90": 391.7871343000676,
+          "min": 231.85875100002158,
+          "max": 740.1131130000576
+        },
+        "all_attempt_latency_ms": {
+          "n": 24,
+          "mean": 333.1516598749925,
+          "median": 311.9940179998521,
+          "p90": 391.7871343000676,
+          "min": 231.85875100002158,
+          "max": 740.1131130000576
+        }
+      },
+      {
+        "scope": "B",
+        "stage": "decision",
+        "provider": "OpenRouter",
+        "model": "openai/gpt-5.6-sol",
+        "attempts": 6912,
+        "successes": 6912,
+        "errors": 0,
+        "running": 0,
+        "input_tokens_all_attempts": 4423301,
+        "output_tokens_all_attempts": 370658,
+        "reasoning_tokens_all_attempts": 230791,
+        "cached_input_tokens_all_attempts": 0,
+        "physical_cost_usd_all_attempts": 12.553182000000056,
+        "successful_call_latency_ms": {
+          "n": 6912,
+          "mean": 2420.978255332756,
+          "median": 2324.766345999844,
+          "p90": 3562.461419899949,
+          "min": 997.4067920000525,
+          "max": 47121.65010500047
+        },
+        "all_attempt_latency_ms": {
+          "n": 6912,
+          "mean": 2420.978255332756,
+          "median": 2324.766345999844,
+          "p90": 3562.461419899949,
+          "min": 997.4067920000525,
+          "max": 47121.65010500047
+        }
+      },
+      {
+        "scope": "B",
+        "stage": "embedding",
+        "provider": "local-vLLM",
+        "model": "Qwen3-Embedding-4B",
+        "attempts": 15937,
+        "successes": 15937,
+        "errors": 0,
+        "running": 0,
+        "input_tokens_all_attempts": 360854,
+        "output_tokens_all_attempts": 0,
+        "reasoning_tokens_all_attempts": 0,
+        "cached_input_tokens_all_attempts": 0,
+        "physical_cost_usd_all_attempts": 0,
+        "successful_call_latency_ms": {
+          "n": 15937,
+          "mean": 56.816648709671426,
+          "median": 23.964389000087976,
+          "p90": 137.3516225999454,
+          "min": 14.129616999998689,
+          "max": 1052.1585010001436
+        },
+        "all_attempt_latency_ms": {
+          "n": 15937,
+          "mean": 56.816648709671426,
+          "median": 23.964389000087976,
+          "p90": 137.3516225999454,
+          "min": 14.129616999998689,
+          "max": 1052.1585010001436
+        }
+      },
+      {
+        "scope": "B",
+        "stage": "evaluator",
+        "provider": "OpenRouter",
+        "model": "openai/gpt-4o-2024-08-06",
+        "attempts": 24,
+        "successes": 24,
+        "errors": 0,
+        "running": 0,
+        "input_tokens_all_attempts": 2826,
+        "output_tokens_all_attempts": 32,
+        "reasoning_tokens_all_attempts": 0,
+        "cached_input_tokens_all_attempts": 0,
+        "physical_cost_usd_all_attempts": 0.007385,
+        "successful_call_latency_ms": {
+          "n": 24,
+          "mean": 770.423756208375,
+          "median": 766.4698400001507,
+          "p90": 927.5581685998943,
+          "min": 577.9634099998511,
+          "max": 1094.1693190000951
+        },
+        "all_attempt_latency_ms": {
+          "n": 24,
+          "mean": 770.423756208375,
+          "median": 766.4698400001507,
+          "p90": 927.5581685998943,
+          "min": 577.9634099998511,
+          "max": 1094.1693190000951
+        }
+      },
+      {
+        "scope": "B",
+        "stage": "rewrite_joint_update",
+        "provider": "local-vLLM",
+        "model": "Qwen3-8B",
+        "attempts": 2170,
+        "successes": 2170,
+        "errors": 0,
+        "running": 0,
+        "input_tokens_all_attempts": 401433,
+        "output_tokens_all_attempts": 69588,
+        "reasoning_tokens_all_attempts": 0,
+        "cached_input_tokens_all_attempts": 0,
+        "physical_cost_usd_all_attempts": 0,
+        "successful_call_latency_ms": {
+          "n": 2170,
+          "mean": 725.9804641046119,
+          "median": 629.3293879998382,
+          "p90": 1157.3579486999895,
+          "min": 172.6711550001055,
+          "max": 5018.556117000058
+        },
+        "all_attempt_latency_ms": {
+          "n": 2170,
+          "mean": 725.9804641046119,
+          "median": 629.3293879998382,
+          "p90": 1157.3579486999895,
+          "min": 172.6711550001055,
+          "max": 5018.556117000058
+        }
+      },
+      {
+        "scope": "C",
+        "stage": "answer_generation",
+        "provider": "local-vLLM",
+        "model": "Qwen3-8B",
+        "attempts": 24,
+        "successes": 24,
+        "errors": 0,
+        "running": 0,
+        "input_tokens_all_attempts": 29858,
+        "output_tokens_all_attempts": 190,
+        "reasoning_tokens_all_attempts": 0,
+        "cached_input_tokens_all_attempts": 0,
+        "physical_cost_usd_all_attempts": 0,
+        "successful_call_latency_ms": {
+          "n": 24,
+          "mean": 330.96634558339673,
+          "median": 281.8091015003156,
+          "p90": 484.0857923999777,
+          "min": 208.9492099992931,
+          "max": 770.484506999841
+        },
+        "all_attempt_latency_ms": {
+          "n": 24,
+          "mean": 330.96634558339673,
+          "median": 281.8091015003156,
+          "p90": 484.0857923999777,
+          "min": 208.9492099992931,
+          "max": 770.484506999841
+        }
+      },
+      {
+        "scope": "C",
+        "stage": "decision",
+        "provider": "OpenRouter",
+        "model": "typesafe/jev-1.13",
+        "attempts": 7069,
+        "successes": 7066,
+        "errors": 3,
+        "running": 0,
+        "input_tokens_all_attempts": 6247405,
+        "output_tokens_all_attempts": 337866,
+        "reasoning_tokens_all_attempts": 0,
+        "cached_input_tokens_all_attempts": 0,
+        "physical_cost_usd_all_attempts": 0.2623910100000003,
+        "successful_call_latency_ms": {
+          "n": 7066,
+          "mean": 407.9478860929841,
+          "median": 390.8527125000255,
+          "p90": 472.88541700015776,
+          "min": 308.0953399995342,
+          "max": 4668.954679999966
+        },
+        "all_attempt_latency_ms": {
+          "n": 7069,
+          "mean": 425.02086380153105,
+          "median": 390.8902370000724,
+          "p90": 473.10586119997316,
+          "min": 308.0953399995342,
+          "max": 40865.808082
+        }
+      },
+      {
+        "scope": "C",
+        "stage": "embedding",
+        "provider": "local-vLLM",
+        "model": "Qwen3-Embedding-4B",
+        "attempts": 17082,
+        "successes": 17082,
+        "errors": 0,
+        "running": 0,
+        "input_tokens_all_attempts": 380301,
+        "output_tokens_all_attempts": 0,
+        "reasoning_tokens_all_attempts": 0,
+        "cached_input_tokens_all_attempts": 0,
+        "physical_cost_usd_all_attempts": 0,
+        "successful_call_latency_ms": {
+          "n": 17082,
+          "mean": 78.82427600690932,
+          "median": 41.178484500036575,
+          "p90": 201.9278517003171,
+          "min": 15.213753000367433,
+          "max": 1661.246873000171
+        },
+        "all_attempt_latency_ms": {
+          "n": 17082,
+          "mean": 78.82427600690932,
+          "median": 41.178484500036575,
+          "p90": 201.9278517003171,
+          "min": 15.213753000367433,
+          "max": 1661.246873000171
+        }
+      },
+      {
+        "scope": "C",
+        "stage": "evaluator",
+        "provider": "OpenRouter",
+        "model": "openai/gpt-4o-2024-08-06",
+        "attempts": 24,
+        "successes": 24,
+        "errors": 0,
+        "running": 0,
+        "input_tokens_all_attempts": 2831,
+        "output_tokens_all_attempts": 31,
+        "reasoning_tokens_all_attempts": 0,
+        "cached_input_tokens_all_attempts": 0,
+        "physical_cost_usd_all_attempts": 0.007387499999999999,
+        "successful_call_latency_ms": {
+          "n": 24,
+          "mean": 771.8154727083844,
+          "median": 744.0927095001098,
+          "p90": 861.7945941999672,
+          "min": 631.5903220000328,
+          "max": 1193.9305190001614
+        },
+        "all_attempt_latency_ms": {
+          "n": 24,
+          "mean": 771.8154727083844,
+          "median": 744.0927095001098,
+          "p90": 861.7945941999672,
+          "min": 631.5903220000328,
+          "max": 1193.9305190001614
+        }
+      },
+      {
+        "scope": "C",
+        "stage": "rewrite_joint_update",
+        "provider": "local-vLLM",
+        "model": "Qwen3-8B",
+        "attempts": 3316,
+        "successes": 3316,
+        "errors": 0,
+        "running": 0,
+        "input_tokens_all_attempts": 584635,
+        "output_tokens_all_attempts": 93622,
+        "reasoning_tokens_all_attempts": 0,
+        "cached_input_tokens_all_attempts": 0,
+        "physical_cost_usd_all_attempts": 0,
+        "successful_call_latency_ms": {
+          "n": 3316,
+          "mean": 654.8922133612786,
+          "median": 599.1390629999951,
+          "p90": 983.5012299999362,
+          "min": 176.99822499975562,
+          "max": 3908.032126000151
+        },
+        "all_attempt_latency_ms": {
+          "n": 3316,
+          "mean": 654.8922133612786,
+          "median": 599.1390629999951,
+          "p90": 983.5012299999362,
+          "min": 176.99822499975562,
+          "max": 3908.032126000151
+        }
+      },
+      {
+        "scope": "shared",
+        "stage": "extraction",
+        "provider": "local-vLLM",
+        "model": "Qwen3-8B",
+        "attempts": 2548,
+        "successes": 2519,
+        "errors": 29,
+        "running": 0,
+        "input_tokens_all_attempts": 3088508,
+        "output_tokens_all_attempts": 2717389,
+        "reasoning_tokens_all_attempts": 0,
+        "cached_input_tokens_all_attempts": 0,
+        "physical_cost_usd_all_attempts": 0,
+        "successful_call_latency_ms": {
+          "n": 2519,
+          "mean": 23637.963050481514,
+          "median": 14664.346220999956,
+          "p90": 47301.97436119976,
+          "min": 3241.4933460000902,
+          "max": 207311.91401399998
+        },
+        "all_attempt_latency_ms": {
+          "n": 2548,
+          "mean": 25441.61002867188,
+          "median": 14823.313012499944,
+          "p90": 49782.711425700014,
+          "min": 0,
+          "max": 300730.015516
+        }
+      }
+    ],
+    "formal_physical_attempts": 55130,
+    "successful_attempts": 55098,
+    "failed_attempts": 32,
+    "paid_provider_exact_usd_all_attempts": 12.830345510000063,
+    "local_module_usage": {
+      "calls_successful": 41072,
+      "calls_failed": 29,
+      "input_tokens_all_attempts": 4875512,
+      "output_tokens_all_attempts": 2880974,
+      "reasoning_tokens_all_attempts": 0,
+      "cached_input_tokens_all_attempts": 0,
+      "api_cost_usd": 0,
+      "hardware_cost_usd": null,
+      "cost_note": "Local modules incurred no API charge; local hardware/energy cost was not monetized."
+    }
+  },
+  "campaign_budget": {
+    "campaign_id": "phase4-low-budget-28-v2",
+    "total_limit_usd": 28,
+    "halted": false,
+    "halt_reason": null,
+    "pools": {
+      "dev": {
+        "limit_usd": 1,
+        "settled_usd": 0.58125,
+        "in_flight_or_unknown_reserved_upper_usd": 0,
+        "available_after_commitments_usd": 0.41875,
+        "reservations_by_status": {
+          "cancelled": {
+            "count": 4,
+            "upper_usd": 0.2,
+            "actual_usd": 0
+          },
+          "settled": {
+            "count": 623,
+            "upper_usd": 9.335696,
+            "actual_usd": 0.58125
+          }
+        }
+      },
+      "formal_controllers": {
+        "limit_usd": 24,
+        "settled_usd": 12.819034,
+        "in_flight_or_unknown_reserved_upper_usd": 0.004032,
+        "available_after_commitments_usd": 11.176934,
+        "reservations_by_status": {
+          "settled": {
+            "count": 13975,
+            "upper_usd": 205.100676,
+            "actual_usd": 12.819034
+          },
+          "unknown": {
+            "count": 3,
+            "upper_usd": 0.004032,
+            "actual_usd": 0
+          }
+        }
+      },
+      "formal_qa": {
+        "limit_usd": 1,
+        "settled_usd": 0.014786,
+        "in_flight_or_unknown_reserved_upper_usd": 0,
+        "available_after_commitments_usd": 0.985214,
+        "reservations_by_status": {
+          "settled": {
+            "count": 48,
+            "upper_usd": 1.085647,
+            "actual_usd": 0.014786
+          }
+        }
+      },
+      "formal_aux": {
+        "limit_usd": 2,
+        "settled_usd": 0.000105,
+        "in_flight_or_unknown_reserved_upper_usd": 0,
+        "available_after_commitments_usd": 1.999895,
+        "reservations_by_status": {
+          "settled": {
+            "count": 3,
+            "upper_usd": 0.004032,
+            "actual_usd": 0.000105
+          }
+        }
+      }
+    },
+    "note": "Settled guard amounts round each request upward to micro-USD; provider-exact formal cost is reported separately."
+  },
+  "preregistered_statistics": {
+    "bootstrap_resamples": 20000,
+    "bootstrap_seed": 20260920,
+    "noninferiority_margin": null
+  },
+  "limitations": [
+    "QA correctness is based on the frozen automated official-rubric judge, not new human gold state annotation.",
+    "Active-state counts describe controller behavior and are not state correctness scores.",
+    "Abstention is a small prespecified descriptive slice.",
+    "Local module token counts are reported, while their hardware and energy costs remain unmonetized."
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "schema": "phase4-low-budget-formal-freeze-v15",
+  "status": "FROZEN_AWAITING_EXPLICIT_FORMAL_RUN_CONFIRMATION",
+  "formal_authorized": false,
+  "n": 24,
+  "ids": [
+    {
+      "order": 0,
+      "question_id": "89941a94",
+      "selection_digest": "0d615b09e696a90e25adacd775e78938d544858581280245578dfd6f83f9aa49",
+      "chronological_sessions": 46,
+      "user_chars": 59393,
+      "deterministic_user_fragments": 706
+    },
+    {
+      "order": 1,
+      "question_id": "830ce83f",
+      "selection_digest": "0e9a9931b69f17a802d32b759a409d8a9937cfb05652b22035a1191a7eb8e530",
+      "chronological_sessions": 47,
+      "user_chars": 55334,
+      "deterministic_user_fragments": 906
+    },
+    {
+      "order": 2,
+      "question_id": "5c40ec5b",
+      "selection_digest": "0ee209e26e472bd71e52a0385bee329c651a9176cb67a74b0b93604391b7ac4f",
+      "chronological_sessions": 51,
+      "user_chars": 70591,
+      "deterministic_user_fragments": 999
+    },
+    {
+      "order": 3,
+      "question_id": "0977f2af",
+      "selection_digest": "1386ca2d47699aeb34ee8d6b06e95b50af6be9e55f7092ade84289514d3136ba",
+      "chronological_sessions": 44,
+      "user_chars": 50188,
+      "deterministic_user_fragments": 591
+    },
+    {
+      "order": 4,
+      "question_id": "184da446",
+      "selection_digest": "13ca781a5df5f5edbbe40bed9927ecfaaae4b90dc0d48eca5789f09d63c37fba",
+      "chronological_sessions": 42,
+      "user_chars": 54064,
+      "deterministic_user_fragments": 595
+    },
+    {
+      "order": 5,
+      "question_id": "6aeb4375_abs",
+      "selection_digest": "157b959a2df25d1ac6db9d14fa74eef0ef326068c895da5145f007b6f8425194",
+      "chronological_sessions": 46,
+      "user_chars": 56490,
+      "deterministic_user_fragments": 643
+    },
+    {
+      "order": 6,
+      "question_id": "7e974930",
+      "selection_digest": "1b766ae4839921ad7bfc24bee2899a14911ad0331f100874ecaf363b2cdf234a",
+      "chronological_sessions": 47,
+      "user_chars": 47768,
+      "deterministic_user_fragments": 617
+    },
+    {
+      "order": 7,
+      "question_id": "07741c45",
+      "selection_digest": "1c76b7f8266cd666202dca0d10efd7e2b0b61cd92b3f3009480aef86d6241aa9",
+      "chronological_sessions": 49,
+      "user_chars": 67096,
+      "deterministic_user_fragments": 832
+    },
+    {
+      "order": 8,
+      "question_id": "2133c1b5_abs",
+      "selection_digest": "1cb6f70c947322266126b7d0055b9d5bae06f4e2cf17b3b5bc23009d1e51f310",
+      "chronological_sessions": 39,
+      "user_chars": 46632,
+      "deterministic_user_fragments": 532
+    },
+    {
+      "order": 9,
+      "question_id": "031748ae_abs",
+      "selection_digest": "229a8c0056c2bd1443ef9e7aea7291a2fd87a18e232799b2d795cb4307895efc",
+      "chronological_sessions": 52,
+      "user_chars": 56883,
+      "deterministic_user_fragments": 645
+    },
+    {
+      "order": 10,
+      "question_id": "852ce960",
+      "selection_digest": "25d17e6f86b48de25f1e4ea6312e478012bd7acddf2588b07d8bcbffc8fe9347",
+      "chronological_sessions": 39,
+      "user_chars": 119258,
+      "deterministic_user_fragments": 1399
+    },
+    {
+      "order": 11,
+      "question_id": "8fb83627",
+      "selection_digest": "268f49bb969d1830fbaa42a28b2e83ca7c07fb72733716adeaa940bf02dfa222",
+      "chronological_sessions": 44,
+      "user_chars": 53840,
+      "deterministic_user_fragments": 623
+    },
+    {
+      "order": 12,
+      "question_id": "6071bd76",
+      "selection_digest": "2df5d0fc63b46a4e35aaf47eff0ad059c1cc0685c9532a30eaf599eb9afbf825",
+      "chronological_sessions": 46,
+      "user_chars": 65033,
+      "deterministic_user_fragments": 755
+    },
+    {
+      "order": 13,
+      "question_id": "603deb26",
+      "selection_digest": "2fe083963e27ac835bccea765bc844231960db3bda489348d9c6335f2f458033",
+      "chronological_sessions": 48,
+      "user_chars": 58958,
+      "deterministic_user_fragments": 665
+    },
+    {
+      "order": 14,
+      "question_id": "c6853660",
+      "selection_digest": "30c6efed69ac8cffe28e36a96238f2bb2c5be4aae225178cf51ecd665ae67914",
+      "chronological_sessions": 46,
+      "user_chars": 62988,
+      "deterministic_user_fragments": 734
+    },
+    {
+      "order": 15,
+      "question_id": "cf22b7bf",
+      "selection_digest": "313e70b5a1bf0652be431c421daab7f7d805efb71e6ba57bd3b2ced971e940ee",
+      "chronological_sessions": 55,
+      "user_chars": 57304,
+      "deterministic_user_fragments": 660
+    },
+    {
+      "order": 16,
+      "question_id": "ba61f0b9",
+      "selection_digest": "3359c223b744670854567450956dab3db9e91055926fe9a25905715f20c0642a",
+      "chronological_sessions": 45,
+      "user_chars": 70346,
+      "deterministic_user_fragments": 799
+    },
+    {
+      "order": 17,
+      "question_id": "72e3ee87",
+      "selection_digest": "36505e0f9f0c4d3ba9aca67dab53086bc621cba6d78fcdf7ead7eb2eb55e2b38",
+      "chronological_sessions": 51,
+      "user_chars": 54543,
+      "deterministic_user_fragments": 690
+    },
+    {
+      "order": 18,
+      "question_id": "71315a70",
+      "selection_digest": "37b5f08a35849af87fa4b8dd7f746913dfeeeacfc9c5556033f3d072691e1171",
+      "chronological_sessions": 51,
+      "user_chars": 54323,
+      "deterministic_user_fragments": 623
+    },
+    {
+      "order": 19,
+      "question_id": "6a1eabeb",
+      "selection_digest": "42b6b4fd5d06b3e3ed17ea6a82da6bd4b3d11f85530a1d33fa69172eb33f49d3",
+      "chronological_sessions": 40,
+      "user_chars": 60504,
+      "deterministic_user_fragments": 1063
+    },
+    {
+      "order": 20,
+      "question_id": "3ba21379",
+      "selection_digest": "4d8582b486796dec2494863859cb5736f9f5403b42318a975027fe8359844447",
+      "chronological_sessions": 37,
+      "user_chars": 70049,
+      "deterministic_user_fragments": 732
+    },
+    {
+      "order": 21,
+      "question_id": "dad224aa",
+      "selection_digest": "4eba65d06b28b9fc5b5f812d3e9a278f7277872e67f258a0744c0ad5b451c12c",
+      "chronological_sessions": 48,
+      "user_chars": 70784,
+      "deterministic_user_fragments": 802
+    },
+    {
+      "order": 22,
+      "question_id": "d7c942c3",
+      "selection_digest": "4ed6b0836dcd9626566fc85c7dd34063ca3e1db9c37335e157b451e1d2ea97b1",
+      "chronological_sessions": 48,
+      "user_chars": 65222,
+      "deterministic_user_fragments": 599
+    },
+    {
+      "order": 23,
+      "question_id": "0f05491a",
+      "selection_digest": "53e480cd3f1225c90a1a685a387e5398247e99e8840daf10a22de2345420a358",
+      "chronological_sessions": 45,
+      "user_chars": 53739,
+      "deterministic_user_fragments": 799
+    }
+  ],
+  "selection": {
+    "population": 77,
+    "development_excluded": "9bbe84a2",
+    "formal_pool": 76,
+    "seed": "phase4-low-budget-test-v1",
+    "algorithm": "ascending SHA256(seed NUL question_id)"
+  },
+  "cost_only_rule": {
+    "measured_controller_pair_usd_per_development_history": 0.5804999799999996,
+    "safety_multiplier": 1.5,
+    "projected_24_controller_usd": 13.93199951999999,
+    "projected_24_with_safety_usd": 20.897999279999986,
+    "controller_pool_usd": 24,
+    "measured_judge_pair_usd_per_history": 0.0006,
+    "projected_24_QA_usd": 0.0144,
+    "QA_pool_usd": 1
+  },
+  "scoring": {
+    "metric": "paired QA accuracy C minus B",
+    "judge": "openai/gpt-4o-2024-08-06",
+    "rubric": {
+      "answerable": "official knowledge-update rubric",
+      "question_id_suffix__abs": "official unanswerable/abstention rubric"
+    },
+    "bootstrap_resamples": 20000,
+    "bootstrap_seed": 20260920,
+    "noninferiority_margin": null
+  },
+  "protocol": {
+    "extractor": "v14 verbatim fragments + source hygiene + thinking verifier with split-on-truncation",
+    "controllers": [
+      "B GPT-5.6 Sol frozen separated decision",
+      "C frozen Jev decision"
+    ],
+    "writer_reader": "shared local Qwen3-8B",
+    "embeddings": "shared implementation Qwen3-Embedding-4B",
+    "independent_states": true,
+    "no_gold_state_restore": true
+  },
+  "pilot_summary_sha256": "869667540c20e5d1240fead3f6babfc5a1d7675b4d717d5726457ca9451cbb5d"
+}

@@ -1,0 +1,388 @@
+{
+  "question_id": "0f05491a",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "How many stars do I need to reach the gold level on my Starbucks Rewards app?",
+    "question_date": "2023/08/01 (Tue) 22:29"
+  },
+  "reference_answer": 120,
+  "answers": {
+    "B": {
+      "answer": "125",
+      "retrieved": [
+        {
+          "id": "E4_3",
+          "text": "I'm actually trying to reach the gold level on my Starbucks Rewards app, do you know how many stars I need for that?",
+          "status": "current",
+          "timestamp": "2023/07/11 (Tue) 00:07",
+          "provenance": [
+            {
+              "session_index": 4,
+              "fact_index": 3,
+              "timestamp": "2023/07/11 (Tue) 00:07",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.9651215818081388
+        },
+        {
+          "id": "E43_2",
+          "text": "I'm trying to reach the gold level on my Starbucks Rewards app, which I know requires a certain number of stars.",
+          "status": "current",
+          "timestamp": "2023/07/30 (Sun) 02:08",
+          "provenance": [
+            {
+              "session_index": 43,
+              "fact_index": 2,
+              "timestamp": "2023/07/30 (Sun) 02:08",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.9560660062174329
+        },
+        {
+          "id": "E4_4",
+          "text": "To correct myself, I actually need **125 stars** to reach the Gold level on the Starbucks Rewards app, not 400.",
+          "status": "current",
+          "timestamp": "2023/07/11 (Tue) 00:07",
+          "provenance": [
+            {
+              "session_index": 4,
+              "fact_index": 4,
+              "timestamp": "2023/07/11 (Tue) 00:07",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.9416819066253065
+        },
+        {
+          "id": "M62",
+          "text": "I'm trying to reach the gold level on my Starbucks Rewards app, which I know requires a certain number of stars. Actually, I need 120 stars to reach the gold level, not 300.",
+          "status": "active",
+          "timestamp": "2023/07/30 (Sun) 02:08",
+          "provenance": [
+            {
+              "session_index": 43,
+              "fact_index": 2,
+              "timestamp": "2023/07/30 (Sun) 02:08",
+              "source_turns": [
+                4
+              ]
+            },
+            {
+              "session_index": 43,
+              "fact_index": 3,
+              "timestamp": "2023/07/30 (Sun) 02:08",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.9033819936070844
+        },
+        {
+          "id": "E43_3",
+          "text": "Actually, I need 120 stars to reach the gold level, not 300.",
+          "status": "current",
+          "timestamp": "2023/07/30 (Sun) 02:08",
+          "provenance": [
+            {
+              "session_index": 43,
+              "fact_index": 3,
+              "timestamp": "2023/07/30 (Sun) 02:08",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.8200566248150415
+        },
+        {
+          "id": "E4_2",
+          "text": "I've been using my Starbucks Rewards app and I was wondering if you know any tips on how to earn stars faster?",
+          "status": "current",
+          "timestamp": "2023/07/11 (Tue) 00:07",
+          "provenance": [
+            {
+              "session_index": 4,
+              "fact_index": 2,
+              "timestamp": "2023/07/11 (Tue) 00:07",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.7614331046043238
+        },
+        {
+          "id": "E29_12",
+          "text": "I've been trying to get to that 50-point mark to redeem a free drink reward.",
+          "status": "current",
+          "timestamp": "2023/07/23 (Sun) 10:28",
+          "provenance": [
+            {
+              "session_index": 29,
+              "fact_index": 12,
+              "timestamp": "2023/07/23 (Sun) 10:28",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.6354046487530258
+        },
+        {
+          "id": "E43_4",
+          "text": "I'll try to make the most out of my Starbucks visits.",
+          "status": "tentative",
+          "timestamp": "2023/07/30 (Sun) 02:08",
+          "provenance": [
+            {
+              "session_index": 43,
+              "fact_index": 4,
+              "timestamp": "2023/07/30 (Sun) 02:08",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6245068072873305
+        },
+        {
+          "id": "E29_9",
+          "text": "I know I need 50 more points to get a free drink.",
+          "status": "current",
+          "timestamp": "2023/07/23 (Sun) 10:28",
+          "provenance": [
+            {
+              "session_index": 29,
+              "fact_index": 9,
+              "timestamp": "2023/07/23 (Sun) 10:28",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6191817456014327
+        },
+        {
+          "id": "E29_6",
+          "text": "They award 10 points for every dollar spent, and I've accumulated 450 points since joining.",
+          "status": "current",
+          "timestamp": "2023/07/23 (Sun) 10:28",
+          "provenance": [
+            {
+              "session_index": 29,
+              "fact_index": 6,
+              "timestamp": "2023/07/23 (Sun) 10:28",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.5888189800112023
+        }
+      ]
+    },
+    "C": {
+      "answer": "120",
+      "retrieved": [
+        {
+          "id": "E4_3",
+          "text": "I'm actually trying to reach the gold level on my Starbucks Rewards app, do you know how many stars I need for that?",
+          "status": "current",
+          "timestamp": "2023/07/11 (Tue) 00:07",
+          "provenance": [
+            {
+              "session_index": 4,
+              "fact_index": 3,
+              "timestamp": "2023/07/11 (Tue) 00:07",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.9648686721818746
+        },
+        {
+          "id": "E43_2",
+          "text": "I'm trying to reach the gold level on my Starbucks Rewards app, which I know requires a certain number of stars.",
+          "status": "current",
+          "timestamp": "2023/07/30 (Sun) 02:08",
+          "provenance": [
+            {
+              "session_index": 43,
+              "fact_index": 2,
+              "timestamp": "2023/07/30 (Sun) 02:08",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.9557149746388829
+        },
+        {
+          "id": "E4_4",
+          "text": "To correct myself, I actually need **125 stars** to reach the Gold level on the Starbucks Rewards app, not 400.",
+          "status": "current",
+          "timestamp": "2023/07/11 (Tue) 00:07",
+          "provenance": [
+            {
+              "session_index": 4,
+              "fact_index": 4,
+              "timestamp": "2023/07/11 (Tue) 00:07",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.9426326130823994
+        },
+        {
+          "id": "M7",
+          "text": "To correct myself, I actually need **120 stars** to reach the Gold level on the Starbucks Rewards app, not 400.",
+          "status": "active",
+          "timestamp": "2023/07/30 (Sun) 02:08",
+          "provenance": [
+            {
+              "session_index": 4,
+              "fact_index": 4,
+              "timestamp": "2023/07/11 (Tue) 00:07",
+              "source_turns": [
+                10
+              ]
+            },
+            {
+              "session_index": 43,
+              "fact_index": 3,
+              "timestamp": "2023/07/30 (Sun) 02:08",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.9380258198786878
+        },
+        {
+          "id": "E43_3",
+          "text": "Actually, I need 120 stars to reach the gold level, not 300.",
+          "status": "current",
+          "timestamp": "2023/07/30 (Sun) 02:08",
+          "provenance": [
+            {
+              "session_index": 43,
+              "fact_index": 3,
+              "timestamp": "2023/07/30 (Sun) 02:08",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.8199175642733002
+        },
+        {
+          "id": "E4_2",
+          "text": "I've been using my Starbucks Rewards app and I was wondering if you know any tips on how to earn stars faster?",
+          "status": "current",
+          "timestamp": "2023/07/11 (Tue) 00:07",
+          "provenance": [
+            {
+              "session_index": 4,
+              "fact_index": 2,
+              "timestamp": "2023/07/11 (Tue) 00:07",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.7615537471678815
+        },
+        {
+          "id": "E29_12",
+          "text": "I've been trying to get to that 50-point mark to redeem a free drink reward.",
+          "status": "current",
+          "timestamp": "2023/07/23 (Sun) 10:28",
+          "provenance": [
+            {
+              "session_index": 29,
+              "fact_index": 12,
+              "timestamp": "2023/07/23 (Sun) 10:28",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.6348184082372479
+        },
+        {
+          "id": "E43_4",
+          "text": "I'll try to make the most out of my Starbucks visits.",
+          "status": "tentative",
+          "timestamp": "2023/07/30 (Sun) 02:08",
+          "provenance": [
+            {
+              "session_index": 43,
+              "fact_index": 4,
+              "timestamp": "2023/07/30 (Sun) 02:08",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6241527457345637
+        },
+        {
+          "id": "E29_9",
+          "text": "I know I need 50 more points to get a free drink.",
+          "status": "current",
+          "timestamp": "2023/07/23 (Sun) 10:28",
+          "provenance": [
+            {
+              "session_index": 29,
+              "fact_index": 9,
+              "timestamp": "2023/07/23 (Sun) 10:28",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6191330001786075
+        },
+        {
+          "id": "M67",
+          "text": "I know I need 50 more points to get a free drink.",
+          "status": "active",
+          "timestamp": "2023/07/23 (Sun) 10:28",
+          "provenance": [
+            {
+              "session_index": 29,
+              "fact_index": 9,
+              "timestamp": "2023/07/23 (Sun) 10:28",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6191330001786075
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "No",
+      "correct": false
+    },
+    "C": {
+      "raw": "Yes",
+      "correct": true
+    }
+  },
+  "rubric": "official knowledge-update"
+}

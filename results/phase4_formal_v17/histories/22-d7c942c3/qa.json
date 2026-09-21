@@ -1,0 +1,388 @@
+{
+  "question_id": "d7c942c3",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "Is my mom using the same grocery list method as me?",
+    "question_date": "2023/05/14 (Sun) 09:58"
+  },
+  "reference_answer": "Yes.",
+  "answers": {
+    "B": {
+      "answer": "Yes",
+      "retrieved": [
+        {
+          "id": "E36_2",
+          "text": "By the way, I was just thinking, my mom is actually using the same grocery list app as me now, so we can easily share lists and keep track of what we need.",
+          "status": "current",
+          "timestamp": "2023/04/30 (Sun) 20:09",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 2,
+              "timestamp": "2023/04/30 (Sun) 20:09",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.7969984219926042
+        },
+        {
+          "id": "E1_5",
+          "text": "It's been really helpful in organizing my grocery lists and keeping me on top of what I need to buy.",
+          "status": "current",
+          "timestamp": "2023/03/11 (Sat) 12:42",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 5,
+              "timestamp": "2023/03/11 (Sat) 12:42",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.7061782015738839
+        },
+        {
+          "id": "E1_9",
+          "text": "I've been trying to get my mom to use it too, but she's still stuck on her old paper list.",
+          "status": "current",
+          "timestamp": "2023/03/11 (Sat) 12:42",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 9,
+              "timestamp": "2023/03/11 (Sat) 12:42",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.6694617430907951
+        },
+        {
+          "id": "M3",
+          "text": "And by the way, I'm using that new grocery list app to keep track of all the ingredients I need - it's been a lifesaver! We can easily share lists and keep track of what we need.",
+          "status": "active",
+          "timestamp": "2023/04/30 (Sun) 20:09",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 3,
+              "timestamp": "2023/03/11 (Sat) 12:42",
+              "source_turns": [
+                4
+              ]
+            },
+            {
+              "session_index": 36,
+              "fact_index": 2,
+              "timestamp": "2023/04/30 (Sun) 20:09",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.668527030895931
+        },
+        {
+          "id": "E1_3",
+          "text": "And by the way, I'm using that new grocery list app to keep track of all the ingredients I need - it's been a lifesaver!",
+          "status": "current",
+          "timestamp": "2023/03/11 (Sat) 12:42",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 3,
+              "timestamp": "2023/03/11 (Sat) 12:42",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.6420153507788378
+        },
+        {
+          "id": "E1_8",
+          "text": "By the way, I'm glad I'm not the only one who's a fan of that new grocery list app.",
+          "status": "current",
+          "timestamp": "2023/03/11 (Sat) 12:42",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 8,
+              "timestamp": "2023/03/11 (Sat) 12:42",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.6318302347428951
+        },
+        {
+          "id": "E33_4",
+          "text": "That sounds like a great plan!",
+          "status": "current",
+          "timestamp": "2023/04/28 (Fri) 04:47",
+          "provenance": [
+            {
+              "session_index": 33,
+              "fact_index": 4,
+              "timestamp": "2023/04/28 (Fri) 04:47",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.5717391044244075
+        },
+        {
+          "id": "E28_6",
+          "text": "I'll share it for approval and the roommates can all split the costs",
+          "status": "tentative",
+          "timestamp": "2023/04/20 (Thu) 13:23",
+          "provenance": [
+            {
+              "session_index": 28,
+              "fact_index": 6,
+              "timestamp": "2023/04/20 (Thu) 13:23",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5559199869426884
+        },
+        {
+          "id": "E32_5",
+          "text": "That's really helpful, thank you!",
+          "status": "current",
+          "timestamp": "2023/04/27 (Thu) 18:24",
+          "provenance": [
+            {
+              "session_index": 32,
+              "fact_index": 5,
+              "timestamp": "2023/04/27 (Thu) 18:24",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.546427415093249
+        },
+        {
+          "id": "E13_4",
+          "text": "I'm in that kind of mood lately.",
+          "status": "current",
+          "timestamp": "2023/03/31 (Fri) 13:47",
+          "provenance": [
+            {
+              "session_index": 13,
+              "fact_index": 4,
+              "timestamp": "2023/03/31 (Fri) 13:47",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.5454208769667661
+        }
+      ]
+    },
+    "C": {
+      "answer": "Yes",
+      "retrieved": [
+        {
+          "id": "E36_2",
+          "text": "By the way, I was just thinking, my mom is actually using the same grocery list app as me now, so we can easily share lists and keep track of what we need.",
+          "status": "current",
+          "timestamp": "2023/04/30 (Sun) 20:09",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 2,
+              "timestamp": "2023/04/30 (Sun) 20:09",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.7967343060381997
+        },
+        {
+          "id": "M5",
+          "text": "I've been trying to get my mom to use it too, but she's actually using the same grocery list app as me now, so we can easily share lists and keep track of what we need.",
+          "status": "active",
+          "timestamp": "2023/04/30 (Sun) 20:09",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 9,
+              "timestamp": "2023/03/11 (Sat) 12:42",
+              "source_turns": [
+                8
+              ]
+            },
+            {
+              "session_index": 36,
+              "fact_index": 2,
+              "timestamp": "2023/04/30 (Sun) 20:09",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.7496105753318271
+        },
+        {
+          "id": "E1_5",
+          "text": "It's been really helpful in organizing my grocery lists and keeping me on top of what I need to buy.",
+          "status": "current",
+          "timestamp": "2023/03/11 (Sat) 12:42",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 5,
+              "timestamp": "2023/03/11 (Sat) 12:42",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.7063147654358812
+        },
+        {
+          "id": "E1_9",
+          "text": "I've been trying to get my mom to use it too, but she's still stuck on her old paper list.",
+          "status": "current",
+          "timestamp": "2023/03/11 (Sat) 12:42",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 9,
+              "timestamp": "2023/03/11 (Sat) 12:42",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.6699124092516828
+        },
+        {
+          "id": "E1_3",
+          "text": "And by the way, I'm using that new grocery list app to keep track of all the ingredients I need - it's been a lifesaver!",
+          "status": "current",
+          "timestamp": "2023/03/11 (Sat) 12:42",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 3,
+              "timestamp": "2023/03/11 (Sat) 12:42",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.6400729561999502
+        },
+        {
+          "id": "E1_8",
+          "text": "By the way, I'm glad I'm not the only one who's a fan of that new grocery list app.",
+          "status": "current",
+          "timestamp": "2023/03/11 (Sat) 12:42",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 8,
+              "timestamp": "2023/03/11 (Sat) 12:42",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.6323101574219698
+        },
+        {
+          "id": "E33_4",
+          "text": "That sounds like a great plan!",
+          "status": "current",
+          "timestamp": "2023/04/28 (Fri) 04:47",
+          "provenance": [
+            {
+              "session_index": 33,
+              "fact_index": 4,
+              "timestamp": "2023/04/28 (Fri) 04:47",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.5717391044244075
+        },
+        {
+          "id": "E28_6",
+          "text": "I'll share it for approval and the roommates can all split the costs",
+          "status": "tentative",
+          "timestamp": "2023/04/20 (Thu) 13:23",
+          "provenance": [
+            {
+              "session_index": 28,
+              "fact_index": 6,
+              "timestamp": "2023/04/20 (Thu) 13:23",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5559199869426884
+        },
+        {
+          "id": "M66",
+          "text": "I'll share it for approval and the roommates can all split the costs",
+          "status": "active",
+          "timestamp": "2023/04/20 (Thu) 13:23",
+          "provenance": [
+            {
+              "session_index": 28,
+              "fact_index": 6,
+              "timestamp": "2023/04/20 (Thu) 13:23",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5559199869426884
+        },
+        {
+          "id": "E32_5",
+          "text": "That's really helpful, thank you!",
+          "status": "current",
+          "timestamp": "2023/04/27 (Thu) 18:24",
+          "provenance": [
+            {
+              "session_index": 32,
+              "fact_index": 5,
+              "timestamp": "2023/04/27 (Thu) 18:24",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.546427415093249
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "Yes.",
+      "correct": true
+    },
+    "C": {
+      "raw": "Yes",
+      "correct": true
+    }
+  },
+  "rubric": "official knowledge-update"
+}

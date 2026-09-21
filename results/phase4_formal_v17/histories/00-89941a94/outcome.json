@@ -1,0 +1,57 @@
+{
+  "status": "COMPLETE",
+  "order": 0,
+  "question_id": "89941a94",
+  "sessions": 46,
+  "extracted_facts": 338,
+  "finished_at": "2026-09-20T14:17:36.949Z",
+  "grades": {
+    "B": true,
+    "C": true
+  },
+  "active_final": {
+    "B": 93,
+    "C": 163
+  },
+  "budget": {
+    "halted": false,
+    "total": {
+      "limitMicroUsd": 28000000,
+      "settledMicroUsd": 1225073,
+      "heldMicroUsd": 0,
+      "unknownMicroUsd": 0,
+      "committedMicroUsd": 1225073,
+      "availableMicroUsd": 26774927
+    },
+    "pools": {
+      "dev": {
+        "limitMicroUsd": 1000000,
+        "settledMicroUsd": 581250,
+        "heldMicroUsd": 0,
+        "unknownMicroUsd": 0,
+        "availableMicroUsd": 418750
+      },
+      "formal_controllers": {
+        "limitMicroUsd": 24000000,
+        "settledMicroUsd": 643167,
+        "heldMicroUsd": 0,
+        "unknownMicroUsd": 0,
+        "availableMicroUsd": 23356833
+      },
+      "formal_qa": {
+        "limitMicroUsd": 1000000,
+        "settledMicroUsd": 656,
+        "heldMicroUsd": 0,
+        "unknownMicroUsd": 0,
+        "availableMicroUsd": 999344
+      },
+      "formal_aux": {
+        "limitMicroUsd": 2000000,
+        "settledMicroUsd": 0,
+        "heldMicroUsd": 0,
+        "unknownMicroUsd": 0,
+        "availableMicroUsd": 2000000
+      }
+    }
+  }
+}

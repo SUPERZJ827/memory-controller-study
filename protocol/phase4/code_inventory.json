@@ -1,0 +1,129 @@
+{
+  "schema_version": "phase4-code-audit-v1",
+  "audit_date": "2026-09-20",
+  "external_calls_made": false,
+  "frozen_phase2_phase3_modified": false,
+  "readiness": {
+    "decision": "BUILD_GO_RUN_NOT_YET",
+    "reason": "Decision-layer components are reusable, but the full-system harness, content generation, retrieval/store adapter, stage ledger, and crash-safe checkpoints are not implemented."
+  },
+  "upstream": {
+    "mem0": {
+      "path": "vendor/mem0",
+      "commit": "a39a802bbc93e85b820078cd3c4dbaf53af25dbe",
+      "root_dependency_installed": false,
+      "active_add_path": "additive_extraction_and_add_only",
+      "joint_update_prompt_present_but_unused": true
+    },
+    "longmemeval": {
+      "path": "vendor/LongMemEval",
+      "commit": "9e0b455f4ef0e2ab8f2e582289761153549043fc"
+    },
+    "memops": {
+      "path": "vendor/MemOps",
+      "commit": "312af65e2c7b6d1b70f062ffa8b4cde32aaf6f35"
+    }
+  },
+  "dataset": {
+    "path": "data/longmemeval/longmemeval_s_cleaned.json",
+    "sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+    "questions": 500,
+    "abstention_questions": 30,
+    "question_types": {
+      "knowledge-update": 78,
+      "multi-session": 133,
+      "single-session-assistant": 56,
+      "single-session-preference": 30,
+      "single-session-user": 70,
+      "temporal-reasoning": 133
+    },
+    "sessions_per_question": {
+      "min": 38,
+      "max": 62,
+      "mean": 47.734
+    }
+  },
+  "reusable": [
+    {
+      "capability": "jev_decision_controller",
+      "paths": ["src/jev.ts", "src/phase2_controllers.ts"],
+      "status": "wrap_read_only"
+    },
+    {
+      "capability": "gpt_decision_controller",
+      "paths": ["src/phase3_gpt_controller.ts", "phase3/gpt56sol_protocol.json"],
+      "status": "wrap_read_only"
+    },
+    {
+      "capability": "claude_and_local_decision_controllers",
+      "paths": ["src/phase2_controllers.ts"],
+      "status": "extract_adapter"
+    },
+    {
+      "capability": "deterministic_operation_execution",
+      "paths": ["src/phase2_executor.ts", "EXECUTOR_SPEC.md"],
+      "status": "reuse_pattern_not_gold_payload"
+    },
+    {
+      "capability": "bounded_concurrency",
+      "paths": ["src/run_phase2.ts", "src/run_phase3_gpt.ts"],
+      "status": "reuse_trajectory_boundary"
+    },
+    {
+      "capability": "usage_and_statistics",
+      "paths": ["src/analyze_phase2.ts", "src/analyze_phase3.ts"],
+      "status": "extract_shared_library"
+    },
+    {
+      "capability": "vector_store_embedding_history_crud",
+      "paths": ["vendor/mem0/mem0-ts/src/oss/src"],
+      "status": "adapter_required"
+    },
+    {
+      "capability": "official_qa_evaluation_reference",
+      "paths": ["vendor/LongMemEval/src/evaluation/evaluate_qa.py"],
+      "status": "wrapper_and_cost_logging_required"
+    }
+  ],
+  "missing": [
+    "frozen_phase4_protocol_and_noninferiority_plan",
+    "longmemeval_leakage_audit",
+    "versioned_temporal_memory_semantics",
+    "joint_updater_path_a",
+    "decision_only_path_b",
+    "jev_path_c_system_adapter",
+    "shared_content_writer_for_b_and_c",
+    "common_fact_extractor",
+    "isolated_store_and_retrieval_adapter",
+    "answer_generator",
+    "stage_level_attempt_cost_token_latency_ledger",
+    "transactional_step_checkpoints_and_resume",
+    "state_and_qa_evaluation_harness",
+    "append_only_reference_arm",
+    "clustered_paired_and_noninferiority_analysis"
+  ],
+  "parallelism": {
+    "safe_without_extra_model_calls": [
+      "dataset_validation_and_hashing",
+      "leakage_checks",
+      "manifest_generation",
+      "offline_analysis",
+      "independent_trajectories_with_isolated_state",
+      "independent_arms_after_protocol_freeze"
+    ],
+    "must_remain_serial": [
+      "events_within_a_trajectory",
+      "state_commit_before_next_retrieval",
+      "ingestion_before_answer_generation",
+      "dependent_error_replay_steps"
+    ],
+    "latency_warning": "Concurrent provider traffic can alter queueing, retry rates, and latency; freeze concurrency and isolate comparative latency runs."
+  },
+  "resume_risks": [
+    "skip_by_id_without_manifest_hash_validation",
+    "no_atomic_external_call_and_state_commit",
+    "no_step_level_trajectory_resume",
+    "no_explicit_single_writer_for_jsonl",
+    "root_workspace_has_no_git_commit_identity"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "phase4-budget-reconciliation-v25",
+  "campaign_id": "phase4-low-budget-28-v2",
+  "currency": "USD",
+  "status": "FINAL_WITH_UNKNOWN_BILLING_HOLDS_RETAINED",
+  "caps": {
+    "campaign": 28.0,
+    "development": 1.0,
+    "formal_controllers": 24.0,
+    "formal_qa": 1.0,
+    "formal_auxiliary": 2.0,
+    "pool_transfer_allowed": false
+  },
+  "provider_exact": {
+    "development_pilot": 0.58109998,
+    "formal_total": 12.83034551,
+    "campaign_known_total": 13.41144549
+  },
+  "guard_accounting": {
+    "development_settled": 0.58125,
+    "formal_controllers_settled": 12.819034,
+    "formal_qa_settled": 0.014786,
+    "formal_auxiliary_settled": 0.000105,
+    "formal_settled_total": 12.833925,
+    "campaign_settled_total": 13.415175,
+    "unknown_billing_holds": 0.004032,
+    "campaign_committed_total": 13.419207,
+    "campaign_available": 14.580793,
+    "halted": false
+  },
+  "unknown_holds": {
+    "count": 3,
+    "cause": "OpenRouter HTTP 520 attempts without provider usage records",
+    "treatment": "Conservative upper bounds remain committed and are not counted as free."
+  },
+  "validation": {
+    "campaign_within_cap": true,
+    "development_within_pool": true,
+    "formal_controllers_within_pool": true,
+    "formal_qa_within_pool": true,
+    "formal_auxiliary_within_pool": true,
+    "no_pool_reallocation": true,
+    "no_paid_calls_after_formal_completion": true
+  },
+  "interpretation": "Provider-exact totals use returned usage metadata. Guard-settled totals round each request upward to the nearest micro-dollar. Local GPU hardware, energy, and amortization were not monetized."
+}

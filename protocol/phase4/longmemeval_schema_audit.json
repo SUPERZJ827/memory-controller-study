@@ -1,0 +1,77 @@
+{
+  "schema_version": "phase4-longmemeval-schema-audit-v1",
+  "source_top_level_fields": [
+    "question_id",
+    "question_type",
+    "question",
+    "question_date",
+    "answer",
+    "answer_session_ids",
+    "haystack_dates",
+    "haystack_session_ids",
+    "haystack_sessions"
+  ],
+  "source_turn_fields": {
+    "role": 246750,
+    "content": 246750,
+    "has_answer": 10960
+  },
+  "source_value_types": {
+    "answer": {
+      "string": 468,
+      "number": 32
+    },
+    "turn_role": {
+      "user": 122416,
+      "assistant": 124334
+    }
+  },
+  "write_time_view": {
+    "exact_session_keys": ["timestamp", "turns"],
+    "exact_turn_keys": ["role", "content"],
+    "forbidden_keys": [
+      "question",
+      "answer",
+      "question_type",
+      "answer_session_ids",
+      "question_date",
+      "question_id",
+      "qid",
+      "_abs",
+      "has_answer",
+      "haystack_session_ids",
+      "haystack_sessions",
+      "haystack_dates"
+    ],
+    "projection_policy": "positive allowlist; unknown source turn annotations are not copied",
+    "scope": "one current session only",
+    "order": "ascending timestamp, stable on equal timestamps"
+  },
+  "query_time_view": {
+    "unlock_condition": "all eligible chronological sessions consumed",
+    "exact_keys": ["question", "question_date"]
+  },
+  "source_anomalies": {
+    "source_records_not_chronologically_ordered": 211,
+    "records_with_session_after_question_date": 76,
+    "sessions_after_question_date": 1475,
+    "records_with_gold_session_after_question_date": 44,
+    "gold_sessions_after_question_date": 75,
+    "question_ids_with_abs_suffix": 30
+  },
+  "future_evidence_policy": {
+    "comparison": "minute-level YYYY/MM/DD HH:mm timestamps from source strings",
+    "future_non_gold_session": "omit before any write-time view is created",
+    "future_gold_session": "exclude the complete question from the eligible projection",
+    "rationale": "retaining the future gold leaks evidence; removing it leaves an unanswerable gold item",
+    "silent_fallback": false
+  },
+  "validation": {
+    "aligned_session_date_id_arrays_required": true,
+    "known_top_level_schema_required": true,
+    "known_role_values_required": true,
+    "future_evidence_guard_required": true,
+    "query_gate_required": true,
+    "pinned_hash_required": true
+  }
+}

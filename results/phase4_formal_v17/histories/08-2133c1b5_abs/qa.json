@@ -1,0 +1,388 @@
+{
+  "question_id": "2133c1b5_abs",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "How long have I been living in my current apartment in Shinjuku?",
+    "question_date": "2023/10/15 (Sun) 10:21"
+  },
+  "reference_answer": "The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.",
+  "answers": {
+    "B": {
+      "answer": "3 months",
+      "retrieved": [
+        {
+          "id": "E34_5",
+          "text": "By the way, I've been living in Harajuku for 3 months now, and I'm still discovering new hidden gems in the neighborhood.",
+          "status": "current",
+          "timestamp": "2023/10/15 (Sun) 03:36",
+          "provenance": [
+            {
+              "session_index": 34,
+              "fact_index": 5,
+              "timestamp": "2023/10/15 (Sun) 03:36",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6699545744074655
+        },
+        {
+          "id": "M23",
+          "text": "I'm still getting used to living in Tokyo, but I've been enjoying the independence of my new studio apartment in Harajuku - it's been 3 months now, and the commute to work is really convenient.",
+          "status": "active",
+          "timestamp": "2023/10/15 (Sun) 03:36",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 2,
+              "timestamp": "2023/04/11 (Tue) 21:07",
+              "source_turns": [
+                4
+              ]
+            },
+            {
+              "session_index": 34,
+              "fact_index": 5,
+              "timestamp": "2023/10/15 (Sun) 03:36",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6451008303516973
+        },
+        {
+          "id": "E9_2",
+          "text": "I'm still getting used to living in Tokyo, but I've been enjoying the independence of my new studio apartment in Harajuku - it's been a month now, and the commute to work is really convenient.",
+          "status": "current",
+          "timestamp": "2023/04/11 (Tue) 21:07",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 2,
+              "timestamp": "2023/04/11 (Tue) 21:07",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.6360722179009013
+        },
+        {
+          "id": "E34_7",
+          "text": "I've been meaning to check out the Meiji Shrine, but I haven't had a chance.",
+          "status": "tentative",
+          "timestamp": "2023/10/15 (Sun) 03:36",
+          "provenance": [
+            {
+              "session_index": 34,
+              "fact_index": 7,
+              "timestamp": "2023/10/15 (Sun) 03:36",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.5046162907176832
+        },
+        {
+          "id": "M58",
+          "text": "I've been meaning to check out the Meiji Shrine, but I haven't had a chance.",
+          "status": "active",
+          "timestamp": "2023/10/15 (Sun) 03:36",
+          "provenance": [
+            {
+              "session_index": 34,
+              "fact_index": 7,
+              "timestamp": "2023/10/15 (Sun) 03:36",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.5042118326282262
+        },
+        {
+          "id": "E9_1",
+          "text": "I'm also thinking of inviting some friends who live in Tokyo to join me for a few days.",
+          "status": "tentative",
+          "timestamp": "2023/04/11 (Tue) 21:07",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 1,
+              "timestamp": "2023/04/11 (Tue) 21:07",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.49652893530921804
+        },
+        {
+          "id": "E9_5",
+          "text": "Since I'll be staying in Matsumoto, I'd like to explore the city's traditional architecture and historical sites.",
+          "status": "tentative",
+          "timestamp": "2023/04/11 (Tue) 21:07",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 5,
+              "timestamp": "2023/04/11 (Tue) 21:07",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.48699350995269025
+        },
+        {
+          "id": "E34_0",
+          "text": "I'm trying to plan a day trip to Yokohama.",
+          "status": "tentative",
+          "timestamp": "2023/10/15 (Sun) 03:36",
+          "provenance": [
+            {
+              "session_index": 34,
+              "fact_index": 0,
+              "timestamp": "2023/10/15 (Sun) 03:36",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.47465869044962966
+        },
+        {
+          "id": "E38_1",
+          "text": "I just bought some new storage bins from IKEA last weekend, and I want to maximize their use.",
+          "status": "current",
+          "timestamp": "2023/10/15 (Sun) 07:49",
+          "provenance": [
+            {
+              "session_index": 38,
+              "fact_index": 1,
+              "timestamp": "2023/10/15 (Sun) 07:49",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.4743335852504009
+        },
+        {
+          "id": "M57",
+          "text": "I've been exploring a new neighborhood every Sunday, and last weekend I stumbled upon a great coffee shop in Daikanyama.",
+          "status": "active",
+          "timestamp": "2023/10/15 (Sun) 03:36",
+          "provenance": [
+            {
+              "session_index": 34,
+              "fact_index": 2,
+              "timestamp": "2023/10/15 (Sun) 03:36",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.4729925321864581
+        }
+      ]
+    },
+    "C": {
+      "answer": "3 months",
+      "retrieved": [
+        {
+          "id": "E34_5",
+          "text": "By the way, I've been living in Harajuku for 3 months now, and I'm still discovering new hidden gems in the neighborhood.",
+          "status": "current",
+          "timestamp": "2023/10/15 (Sun) 03:36",
+          "provenance": [
+            {
+              "session_index": 34,
+              "fact_index": 5,
+              "timestamp": "2023/10/15 (Sun) 03:36",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6691560575120475
+        },
+        {
+          "id": "M37",
+          "text": "I'm still getting used to living in Tokyo, but I've been enjoying the independence of my new studio apartment in Harajuku - it's been 3 months now, and the commute to work is really convenient.",
+          "status": "active",
+          "timestamp": "2023/10/15 (Sun) 03:36",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 2,
+              "timestamp": "2023/04/11 (Tue) 21:07",
+              "source_turns": [
+                4
+              ]
+            },
+            {
+              "session_index": 34,
+              "fact_index": 5,
+              "timestamp": "2023/10/15 (Sun) 03:36",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6445624387735894
+        },
+        {
+          "id": "E9_2",
+          "text": "I'm still getting used to living in Tokyo, but I've been enjoying the independence of my new studio apartment in Harajuku - it's been a month now, and the commute to work is really convenient.",
+          "status": "current",
+          "timestamp": "2023/04/11 (Tue) 21:07",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 2,
+              "timestamp": "2023/04/11 (Tue) 21:07",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.636522291241438
+        },
+        {
+          "id": "E34_7",
+          "text": "I've been meaning to check out the Meiji Shrine, but I haven't had a chance.",
+          "status": "tentative",
+          "timestamp": "2023/10/15 (Sun) 03:36",
+          "provenance": [
+            {
+              "session_index": 34,
+              "fact_index": 7,
+              "timestamp": "2023/10/15 (Sun) 03:36",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.5042118326282262
+        },
+        {
+          "id": "M95",
+          "text": "I've been meaning to check out the Meiji Shrine, but I haven't had a chance.",
+          "status": "active",
+          "timestamp": "2023/10/15 (Sun) 03:36",
+          "provenance": [
+            {
+              "session_index": 34,
+              "fact_index": 7,
+              "timestamp": "2023/10/15 (Sun) 03:36",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.5042118326282262
+        },
+        {
+          "id": "E9_1",
+          "text": "I'm also thinking of inviting some friends who live in Tokyo to join me for a few days.",
+          "status": "tentative",
+          "timestamp": "2023/04/11 (Tue) 21:07",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 1,
+              "timestamp": "2023/04/11 (Tue) 21:07",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.49637203020647314
+        },
+        {
+          "id": "E9_5",
+          "text": "Since I'll be staying in Matsumoto, I'd like to explore the city's traditional architecture and historical sites.",
+          "status": "tentative",
+          "timestamp": "2023/04/11 (Tue) 21:07",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 5,
+              "timestamp": "2023/04/11 (Tue) 21:07",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.48651565982189604
+        },
+        {
+          "id": "M39",
+          "text": "Since I'll be staying in Matsumoto, I'd like to explore the city's traditional architecture and historical sites.",
+          "status": "active",
+          "timestamp": "2023/04/11 (Tue) 21:07",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 5,
+              "timestamp": "2023/04/11 (Tue) 21:07",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.48651565982189604
+        },
+        {
+          "id": "E34_0",
+          "text": "I'm trying to plan a day trip to Yokohama.",
+          "status": "tentative",
+          "timestamp": "2023/10/15 (Sun) 03:36",
+          "provenance": [
+            {
+              "session_index": 34,
+              "fact_index": 0,
+              "timestamp": "2023/10/15 (Sun) 03:36",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.47465869044962966
+        },
+        {
+          "id": "M90",
+          "text": "I'm trying to plan a day trip to Yokohama.",
+          "status": "active",
+          "timestamp": "2023/10/15 (Sun) 03:36",
+          "provenance": [
+            {
+              "session_index": 34,
+              "fact_index": 0,
+              "timestamp": "2023/10/15 (Sun) 03:36",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.47465869044962966
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "No",
+      "correct": false
+    },
+    "C": {
+      "raw": "No",
+      "correct": false
+    }
+  },
+  "rubric": "official abstention"
+}

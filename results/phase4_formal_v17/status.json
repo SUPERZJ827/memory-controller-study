@@ -1,0 +1,46 @@
+{
+  "status": "COMPLETE",
+  "histories": 24,
+  "finished_at": "2026-09-21T05:24:19.917Z",
+  "budget": {
+    "halted": false,
+    "total": {
+      "limitMicroUsd": 28000000,
+      "settledMicroUsd": 13415175,
+      "heldMicroUsd": 4032,
+      "unknownMicroUsd": 4032,
+      "committedMicroUsd": 13419207,
+      "availableMicroUsd": 14580793
+    },
+    "pools": {
+      "dev": {
+        "limitMicroUsd": 1000000,
+        "settledMicroUsd": 581250,
+        "heldMicroUsd": 0,
+        "unknownMicroUsd": 0,
+        "availableMicroUsd": 418750
+      },
+      "formal_controllers": {
+        "limitMicroUsd": 24000000,
+        "settledMicroUsd": 12819034,
+        "heldMicroUsd": 4032,
+        "unknownMicroUsd": 4032,
+        "availableMicroUsd": 11176934
+      },
+      "formal_qa": {
+        "limitMicroUsd": 1000000,
+        "settledMicroUsd": 14786,
+        "heldMicroUsd": 0,
+        "unknownMicroUsd": 0,
+        "availableMicroUsd": 985214
+      },
+      "formal_aux": {
+        "limitMicroUsd": 2000000,
+        "settledMicroUsd": 105,
+        "heldMicroUsd": 0,
+        "unknownMicroUsd": 0,
+        "availableMicroUsd": 1999895
+      }
+    }
+  }
+}

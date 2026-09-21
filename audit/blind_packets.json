@@ -1,0 +1,4317 @@
+{
+  "frozen_memory_policy": {
+    "instructions": "Choose exactly one memory operation under the fixed policy in the criteria. Apply the policy to the supplied new fact and all candidate memories. Do not infer a definite state change from tentative, hypothetical, or uncertain language.",
+    "criteria": {
+      "ADD": "The new fact represents persistent information worth storing and is not already represented by an existing candidate memory.",
+      "UPDATE": "The new fact clearly changes, replaces, or updates the current value or state of an existing persistent memory about the same object or attribute.",
+      "DELETE": "The new information explicitly requires an existing memory to be removed or forgotten, without providing a new persistent replacement value.",
+      "NOOP": "No long-term memory mutation should be performed because the information is duplicate or a paraphrase, temporary, tentative, hypothetical, uncertain, irrelevant to long-term memory, or insufficient to support a state change."
+    }
+  },
+  "packets": [
+    {
+      "blind_id": "BA-001",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "EpiPen expiration date: September 15th"
+        },
+        {
+          "id": "M1",
+          "content": "confirmed tree nut allergy test results: Allergic to tree nuts: walnuts (Class 3 reaction), cashews (Class 2 reaction)"
+        },
+        {
+          "id": "M5",
+          "content": "allergic reaction incident at Thai restaurant: Allergic reaction from crushed cashews in curry paste at Thai restaurant; used EpiPen for the first time"
+        },
+        {
+          "id": "M4",
+          "content": "blood pressure medication decision timeline: If blood pressure still elevated at June check-up, Dr. Chen will consider medication"
+        },
+        {
+          "id": "M2",
+          "content": "allergist name and clinic location: Dr. Patel, allergist, clinic on Kensington Rd"
+        }
+      ],
+      "current_evidence": "my last home blood pressure reading was 126 over 82, so things are heading in the right direction",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "EpiPen expiration date: September 15th"
+        },
+        {
+          "id": "M1",
+          "content": "confirmed tree nut allergy test results: Allergic to tree nuts: walnuts (Class 3 reaction), cashews (Class 2 reaction)"
+        },
+        {
+          "id": "M5",
+          "content": "allergic reaction incident at Thai restaurant: Allergic reaction from crushed cashews in curry paste at Thai restaurant; used EpiPen for the first time"
+        },
+        {
+          "id": "M4",
+          "content": "blood pressure medication decision timeline: If blood pressure still elevated at June check-up, Dr. Chen will consider medication"
+        },
+        {
+          "id": "M2",
+          "content": "allergist name and clinic location: Dr. Patel, allergist, clinic on Kensington Rd"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-002",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Becker FAR progress percentage and date: 58% as of May 3rd"
+        },
+        {
+          "id": "M1",
+          "content": "CPA FAR section exam date: June 7th"
+        },
+        {
+          "id": "M2",
+          "content": "Kevin's AUD practice exam score: 71"
+        }
+      ],
+      "current_evidence": "I need to finish Becker 100% by at least two weeks before the exam so I have time for a final review pass",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Becker FAR progress percentage and date: 58% as of May 3rd"
+        },
+        {
+          "id": "M1",
+          "content": "CPA FAR section exam date: June 7th"
+        },
+        {
+          "id": "M2",
+          "content": "Kevin's AUD practice exam score: 71"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-003",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Omeprazole prescription details: Omeprazole 20mg once daily before breakfast"
+        },
+        {
+          "id": "M3",
+          "content": "Vitamin D3 supplement details: Vitamin D3 2000 IU daily since last fall"
+        },
+        {
+          "id": "M1",
+          "content": "Current metformin dosage: 750mg twice daily"
+        }
+      ],
+      "current_evidence": "Dr. Patel actually bumped the metformin up again to 1000mg twice daily as of last Monday",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Omeprazole prescription details: Omeprazole 20mg once daily before breakfast"
+        },
+        {
+          "id": "M3",
+          "content": "Vitamin D3 supplement details: Vitamin D3 2000 IU daily since last fall"
+        },
+        {
+          "id": "M1",
+          "content": "Current metformin dosage: 750mg twice daily"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-004",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Mochi's next vet appointment date: May 10th"
+        },
+        {
+          "id": "M1",
+          "content": "Mochi's current kitten food: Royal Canin Kitten dry food (breeder-recommended)"
+        }
+      ],
+      "current_evidence": "So I looked into Orijen more and it turns out the protein content might actually be too high for a kitten Mochi's age. The vet's office confirmed that what she's on now is perfectly fine. So I'm sticking with Royal Canin Kitten after all",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Mochi's next vet appointment date: May 10th"
+        },
+        {
+          "id": "M1",
+          "content": "Mochi's current kitten food: Royal Canin Kitten dry food (breeder-recommended)"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-005",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "mother's current height: 5'4\""
+        },
+        {
+          "id": "M1",
+          "content": "confirmed current height from March physical: 5'11\""
+        }
+      ],
+      "current_evidence": "I measured myself at home first thing in the morning against my door frame and got 5'11¼\"",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "mother's current height: 5'4\""
+        },
+        {
+          "id": "M1",
+          "content": "confirmed current height from March physical: 5'11\""
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-006",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Henderson & Associates client call misspeak incident: On a client call with Henderson & Associates, said contract renewal was June 15th instead of July 15th; colleague Raj flagged the error privately; user sent the correction email"
+        },
+        {
+          "id": "M1",
+          "content": "Standup misspeak incident about server migration date: During a team standup around March 3rd, said server migration was March 20th instead of April 20th; manager Diane corrected via Slack; user sent correction to the whole channel"
+        }
+      ],
+      "current_evidence": "I started keeping a sticky note on my monitor with key dates before meetings, and it's been really helpful",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Henderson & Associates client call misspeak incident: On a client call with Henderson & Associates, said contract renewal was June 15th instead of July 15th; colleague Raj flagged the error privately; user sent the correction email"
+        },
+        {
+          "id": "M1",
+          "content": "Standup misspeak incident about server migration date: During a team standup around March 3rd, said server migration was March 20th instead of April 20th; manager Diane corrected via Slack; user sent correction to the whole channel"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-007",
+      "current_memory_state": [
+        {
+          "id": "M4",
+          "content": "Current preferred hotel brand: Hilton"
+        },
+        {
+          "id": "M3",
+          "content": "Goal to reach Delta Gold Medallion by year end: Reach Delta Gold Medallion by end of year"
+        },
+        {
+          "id": "M1",
+          "content": "Delta SkyMiles membership number: 2847301566"
+        },
+        {
+          "id": "M2",
+          "content": "Current Delta Medallion tier status: Silver Medallion"
+        }
+      ],
+      "current_evidence": "my Marriott Bonvoy Gold status lapsed — I think it was earlier this year or maybe late last year, I'm not exactly sure when",
+      "candidate_memories": [
+        {
+          "id": "M4",
+          "content": "Current preferred hotel brand: Hilton"
+        },
+        {
+          "id": "M3",
+          "content": "Goal to reach Delta Gold Medallion by year end: Reach Delta Gold Medallion by end of year"
+        },
+        {
+          "id": "M1",
+          "content": "Delta SkyMiles membership number: 2847301566"
+        },
+        {
+          "id": "M2",
+          "content": "Current Delta Medallion tier status: Silver Medallion"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-008",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "Danny Kowalski's phone number: 773-505-9241"
+        },
+        {
+          "id": "M3",
+          "content": "Danny Kowalski's work phone number: 312-477-6600, extension 309"
+        },
+        {
+          "id": "M4",
+          "content": "Danny Kowalski's birthday: October 17th"
+        },
+        {
+          "id": "M2",
+          "content": "Danny Kowalski's current mailing address: 2731 North Kedzie Avenue, Apartment 4B, Logan Square, Chicago"
+        }
+      ],
+      "current_evidence": "Danny mentioned the carrier is issuing him yet another number because of some billing glitch. He said it'll be 773-505-9300 once it goes through",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "Danny Kowalski's phone number: 773-505-9241"
+        },
+        {
+          "id": "M3",
+          "content": "Danny Kowalski's work phone number: 312-477-6600, extension 309"
+        },
+        {
+          "id": "M4",
+          "content": "Danny Kowalski's birthday: October 17th"
+        },
+        {
+          "id": "M2",
+          "content": "Danny Kowalski's current mailing address: 2731 North Kedzie Avenue, Apartment 4B, Logan Square, Chicago"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-009",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "primary payment method for everyday purchases: Apple Pay linked to Chase Freedom Unlimited"
+        },
+        {
+          "id": "M2",
+          "content": "monthly rent amount paid via Zelle: $1,850"
+        }
+      ],
+      "current_evidence": "I looked into the Discover thing more and realized a lot of places near me don't accept Discover, so I'm sticking with the Chase Freedom Unlimited for Apple Pay after all",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "primary payment method for everyday purchases: Apple Pay linked to Chase Freedom Unlimited"
+        },
+        {
+          "id": "M2",
+          "content": "monthly rent amount paid via Zelle: $1,850"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-010",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Purchased bathroom exhaust fan model and cost: Panasonic WhisperCeiling FV-0811VF5, purchased from Home Depot on April 19th for $159"
+        },
+        {
+          "id": "M1",
+          "content": "BrightFix Home Services quote for bathroom exhaust fan replacement: $240"
+        }
+      ],
+      "current_evidence": "BrightFix emailed me an updated quote this morning — they revised it to $260 because the specific fan model I want requires a slightly different wiring adapter",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Purchased bathroom exhaust fan model and cost: Panasonic WhisperCeiling FV-0811VF5, purchased from Home Depot on April 19th for $159"
+        },
+        {
+          "id": "M1",
+          "content": "BrightFix Home Services quote for bathroom exhaust fan replacement: $240"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-011",
+      "current_memory_state": [
+        {
+          "id": "M4",
+          "content": "mother's home address: 4010 Greenleaf Boulevard, Westbrook"
+        },
+        {
+          "id": "M2",
+          "content": "current home ZIP code: 60143"
+        },
+        {
+          "id": "M1",
+          "content": "current home address: 742 Birchwood Lane, Unit 3B, Ashford Heights"
+        },
+        {
+          "id": "M3",
+          "content": "PO Box at Ashford Heights post office: PO Box 5587, Ashford Heights post office"
+        }
+      ],
+      "current_evidence": "Before this I lived at 118 Caldwell Street, Apartment 12, in Maplewood. That lease ended on January 31st specifically.",
+      "candidate_memories": [
+        {
+          "id": "M4",
+          "content": "mother's home address: 4010 Greenleaf Boulevard, Westbrook"
+        },
+        {
+          "id": "M2",
+          "content": "current home ZIP code: 60143"
+        },
+        {
+          "id": "M1",
+          "content": "current home address: 742 Birchwood Lane, Unit 3B, Ashford Heights"
+        },
+        {
+          "id": "M3",
+          "content": "PO Box at Ashford Heights post office: PO Box 5587, Ashford Heights post office"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-012",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "date of move to Portland: February 3rd"
+        },
+        {
+          "id": "M3",
+          "content": "Portland lease end date: January 31st of next year"
+        },
+        {
+          "id": "M2",
+          "content": "Portland apartment location: SE Division Street near 26th, Portland"
+        }
+      ],
+      "current_evidence": "my property management company requires 90 days' written notice before the lease end date if I want to renew or vacate",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "date of move to Portland: February 3rd"
+        },
+        {
+          "id": "M3",
+          "content": "Portland lease end date: January 31st of next year"
+        },
+        {
+          "id": "M2",
+          "content": "Portland apartment location: SE Division Street near 26th, Portland"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-013",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "current primary smartphone model: Pixel 8 Pro"
+        },
+        {
+          "id": "M2",
+          "content": "Pixel 8 Pro storage capacity: 128GB"
+        },
+        {
+          "id": "M3",
+          "content": "Pixel 8 Pro purchase timing: Right after January 25th birthday, late January or early February"
+        },
+        {
+          "id": "M4",
+          "content": "Pixel 8 Pro battery charging practice and health: Charges between 20-80%, battery health at 100% per AccuBattery"
+        }
+      ],
+      "current_evidence": "the eSIM transfer from my old Samsung was a nightmare when I first got the phone, took three calls to T-Mobile to sort it out",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "current primary smartphone model: Pixel 8 Pro"
+        },
+        {
+          "id": "M2",
+          "content": "Pixel 8 Pro storage capacity: 128GB"
+        },
+        {
+          "id": "M3",
+          "content": "Pixel 8 Pro purchase timing: Right after January 25th birthday, late January or early February"
+        },
+        {
+          "id": "M4",
+          "content": "Pixel 8 Pro battery charging practice and health: Charges between 20-80%, battery health at 100% per AccuBattery"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-014",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Purchased bathroom exhaust fan model and cost: Panasonic WhisperCeiling FV-0811VF5, purchased from Home Depot on April 19th for $159"
+        },
+        {
+          "id": "M1",
+          "content": "BrightFix Home Services quote for bathroom exhaust fan replacement: $240 for parts and labor"
+        }
+      ],
+      "current_evidence": "I've blocked out Saturday, May 10th, to install the bathroom fan myself.",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Purchased bathroom exhaust fan model and cost: Panasonic WhisperCeiling FV-0811VF5, purchased from Home Depot on April 19th for $159"
+        },
+        {
+          "id": "M1",
+          "content": "BrightFix Home Services quote for bathroom exhaust fan replacement: $240 for parts and labor"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-015",
+      "current_memory_state": [
+        {
+          "id": "M5",
+          "content": "C25 rebuttal phase opening date: May 6"
+        },
+        {
+          "id": "M6",
+          "content": "internal work report deadline and status: due February 9, submitted on time"
+        },
+        {
+          "id": "M3",
+          "content": "C25 paper title: Adaptive Threshold Mechanisms in Low-Resource Classification Pipelines"
+        },
+        {
+          "id": "M1",
+          "content": "C25 portal submission ID: #4782"
+        },
+        {
+          "id": "M4",
+          "content": "C25 main track page limit: 10 pages excluding references"
+        },
+        {
+          "id": "M2",
+          "content": "C25 paper co-author: Dr. Elena Vasquez"
+        }
+      ],
+      "current_evidence": "Please forget about that internal work report I mentioned, the one due February 9. That's completely done and I don't need you tracking it anymore",
+      "candidate_memories": [
+        {
+          "id": "M5",
+          "content": "C25 rebuttal phase opening date: May 6"
+        },
+        {
+          "id": "M6",
+          "content": "internal work report deadline and status: due February 9, submitted on time"
+        },
+        {
+          "id": "M3",
+          "content": "C25 paper title: Adaptive Threshold Mechanisms in Low-Resource Classification Pipelines"
+        },
+        {
+          "id": "M1",
+          "content": "C25 portal submission ID: #4782"
+        },
+        {
+          "id": "M4",
+          "content": "C25 main track page limit: 10 pages excluding references"
+        },
+        {
+          "id": "M2",
+          "content": "C25 paper co-author: Dr. Elena Vasquez"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-016",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Date user began home blood pressure monitoring: April 15th"
+        },
+        {
+          "id": "M1",
+          "content": "User's most recent blood pressure reading: 130/80"
+        },
+        {
+          "id": "M4",
+          "content": "Surgeon who performed user's gallbladder removal: Dr. Patel at St. Luke's Medical Center"
+        },
+        {
+          "id": "M3",
+          "content": "Deadline for blood pressure monitoring data review by Dr. Simmons: June 15th"
+        }
+      ],
+      "current_evidence": "The pharmacy kiosk at CVS just gave me 118/72 today. I think that machine reads low though, my home cuff never goes that low",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Date user began home blood pressure monitoring: April 15th"
+        },
+        {
+          "id": "M1",
+          "content": "User's most recent blood pressure reading: 130/80"
+        },
+        {
+          "id": "M4",
+          "content": "Surgeon who performed user's gallbladder removal: Dr. Patel at St. Luke's Medical Center"
+        },
+        {
+          "id": "M3",
+          "content": "Deadline for blood pressure monitoring data review by Dr. Simmons: June 15th"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-017",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Rebecca's start date on analytics team: February 26th"
+        },
+        {
+          "id": "M1",
+          "content": "Name of new colleague on analytics team: Rebecca Thornton"
+        },
+        {
+          "id": "M4",
+          "content": "Name of neighbor's daughter who babysits: Priya Rao"
+        },
+        {
+          "id": "M3",
+          "content": "Rebecca's probation period duration: 90 days"
+        }
+      ],
+      "current_evidence": "HR sent a memo saying her records will be listed as Rebecca Lee going forward because of some policy about using the most recent legal surname.",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Rebecca's start date on analytics team: February 26th"
+        },
+        {
+          "id": "M1",
+          "content": "Name of new colleague on analytics team: Rebecca Thornton"
+        },
+        {
+          "id": "M4",
+          "content": "Name of neighbor's daughter who babysits: Priya Rao"
+        },
+        {
+          "id": "M3",
+          "content": "Rebecca's probation period duration: 90 days"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-018",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Shared city and regular hangout routine: Both live in Portland for ~6 years; Tuesday evening ramen on Hawthorne"
+        },
+        {
+          "id": "M4",
+          "content": "Darren's Seattle job offer details: Senior DevOps role in Seattle, $152K salary"
+        },
+        {
+          "id": "M1",
+          "content": "Best friend's name and relationship origin: Darren Liu, best friend since freshman year at Oregon State"
+        },
+        {
+          "id": "M5",
+          "content": "Darren's girlfriend Naomi and relationship duration: Naomi, together about 2 years, opposed to the Seattle move"
+        },
+        {
+          "id": "M3",
+          "content": "Darren Liu's birthday: October 17th"
+        }
+      ],
+      "current_evidence": "Darren said he's leaning toward accepting the offer. He told me he'd decide by the end of May.",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Shared city and regular hangout routine: Both live in Portland for ~6 years; Tuesday evening ramen on Hawthorne"
+        },
+        {
+          "id": "M4",
+          "content": "Darren's Seattle job offer details: Senior DevOps role in Seattle, $152K salary"
+        },
+        {
+          "id": "M1",
+          "content": "Best friend's name and relationship origin: Darren Liu, best friend since freshman year at Oregon State"
+        },
+        {
+          "id": "M5",
+          "content": "Darren's girlfriend Naomi and relationship duration: Naomi, together about 2 years, opposed to the Seattle move"
+        },
+        {
+          "id": "M3",
+          "content": "Darren Liu's birthday: October 17th"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-019",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Fidelity brokerage initial deposit amount and date: $15,000 deposited on March 3rd"
+        },
+        {
+          "id": "M1",
+          "content": "BND bond allocation percentage in Fidelity brokerage: 23%"
+        },
+        {
+          "id": "M2",
+          "content": "Fidelity brokerage account current total value: $17,800"
+        }
+      ],
+      "current_evidence": "I actually sold some of the BND I just bought and put it back into VTI. Bonds are back down to about 18% now",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Fidelity brokerage initial deposit amount and date: $15,000 deposited on March 3rd"
+        },
+        {
+          "id": "M1",
+          "content": "BND bond allocation percentage in Fidelity brokerage: 23%"
+        },
+        {
+          "id": "M2",
+          "content": "Fidelity brokerage account current total value: $17,800"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-020",
+      "current_memory_state": [
+        {
+          "id": "M4",
+          "content": "number of training sessions per week: 2 sessions per week"
+        },
+        {
+          "id": "M2",
+          "content": "per-session training cost with Marcus: $75 per session"
+        },
+        {
+          "id": "M1",
+          "content": "personal/fitness trainer name: Marcus Delgado"
+        },
+        {
+          "id": "M3",
+          "content": "12-week training block start date: April 14th"
+        }
+      ],
+      "current_evidence": "Tuesdays are at 6:30 AM and Thursdays are still at 7 AM",
+      "candidate_memories": [
+        {
+          "id": "M4",
+          "content": "number of training sessions per week: 2 sessions per week"
+        },
+        {
+          "id": "M2",
+          "content": "per-session training cost with Marcus: $75 per session"
+        },
+        {
+          "id": "M1",
+          "content": "personal/fitness trainer name: Marcus Delgado"
+        },
+        {
+          "id": "M3",
+          "content": "12-week training block start date: April 14th"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-021",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "unit number at 742 Birchwood Lane, Ashford Heights: Unit 3A"
+        },
+        {
+          "id": "M2",
+          "content": "ZIP code for 742 Birchwood Lane, Ashford Heights: 60143"
+        }
+      ],
+      "current_evidence": "I moved into the Birchwood Lane place on March 15th this year",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "unit number at 742 Birchwood Lane, Ashford Heights: Unit 3A"
+        },
+        {
+          "id": "M2",
+          "content": "ZIP code for 742 Birchwood Lane, Ashford Heights: 60143"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-022",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Icelandair booking reference code: IKXR47"
+        },
+        {
+          "id": "M4",
+          "content": "Iceland trip departure and return dates: Departing May 18, returning May 26 (8 nights)"
+        },
+        {
+          "id": "M3",
+          "content": "Number of travelers on Iceland trip: 2 (user and partner)"
+        },
+        {
+          "id": "M6",
+          "content": "Iceland trip accommodation: Black Beach Guesthouse near Vik, 6 rooms"
+        },
+        {
+          "id": "M5",
+          "content": "Iceland trip ground budget (excluding flights): $3,200 total for two people, excluding flights"
+        },
+        {
+          "id": "M1",
+          "content": "Iceland flight cost per person: $640 per person"
+        }
+      ],
+      "current_evidence": "I bookmarked Seljavallalaug—it's a natural hot spring pool hidden in a valley. Not one of the commercial ones.",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Icelandair booking reference code: IKXR47"
+        },
+        {
+          "id": "M4",
+          "content": "Iceland trip departure and return dates: Departing May 18, returning May 26 (8 nights)"
+        },
+        {
+          "id": "M3",
+          "content": "Number of travelers on Iceland trip: 2 (user and partner)"
+        },
+        {
+          "id": "M6",
+          "content": "Iceland trip accommodation: Black Beach Guesthouse near Vik, 6 rooms"
+        },
+        {
+          "id": "M5",
+          "content": "Iceland trip ground budget (excluding flights): $3,200 total for two people, excluding flights"
+        },
+        {
+          "id": "M1",
+          "content": "Iceland flight cost per person: $640 per person"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-023",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "baby due date: July 19th"
+        },
+        {
+          "id": "M3",
+          "content": "deadline for finalizing baby name: end of May"
+        },
+        {
+          "id": "M4",
+          "content": "custom nursery letters lead time: six weeks"
+        },
+        {
+          "id": "M1",
+          "content": "top baby name pick: Margot"
+        }
+      ],
+      "current_evidence": "My sister-in-law just told us that her college roommate named her daughter Margot last year, so my wife is now saying we should switch to Wren instead",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "baby due date: July 19th"
+        },
+        {
+          "id": "M3",
+          "content": "deadline for finalizing baby name: end of May"
+        },
+        {
+          "id": "M4",
+          "content": "custom nursery letters lead time: six weeks"
+        },
+        {
+          "id": "M1",
+          "content": "top baby name pick: Margot"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-024",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Chase Sapphire card payment due date: 15th of each month"
+        },
+        {
+          "id": "M4",
+          "content": "Second monthly paycheck deposit date: 16th of each month"
+        },
+        {
+          "id": "M3",
+          "content": "Google Calendar reminder offset before due dates: 3 days before each due date"
+        },
+        {
+          "id": "M1",
+          "content": "Citi Double Cash card payment due date: 18th of every month"
+        }
+      ],
+      "current_evidence": "I decided to keep the Citi due date at the 18th after all",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Chase Sapphire card payment due date: 15th of each month"
+        },
+        {
+          "id": "M4",
+          "content": "Second monthly paycheck deposit date: 16th of each month"
+        },
+        {
+          "id": "M3",
+          "content": "Google Calendar reminder offset before due dates: 3 days before each due date"
+        },
+        {
+          "id": "M1",
+          "content": "Citi Double Cash card payment due date: 18th of every month"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-025",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "C11 exam center location: Pearson VUE, 250 Yonge Street, Toronto"
+        },
+        {
+          "id": "M1",
+          "content": "C11 exam date: May 10"
+        },
+        {
+          "id": "M3",
+          "content": "C11 exam flashcard purchase details: Physical flashcard set from CSI, $45"
+        }
+      ],
+      "current_evidence": "Kevin moved his C11 exam to May 24",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "C11 exam center location: Pearson VUE, 250 Yonge Street, Toronto"
+        },
+        {
+          "id": "M1",
+          "content": "C11 exam date: May 10"
+        },
+        {
+          "id": "M3",
+          "content": "C11 exam flashcard purchase details: Physical flashcard set from CSI, $45"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-026",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "L6 compensation band floor: $185,000"
+        },
+        {
+          "id": "M3",
+          "content": "current base salary after promotion adjustment: $191,500"
+        },
+        {
+          "id": "M1",
+          "content": "current job level and title grade: L6, Senior Software Engineer"
+        }
+      ],
+      "current_evidence": "I just checked the HRIS portal and my official title still shows L6, Senior Software Engineer. Nothing about L6 Plus has been formalized yet, so for the record my level is still plain L6",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "L6 compensation band floor: $185,000"
+        },
+        {
+          "id": "M3",
+          "content": "current base salary after promotion adjustment: $191,500"
+        },
+        {
+          "id": "M1",
+          "content": "current job level and title grade: L6, Senior Software Engineer"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-027",
+      "current_memory_state": [
+        {
+          "id": "M4",
+          "content": "Thai DoorDash pickup code from last month: 941"
+        },
+        {
+          "id": "M2",
+          "content": "preferred InPost locker location: Greenfield Ave"
+        },
+        {
+          "id": "M3",
+          "content": "Mom's pharmacy verification code from mid-March: 3058"
+        },
+        {
+          "id": "M1",
+          "content": "InPost locker pickup code from March 3rd: 7724"
+        },
+        {
+          "id": "M5",
+          "content": "user's apartment number: 149"
+        }
+      ],
+      "current_evidence": "A few days ago I got a two-factor authentication code from my bank. It was 882471.",
+      "candidate_memories": [
+        {
+          "id": "M4",
+          "content": "Thai DoorDash pickup code from last month: 941"
+        },
+        {
+          "id": "M2",
+          "content": "preferred InPost locker location: Greenfield Ave"
+        },
+        {
+          "id": "M3",
+          "content": "Mom's pharmacy verification code from mid-March: 3058"
+        },
+        {
+          "id": "M1",
+          "content": "InPost locker pickup code from March 3rd: 7724"
+        },
+        {
+          "id": "M5",
+          "content": "user's apartment number: 149"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-028",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Mochi's current deworming product: Milbemax, switched from Drontal in late January"
+        },
+        {
+          "id": "M3",
+          "content": "Mochi's next deworming date: Around May 14th"
+        },
+        {
+          "id": "M1",
+          "content": "Mochi's rabies booster details: Rabies booster on March 3rd at Greenfield Veterinary Clinic, administered by Dr. Patel; next rabies shot due March next year"
+        },
+        {
+          "id": "M6",
+          "content": "Suggested grooming frequency for Mochi: Groomer suggested every 6 weeks instead of every 8 weeks"
+        },
+        {
+          "id": "M4",
+          "content": "Mochi's March 15th grooming at Pampered Paws: Full groom at Pampered Paws on March 15th — bath, nail trim, ear cleaning with unscented oat-based shampoo"
+        },
+        {
+          "id": "M5",
+          "content": "Mochi's April 8th grooming at Pampered Paws: Grooming at Pampered Paws on April 8th (moved up from originally scheduled April 12th due to sticky garage incident)"
+        }
+      ],
+      "current_evidence": "Please remove the record of Mochi's March 15th grooming appointment from your notes",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Mochi's current deworming product: Milbemax, switched from Drontal in late January"
+        },
+        {
+          "id": "M3",
+          "content": "Mochi's next deworming date: Around May 14th"
+        },
+        {
+          "id": "M1",
+          "content": "Mochi's rabies booster details: Rabies booster on March 3rd at Greenfield Veterinary Clinic, administered by Dr. Patel; next rabies shot due March next year"
+        },
+        {
+          "id": "M6",
+          "content": "Suggested grooming frequency for Mochi: Groomer suggested every 6 weeks instead of every 8 weeks"
+        },
+        {
+          "id": "M4",
+          "content": "Mochi's March 15th grooming at Pampered Paws: Full groom at Pampered Paws on March 15th — bath, nail trim, ear cleaning with unscented oat-based shampoo"
+        },
+        {
+          "id": "M5",
+          "content": "Mochi's April 8th grooming at Pampered Paws: Grooming at Pampered Paws on April 8th (moved up from originally scheduled April 12th due to sticky garage incident)"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-029",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "B04 department office location: 6th floor, Building 2"
+        },
+        {
+          "id": "M1",
+          "content": "Kevin Chen's effective transfer date to B04: January 15th"
+        },
+        {
+          "id": "M2",
+          "content": "Manager of B04 department: Linda Zhao"
+        }
+      ],
+      "current_evidence": "Kevin's manager Linda told me today that the official system shows his transfer date as January 2nd because of some payroll alignment thing",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "B04 department office location: 6th floor, Building 2"
+        },
+        {
+          "id": "M1",
+          "content": "Kevin Chen's effective transfer date to B04: January 15th"
+        },
+        {
+          "id": "M2",
+          "content": "Manager of B04 department: Linda Zhao"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-030",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Marcus's consulting firm employer: Whitfield & Associates"
+        },
+        {
+          "id": "M4",
+          "content": "Chen Wei's Toronto employer: Ledgerly"
+        },
+        {
+          "id": "M2",
+          "content": "Roommate Chen Wei's preferred form of address: Chen Wei"
+        },
+        {
+          "id": "M1",
+          "content": "College friend Marcus's preferred form of address: Marcus"
+        }
+      ],
+      "current_evidence": "His HR department confirmed they'll be listing him as \"M. Torres\" on all new business cards and the company directory starting next quarter. He said that's basically going to be his professional identity going forward.",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Marcus's consulting firm employer: Whitfield & Associates"
+        },
+        {
+          "id": "M4",
+          "content": "Chen Wei's Toronto employer: Ledgerly"
+        },
+        {
+          "id": "M2",
+          "content": "Roommate Chen Wei's preferred form of address: Chen Wei"
+        },
+        {
+          "id": "M1",
+          "content": "College friend Marcus's preferred form of address: Marcus"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-031",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "candle business packaging supplier name: GreenWrap Co."
+        },
+        {
+          "id": "M3",
+          "content": "wax amount per standard candle: 8 oz (approximately 227 grams)"
+        },
+        {
+          "id": "M2",
+          "content": "recent mason jar order total quantity: 144 jars (12 cases × 12 jars per case)"
+        }
+      ],
+      "current_evidence": "My contact at the company just emailed me and said they're rebranding next quarter to GreenWrap Supply. She said all future invoices will use the new name starting in July.",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "candle business packaging supplier name: GreenWrap Co."
+        },
+        {
+          "id": "M3",
+          "content": "wax amount per standard candle: 8 oz (approximately 227 grams)"
+        },
+        {
+          "id": "M2",
+          "content": "recent mason jar order total quantity: 144 jars (12 cases × 12 jars per case)"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-032",
+      "current_memory_state": [
+        {
+          "id": "M4",
+          "content": "childhood left wrist fracture: Broke left wrist at age 14-15 from bike fall, cast for about 6 weeks, occasional cold-weather ache"
+        },
+        {
+          "id": "M1",
+          "content": "gallbladder removal surgery details: Laparoscopic cholecystectomy at St. Luke's Medical Center, performed by Dr. Patel, late 2019 or early 2020"
+        },
+        {
+          "id": "M2",
+          "content": "emergency appendectomy details: Emergency appendectomy at Mercy General in 2015, age 22, middle-of-the-night surgery around 3 a.m."
+        },
+        {
+          "id": "M3",
+          "content": "mole removal and biopsy details: Mole removed from upper back on March 7 this year, precautionary due to irregular borders, biopsy benign"
+        }
+      ],
+      "current_evidence": "Can you actually remove the wrist fracture from anything you're tracking for me? It's ancient history, not medically relevant anymore, and I don't want it cluttering up my records summary.",
+      "candidate_memories": [
+        {
+          "id": "M4",
+          "content": "childhood left wrist fracture: Broke left wrist at age 14-15 from bike fall, cast for about 6 weeks, occasional cold-weather ache"
+        },
+        {
+          "id": "M1",
+          "content": "gallbladder removal surgery details: Laparoscopic cholecystectomy at St. Luke's Medical Center, performed by Dr. Patel, late 2019 or early 2020"
+        },
+        {
+          "id": "M2",
+          "content": "emergency appendectomy details: Emergency appendectomy at Mercy General in 2015, age 22, middle-of-the-night surgery around 3 a.m."
+        },
+        {
+          "id": "M3",
+          "content": "mole removal and biopsy details: Mole removed from upper back on March 7 this year, precautionary due to irregular borders, biopsy benign"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-033",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "User's pet cat Mochi: Scottish Fold kitten, female, gray tabby, named Mochi"
+        },
+        {
+          "id": "M2",
+          "content": "Friend Derek's pet dog Brisket: French Bulldog puppy named Brisket, got in late February"
+        }
+      ],
+      "current_evidence": "earlier this year I was looking into setting up a small planted freshwater fish tank. I spent a few weeks researching it — filter types, substrate, stocking ideas.",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "User's pet cat Mochi: Scottish Fold kitten, female, gray tabby, named Mochi"
+        },
+        {
+          "id": "M2",
+          "content": "Friend Derek's pet dog Brisket: French Bulldog puppy named Brisket, got in late February"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-034",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Wife's passport expiration date: March 7, 2026"
+        },
+        {
+          "id": "M1",
+          "content": "User's passport expiration date: October 31, 2025"
+        },
+        {
+          "id": "M3",
+          "content": "User's target window for passport renewal: June 2025"
+        }
+      ],
+      "current_evidence": "The consular officer told me that with the new bilateral agreement, my passport validity will be recognized until December 31, 2025 for travel within the region",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Wife's passport expiration date: March 7, 2026"
+        },
+        {
+          "id": "M1",
+          "content": "User's passport expiration date: October 31, 2025"
+        },
+        {
+          "id": "M3",
+          "content": "User's target window for passport renewal: June 2025"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-035",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Main storage folder name on Google Drive: Core_Vault"
+        },
+        {
+          "id": "M1",
+          "content": "Google One storage plan tier: 200 GB"
+        }
+      ],
+      "current_evidence": "the external SSD I moved the photos to is a 4 TB Samsung T7 Shield",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Main storage folder name on Google Drive: Core_Vault"
+        },
+        {
+          "id": "M1",
+          "content": "Google One storage plan tier: 200 GB"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-036",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "Citi Double Cash card payment due date: 22nd of every month"
+        },
+        {
+          "id": "M2",
+          "content": "Chase Sapphire card payment due date: 15th of each month"
+        }
+      ],
+      "current_evidence": "I set my Google Calendar reminders to go off 3 days before each credit card due date",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "Citi Double Cash card payment due date: 22nd of every month"
+        },
+        {
+          "id": "M2",
+          "content": "Chase Sapphire card payment due date: 15th of each month"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-037",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "new health insurance policy number: HX-440812"
+        },
+        {
+          "id": "M2",
+          "content": "daily water intake target: 2.5 liters per day"
+        }
+      ],
+      "current_evidence": "I called the insurance company and they confirmed the correct policy number is HX-440812. They also told me my coverage effective date was February 1st",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "new health insurance policy number: HX-440812"
+        },
+        {
+          "id": "M2",
+          "content": "daily water intake target: 2.5 liters per day"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-038",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Middle name shortlist for daughter: June or Mae"
+        },
+        {
+          "id": "M2",
+          "content": "Daughter's due date: July 18th"
+        },
+        {
+          "id": "M1",
+          "content": "First-choice name for daughter: Elara"
+        }
+      ],
+      "current_evidence": "My wife's sister just told us she's naming her baby Elara too, due in September. My wife said we should switch to Iris to avoid confusion. She's pretty firm about it.",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Middle name shortlist for daughter: June or Mae"
+        },
+        {
+          "id": "M2",
+          "content": "Daughter's due date: July 18th"
+        },
+        {
+          "id": "M1",
+          "content": "First-choice name for daughter: Elara"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-039",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Gboard keyboard theme: plain dark gray background"
+        },
+        {
+          "id": "M1",
+          "content": "phone default input method: Gboard"
+        }
+      ],
+      "current_evidence": "the switch date from SwiftKey to Gboard was March 3rd",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Gboard keyboard theme: plain dark gray background"
+        },
+        {
+          "id": "M1",
+          "content": "phone default input method: Gboard"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-040",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "preferred method for communicating dates: Strongly prefers communicating dates in writing (emails, Slack) so they can be double-checked before sending"
+        },
+        {
+          "id": "M1",
+          "content": "pattern of misspelling months when stating dates verbally: Tends to mix up months when stating dates verbally under pressure, especially in meetings"
+        }
+      ],
+      "current_evidence": "I started keeping a sticky note on my monitor with all the key dates listed out before any meeting",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "preferred method for communicating dates: Strongly prefers communicating dates in writing (emails, Slack) so they can be double-checked before sending"
+        },
+        {
+          "id": "M1",
+          "content": "pattern of misspelling months when stating dates verbally: Tends to mix up months when stating dates verbally under pressure, especially in meetings"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-041",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Monthly Bitcoin auto-buy on Coinbase: $50 monthly on the 1st via Coinbase"
+        },
+        {
+          "id": "M1",
+          "content": "Biweekly VTSAX auto-invest amount: $300"
+        }
+      ],
+      "current_evidence": "My financial advisor recommended I increase the VTSAX contribution to $350 biweekly to max out my annual target",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Monthly Bitcoin auto-buy on Coinbase: $50 monthly on the 1st via Coinbase"
+        },
+        {
+          "id": "M1",
+          "content": "Biweekly VTSAX auto-invest amount: $300"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-042",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "personal trainer session cost: $75"
+        },
+        {
+          "id": "M3",
+          "content": "total sessions in 12-week training block: 24 sessions"
+        },
+        {
+          "id": "M2",
+          "content": "12-week training block end date: July 7th"
+        }
+      ],
+      "current_evidence": "Marcus actually bumped it back up to $80 per session because he added a nutrition check-in component to each session",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "personal trainer session cost: $75"
+        },
+        {
+          "id": "M3",
+          "content": "total sessions in 12-week training block: 24 sessions"
+        },
+        {
+          "id": "M2",
+          "content": "12-week training block end date: July 7th"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-043",
+      "current_memory_state": [
+        {
+          "id": "M4",
+          "content": "current deadlift max: 275 lbs (up from 225 lbs in March)"
+        },
+        {
+          "id": "M3",
+          "content": "training session cost and commitment: $75 per session, 12-week commitment starting mid-April"
+        },
+        {
+          "id": "M1",
+          "content": "personal/fitness trainer name: Marcus Delgado"
+        },
+        {
+          "id": "M2",
+          "content": "training session schedule: Tuesdays at 6:30 AM, Thursdays at 7 AM"
+        }
+      ],
+      "current_evidence": "My coworker Jen referred me to Marcus's gym. She trains with someone named Priya there",
+      "candidate_memories": [
+        {
+          "id": "M4",
+          "content": "current deadlift max: 275 lbs (up from 225 lbs in March)"
+        },
+        {
+          "id": "M3",
+          "content": "training session cost and commitment: $75 per session, 12-week commitment starting mid-April"
+        },
+        {
+          "id": "M1",
+          "content": "personal/fitness trainer name: Marcus Delgado"
+        },
+        {
+          "id": "M2",
+          "content": "training session schedule: Tuesdays at 6:30 AM, Thursdays at 7 AM"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-044",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "C26 role salary range: $72,000 to $85,000"
+        },
+        {
+          "id": "M2",
+          "content": "C26 interview location: 15 Clarke Road, satellite office"
+        },
+        {
+          "id": "M1",
+          "content": "C26 interview appointment time: March 12, 2:00 PM"
+        }
+      ],
+      "current_evidence": "David Koh's assistant emailed me and moved the interview to 3:00 PM on the same day, March 12",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "C26 role salary range: $72,000 to $85,000"
+        },
+        {
+          "id": "M2",
+          "content": "C26 interview location: 15 Clarke Road, satellite office"
+        },
+        {
+          "id": "M1",
+          "content": "C26 interview appointment time: March 12, 2:00 PM"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-045",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "number of mason jar cases in recent order: 12 cases"
+        },
+        {
+          "id": "M1",
+          "content": "candle business packaging supplier: GreenWrap Co., based in Portland"
+        }
+      ],
+      "current_evidence": "I've switched everything to metric now, all my recipes are in grams and milliliters",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "number of mason jar cases in recent order: 12 cases"
+        },
+        {
+          "id": "M1",
+          "content": "candle business packaging supplier: GreenWrap Co., based in Portland"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-046",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Mochi's current deworming product: Milbemax"
+        },
+        {
+          "id": "M1",
+          "content": "Mochi's rabies booster date: March 3rd"
+        },
+        {
+          "id": "M2",
+          "content": "Mochi's rabies vaccination interval: 12 months after previous dose"
+        }
+      ],
+      "current_evidence": "Mochi's next Milbemax deworming dose is due on May 14th",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Mochi's current deworming product: Milbemax"
+        },
+        {
+          "id": "M1",
+          "content": "Mochi's rabies booster date: March 3rd"
+        },
+        {
+          "id": "M2",
+          "content": "Mochi's rabies vaccination interval: 12 months after previous dose"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-047",
+      "current_memory_state": [
+        {
+          "id": "M5",
+          "content": "Pixel 8 Pro current unlock method: Fingerprint sensor (set up after March feature drop update; previously used PIN only)"
+        },
+        {
+          "id": "M3",
+          "content": "Pixel 8 Pro storage capacity: 128GB"
+        },
+        {
+          "id": "M4",
+          "content": "Pixel 8 Pro color: Porcelain"
+        },
+        {
+          "id": "M1",
+          "content": "current primary smartphone model: Pixel 8 Pro"
+        },
+        {
+          "id": "M2",
+          "content": "Pixel 8 Pro phone case: plain matte black case, no logos or patterns"
+        }
+      ],
+      "current_evidence": "I keep the battery between 20 and 80 percent at all times. AccuBattery still shows 100% battery health, which is great.",
+      "candidate_memories": [
+        {
+          "id": "M5",
+          "content": "Pixel 8 Pro current unlock method: Fingerprint sensor (set up after March feature drop update; previously used PIN only)"
+        },
+        {
+          "id": "M3",
+          "content": "Pixel 8 Pro storage capacity: 128GB"
+        },
+        {
+          "id": "M4",
+          "content": "Pixel 8 Pro color: Porcelain"
+        },
+        {
+          "id": "M1",
+          "content": "current primary smartphone model: Pixel 8 Pro"
+        },
+        {
+          "id": "M2",
+          "content": "Pixel 8 Pro phone case: plain matte black case, no logos or patterns"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-048",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "User's current prenatal vitamin: Thorne Basic Prenatal"
+        },
+        {
+          "id": "M1",
+          "content": "User's AMH level from fertility hormone panel: 1.1 ng/mL"
+        }
+      ],
+      "current_evidence": "the nurse at the clinic called today and said there might be another correction — the external reference lab is showing 1.6 ng/mL for that same sample",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "User's current prenatal vitamin: Thorne Basic Prenatal"
+        },
+        {
+          "id": "M1",
+          "content": "User's AMH level from fertility hormone panel: 1.1 ng/mL"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-049",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "Apartment lease renewal notification deadline: April 10"
+        },
+        {
+          "id": "M2",
+          "content": "Community arts program grant application deadline: April 18"
+        }
+      ],
+      "current_evidence": "The building's new ownership group sent a notice saying all renewal deadlines are being pushed to April 20 across the board. My neighbor got the same letter.",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "Apartment lease renewal notification deadline: April 10"
+        },
+        {
+          "id": "M2",
+          "content": "Community arts program grant application deadline: April 18"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-050",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "InPost locker pickup code from March 3rd: 7724"
+        },
+        {
+          "id": "M2",
+          "content": "preferred InPost locker location: Greenfield Ave"
+        }
+      ],
+      "current_evidence": "My mom needed help with her pharmacy kiosk pickup in mid-March. The verification code they texted her was 3058.",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "InPost locker pickup code from March 3rd: 7724"
+        },
+        {
+          "id": "M2",
+          "content": "preferred InPost locker location: Greenfield Ave"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-051",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Dr. Voss sabbatical start date: around June 15th"
+        },
+        {
+          "id": "M2",
+          "content": "weekly meeting schedule with Dr. Voss: Thursdays at 10:30 AM"
+        },
+        {
+          "id": "M1",
+          "content": "date Dr. Voss became thesis advisor: February 14th"
+        }
+      ],
+      "current_evidence": "Her sabbatical is six months long and she'll be at UC San Diego",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Dr. Voss sabbatical start date: around June 15th"
+        },
+        {
+          "id": "M2",
+          "content": "weekly meeting schedule with Dr. Voss: Thursdays at 10:30 AM"
+        },
+        {
+          "id": "M1",
+          "content": "date Dr. Voss became thesis advisor: February 14th"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-052",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "retinoid prescription start date: March 3rd"
+        },
+        {
+          "id": "M4",
+          "content": "rent auto-pay billing cycle and due date: monthly on the 1st"
+        },
+        {
+          "id": "M3",
+          "content": "vitamin D supplement schedule: 50,000 IU once a week on Sundays"
+        },
+        {
+          "id": "M1",
+          "content": "prescription retinoid application schedule: every other night"
+        }
+      ],
+      "current_evidence": "my sister Emily gets her allergy shots once a month now, on Thursdays",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "retinoid prescription start date: March 3rd"
+        },
+        {
+          "id": "M4",
+          "content": "rent auto-pay billing cycle and due date: monthly on the 1st"
+        },
+        {
+          "id": "M3",
+          "content": "vitamin D supplement schedule: 50,000 IU once a week on Sundays"
+        },
+        {
+          "id": "M1",
+          "content": "prescription retinoid application schedule: every other night"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-053",
+      "current_memory_state": [
+        {
+          "id": "M5",
+          "content": "Friend Kevin's stacked vaccine experience: Kevin got flu shot and COVID booster same day in February, felt terrible for almost a week"
+        },
+        {
+          "id": "M4",
+          "content": "Preferred vaccine appointment time: Late morning, around 10 or 11 AM"
+        },
+        {
+          "id": "M1",
+          "content": "COVID booster first dose details: First Pfizer COVID booster dose on March 3rd at CVS on Elm Street"
+        },
+        {
+          "id": "M3",
+          "content": "Shingrix first dose planned timing: Early May, after second COVID booster settles"
+        },
+        {
+          "id": "M2",
+          "content": "COVID booster second dose target date: April 21st, earliest April 1st (4 weeks minimum after March 3rd first dose)"
+        }
+      ],
+      "current_evidence": "you can forget about Kevin's experience with the stacked vaccines. I don't need you to remember that — it was just an anecdote to explain my preference",
+      "candidate_memories": [
+        {
+          "id": "M5",
+          "content": "Friend Kevin's stacked vaccine experience: Kevin got flu shot and COVID booster same day in February, felt terrible for almost a week"
+        },
+        {
+          "id": "M4",
+          "content": "Preferred vaccine appointment time: Late morning, around 10 or 11 AM"
+        },
+        {
+          "id": "M1",
+          "content": "COVID booster first dose details: First Pfizer COVID booster dose on March 3rd at CVS on Elm Street"
+        },
+        {
+          "id": "M3",
+          "content": "Shingrix first dose planned timing: Early May, after second COVID booster settles"
+        },
+        {
+          "id": "M2",
+          "content": "COVID booster second dose target date: April 21st, earliest April 1st (4 weeks minimum after March 3rd first dose)"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-054",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Portland hotel stay total cost: $378 for two nights at the Residence Inn on SW Morrison Street"
+        },
+        {
+          "id": "M3",
+          "content": "personal report submission rule: Triple-check any dollar amount or headcount before submitting; never file reports after 4 PM"
+        },
+        {
+          "id": "M1",
+          "content": "February driving log mileage: 871"
+        }
+      ],
+      "current_evidence": "My fleet coordinator just messaged me saying the GPS log for February shows 868 miles and that I should use that number going forward",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Portland hotel stay total cost: $378 for two nights at the Residence Inn on SW Morrison Street"
+        },
+        {
+          "id": "M3",
+          "content": "personal report submission rule: Triple-check any dollar amount or headcount before submitting; never file reports after 4 PM"
+        },
+        {
+          "id": "M1",
+          "content": "February driving log mileage: 871"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-055",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Aunt Linda's breast cancer diagnosis: Breast cancer, diagnosed about 3 years ago; had lumpectomy and chemo, doing okay now"
+        },
+        {
+          "id": "M4",
+          "content": "paternal grandmother's cause of death: Died of stroke at age 71; possibly had hypertension (unconfirmed)"
+        },
+        {
+          "id": "M3",
+          "content": "father's high cholesterol and statin use: High cholesterol; started statins at age 48; currently 67 years old"
+        },
+        {
+          "id": "M1",
+          "content": "maternal grandfather's type 2 diabetes diagnosis: Type 2 diabetes, diagnosed around age 52"
+        }
+      ],
+      "current_evidence": "My cousin Jake on my mom's side found out he carries one copy of the BRCA1 variant",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Aunt Linda's breast cancer diagnosis: Breast cancer, diagnosed about 3 years ago; had lumpectomy and chemo, doing okay now"
+        },
+        {
+          "id": "M4",
+          "content": "paternal grandmother's cause of death: Died of stroke at age 71; possibly had hypertension (unconfirmed)"
+        },
+        {
+          "id": "M3",
+          "content": "father's high cholesterol and statin use: High cholesterol; started statins at age 48; currently 67 years old"
+        },
+        {
+          "id": "M1",
+          "content": "maternal grandfather's type 2 diabetes diagnosis: Type 2 diabetes, diagnosed around age 52"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-056",
+      "current_memory_state": [
+        {
+          "id": "M5",
+          "content": "preferred complex flavor profiles: Enjoys Sichuan peppercorn numbing tingle and fermented sweetness of gochujang; dislikes chili heat"
+        },
+        {
+          "id": "M2",
+          "content": "preferred Indian restaurant dish: butter chicken with garlic naan at mild level"
+        },
+        {
+          "id": "M3",
+          "content": "Koku Kitchen visit frequency: approximately once a week (about four times per month)"
+        },
+        {
+          "id": "M1",
+          "content": "go-to lunch spot and usual order: Koku Kitchen; mild beef curry with extra pickled ginger on the side"
+        },
+        {
+          "id": "M4",
+          "content": "cost per meal at Koku Kitchen: $12 per bowl"
+        }
+      ],
+      "current_evidence": "my monthly food budget for eating out is around two hundred dollars",
+      "candidate_memories": [
+        {
+          "id": "M5",
+          "content": "preferred complex flavor profiles: Enjoys Sichuan peppercorn numbing tingle and fermented sweetness of gochujang; dislikes chili heat"
+        },
+        {
+          "id": "M2",
+          "content": "preferred Indian restaurant dish: butter chicken with garlic naan at mild level"
+        },
+        {
+          "id": "M3",
+          "content": "Koku Kitchen visit frequency: approximately once a week (about four times per month)"
+        },
+        {
+          "id": "M1",
+          "content": "go-to lunch spot and usual order: Koku Kitchen; mild beef curry with extra pickled ginger on the side"
+        },
+        {
+          "id": "M4",
+          "content": "cost per meal at Koku Kitchen: $12 per bowl"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-057",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "Support group meeting day: Tuesday"
+        },
+        {
+          "id": "M2",
+          "content": "Current therapist name and start date: Dr. Patel, started April 8th, office on Birch Avenue"
+        }
+      ],
+      "current_evidence": "Marcus texted the group today saying the community center double-booked Tuesdays for the summer, so he's confirmed we'll be switching to Monday evenings starting next month",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "Support group meeting day: Tuesday"
+        },
+        {
+          "id": "M2",
+          "content": "Current therapist name and start date: Dr. Patel, started April 8th, office on Birch Avenue"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-058",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "baby due date: July 19th"
+        },
+        {
+          "id": "M1",
+          "content": "top baby name pick: Elara"
+        }
+      ],
+      "current_evidence": "we need to finalize the name by the end of May so we can get the custom nursery letters ordered — the shop needs six weeks lead time",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "baby due date: July 19th"
+        },
+        {
+          "id": "M1",
+          "content": "top baby name pick: Elara"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-059",
+      "current_memory_state": [
+        {
+          "id": "M4",
+          "content": "Dissertation topic: Sentiment analysis in Scottish Twitter data"
+        },
+        {
+          "id": "M1",
+          "content": "Master's degree title: MSc in Computational Linguistics"
+        },
+        {
+          "id": "M3",
+          "content": "Dissertation supervisor name: Dr. Fiona Ashworth"
+        },
+        {
+          "id": "M5",
+          "content": "Master's program overall grade: Merit"
+        },
+        {
+          "id": "M2",
+          "content": "Master's degree institution: University of Edinburgh"
+        }
+      ],
+      "current_evidence": "The registry office told me they're re-examining all the borderline cases from my cohort and my grade will likely be changed to distinction after the review completes next month",
+      "candidate_memories": [
+        {
+          "id": "M4",
+          "content": "Dissertation topic: Sentiment analysis in Scottish Twitter data"
+        },
+        {
+          "id": "M1",
+          "content": "Master's degree title: MSc in Computational Linguistics"
+        },
+        {
+          "id": "M3",
+          "content": "Dissertation supervisor name: Dr. Fiona Ashworth"
+        },
+        {
+          "id": "M5",
+          "content": "Master's program overall grade: Merit"
+        },
+        {
+          "id": "M2",
+          "content": "Master's degree institution: University of Edinburgh"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-060",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "ThinkPad X1 Carbon Gen 11 screen resolution: 1920x1200"
+        },
+        {
+          "id": "M2",
+          "content": "ThinkPad X1 Carbon Gen 11 warranty expiration: Two-year warranty from February 10, 2024"
+        }
+      ],
+      "current_evidence": "Priya looked it up on Lenovo's PSREF database and she says the panel on my exact SKU is listed as 2880 by 1800",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "ThinkPad X1 Carbon Gen 11 screen resolution: 1920x1200"
+        },
+        {
+          "id": "M2",
+          "content": "ThinkPad X1 Carbon Gen 11 warranty expiration: Two-year warranty from February 10, 2024"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-061",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "department at Meridian Consulting Group: Strategic Analytics"
+        },
+        {
+          "id": "M2",
+          "content": "direct manager at Meridian Consulting Group: Rachel Tseng, analytics division lead"
+        },
+        {
+          "id": "M3",
+          "content": "employee ID number at Meridian Consulting Group: MCG-20250115-47"
+        },
+        {
+          "id": "M4",
+          "content": "colleague David Lam at Meridian Consulting Group: David Lam, colleague in Strategic Analytics department"
+        }
+      ],
+      "current_evidence": "my six-month probation review is scheduled for July 15th",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "department at Meridian Consulting Group: Strategic Analytics"
+        },
+        {
+          "id": "M2",
+          "content": "direct manager at Meridian Consulting Group: Rachel Tseng, analytics division lead"
+        },
+        {
+          "id": "M3",
+          "content": "employee ID number at Meridian Consulting Group: MCG-20250115-47"
+        },
+        {
+          "id": "M4",
+          "content": "colleague David Lam at Meridian Consulting Group: David Lam, colleague in Strategic Analytics department"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-062",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "B27 neighbor Kevin's last name: Park"
+        },
+        {
+          "id": "M2",
+          "content": "B27 neighbor Kevin's occupation and workplace: Works in radiology at the university hospital, about two years"
+        }
+      ],
+      "current_evidence": "Kevin mentioned his legal name is actually spelled Bak — B-A-K — it's a romanization thing. He said the building management keeps getting it wrong.",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "B27 neighbor Kevin's last name: Park"
+        },
+        {
+          "id": "M2",
+          "content": "B27 neighbor Kevin's occupation and workplace: Works in radiology at the university hospital, about two years"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-063",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "baby name finalists: Elara, Margot, and Wren"
+        },
+        {
+          "id": "M4",
+          "content": "baby name decision deadline: end of this month"
+        },
+        {
+          "id": "M5",
+          "content": "name preferences between spouses: Wife prefers Margot; user leans toward Wren but not strongly"
+        },
+        {
+          "id": "M1",
+          "content": "baby's gender: girl"
+        },
+        {
+          "id": "M2",
+          "content": "baby's due date: July 19th"
+        }
+      ],
+      "current_evidence": "They don't know the gender yet — they want it to be a surprise",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "baby name finalists: Elara, Margot, and Wren"
+        },
+        {
+          "id": "M4",
+          "content": "baby name decision deadline: end of this month"
+        },
+        {
+          "id": "M5",
+          "content": "name preferences between spouses: Wife prefers Margot; user leans toward Wren but not strongly"
+        },
+        {
+          "id": "M1",
+          "content": "baby's gender: girl"
+        },
+        {
+          "id": "M2",
+          "content": "baby's due date: July 19th"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-064",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Date user began home blood pressure monitoring: April 15th"
+        },
+        {
+          "id": "M1",
+          "content": "User's most recent blood pressure reading: 136/84"
+        }
+      ],
+      "current_evidence": "The monitoring period is two months, so the deadline to have enough data for Dr. Simmons is June 15th",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Date user began home blood pressure monitoring: April 15th"
+        },
+        {
+          "id": "M1",
+          "content": "User's most recent blood pressure reading: 136/84"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-065",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "ThinkPad storage and screen resolution: 1TB SSD, 2560x1600 screen resolution"
+        },
+        {
+          "id": "M1",
+          "content": "current laptop model and key specs: ThinkPad X1 Carbon Gen 11, 14-inch, i7-1365U, 32GB RAM"
+        },
+        {
+          "id": "M2",
+          "content": "ThinkPad purchase/order date: February 8th, 2025"
+        }
+      ],
+      "current_evidence": "The laptop weighs about 1.12 kg. I carry it to the office every day and I barely notice it in my bag.",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "ThinkPad storage and screen resolution: 1TB SSD, 2560x1600 screen resolution"
+        },
+        {
+          "id": "M1",
+          "content": "current laptop model and key specs: ThinkPad X1 Carbon Gen 11, 14-inch, i7-1365U, 32GB RAM"
+        },
+        {
+          "id": "M2",
+          "content": "ThinkPad purchase/order date: February 8th, 2025"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-066",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Sarah's office floor and building address at Meridian: Third floor, 401 Lakeshore Drive, Wilmington"
+        },
+        {
+          "id": "M2",
+          "content": "Sarah's annual salary at Meridian Health Systems: $58,500"
+        },
+        {
+          "id": "M1",
+          "content": "Sarah's work phone extension at Meridian Health Systems: 4302"
+        }
+      ],
+      "current_evidence": "Tom Reznik emailed the team that all patient coordination extensions will be migrated to the 4800 block next Monday, so Sarah's extension will become 4817",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Sarah's office floor and building address at Meridian: Third floor, 401 Lakeshore Drive, Wilmington"
+        },
+        {
+          "id": "M2",
+          "content": "Sarah's annual salary at Meridian Health Systems: $58,500"
+        },
+        {
+          "id": "M1",
+          "content": "Sarah's work phone extension at Meridian Health Systems: 4302"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-067",
+      "current_memory_state": [
+        {
+          "id": "M6",
+          "content": "iCloud+ monthly renewal date: 17th of every month"
+        },
+        {
+          "id": "M3",
+          "content": "NYT digital subscription start date: November 2"
+        },
+        {
+          "id": "M5",
+          "content": "Spotify Premium monthly renewal date: 7th of every month"
+        },
+        {
+          "id": "M4",
+          "content": "NYT introductory rate duration: $1/week for the first year"
+        },
+        {
+          "id": "M1",
+          "content": "Adobe Creative Cloud annual auto-renewal date: March 15, annually"
+        },
+        {
+          "id": "M2",
+          "content": "Adobe Creative Cloud annual subscription cost: $659"
+        }
+      ],
+      "current_evidence": "Mullvad VPN renews annually around February 22nd",
+      "candidate_memories": [
+        {
+          "id": "M6",
+          "content": "iCloud+ monthly renewal date: 17th of every month"
+        },
+        {
+          "id": "M3",
+          "content": "NYT digital subscription start date: November 2"
+        },
+        {
+          "id": "M5",
+          "content": "Spotify Premium monthly renewal date: 7th of every month"
+        },
+        {
+          "id": "M4",
+          "content": "NYT introductory rate duration: $1/week for the first year"
+        },
+        {
+          "id": "M1",
+          "content": "Adobe Creative Cloud annual auto-renewal date: March 15, annually"
+        },
+        {
+          "id": "M2",
+          "content": "Adobe Creative Cloud annual subscription cost: $659"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-068",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Sister Laura's Vancouver departure date: April 3"
+        },
+        {
+          "id": "M3",
+          "content": "Lisbon trip duration: 12 nights"
+        },
+        {
+          "id": "M1",
+          "content": "Lisbon trip departure date: March 15"
+        }
+      ],
+      "current_evidence": "My travel agent just emailed saying she can move me to March 18, a Tuesday, for a better fare. She's holding that seat for me until tomorrow",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Sister Laura's Vancouver departure date: April 3"
+        },
+        {
+          "id": "M3",
+          "content": "Lisbon trip duration: 12 nights"
+        },
+        {
+          "id": "M1",
+          "content": "Lisbon trip departure date: March 15"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-069",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "User's current prenatal vitamin: Thorne Basic Prenatal"
+        },
+        {
+          "id": "M1",
+          "content": "User's AMH level from fertility hormone panel: 1.1 ng/mL"
+        }
+      ],
+      "current_evidence": "Dr. Reyes just emailed me. She said the external lab result was from a mislabeled vial, so it's not mine. The confirmed AMH is still 1.1 ng/mL from the rerun",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "User's current prenatal vitamin: Thorne Basic Prenatal"
+        },
+        {
+          "id": "M1",
+          "content": "User's AMH level from fertility hormone panel: 1.1 ng/mL"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-070",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "date of move to Portland: February 3rd"
+        },
+        {
+          "id": "M2",
+          "content": "Portland apartment location: SE Division Street near 26th, Portland"
+        }
+      ],
+      "current_evidence": "My lease here runs through January 31st of next year",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "date of move to Portland: February 3rd"
+        },
+        {
+          "id": "M2",
+          "content": "Portland apartment location: SE Division Street near 26th, Portland"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-071",
+      "current_memory_state": [
+        {
+          "id": "M6",
+          "content": "Venmo account status: Venmo account deleted in February, no longer active"
+        },
+        {
+          "id": "M4",
+          "content": "everyday purchase payment method: Apple Pay linked to Chase Sapphire Preferred card, no cash"
+        },
+        {
+          "id": "M3",
+          "content": "amount transferred to Marcus savings from Chase: $8,000 transferred from Chase savings to Marcus savings"
+        },
+        {
+          "id": "M5",
+          "content": "Zelle setup for rent payment: Zelle set up through Chase app, used for rent payment to new landlord"
+        },
+        {
+          "id": "M7",
+          "content": "BECU credit union account status: BECU credit union account from Seattle era, approximately $200 balance, intending to close"
+        },
+        {
+          "id": "M2",
+          "content": "Marcus by Goldman Sachs high-yield savings account: Marcus by Goldman Sachs high-yield savings, 4.5% APY at sign-up in mid-March"
+        },
+        {
+          "id": "M1",
+          "content": "primary checking account and direct deposit setup: Chase checking account, salary direct-deposited every two weeks, primary account for all recurring bills"
+        }
+      ],
+      "current_evidence": "my Chase savings was earning basically 0.01% APY before I moved the money to Marcus",
+      "candidate_memories": [
+        {
+          "id": "M6",
+          "content": "Venmo account status: Venmo account deleted in February, no longer active"
+        },
+        {
+          "id": "M4",
+          "content": "everyday purchase payment method: Apple Pay linked to Chase Sapphire Preferred card, no cash"
+        },
+        {
+          "id": "M3",
+          "content": "amount transferred to Marcus savings from Chase: $8,000 transferred from Chase savings to Marcus savings"
+        },
+        {
+          "id": "M5",
+          "content": "Zelle setup for rent payment: Zelle set up through Chase app, used for rent payment to new landlord"
+        },
+        {
+          "id": "M7",
+          "content": "BECU credit union account status: BECU credit union account from Seattle era, approximately $200 balance, intending to close"
+        },
+        {
+          "id": "M2",
+          "content": "Marcus by Goldman Sachs high-yield savings account: Marcus by Goldman Sachs high-yield savings, 4.5% APY at sign-up in mid-March"
+        },
+        {
+          "id": "M1",
+          "content": "primary checking account and direct deposit setup: Chase checking account, salary direct-deposited every two weeks, primary account for all recurring bills"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-072",
+      "current_memory_state": [
+        {
+          "id": "M5",
+          "content": "offline access configuration for Core_Vault: Offline access enabled for Core_Vault on laptop and tablet"
+        },
+        {
+          "id": "M4",
+          "content": "automatic camera roll backup configuration: Automatic camera roll backup enabled to Google Drive on phone"
+        },
+        {
+          "id": "M2",
+          "content": "main storage folder name on Google Drive: Core_Vault"
+        },
+        {
+          "id": "M1",
+          "content": "default cloud storage service: Google Drive"
+        },
+        {
+          "id": "M3",
+          "content": "Google One storage plan tier: 2 TB"
+        }
+      ],
+      "current_evidence": "I started using Google Drive's built-in document scanner on my phone around mid-April to digitize receipts",
+      "candidate_memories": [
+        {
+          "id": "M5",
+          "content": "offline access configuration for Core_Vault: Offline access enabled for Core_Vault on laptop and tablet"
+        },
+        {
+          "id": "M4",
+          "content": "automatic camera roll backup configuration: Automatic camera roll backup enabled to Google Drive on phone"
+        },
+        {
+          "id": "M2",
+          "content": "main storage folder name on Google Drive: Core_Vault"
+        },
+        {
+          "id": "M1",
+          "content": "default cloud storage service: Google Drive"
+        },
+        {
+          "id": "M3",
+          "content": "Google One storage plan tier: 2 TB"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-073",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "12-week training block end date: July 7th"
+        },
+        {
+          "id": "M1",
+          "content": "personal trainer session cost: $80"
+        },
+        {
+          "id": "M3",
+          "content": "total sessions in 12-week training block: 24 sessions"
+        }
+      ],
+      "current_evidence": "I just confirmed with Marcus and the rate stays at $80 for now since I haven't signed the 24-week extension yet",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "12-week training block end date: July 7th"
+        },
+        {
+          "id": "M1",
+          "content": "personal trainer session cost: $80"
+        },
+        {
+          "id": "M3",
+          "content": "total sessions in 12-week training block: 24 sessions"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-074",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Adobe Creative Cloud annual subscription cost: $659"
+        },
+        {
+          "id": "M1",
+          "content": "Adobe Creative Cloud annual auto-renewal date: March 15, annually"
+        }
+      ],
+      "current_evidence": "the introductory rate is $1 per week for the first year",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Adobe Creative Cloud annual subscription cost: $659"
+        },
+        {
+          "id": "M1",
+          "content": "Adobe Creative Cloud annual auto-renewal date: March 15, annually"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-075",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Kevin's AUD practice exam score: 71"
+        },
+        {
+          "id": "M1",
+          "content": "CPA FAR section exam date: June 7th"
+        },
+        {
+          "id": "M3",
+          "content": "Becker FAR progress percentage and date: 58% as of May 3rd"
+        }
+      ],
+      "current_evidence": "I had originally planned to sit for REG in August too, but I dropped that idea entirely",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Kevin's AUD practice exam score: 71"
+        },
+        {
+          "id": "M1",
+          "content": "CPA FAR section exam date: June 7th"
+        },
+        {
+          "id": "M3",
+          "content": "Becker FAR progress percentage and date: 58% as of May 3rd"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-076",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "user passport expiration date: September 14, 2025"
+        },
+        {
+          "id": "M5",
+          "content": "passport renewal processing time: approximately 4 weeks"
+        },
+        {
+          "id": "M2",
+          "content": "wife's passport expiration date: March 7, 2026"
+        },
+        {
+          "id": "M3",
+          "content": "user national ID card expiration date: November 2034"
+        },
+        {
+          "id": "M4",
+          "content": "user target month for passport renewal appointment: June 2025"
+        }
+      ],
+      "current_evidence": "my son's passport was issued when he was 6 and it's a 5-year one, so it should expire around July or August 2025",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "user passport expiration date: September 14, 2025"
+        },
+        {
+          "id": "M5",
+          "content": "passport renewal processing time: approximately 4 weeks"
+        },
+        {
+          "id": "M2",
+          "content": "wife's passport expiration date: March 7, 2026"
+        },
+        {
+          "id": "M3",
+          "content": "user national ID card expiration date: November 2034"
+        },
+        {
+          "id": "M4",
+          "content": "user target month for passport renewal appointment: June 2025"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-077",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Mochi's next vet appointment date: May 10th"
+        },
+        {
+          "id": "M1",
+          "content": "Mochi's current kitten food: Royal Canin Kitten dry food (breeder-recommended)"
+        }
+      ],
+      "current_evidence": "My coworker Sana told me her friend who breeds cats swears by Orijen kitten food. She said it's way better quality protein. I'm pretty sure I'm going to switch Mochi over to Orijen starting next week",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Mochi's next vet appointment date: May 10th"
+        },
+        {
+          "id": "M1",
+          "content": "Mochi's current kitten food: Royal Canin Kitten dry food (breeder-recommended)"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-078",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "vitamin D blood level from mid-March bloodwork: 18 ng/mL"
+        },
+        {
+          "id": "M3",
+          "content": "TSH level from April 28 appointment: 4.8"
+        },
+        {
+          "id": "M1",
+          "content": "daily vitamin D supplement dose prescribed by Dr. Sharma: 6,000 IU"
+        }
+      ],
+      "current_evidence": "The endocrinologist's office called and said he might want to raise my vitamin D to 8,000 IU once he reviews the full panel",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "vitamin D blood level from mid-March bloodwork: 18 ng/mL"
+        },
+        {
+          "id": "M3",
+          "content": "TSH level from April 28 appointment: 4.8"
+        },
+        {
+          "id": "M1",
+          "content": "daily vitamin D supplement dose prescribed by Dr. Sharma: 6,000 IU"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-079",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "department at Meridian Consulting Group: Strategic Analytics"
+        },
+        {
+          "id": "M2",
+          "content": "direct manager at Meridian Consulting Group: Rachel Tseng, analytics division lead"
+        }
+      ],
+      "current_evidence": "my employee ID is MCG-20250115-47",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "department at Meridian Consulting Group: Strategic Analytics"
+        },
+        {
+          "id": "M2",
+          "content": "direct manager at Meridian Consulting Group: Rachel Tseng, analytics division lead"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-080",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "User's passport expiration date: September 14, 2025"
+        },
+        {
+          "id": "M2",
+          "content": "Wife's passport expiration date: March 7, 2026"
+        }
+      ],
+      "current_evidence": "I renewed my driver's license last Friday at the DMV, so that one's all taken care of now",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "User's passport expiration date: September 14, 2025"
+        },
+        {
+          "id": "M2",
+          "content": "Wife's passport expiration date: March 7, 2026"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-081",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "Lily's swimming lesson schedule: Tuesday and Thursday, 4:30–5:15 PM, Greenfield Aquatic Center, Coach Rivera, intermediate lane"
+        },
+        {
+          "id": "M2",
+          "content": "Lily's Saturday art class schedule: Every Saturday, 10:00–11:30 AM, Creative Sparks studio on Elm Street"
+        },
+        {
+          "id": "M3",
+          "content": "Lily's piano lessons with Mrs. Chen: Piano lessons on Wednesdays with Mrs. Chen, discontinued end of February"
+        },
+        {
+          "id": "M4",
+          "content": "Lily's school robotics club schedule: Every other Friday (2nd and 4th Fridays), 3:15–4:30 PM, at her school"
+        }
+      ],
+      "current_evidence": "can you remove the piano lesson info from your memory? I don't need you tracking that anymore since it's been done for a while",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "Lily's swimming lesson schedule: Tuesday and Thursday, 4:30–5:15 PM, Greenfield Aquatic Center, Coach Rivera, intermediate lane"
+        },
+        {
+          "id": "M2",
+          "content": "Lily's Saturday art class schedule: Every Saturday, 10:00–11:30 AM, Creative Sparks studio on Elm Street"
+        },
+        {
+          "id": "M3",
+          "content": "Lily's piano lessons with Mrs. Chen: Piano lessons on Wednesdays with Mrs. Chen, discontinued end of February"
+        },
+        {
+          "id": "M4",
+          "content": "Lily's school robotics club schedule: Every other Friday (2nd and 4th Fridays), 3:15–4:30 PM, at her school"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-082",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "department name at Meridian Consulting Group: Strategic Analytics"
+        },
+        {
+          "id": "M4",
+          "content": "start date at Meridian Consulting Group: January 15th"
+        },
+        {
+          "id": "M3",
+          "content": "six-month probation review date at Meridian: July 15th"
+        },
+        {
+          "id": "M2",
+          "content": "direct manager at Meridian Consulting Group: Rachel Tseng, analytics division lead"
+        }
+      ],
+      "current_evidence": "Rachel mentioned in our team meeting that the department is being rebranded to Applied Strategy & Analytics starting next quarter",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "department name at Meridian Consulting Group: Strategic Analytics"
+        },
+        {
+          "id": "M4",
+          "content": "start date at Meridian Consulting Group: January 15th"
+        },
+        {
+          "id": "M3",
+          "content": "six-month probation review date at Meridian: July 15th"
+        },
+        {
+          "id": "M2",
+          "content": "direct manager at Meridian Consulting Group: Rachel Tseng, analytics division lead"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-083",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "InPost locker package pickup code: 7724"
+        },
+        {
+          "id": "M2",
+          "content": "preferred InPost locker location: Greenfield Ave (not the one by the train station)"
+        }
+      ],
+      "current_evidence": "my mom needed help with her pharmacy kiosk and the verification code they texted her was 3058",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "InPost locker package pickup code: 7724"
+        },
+        {
+          "id": "M2",
+          "content": "preferred InPost locker location: Greenfield Ave (not the one by the train station)"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-084",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Karen Liu's phone number: 503-461-2283"
+        },
+        {
+          "id": "M1",
+          "content": "primary emergency contact name: Priya Nair"
+        },
+        {
+          "id": "M2",
+          "content": "emergency contact phone number: 520-334-7190"
+        }
+      ],
+      "current_evidence": "My friend Tom actually volunteered to be my emergency contact going forward. He confirmed it yesterday, so I'll be switching to Tom Brennan as my primary",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Karen Liu's phone number: 503-461-2283"
+        },
+        {
+          "id": "M1",
+          "content": "primary emergency contact name: Priya Nair"
+        },
+        {
+          "id": "M2",
+          "content": "emergency contact phone number: 520-334-7190"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-085",
+      "current_memory_state": [
+        {
+          "id": "M4",
+          "content": "start date at Meridian Consulting Group: January 15th"
+        },
+        {
+          "id": "M1",
+          "content": "department name at Meridian Consulting Group: Strategic Analytics"
+        },
+        {
+          "id": "M3",
+          "content": "six-month probation review date at Meridian: July 15th"
+        },
+        {
+          "id": "M2",
+          "content": "direct manager at Meridian Consulting Group: Rachel Tseng, analytics division lead"
+        }
+      ],
+      "current_evidence": "Turns out the rebranding got shelved. Leadership decided to keep it as Strategic Analytics after all",
+      "candidate_memories": [
+        {
+          "id": "M4",
+          "content": "start date at Meridian Consulting Group: January 15th"
+        },
+        {
+          "id": "M1",
+          "content": "department name at Meridian Consulting Group: Strategic Analytics"
+        },
+        {
+          "id": "M3",
+          "content": "six-month probation review date at Meridian: July 15th"
+        },
+        {
+          "id": "M2",
+          "content": "direct manager at Meridian Consulting Group: Rachel Tseng, analytics division lead"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-086",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "ratio of downgraded to upgraded priority incidents: 9 downgraded, 5 upgraded out of initial 14"
+        },
+        {
+          "id": "M1",
+          "content": "production database outage ticket number: INC-20240303-0712"
+        },
+        {
+          "id": "M2",
+          "content": "number of mislabeled priority incidents in personal spreadsheet: 16"
+        }
+      ],
+      "current_evidence": "The tracking period for the spreadsheet runs from late March through April 15th. That's roughly three weeks of data collection across our entire team.",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "ratio of downgraded to upgraded priority incidents: 9 downgraded, 5 upgraded out of initial 14"
+        },
+        {
+          "id": "M1",
+          "content": "production database outage ticket number: INC-20240303-0712"
+        },
+        {
+          "id": "M2",
+          "content": "number of mislabeled priority incidents in personal spreadsheet: 16"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-087",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "recent mason jar order total quantity: 144 jars (12 cases × 12 jars per case)"
+        },
+        {
+          "id": "M3",
+          "content": "wax amount per standard candle: 8 oz (approximately 227 grams)"
+        },
+        {
+          "id": "M1",
+          "content": "candle business packaging supplier name: GreenBox Supply"
+        }
+      ],
+      "current_evidence": "I pulled up the actual purchase order PDF and the company header says GreenWrap Co. So my original name was right and the invoice I checked earlier must have been from a different vendor.",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "recent mason jar order total quantity: 144 jars (12 cases × 12 jars per case)"
+        },
+        {
+          "id": "M3",
+          "content": "wax amount per standard candle: 8 oz (approximately 227 grams)"
+        },
+        {
+          "id": "M1",
+          "content": "candle business packaging supplier name: GreenBox Supply"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-088",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "User's current weight: 187.4 lbs as of March 12"
+        },
+        {
+          "id": "M2",
+          "content": "User's weight goal: Under 180 lbs by end of April"
+        },
+        {
+          "id": "M3",
+          "content": "User's morning walk route details: 2.1-mile trail near apartment on Greenfield Road, walked every morning"
+        },
+        {
+          "id": "M5",
+          "content": "User's weight on February 5th: 191.0 lbs on February 5th"
+        },
+        {
+          "id": "M4",
+          "content": "User's weight on January 6th: 194.2 lbs on January 6th"
+        }
+      ],
+      "current_evidence": "Actually, please remove that January 6th weight from your memory. I don't want that number saved anymore. It was a low point and I'd rather not have it on record",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "User's current weight: 187.4 lbs as of March 12"
+        },
+        {
+          "id": "M2",
+          "content": "User's weight goal: Under 180 lbs by end of April"
+        },
+        {
+          "id": "M3",
+          "content": "User's morning walk route details: 2.1-mile trail near apartment on Greenfield Road, walked every morning"
+        },
+        {
+          "id": "M5",
+          "content": "User's weight on February 5th: 191.0 lbs on February 5th"
+        },
+        {
+          "id": "M4",
+          "content": "User's weight on January 6th: 194.2 lbs on January 6th"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-089",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "C11 exam center location: Pearson VUE, 250 Yonge Street, Toronto"
+        },
+        {
+          "id": "M1",
+          "content": "C11 exam date: May 10"
+        }
+      ],
+      "current_evidence": "My friend Kevin is also writing C11 and his date is May 24",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "C11 exam center location: Pearson VUE, 250 Yonge Street, Toronto"
+        },
+        {
+          "id": "M1",
+          "content": "C11 exam date: May 10"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-090",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "home morning height measurement: 5'11¼\""
+        },
+        {
+          "id": "M4",
+          "content": "Kevin's actual measured height: 5'8½\""
+        },
+        {
+          "id": "M2",
+          "content": "mother's current height: 5'4\""
+        },
+        {
+          "id": "M1",
+          "content": "confirmed current height from March physical: 5'11\""
+        }
+      ],
+      "current_evidence": "please forget that home morning measurement I mentioned, the 5'11¼\" one. The March physical number is the only one that matters",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "home morning height measurement: 5'11¼\""
+        },
+        {
+          "id": "M4",
+          "content": "Kevin's actual measured height: 5'8½\""
+        },
+        {
+          "id": "M2",
+          "content": "mother's current height: 5'4\""
+        },
+        {
+          "id": "M1",
+          "content": "confirmed current height from March physical: 5'11\""
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-091",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "User's last name and its correct spelling: McAllister (capital M, capital A)"
+        },
+        {
+          "id": "M2",
+          "content": "Pending task to correct name spelling at dentist office: Call Dr. Huang's office on Elm Street (near the library) to correct name spelling in their system"
+        },
+        {
+          "id": "M3",
+          "content": "User's preference for filling out forms: Prefers filling out forms by hand rather than online"
+        }
+      ],
+      "current_evidence": "There's this coffee shop on 4th Avenue where I go almost every morning. They always spell my name right on the cup, which is honestly one of the main reasons I keep going back.",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "User's last name and its correct spelling: McAllister (capital M, capital A)"
+        },
+        {
+          "id": "M2",
+          "content": "Pending task to correct name spelling at dentist office: Call Dr. Huang's office on Elm Street (near the library) to correct name spelling in their system"
+        },
+        {
+          "id": "M3",
+          "content": "User's preference for filling out forms: Prefers filling out forms by hand rather than online"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-092",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "Adobe Creative Cloud annual auto-renewal date: April 1"
+        },
+        {
+          "id": "M2",
+          "content": "iCloud+ 200GB monthly renewal date: 17th of each month"
+        },
+        {
+          "id": "M3",
+          "content": "Adobe Creative Cloud annual subscription cost: $659 per year"
+        }
+      ],
+      "current_evidence": "Adobe sent me an email saying they're consolidating billing cycles and my renewal will shift to April 15 going forward",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "Adobe Creative Cloud annual auto-renewal date: April 1"
+        },
+        {
+          "id": "M2",
+          "content": "iCloud+ 200GB monthly renewal date: 17th of each month"
+        },
+        {
+          "id": "M3",
+          "content": "Adobe Creative Cloud annual subscription cost: $659 per year"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-093",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "Mother's full legal name: Margaret Ellen Davies"
+        },
+        {
+          "id": "M2",
+          "content": "Father's full legal name: Robert James Kowalski"
+        },
+        {
+          "id": "M3",
+          "content": "Father's birthday: September 22nd"
+        },
+        {
+          "id": "M4",
+          "content": "Mother's birthday: June 5th"
+        }
+      ],
+      "current_evidence": "my mom mentioned she's going to start using Margaret Ellen Kowalski on all her legal documents going forward since the trust attorney recommended it",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "Mother's full legal name: Margaret Ellen Davies"
+        },
+        {
+          "id": "M2",
+          "content": "Father's full legal name: Robert James Kowalski"
+        },
+        {
+          "id": "M3",
+          "content": "Father's birthday: September 22nd"
+        },
+        {
+          "id": "M4",
+          "content": "Mother's birthday: June 5th"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-094",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "February driving log mileage: 847"
+        },
+        {
+          "id": "M2",
+          "content": "Portland hotel stay total cost: $378 for two nights at the Residence Inn on SW Morrison Street"
+        }
+      ],
+      "current_evidence": "I rechecked the odometer photos I took and the correct number is actually 874 miles",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "February driving log mileage: 847"
+        },
+        {
+          "id": "M2",
+          "content": "Portland hotel stay total cost: $378 for two nights at the Residence Inn on SW Morrison Street"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-095",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Kevin's avoidance of eggs: Kevin stopped eating eggs about two years ago"
+        },
+        {
+          "id": "M4",
+          "content": "Kevin's prior residence in Portland until 2022: Kevin lived in Portland until 2022"
+        },
+        {
+          "id": "M3",
+          "content": "Kevin's avoidance of seafood: Kevin avoids seafood"
+        },
+        {
+          "id": "M1",
+          "content": "Kevin's avoidance of dairy: Kevin does not eat dairy"
+        }
+      ],
+      "current_evidence": "he asked them to make the mapo tofu without the ground pork. He doesn't eat meat either, so steakhouses are out.",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Kevin's avoidance of eggs: Kevin stopped eating eggs about two years ago"
+        },
+        {
+          "id": "M4",
+          "content": "Kevin's prior residence in Portland until 2022: Kevin lived in Portland until 2022"
+        },
+        {
+          "id": "M3",
+          "content": "Kevin's avoidance of seafood: Kevin avoids seafood"
+        },
+        {
+          "id": "M1",
+          "content": "Kevin's avoidance of dairy: Kevin does not eat dairy"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-096",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Pixel 8 Pro storage capacity: 128GB"
+        },
+        {
+          "id": "M2",
+          "content": "Pixel 8 Pro phone case: plain matte black case, no logos or patterns"
+        },
+        {
+          "id": "M4",
+          "content": "Pixel 8 Pro color: Porcelain"
+        },
+        {
+          "id": "M1",
+          "content": "current primary smartphone model: Pixel 8 Pro"
+        }
+      ],
+      "current_evidence": "I finally set up the fingerprint sensor properly a few days ago. The March feature drop update made the under-display reader way faster, so I switched from just using a PIN.",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Pixel 8 Pro storage capacity: 128GB"
+        },
+        {
+          "id": "M2",
+          "content": "Pixel 8 Pro phone case: plain matte black case, no logos or patterns"
+        },
+        {
+          "id": "M4",
+          "content": "Pixel 8 Pro color: Porcelain"
+        },
+        {
+          "id": "M1",
+          "content": "current primary smartphone model: Pixel 8 Pro"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-097",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Dentist emergency contact form mislabel incident: Wrote 'wife' instead of 'partner' on dentist emergency contact form around March 3rd; corrected at front desk"
+        },
+        {
+          "id": "M1",
+          "content": "Elaine's actual relationship status and dating start date: Long-term partner, together since June 2022"
+        }
+      ],
+      "current_evidence": "my mom introduced Elaine to her book club friends as my 'fiancée' around mid-March, maybe the 18th or 19th",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Dentist emergency contact form mislabel incident: Wrote 'wife' instead of 'partner' on dentist emergency contact form around March 3rd; corrected at front desk"
+        },
+        {
+          "id": "M1",
+          "content": "Elaine's actual relationship status and dating start date: Long-term partner, together since June 2022"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-098",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Annual salary at Bridgemark Solutions: $74,500"
+        },
+        {
+          "id": "M2",
+          "content": "Direct manager at Bridgemark Solutions: Diane Kowalski"
+        },
+        {
+          "id": "M1",
+          "content": "Current job title at Bridgemark Solutions: Data Analyst"
+        }
+      ],
+      "current_evidence": "Diane told me yesterday that because I'm now the primary owner of the MedVantage quarterly deliverable, my title is being changed to Senior Data Analyst effective immediately",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Annual salary at Bridgemark Solutions: $74,500"
+        },
+        {
+          "id": "M2",
+          "content": "Direct manager at Bridgemark Solutions: Diane Kowalski"
+        },
+        {
+          "id": "M1",
+          "content": "Current job title at Bridgemark Solutions: Data Analyst"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-099",
+      "current_memory_state": [
+        {
+          "id": "M4",
+          "content": "timing of visit to Olive & Thyme with mom: Late February or early March, weeknight dinner"
+        },
+        {
+          "id": "M3",
+          "content": "usual order at Olive & Thyme: Roasted cauliflower flatbread with a side of house green salad"
+        },
+        {
+          "id": "M1",
+          "content": "favorite restaurant name and location: Olive & Thyme on Magnolia Boulevard"
+        },
+        {
+          "id": "M2",
+          "content": "date and occasion of first visit to Olive & Thyme: February 8th, Clara's birthday lunch"
+        }
+      ],
+      "current_evidence": "The bill for both of us came to $47 before tip",
+      "candidate_memories": [
+        {
+          "id": "M4",
+          "content": "timing of visit to Olive & Thyme with mom: Late February or early March, weeknight dinner"
+        },
+        {
+          "id": "M3",
+          "content": "usual order at Olive & Thyme: Roasted cauliflower flatbread with a side of house green salad"
+        },
+        {
+          "id": "M1",
+          "content": "favorite restaurant name and location: Olive & Thyme on Magnolia Boulevard"
+        },
+        {
+          "id": "M2",
+          "content": "date and occasion of first visit to Olive & Thyme: February 8th, Clara's birthday lunch"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-100",
+      "current_memory_state": [
+        {
+          "id": "M5",
+          "content": "sister Laura weight and wedding goal: Laura is at 142 lbs, goal 135 lbs before her April wedding"
+        },
+        {
+          "id": "M1",
+          "content": "user current weight as of March 12: 187.4 lbs as of March 12"
+        },
+        {
+          "id": "M4",
+          "content": "morning walking trail distance on Greenfield Road: 2.1 miles on Greenfield Road"
+        },
+        {
+          "id": "M3",
+          "content": "user weight goal and deadline: Under 180 lbs by end of April"
+        },
+        {
+          "id": "M6",
+          "content": "user weight on February 5: 191.0 lbs on February 5"
+        },
+        {
+          "id": "M2",
+          "content": "user weight on January 6: 194.2 lbs on January 6"
+        }
+      ],
+      "current_evidence": "I do my walks every morning, seven days a week",
+      "candidate_memories": [
+        {
+          "id": "M5",
+          "content": "sister Laura weight and wedding goal: Laura is at 142 lbs, goal 135 lbs before her April wedding"
+        },
+        {
+          "id": "M1",
+          "content": "user current weight as of March 12: 187.4 lbs as of March 12"
+        },
+        {
+          "id": "M4",
+          "content": "morning walking trail distance on Greenfield Road: 2.1 miles on Greenfield Road"
+        },
+        {
+          "id": "M3",
+          "content": "user weight goal and deadline: Under 180 lbs by end of April"
+        },
+        {
+          "id": "M6",
+          "content": "user weight on February 5: 191.0 lbs on February 5"
+        },
+        {
+          "id": "M2",
+          "content": "user weight on January 6: 194.2 lbs on January 6"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-101",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Company language certification submission deadline: June 30th"
+        },
+        {
+          "id": "M2",
+          "content": "User's JLPT N3 exam result: Passed JLPT N3 in December, score 118/180"
+        },
+        {
+          "id": "M1",
+          "content": "User's current French CEFR proficiency level: B2"
+        }
+      ],
+      "current_evidence": "The Alliance Française coordinator told me they're reclassifying me back to B1 for the summer intensive because they changed their placement criteria",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Company language certification submission deadline: June 30th"
+        },
+        {
+          "id": "M2",
+          "content": "User's JLPT N3 exam result: Passed JLPT N3 in December, score 118/180"
+        },
+        {
+          "id": "M1",
+          "content": "User's current French CEFR proficiency level: B2"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-102",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "User's current mobile phone number: 512-847-3291"
+        },
+        {
+          "id": "M2",
+          "content": "Date user switched to current phone carrier in Austin: February 3rd"
+        },
+        {
+          "id": "M4",
+          "content": "Dentist office where user registered phone number: Dr. Patel's clinic on South Lamar, registered 512-847-3291 around mid-March before March 18th appointment"
+        },
+        {
+          "id": "M3",
+          "content": "Bank two-factor authentication setup date and linked number: 2FA set up on bank account using 512-847-3291, around February 26th-27th"
+        }
+      ],
+      "current_evidence": "there was a gas station rewards app I signed up for on March 1st that probably sold my number and caused the spam calls",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "User's current mobile phone number: 512-847-3291"
+        },
+        {
+          "id": "M2",
+          "content": "Date user switched to current phone carrier in Austin: February 3rd"
+        },
+        {
+          "id": "M4",
+          "content": "Dentist office where user registered phone number: Dr. Patel's clinic on South Lamar, registered 512-847-3291 around mid-March before March 18th appointment"
+        },
+        {
+          "id": "M3",
+          "content": "Bank two-factor authentication setup date and linked number: 2FA set up on bank account using 512-847-3291, around February 26th-27th"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-103",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "location of allergist clinic where testing was done: 412 Kensington Rd, Suite 200"
+        },
+        {
+          "id": "M2",
+          "content": "EpiPen expiration date: September 15th"
+        },
+        {
+          "id": "M3",
+          "content": "tree nut allergy reaction classes for walnuts and cashews: Class 3 for walnuts, Class 2 for cashews"
+        }
+      ],
+      "current_evidence": "Dr. Patel's office confirmed they're relocating to 780 Greystone Blvd starting next month. So my follow-up appointment in September will be at the new location",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "location of allergist clinic where testing was done: 412 Kensington Rd, Suite 200"
+        },
+        {
+          "id": "M2",
+          "content": "EpiPen expiration date: September 15th"
+        },
+        {
+          "id": "M3",
+          "content": "tree nut allergy reaction classes for walnuts and cashews: Class 3 for walnuts, Class 2 for cashews"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-104",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Deadline for blood pressure monitoring data review by Dr. Simmons: June 15th"
+        },
+        {
+          "id": "M1",
+          "content": "User's most recent blood pressure reading: 136/84"
+        },
+        {
+          "id": "M2",
+          "content": "Date user began home blood pressure monitoring: April 15th"
+        }
+      ],
+      "current_evidence": "I took my blood pressure twice yesterday. Morning was 132/82 and evening was 130/80. So I'd say the most accurate recent one is 130/80 since I was fully rested",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Deadline for blood pressure monitoring data review by Dr. Simmons: June 15th"
+        },
+        {
+          "id": "M1",
+          "content": "User's most recent blood pressure reading: 136/84"
+        },
+        {
+          "id": "M2",
+          "content": "Date user began home blood pressure monitoring: April 15th"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-105",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "correct February driving log mileage: 871 miles"
+        },
+        {
+          "id": "M4",
+          "content": "Greenfield project actual billable hours: 38 hours"
+        },
+        {
+          "id": "M1",
+          "content": "correct Portland hotel total: $378 for two nights at the Residence Inn on SW Morrison Street"
+        },
+        {
+          "id": "M2",
+          "content": "spreadsheet template adoption for pre-submission tracking: Uses a spreadsheet template adopted around mid-March to track all numbers before submitting"
+        }
+      ],
+      "current_evidence": "the Greenfield project client is billed at $95 per hour",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "correct February driving log mileage: 871 miles"
+        },
+        {
+          "id": "M4",
+          "content": "Greenfield project actual billable hours: 38 hours"
+        },
+        {
+          "id": "M1",
+          "content": "correct Portland hotel total: $378 for two nights at the Residence Inn on SW Morrison Street"
+        },
+        {
+          "id": "M2",
+          "content": "spreadsheet template adoption for pre-submission tracking: Uses a spreadsheet template adopted around mid-March to track all numbers before submitting"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-106",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "Ethan's weekend soccer league day: Saturday morning"
+        },
+        {
+          "id": "M3",
+          "content": "Lily's daycare location and start date: Montessori daycare on Elm Street, started second week of January"
+        },
+        {
+          "id": "M2",
+          "content": "Ethan's pediatrician appointment date and details: April 22nd, annual checkup with vision screening"
+        }
+      ],
+      "current_evidence": "The league coordinator confirmed they'll be switching all spring sessions to Friday evenings starting in May",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "Ethan's weekend soccer league day: Saturday morning"
+        },
+        {
+          "id": "M3",
+          "content": "Lily's daycare location and start date: Montessori daycare on Elm Street, started second week of January"
+        },
+        {
+          "id": "M2",
+          "content": "Ethan's pediatrician appointment date and details: April 22nd, annual checkup with vision screening"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-107",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "pre-appointment fasting requirement: 12-hour fast before blood draw"
+        },
+        {
+          "id": "M5",
+          "content": "pre-visit questionnaire completion status: Pre-visit questionnaire not yet completed; must be done before April 17th"
+        },
+        {
+          "id": "M3",
+          "content": "user blood type: A-negative"
+        },
+        {
+          "id": "M6",
+          "content": "wife Sarah's physical exam date: February 12th"
+        },
+        {
+          "id": "M1",
+          "content": "annual physical exam date and time: April 17th at 9:30 AM"
+        },
+        {
+          "id": "M4",
+          "content": "father's type 2 diabetes diagnosis: Father diagnosed with type 2 diabetes in January"
+        }
+      ],
+      "current_evidence": "The dermatologist referral from last year is all done — Dr. Huang confirmed the mole was benign back in November",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "pre-appointment fasting requirement: 12-hour fast before blood draw"
+        },
+        {
+          "id": "M5",
+          "content": "pre-visit questionnaire completion status: Pre-visit questionnaire not yet completed; must be done before April 17th"
+        },
+        {
+          "id": "M3",
+          "content": "user blood type: A-negative"
+        },
+        {
+          "id": "M6",
+          "content": "wife Sarah's physical exam date: February 12th"
+        },
+        {
+          "id": "M1",
+          "content": "annual physical exam date and time: April 17th at 9:30 AM"
+        },
+        {
+          "id": "M4",
+          "content": "father's type 2 diabetes diagnosis: Father diagnosed with type 2 diabetes in January"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-108",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Vitamin D supplement dosage: 4,000 IU daily"
+        },
+        {
+          "id": "M1",
+          "content": "Primary care doctor name and practice: Dr. Anita Sharma at Greenfield Medical Group on Elm Street"
+        },
+        {
+          "id": "M2",
+          "content": "Vitamin D lab result: 18 ng/mL"
+        }
+      ],
+      "current_evidence": "My sister Sarah sees Dr. Kevin Liu at Bayside Health",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Vitamin D supplement dosage: 4,000 IU daily"
+        },
+        {
+          "id": "M1",
+          "content": "Primary care doctor name and practice: Dr. Anita Sharma at Greenfield Medical Group on Elm Street"
+        },
+        {
+          "id": "M2",
+          "content": "Vitamin D lab result: 18 ng/mL"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-109",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "health insurance coverage effective date: February 1st"
+        },
+        {
+          "id": "M4",
+          "content": "next doctor follow-up appointment timing: three months from the January visit, sometime in April"
+        },
+        {
+          "id": "M1",
+          "content": "new health insurance policy number: HX-440812"
+        },
+        {
+          "id": "M2",
+          "content": "daily water intake target: 2.5 liters per day"
+        }
+      ],
+      "current_evidence": "HR just sent me a message saying they're migrating everyone to a new plan and my updated policy number will be HX-441090 starting next quarter",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "health insurance coverage effective date: February 1st"
+        },
+        {
+          "id": "M4",
+          "content": "next doctor follow-up appointment timing: three months from the January visit, sometime in April"
+        },
+        {
+          "id": "M1",
+          "content": "new health insurance policy number: HX-440812"
+        },
+        {
+          "id": "M2",
+          "content": "daily water intake target: 2.5 liters per day"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-110",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "primary client project assignment at Bridgemark: MedVantage (healthcare company), assigned around last week of February"
+        },
+        {
+          "id": "M2",
+          "content": "direct manager at Bridgemark Solutions: Diane Kowalski, analytics team lead, approximately 7 years at the company"
+        },
+        {
+          "id": "M1",
+          "content": "Bridgemark Solutions employment start date: January 15"
+        },
+        {
+          "id": "M4",
+          "content": "date assigned quarterly reporting deliverable for MedVantage: March 3"
+        }
+      ],
+      "current_evidence": "the office is on SW 5th Avenue in downtown Portland and there are about 200 employees",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "primary client project assignment at Bridgemark: MedVantage (healthcare company), assigned around last week of February"
+        },
+        {
+          "id": "M2",
+          "content": "direct manager at Bridgemark Solutions: Diane Kowalski, analytics team lead, approximately 7 years at the company"
+        },
+        {
+          "id": "M1",
+          "content": "Bridgemark Solutions employment start date: January 15"
+        },
+        {
+          "id": "M4",
+          "content": "date assigned quarterly reporting deliverable for MedVantage: March 3"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-111",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "Kevin's dietary classification: vegan"
+        },
+        {
+          "id": "M3",
+          "content": "Kevin's previous city of residence: Portland, until 2022"
+        },
+        {
+          "id": "M2",
+          "content": "Kevin's girlfriend's name: Mia"
+        },
+        {
+          "id": "M4",
+          "content": "Kevin's favorite cuisine for dining out: Mediterranean"
+        }
+      ],
+      "current_evidence": "we started doing regular dinners together around early March, and the first one was March 8th at a Thai place on Elm Street",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "Kevin's dietary classification: vegan"
+        },
+        {
+          "id": "M3",
+          "content": "Kevin's previous city of residence: Portland, until 2022"
+        },
+        {
+          "id": "M2",
+          "content": "Kevin's girlfriend's name: Mia"
+        },
+        {
+          "id": "M4",
+          "content": "Kevin's favorite cuisine for dining out: Mediterranean"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-112",
+      "current_memory_state": [
+        {
+          "id": "M4",
+          "content": "L6 compensation band floor: $185,000"
+        },
+        {
+          "id": "M2",
+          "content": "current manager: David Chen"
+        },
+        {
+          "id": "M1",
+          "content": "current job level and title: L6, Senior Software Engineer, effective March 3rd"
+        },
+        {
+          "id": "M3",
+          "content": "current base salary at L6: $191,500"
+        }
+      ],
+      "current_evidence": "I'm the tech lead on an internal platform migration project. The kickoff was March 12th and we have a target completion of end of June.",
+      "candidate_memories": [
+        {
+          "id": "M4",
+          "content": "L6 compensation band floor: $185,000"
+        },
+        {
+          "id": "M2",
+          "content": "current manager: David Chen"
+        },
+        {
+          "id": "M1",
+          "content": "current job level and title: L6, Senior Software Engineer, effective March 3rd"
+        },
+        {
+          "id": "M3",
+          "content": "current base salary at L6: $191,500"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-113",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Karen Liu's phone number: 503-461-2283"
+        },
+        {
+          "id": "M1",
+          "content": "primary emergency contact name: Karen Liu"
+        },
+        {
+          "id": "M2",
+          "content": "emergency contact phone number: 520-334-7190"
+        }
+      ],
+      "current_evidence": "I actually changed my emergency contact again to my coworker Priya Nair last week because Karen was going to be on a two-week medical mission trip overseas",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Karen Liu's phone number: 503-461-2283"
+        },
+        {
+          "id": "M1",
+          "content": "primary emergency contact name: Karen Liu"
+        },
+        {
+          "id": "M2",
+          "content": "emergency contact phone number: 520-334-7190"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-114",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "Misspoken name incident with colleague Rebecca Thornton: Called Rebecca Thornton 'Rachel' during a lunch introduction on March 3rd"
+        },
+        {
+          "id": "M4",
+          "content": "Misspoken name incident with babysitter Priya Rao: Called Priya Rao 'Priyanka' when first meeting her"
+        },
+        {
+          "id": "M3",
+          "content": "Misspoken name incident with Lena Vasquez: Called Lena Vasquez 'Leah' at a dinner party last week"
+        },
+        {
+          "id": "M2",
+          "content": "Misspoken name incident with client Martin Chu: Called Martin Chu 'Michael' three times on a video call around March 20th"
+        },
+        {
+          "id": "M5",
+          "content": "Name retention technique adopted in late April: Repeats a person's name back to them upon meeting since late April"
+        }
+      ],
+      "current_evidence": "the Martin Chu account got handed off to another rep in April, so I don't need you tracking that incident anymore. Go ahead and drop the Martin Chu details from my notes",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "Misspoken name incident with colleague Rebecca Thornton: Called Rebecca Thornton 'Rachel' during a lunch introduction on March 3rd"
+        },
+        {
+          "id": "M4",
+          "content": "Misspoken name incident with babysitter Priya Rao: Called Priya Rao 'Priyanka' when first meeting her"
+        },
+        {
+          "id": "M3",
+          "content": "Misspoken name incident with Lena Vasquez: Called Lena Vasquez 'Leah' at a dinner party last week"
+        },
+        {
+          "id": "M2",
+          "content": "Misspoken name incident with client Martin Chu: Called Martin Chu 'Michael' three times on a video call around March 20th"
+        },
+        {
+          "id": "M5",
+          "content": "Name retention technique adopted in late April: Repeats a person's name back to them upon meeting since late April"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-115",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "previously owned motorcycle (sold): 2016 Yamaha MT-07, sold last month for $4,200"
+        },
+        {
+          "id": "M1",
+          "content": "current daily driver vehicle: 2019 Honda CR-V, purchased January 2023 from a dealership in Plano, Texas with ~38,000 miles"
+        }
+      ],
+      "current_evidence": "I got pre-approved for a mortgage through First United Bank, up to $310K, and the pre-approval letter is dated May 8th, 2025",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "previously owned motorcycle (sold): 2016 Yamaha MT-07, sold last month for $4,200"
+        },
+        {
+          "id": "M1",
+          "content": "current daily driver vehicle: 2019 Honda CR-V, purchased January 2023 from a dealership in Plano, Texas with ~38,000 miles"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-116",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "Rachel Simmons's start date on the team: April 22nd"
+        },
+        {
+          "id": "M2",
+          "content": "Tom Aldridge's job title: VP of Engineering"
+        },
+        {
+          "id": "M1",
+          "content": "David Keane's job title: Staff Technical Lead"
+        }
+      ],
+      "current_evidence": "Tom Aldridge confirmed in a meeting today that David will be promoted again to Distinguished Technical Lead starting next quarter",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "Rachel Simmons's start date on the team: April 22nd"
+        },
+        {
+          "id": "M2",
+          "content": "Tom Aldridge's job title: VP of Engineering"
+        },
+        {
+          "id": "M1",
+          "content": "David Keane's job title: Staff Technical Lead"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-117",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Henderson & Associates client call misspeak incident: On a client call with Henderson & Associates, said contract renewal was June 15th instead of July 15th; colleague Raj flagged the error privately; user sent the correction email"
+        },
+        {
+          "id": "M1",
+          "content": "Standup misspeak incident about server migration date: During a team standup around March 3rd, said server migration was March 20th instead of April 20th; manager Diane corrected via Slack; user sent correction to the whole channel"
+        },
+        {
+          "id": "M3",
+          "content": "Sticky note coping strategy for verbal date errors: Started mid-April keeping a sticky note on monitor with key dates before meetings to reduce verbal misspeak risk"
+        }
+      ],
+      "current_evidence": "I much prefer written communication like emails and Slack because I can double-check dates before hitting send",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Henderson & Associates client call misspeak incident: On a client call with Henderson & Associates, said contract renewal was June 15th instead of July 15th; colleague Raj flagged the error privately; user sent the correction email"
+        },
+        {
+          "id": "M1",
+          "content": "Standup misspeak incident about server migration date: During a team standup around March 3rd, said server migration was March 20th instead of April 20th; manager Diane corrected via Slack; user sent correction to the whole channel"
+        },
+        {
+          "id": "M3",
+          "content": "Sticky note coping strategy for verbal date errors: Started mid-April keeping a sticky note on monitor with key dates before meetings to reduce verbal misspeak risk"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-118",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "ZIP code for 742 Birchwood Lane, Ashford Heights: 60143"
+        },
+        {
+          "id": "M3",
+          "content": "move-in date at 742 Birchwood Lane: March 15th of this year"
+        },
+        {
+          "id": "M1",
+          "content": "unit number at 742 Birchwood Lane, Ashford Heights: Unit 4A"
+        },
+        {
+          "id": "M4",
+          "content": "lease duration at 742 Birchwood Lane: 12 months"
+        }
+      ],
+      "current_evidence": "the landlord requires 90 days' written notice before the lease end date if I want to renew",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "ZIP code for 742 Birchwood Lane, Ashford Heights: 60143"
+        },
+        {
+          "id": "M3",
+          "content": "move-in date at 742 Birchwood Lane: March 15th of this year"
+        },
+        {
+          "id": "M1",
+          "content": "unit number at 742 Birchwood Lane, Ashford Heights: Unit 4A"
+        },
+        {
+          "id": "M4",
+          "content": "lease duration at 742 Birchwood Lane: 12 months"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-119",
+      "current_memory_state": [
+        {
+          "id": "M3",
+          "content": "move-in date at 742 Birchwood Lane: March 15th of this year"
+        },
+        {
+          "id": "M2",
+          "content": "ZIP code for 742 Birchwood Lane, Ashford Heights: 60143"
+        },
+        {
+          "id": "M1",
+          "content": "unit number at 742 Birchwood Lane, Ashford Heights: Unit 3A"
+        }
+      ],
+      "current_evidence": "I got a letter from the building management today and they've officially re-designated my apartment as Unit 4A after the floor renumbering",
+      "candidate_memories": [
+        {
+          "id": "M3",
+          "content": "move-in date at 742 Birchwood Lane: March 15th of this year"
+        },
+        {
+          "id": "M2",
+          "content": "ZIP code for 742 Birchwood Lane, Ashford Heights: 60143"
+        },
+        {
+          "id": "M1",
+          "content": "unit number at 742 Birchwood Lane, Ashford Heights: Unit 3A"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-120",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "Brazilian passport number: HG284139"
+        },
+        {
+          "id": "M2",
+          "content": "Portuguese citizenship application reference number: PT-2025-04417"
+        }
+      ],
+      "current_evidence": "the consulate clerk told me their system shows my passport as HG284931. She said that's what's linked to my application file",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "Brazilian passport number: HG284139"
+        },
+        {
+          "id": "M2",
+          "content": "Portuguese citizenship application reference number: PT-2025-04417"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-121",
+      "current_memory_state": [
+        {
+          "id": "M4",
+          "content": "Karen Liu's work shift schedule: 12-hour shifts at OHSU, 7 AM to 7 PM"
+        },
+        {
+          "id": "M3",
+          "content": "Date HR emergency contact form was submitted: March 5th"
+        },
+        {
+          "id": "M5",
+          "content": "Date emergency contact was listed at CoreFit gym: March 18th"
+        },
+        {
+          "id": "M2",
+          "content": "Primary emergency contact phone number: 503-461-2283"
+        },
+        {
+          "id": "M1",
+          "content": "Primary emergency contact name: Karen Liu"
+        }
+      ],
+      "current_evidence": "I'm considering adding my coworker Priya Nair as a secondary emergency contact since she sits right next to me at work",
+      "candidate_memories": [
+        {
+          "id": "M4",
+          "content": "Karen Liu's work shift schedule: 12-hour shifts at OHSU, 7 AM to 7 PM"
+        },
+        {
+          "id": "M3",
+          "content": "Date HR emergency contact form was submitted: March 5th"
+        },
+        {
+          "id": "M5",
+          "content": "Date emergency contact was listed at CoreFit gym: March 18th"
+        },
+        {
+          "id": "M2",
+          "content": "Primary emergency contact phone number: 503-461-2283"
+        },
+        {
+          "id": "M1",
+          "content": "Primary emergency contact name: Karen Liu"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-122",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "Rebecca's start date on analytics team: February 26th"
+        },
+        {
+          "id": "M3",
+          "content": "Rebecca's probation period duration: 90 days"
+        },
+        {
+          "id": "M1",
+          "content": "Name of new colleague on analytics team: Rebecca Thornton"
+        }
+      ],
+      "current_evidence": "I just found out her full name is actually Rebecca Anne Thornton-Lee. She hyphenated after getting married last year.",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "Rebecca's start date on analytics team: February 26th"
+        },
+        {
+          "id": "M3",
+          "content": "Rebecca's probation period duration: 90 days"
+        },
+        {
+          "id": "M1",
+          "content": "Name of new colleague on analytics team: Rebecca Thornton"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-123",
+      "current_memory_state": [
+        {
+          "id": "M1",
+          "content": "B27 neighbor Kevin's last name: Park"
+        },
+        {
+          "id": "M2",
+          "content": "B27 neighbor Kevin's occupation and workplace: Works in radiology at the university hospital, about two years"
+        }
+      ],
+      "current_evidence": "I saw a package outside his door last week and the label clearly said Kevin Pak, P-A-K. So I think I had the spelling wrong before.",
+      "candidate_memories": [
+        {
+          "id": "M1",
+          "content": "B27 neighbor Kevin's last name: Park"
+        },
+        {
+          "id": "M2",
+          "content": "B27 neighbor Kevin's occupation and workplace: Works in radiology at the university hospital, about two years"
+        }
+      ]
+    },
+    {
+      "blind_id": "BA-124",
+      "current_memory_state": [
+        {
+          "id": "M2",
+          "content": "start date of relationship with Elaine: June 2022"
+        },
+        {
+          "id": "M3",
+          "content": "preferred neutral relationship phrasing from Marco: Marco uses 'your person' as a neutral relationship label"
+        },
+        {
+          "id": "M1",
+          "content": "Elaine's relationship label on official forms: co-tenant"
+        }
+      ],
+      "current_evidence": "Elaine's mom told us she already listed Elaine as my fiancée on the family reunion RSVP for August",
+      "candidate_memories": [
+        {
+          "id": "M2",
+          "content": "start date of relationship with Elaine: June 2022"
+        },
+        {
+          "id": "M3",
+          "content": "preferred neutral relationship phrasing from Marco: Marco uses 'your person' as a neutral relationship label"
+        },
+        {
+          "id": "M1",
+          "content": "Elaine's relationship label on official forms: co-tenant"
+        }
+      ]
+    }
+  ]
+}

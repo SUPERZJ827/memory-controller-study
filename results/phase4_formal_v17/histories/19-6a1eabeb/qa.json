@@ -1,0 +1,388 @@
+{
+  "question_id": "6a1eabeb",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "What was my personal best time in the charity 5K run?",
+    "question_date": "2023/06/25 (Sun) 13:22"
+  },
+  "reference_answer": "25 minutes and 50 seconds (or 25:50)",
+  "answers": {
+    "B": {
+      "answer": "25:50",
+      "retrieved": [
+        {
+          "id": "M20",
+          "text": "I've been doing some running lately, and I'm happy to say that I recently set a personal best time in a charity 5K run with a time of 25:50.",
+          "status": "active",
+          "timestamp": "2023/05/30 (Tue) 13:53",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 2,
+              "timestamp": "2023/05/23 (Tue) 13:01",
+              "source_turns": [
+                4
+              ]
+            },
+            {
+              "session_index": 36,
+              "fact_index": 1,
+              "timestamp": "2023/05/30 (Tue) 13:53",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.8651083803742827
+        },
+        {
+          "id": "E19_2",
+          "text": "I've been doing some running lately, and I'm happy to say that I recently set a personal best time in a charity 5K run with a time of 27:12.",
+          "status": "historical",
+          "timestamp": "2023/05/23 (Tue) 13:01",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 2,
+              "timestamp": "2023/05/23 (Tue) 13:01",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.8608183016960541
+        },
+        {
+          "id": "M69",
+          "text": "I'm training for another charity 5K run coming up and I was wondering if you could give me some tips on how to improve my endurance.",
+          "status": "active",
+          "timestamp": "2023/05/30 (Tue) 13:53",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 0,
+              "timestamp": "2023/05/30 (Tue) 13:53",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7209375814739941
+        },
+        {
+          "id": "E36_0",
+          "text": "I'm training for another charity 5K run coming up and I was wondering if you could give me some tips on how to improve my endurance.",
+          "status": "current",
+          "timestamp": "2023/05/30 (Tue) 13:53",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 0,
+              "timestamp": "2023/05/30 (Tue) 13:53",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7205087937938783
+        },
+        {
+          "id": "E36_5",
+          "text": "I'm getting ready for a charity 5K run and I was wondering if you could give me some tips on how to improve my endurance.",
+          "status": "current",
+          "timestamp": "2023/05/30 (Tue) 13:53",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 5,
+              "timestamp": "2023/05/30 (Tue) 13:53",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.7175673089946355
+        },
+        {
+          "id": "E36_1",
+          "text": "By the way, I'm hoping to beat my personal best time of 25:50 this time around.",
+          "status": "tentative",
+          "timestamp": "2023/05/30 (Tue) 13:53",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 1,
+              "timestamp": "2023/05/30 (Tue) 13:53",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6538432378764698
+        },
+        {
+          "id": "E36_6",
+          "text": "By the way, I'm hoping to beat my personal best time this time around.",
+          "status": "tentative",
+          "timestamp": "2023/05/30 (Tue) 13:53",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 6,
+              "timestamp": "2023/05/30 (Tue) 13:53",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.6329981381870601
+        },
+        {
+          "id": "E29_2",
+          "text": "My current finish time is around 4 hours 15 minutes, and I'm hoping to shave off at least 15 minutes from that for my next marathon.",
+          "status": "current",
+          "timestamp": "2023/05/27 (Sat) 14:54",
+          "provenance": [
+            {
+              "session_index": 29,
+              "fact_index": 2,
+              "timestamp": "2023/05/27 (Sat) 14:54",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6241233757337605
+        },
+        {
+          "id": "E29_0",
+          "text": "I'm training for another marathon and I'm looking for some advice on how to improve my running pace.",
+          "status": "current",
+          "timestamp": "2023/05/27 (Sat) 14:54",
+          "provenance": [
+            {
+              "session_index": 29,
+              "fact_index": 0,
+              "timestamp": "2023/05/27 (Sat) 14:54",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6216773223940552
+        },
+        {
+          "id": "M40",
+          "text": "I completed my first marathon 6 months after turning 30, and it was an incredible experience.",
+          "status": "active",
+          "timestamp": "2023/05/27 (Sat) 14:54",
+          "provenance": [
+            {
+              "session_index": 29,
+              "fact_index": 1,
+              "timestamp": "2023/05/27 (Sat) 14:54",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5733562247207886
+        }
+      ]
+    },
+    "C": {
+      "answer": "25:50",
+      "retrieved": [
+        {
+          "id": "M52",
+          "text": "I've been doing some running lately, and I'm happy to say that I recently set a personal best time in a charity 5K run with a time of 25:50.",
+          "status": "active",
+          "timestamp": "2023/05/30 (Tue) 13:53",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 2,
+              "timestamp": "2023/05/23 (Tue) 13:01",
+              "source_turns": [
+                4
+              ]
+            },
+            {
+              "session_index": 36,
+              "fact_index": 1,
+              "timestamp": "2023/05/30 (Tue) 13:53",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.8651083803742827
+        },
+        {
+          "id": "E19_2",
+          "text": "I've been doing some running lately, and I'm happy to say that I recently set a personal best time in a charity 5K run with a time of 27:12.",
+          "status": "historical",
+          "timestamp": "2023/05/23 (Tue) 13:01",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 2,
+              "timestamp": "2023/05/23 (Tue) 13:01",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.8612573613921539
+        },
+        {
+          "id": "E36_0",
+          "text": "I'm training for another charity 5K run coming up and I was wondering if you could give me some tips on how to improve my endurance.",
+          "status": "current",
+          "timestamp": "2023/05/30 (Tue) 13:53",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 0,
+              "timestamp": "2023/05/30 (Tue) 13:53",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7209375814739941
+        },
+        {
+          "id": "M139",
+          "text": "I'm training for another charity 5K run coming up and I was wondering if you could give me some tips on how to improve my endurance.",
+          "status": "active",
+          "timestamp": "2023/05/30 (Tue) 13:53",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 0,
+              "timestamp": "2023/05/30 (Tue) 13:53",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7209375814739941
+        },
+        {
+          "id": "E36_5",
+          "text": "I'm getting ready for a charity 5K run and I was wondering if you could give me some tips on how to improve my endurance.",
+          "status": "current",
+          "timestamp": "2023/05/30 (Tue) 13:53",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 5,
+              "timestamp": "2023/05/30 (Tue) 13:53",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.7161904945863818
+        },
+        {
+          "id": "E36_1",
+          "text": "By the way, I'm hoping to beat my personal best time of 25:50 this time around.",
+          "status": "tentative",
+          "timestamp": "2023/05/30 (Tue) 13:53",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 1,
+              "timestamp": "2023/05/30 (Tue) 13:53",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6536503560894735
+        },
+        {
+          "id": "E36_6",
+          "text": "By the way, I'm hoping to beat my personal best time this time around.",
+          "status": "tentative",
+          "timestamp": "2023/05/30 (Tue) 13:53",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 6,
+              "timestamp": "2023/05/30 (Tue) 13:53",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.6328776342721686
+        },
+        {
+          "id": "E29_2",
+          "text": "My current finish time is around 4 hours 15 minutes, and I'm hoping to shave off at least 15 minutes from that for my next marathon.",
+          "status": "current",
+          "timestamp": "2023/05/27 (Sat) 14:54",
+          "provenance": [
+            {
+              "session_index": 29,
+              "fact_index": 2,
+              "timestamp": "2023/05/27 (Sat) 14:54",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6235789650317436
+        },
+        {
+          "id": "M97",
+          "text": "My current finish time is around 4 hours 15 minutes, and I'm hoping to shave off at least 15 minutes from that for my next marathon.",
+          "status": "active",
+          "timestamp": "2023/05/27 (Sat) 14:54",
+          "provenance": [
+            {
+              "session_index": 29,
+              "fact_index": 2,
+              "timestamp": "2023/05/27 (Sat) 14:54",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6235789650317436
+        },
+        {
+          "id": "E29_0",
+          "text": "I'm training for another marathon and I'm looking for some advice on how to improve my running pace.",
+          "status": "current",
+          "timestamp": "2023/05/27 (Sat) 14:54",
+          "provenance": [
+            {
+              "session_index": 29,
+              "fact_index": 0,
+              "timestamp": "2023/05/27 (Sat) 14:54",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6231130495943125
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "yes",
+      "correct": true
+    },
+    "C": {
+      "raw": "yes",
+      "correct": true
+    }
+  },
+  "rubric": "official knowledge-update"
+}

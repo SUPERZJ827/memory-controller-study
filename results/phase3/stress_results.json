@@ -1,0 +1,477 @@
+{
+  "frozen_stress_sha256": "eddfea9d2a331a0698a47fed4f11a731a640febb8a47520d1a5ce6945e208c06",
+  "controllers": {
+    "jev": {
+      "count": 180,
+      "operation_accuracy": {
+        "correct": 178,
+        "total": 180,
+        "value": 0.988889
+      },
+      "operation_macro_f1": {
+        "value": 0.982164,
+        "per_class": {
+          "ADD": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "UPDATE": {
+            "precision": 0.9875,
+            "recall": 0.9875,
+            "f1": 0.9875
+          },
+          "DELETE": {
+            "precision": 1,
+            "recall": 0.9,
+            "f1": 0.947368
+          },
+          "NOOP": {
+            "precision": 0.987654,
+            "recall": 1,
+            "f1": 0.993789
+          }
+        }
+      },
+      "target_accuracy": {
+        "correct": 179,
+        "total": 180,
+        "value": 0.994444
+      },
+      "target_required_accuracy": {
+        "correct": 89,
+        "total": 90,
+        "value": 0.988889
+      },
+      "joint_accuracy": {
+        "correct": 178,
+        "total": 180,
+        "value": 0.988889
+      },
+      "family_joint_accuracy": {
+        "explicit_retraction": {
+          "correct": 29,
+          "total": 30,
+          "value": 0.966667
+        },
+        "partial_update": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "persistence_ambiguity": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "recency_trap": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "round_trip_update": {
+          "correct": 29,
+          "total": 30,
+          "value": 0.966667
+        },
+        "tentative_plan": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        }
+      },
+      "over_mutation_rate": {
+        "correct": 0,
+        "total": 80,
+        "value": 0
+      },
+      "under_mutation_rate": {
+        "correct": 1,
+        "total": 100,
+        "value": 0.01
+      },
+      "confusion_matrix": {
+        "ADD": {
+          "ADD": 10,
+          "UPDATE": 0,
+          "DELETE": 0,
+          "NOOP": 0
+        },
+        "UPDATE": {
+          "ADD": 0,
+          "UPDATE": 79,
+          "DELETE": 0,
+          "NOOP": 1
+        },
+        "DELETE": {
+          "ADD": 0,
+          "UPDATE": 1,
+          "DELETE": 9,
+          "NOOP": 0
+        },
+        "NOOP": {
+          "ADD": 0,
+          "UPDATE": 0,
+          "DELETE": 0,
+          "NOOP": 80
+        }
+      },
+      "parse_errors": 0,
+      "retries": 0
+    },
+    "gpt56sol": {
+      "count": 180,
+      "operation_accuracy": {
+        "correct": 180,
+        "total": 180,
+        "value": 1
+      },
+      "operation_macro_f1": {
+        "value": 1,
+        "per_class": {
+          "ADD": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "UPDATE": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "DELETE": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "NOOP": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        }
+      },
+      "target_accuracy": {
+        "correct": 180,
+        "total": 180,
+        "value": 1
+      },
+      "target_required_accuracy": {
+        "correct": 90,
+        "total": 90,
+        "value": 1
+      },
+      "joint_accuracy": {
+        "correct": 180,
+        "total": 180,
+        "value": 1
+      },
+      "family_joint_accuracy": {
+        "explicit_retraction": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "partial_update": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "persistence_ambiguity": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "recency_trap": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "round_trip_update": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "tentative_plan": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        }
+      },
+      "over_mutation_rate": {
+        "correct": 0,
+        "total": 80,
+        "value": 0
+      },
+      "under_mutation_rate": {
+        "correct": 0,
+        "total": 100,
+        "value": 0
+      },
+      "confusion_matrix": {
+        "ADD": {
+          "ADD": 10,
+          "UPDATE": 0,
+          "DELETE": 0,
+          "NOOP": 0
+        },
+        "UPDATE": {
+          "ADD": 0,
+          "UPDATE": 80,
+          "DELETE": 0,
+          "NOOP": 0
+        },
+        "DELETE": {
+          "ADD": 0,
+          "UPDATE": 0,
+          "DELETE": 10,
+          "NOOP": 0
+        },
+        "NOOP": {
+          "ADD": 0,
+          "UPDATE": 0,
+          "DELETE": 0,
+          "NOOP": 80
+        }
+      },
+      "parse_errors": 0,
+      "retries": 0
+    },
+    "claude": {
+      "count": 180,
+      "operation_accuracy": {
+        "correct": 180,
+        "total": 180,
+        "value": 1
+      },
+      "operation_macro_f1": {
+        "value": 1,
+        "per_class": {
+          "ADD": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "UPDATE": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "DELETE": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "NOOP": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          }
+        }
+      },
+      "target_accuracy": {
+        "correct": 180,
+        "total": 180,
+        "value": 1
+      },
+      "target_required_accuracy": {
+        "correct": 90,
+        "total": 90,
+        "value": 1
+      },
+      "joint_accuracy": {
+        "correct": 180,
+        "total": 180,
+        "value": 1
+      },
+      "family_joint_accuracy": {
+        "explicit_retraction": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "partial_update": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "persistence_ambiguity": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "recency_trap": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "round_trip_update": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "tentative_plan": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        }
+      },
+      "over_mutation_rate": {
+        "correct": 0,
+        "total": 80,
+        "value": 0
+      },
+      "under_mutation_rate": {
+        "correct": 0,
+        "total": 100,
+        "value": 0
+      },
+      "confusion_matrix": {
+        "ADD": {
+          "ADD": 10,
+          "UPDATE": 0,
+          "DELETE": 0,
+          "NOOP": 0
+        },
+        "UPDATE": {
+          "ADD": 0,
+          "UPDATE": 80,
+          "DELETE": 0,
+          "NOOP": 0
+        },
+        "DELETE": {
+          "ADD": 0,
+          "UPDATE": 0,
+          "DELETE": 10,
+          "NOOP": 0
+        },
+        "NOOP": {
+          "ADD": 0,
+          "UPDATE": 0,
+          "DELETE": 0,
+          "NOOP": 80
+        }
+      },
+      "parse_errors": 0,
+      "retries": 0
+    },
+    "qwen3_8b": {
+      "count": 180,
+      "operation_accuracy": {
+        "correct": 156,
+        "total": 180,
+        "value": 0.866667
+      },
+      "operation_macro_f1": {
+        "value": 0.691424,
+        "per_class": {
+          "ADD": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "UPDATE": {
+            "precision": 0.851064,
+            "recall": 1,
+            "f1": 0.91954
+          },
+          "DELETE": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "NOOP": {
+            "precision": 0.868421,
+            "recall": 0.825,
+            "f1": 0.846154
+          }
+        }
+      },
+      "target_accuracy": {
+        "correct": 166,
+        "total": 180,
+        "value": 0.922222
+      },
+      "target_required_accuracy": {
+        "correct": 90,
+        "total": 90,
+        "value": 1
+      },
+      "joint_accuracy": {
+        "correct": 156,
+        "total": 180,
+        "value": 0.866667
+      },
+      "family_joint_accuracy": {
+        "explicit_retraction": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "partial_update": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "persistence_ambiguity": {
+          "correct": 20,
+          "total": 30,
+          "value": 0.666667
+        },
+        "recency_trap": {
+          "correct": 18,
+          "total": 30,
+          "value": 0.6
+        },
+        "round_trip_update": {
+          "correct": 30,
+          "total": 30,
+          "value": 1
+        },
+        "tentative_plan": {
+          "correct": 28,
+          "total": 30,
+          "value": 0.933333
+        }
+      },
+      "over_mutation_rate": {
+        "correct": 14,
+        "total": 80,
+        "value": 0.175
+      },
+      "under_mutation_rate": {
+        "correct": 10,
+        "total": 100,
+        "value": 0.1
+      },
+      "confusion_matrix": {
+        "ADD": {
+          "ADD": 0,
+          "UPDATE": 0,
+          "DELETE": 0,
+          "NOOP": 10
+        },
+        "UPDATE": {
+          "ADD": 0,
+          "UPDATE": 80,
+          "DELETE": 0,
+          "NOOP": 0
+        },
+        "DELETE": {
+          "ADD": 0,
+          "UPDATE": 0,
+          "DELETE": 10,
+          "NOOP": 0
+        },
+        "NOOP": {
+          "ADD": 0,
+          "UPDATE": 14,
+          "DELETE": 0,
+          "NOOP": 66
+        }
+      },
+      "parse_errors": 0,
+      "retries": 0
+    }
+  }
+}

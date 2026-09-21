@@ -1,0 +1,84 @@
+{
+  "model": "typesafe/jev-1.13",
+  "case_count": 20,
+  "successful_api_cases": 20,
+  "policy_sha256": "e824dfdeffe485ddde0fa6fbe5500c73874335c9ec57f473f74e463b4bdc2393",
+  "operation_accuracy": {
+    "correct": 20,
+    "total": 20,
+    "percent": 100
+  },
+  "target_accuracy_on_target_required_cases": {
+    "correct": 10,
+    "total": 10,
+    "percent": 100
+  },
+  "joint_accuracy": {
+    "correct": 20,
+    "total": 20,
+    "percent": 100
+  },
+  "accuracy_by_gold_operation": {
+    "ADD": {
+      "correct": 4,
+      "total": 4,
+      "percent": 100
+    },
+    "UPDATE": {
+      "correct": 7,
+      "total": 7,
+      "percent": 100
+    },
+    "DELETE": {
+      "correct": 3,
+      "total": 3,
+      "percent": 100
+    },
+    "NOOP": {
+      "correct": 6,
+      "total": 6,
+      "percent": 100
+    }
+  },
+  "boundary_case_accuracy": {
+    "correct": 5,
+    "total": 5,
+    "percent": 100
+  },
+  "latency_ms": {
+    "median_operation": 413.27,
+    "median_total": 734.97,
+    "mean_operation": 450.22,
+    "mean_total": 653.05
+  },
+  "confidence": {
+    "exploratory_only": true,
+    "correct_predictions": {
+      "count": 20,
+      "mean": 0.96,
+      "median": 0.99
+    },
+    "wrong_predictions": {
+      "count": 0,
+      "mean": null,
+      "median": null
+    },
+    "accuracy_at_confidence_gte_0_9": {
+      "correct": 19,
+      "total": 19,
+      "percent": 100
+    },
+    "accuracy_at_confidence_gte_0_8": {
+      "correct": 19,
+      "total": 19,
+      "percent": 100
+    },
+    "accuracy_at_confidence_lt_0_8": {
+      "correct": 1,
+      "total": 1,
+      "percent": 100
+    },
+    "conclusion": "Lower-confidence samples were not less accurate in this run; exploratory only."
+  },
+  "api_errors": []
+}

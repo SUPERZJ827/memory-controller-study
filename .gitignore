@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+*.sqlite
+*.log
+*.aux
+*.out
+*.blg
+*.fdb_latexmk
+*.fls
+__pycache__/
+data/longmemeval/

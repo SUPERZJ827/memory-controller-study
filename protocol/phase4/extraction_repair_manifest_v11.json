@@ -1,0 +1,23 @@
+{
+  "schema_version": "phase4-local-extraction-repair-v11",
+  "development_id": "9bbe84a2",
+  "formal_authorized": false,
+  "model": "Qwen3-8B",
+  "temperature": 0,
+  "thinking": true,
+  "max_tokens": 8192,
+  "session_concurrency": 2,
+  "prompt": "For each immutable USER excerpt, classify it as current, historical, tentative, retracted, or DROP. Think carefully about authorship, completion state, and persistence. Return one verdict for every ID.\n\nKEEP only autobiographical information genuinely asserted by the user: the user's life, preferences, possessions, role, completed experiences, ongoing state, or people/objects directly connected to the user. DROP pure questions, requests with no personal fact, greetings/thanks/reactions, generic topical interest, assistant-provided facts, and pasted/quoted text attributed to other people. First-person testimonials followed by another person's signature are not the user's memories. A resume explicitly introduced as \"my bio\" is user information.\n\nKIND RULES:\n- historical = any completed event/action or former state, even if it happened just now or recently. \"I finished\", \"I bought\", \"I went\", \"I attended\", \"I was prescribed\", and \"I just completed\" are historical, never current.\n- tentative = every uncompleted future plan, intention, aim, option, or consideration: \"I will\", \"I'll\", \"I'm going to\", \"planning\", \"thinking of\", \"might\", or \"want to\".\n- current = a confirmed present/enduring state, possession, role, preference, or genuinely ongoing activity.\n- retracted = only an explicit cancellation, withdrawal, correction, denial, or request to forget. Past is never retracted.\n\nDo not infer an answer from a question and do not rewrite text. End with exactly one compact JSON object {\"verdicts\":{\"ID\":\"current|historical|tentative|retracted|DROP\"}} containing every supplied ID and no text after it.\n\nKeep internal reasoning concise. Resolve each item once, then emit the required final JSON; do not repeatedly reconsider verdicts.",
+  "representation": "deterministically enumerate verbatim USER fragments; model can only classify or DROP; no generated fact text",
+  "source_hashes": {
+    "src/phase4/local_extractor_v11.ts": "2864e5f7a2052378a15e59dbe6b01a01c3f3a50e8941989496ef2d427c3b631a",
+    "src/phase4/local_extractor_v10.ts": "a76c3df014ca6703408631bcdd4b4aa444c4fdf4ae5e381ed2067e1fd9c25450",
+    "src/phase4/local_extractor_v6.ts": "552091f523778ca311b52bb77cada4259cecd74697edfbbe78db549675556083",
+    "src/phase4/run_extraction_repair_v11.ts": "9b73255f8d4b2b053b6f38c5fa53b129738939661735b2af84898972103779da",
+    "src/phase4/longmemeval_adapter.ts": "801c3d283066882504839bc1c5b501e289395c2e46346274cae669079d9c53ba",
+    "src/phase4/local_memory_v2.ts": "7e6deb1970eb0af5798e3d2b50988419467e2f6fb70684206bc363297323d408",
+    "phase4/budget_config_v2.json": "7275948b6b12164f21604a86f65c450a69d4f2712d4488d8181c21eef4b6a80c",
+    "phase4/budget_guard_v2_simulation.json": "db45339e65576d93edbc6ce14d09d97bad45e38c8658f8cf61e107de9d53224c",
+    "phase4/local_weights_v2.json": "763576e265fdee1c8b2b5936403525b95ea14483d24d781463aa4d5442431c3e"
+  }
+}

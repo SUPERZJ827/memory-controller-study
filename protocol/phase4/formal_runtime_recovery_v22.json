@@ -1,0 +1,19 @@
+{
+  "schema": "phase4-formal-runtime-recovery-v22",
+  "recovered_at": "2026-09-21T02:30:50+08:00",
+  "reason": "The v21 transport created attempt 3 before enforcing its two-attempt local limit. No HTTP request was dispatched for this row; the process threw immediately after beginAttempt.",
+  "ledger_sha256_before": "564331bb6d0c231ac1fa5a9d4cef51add1fdab388b153a6958d535b02bd00110",
+  "target": {
+    "run_id": "formal-24-v17",
+    "call_key": "p4c_19dc3cbdf6eb9b1be62fb15c8a7acf3284b77b9f",
+    "attempt_no": 3,
+    "trajectory_id": "07741c45",
+    "step_index": 28,
+    "logical_call_id": "extraction-0",
+    "started_at": "2026-09-20T18:29:03.605Z"
+  },
+  "repair": "Mark the non-dispatched running row as error_kind=retry_limit_pre_dispatch with zero latency, tokens, and cost; preserve the row permanently.",
+  "paid_calls_affected": 0,
+  "semantic_outputs_affected": 0,
+  "ledger_sha256_after": "c5e8797b723267dc3a5e31bf8e253f78d9ff5e5257cf9e14a61b1fb267dc4265"
+}

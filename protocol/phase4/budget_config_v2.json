@@ -1,0 +1,10 @@
+{
+  "campaignId": "phase4-low-budget-28-v2",
+  "totalMicroUsd": 28000000,
+  "pools": {
+    "dev": 1000000,
+    "formal_controllers": 24000000,
+    "formal_qa": 1000000,
+    "formal_aux": 2000000
+  }
+}

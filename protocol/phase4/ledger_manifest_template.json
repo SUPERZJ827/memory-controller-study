@@ -1,0 +1,40 @@
+{
+  "schema_version": "phase4-experiment-manifest-v1",
+  "dataset": {
+    "path": "FILL_BEFORE_FREEZE",
+    "sha256": "FILL_BEFORE_FREEZE",
+    "split_sha256": "FILL_BEFORE_FREEZE"
+  },
+  "memory_policy_sha256": "FILL_BEFORE_FREEZE",
+  "arms": {
+    "A_joint_generative": {
+      "protocol_sha256": "FILL_BEFORE_FREEZE"
+    },
+    "B_separated_strong_llm": {
+      "decision_protocol_sha256": "FILL_BEFORE_FREEZE",
+      "writer_protocol_sha256": "FILL_BEFORE_FREEZE"
+    },
+    "C_separated_jev": {
+      "decision_protocol_sha256": "FILL_BEFORE_FREEZE",
+      "writer_protocol_sha256": "MUST_EQUAL_ARM_B"
+    }
+  },
+  "shared_components": {
+    "extractor_sha256": "FILL_BEFORE_FREEZE",
+    "embedding_model": "FILL_BEFORE_FREEZE",
+    "retrieval_config_sha256": "FILL_BEFORE_FREEZE",
+    "answer_protocol_sha256": "FILL_BEFORE_FREEZE",
+    "evaluator_protocol_sha256": "FILL_BEFORE_FREEZE"
+  },
+  "pricing_snapshot_sha256": "FILL_BEFORE_FREEZE",
+  "retry_policy_sha256": "FILL_BEFORE_FREEZE",
+  "concurrency": {
+    "trajectory_workers": 1,
+    "per_provider_limit": 1
+  },
+  "code_artifact_hashes": {
+    "phase4_runner": "FILL_BEFORE_FREEZE",
+    "ledger": "FILL_BEFORE_FREEZE",
+    "scheduler": "FILL_BEFORE_FREEZE"
+  }
+}

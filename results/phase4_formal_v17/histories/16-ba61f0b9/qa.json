@@ -1,0 +1,380 @@
+{
+  "question_id": "ba61f0b9",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "How many women are on the team led by my former manager Rachel?",
+    "question_date": "2023/08/03 (Thu) 06:02"
+  },
+  "reference_answer": "6",
+  "answers": {
+    "B": {
+      "answer": "6",
+      "retrieved": [
+        {
+          "id": "M24",
+          "text": "Going back to my former manager Rachel's team, I'm curious to know more about the women on her team, with 6 women out of 10 people.",
+          "status": "active",
+          "timestamp": "2023/07/20 (Thu) 16:38",
+          "provenance": [
+            {
+              "session_index": 13,
+              "fact_index": 3,
+              "timestamp": "2023/01/18 (Wed) 13:09",
+              "source_turns": [
+                6
+              ]
+            },
+            {
+              "session_index": 41,
+              "fact_index": 0,
+              "timestamp": "2023/07/20 (Thu) 16:38",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.8628336207669814
+        },
+        {
+          "id": "E13_3",
+          "text": "Going back to my former manager Rachel's team, I'm curious to know more about the women on her team.",
+          "status": "tentative",
+          "timestamp": "2023/01/18 (Wed) 13:09",
+          "provenance": [
+            {
+              "session_index": 13,
+              "fact_index": 3,
+              "timestamp": "2023/01/18 (Wed) 13:09",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.8530249658057256
+        },
+        {
+          "id": "E13_1",
+          "text": "Speaking of diverse teams, I just caught up with my former manager, Rachel, who's now leading a team of 10 people, and I was impressed to learn that half of them are women.",
+          "status": "current",
+          "timestamp": "2023/01/18 (Wed) 13:09",
+          "provenance": [
+            {
+              "session_index": 13,
+              "fact_index": 1,
+              "timestamp": "2023/01/18 (Wed) 13:09",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.840456068888399
+        },
+        {
+          "id": "E41_0",
+          "text": "By the way, it's interesting to think about this in the context of my own experiences - for instance, my former manager Rachel's team is a great example of a diverse team, with 6 women out of 10 people.",
+          "status": "historical",
+          "timestamp": "2023/07/20 (Thu) 16:38",
+          "provenance": [
+            {
+              "session_index": 41,
+              "fact_index": 0,
+              "timestamp": "2023/07/20 (Thu) 16:38",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7602241130759932
+        },
+        {
+          "id": "E16_5",
+          "text": "I'll just check with her and get back to you.",
+          "status": "tentative",
+          "timestamp": "2023/02/10 (Fri) 04:35",
+          "provenance": [
+            {
+              "session_index": 16,
+              "fact_index": 5,
+              "timestamp": "2023/02/10 (Fri) 04:35",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.3810323199471296
+        },
+        {
+          "id": "E26_11",
+          "text": "I've been trying to do too many things at once and it's not working out.",
+          "status": "current",
+          "timestamp": "2023/04/15 (Sat) 23:50",
+          "provenance": [
+            {
+              "session_index": 26,
+              "fact_index": 11,
+              "timestamp": "2023/04/15 (Sat) 23:50",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.38076487169251
+        },
+        {
+          "id": "E13_0",
+          "text": "I'm looking to learn more about the importance of diversity in the workplace.",
+          "status": "tentative",
+          "timestamp": "2023/01/18 (Wed) 13:09",
+          "provenance": [
+            {
+              "session_index": 13,
+              "fact_index": 0,
+              "timestamp": "2023/01/18 (Wed) 13:09",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.37581409073558814
+        },
+        {
+          "id": "M23",
+          "text": "I'm looking to learn more about the importance of diversity in the workplace.",
+          "status": "active",
+          "timestamp": "2023/01/18 (Wed) 13:09",
+          "provenance": [
+            {
+              "session_index": 13,
+              "fact_index": 0,
+              "timestamp": "2023/01/18 (Wed) 13:09",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.37581409073558814
+        },
+        {
+          "id": "E16_10",
+          "text": "I'll ask my mom about the address and other details.",
+          "status": "tentative",
+          "timestamp": "2023/02/10 (Fri) 04:35",
+          "provenance": [
+            {
+              "session_index": 16,
+              "fact_index": 10,
+              "timestamp": "2023/02/10 (Fri) 04:35",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.3753413029106913
+        },
+        {
+          "id": "E16_8",
+          "text": "I'll ask my mom about the address and other details.",
+          "status": "tentative",
+          "timestamp": "2023/02/10 (Fri) 04:35",
+          "provenance": [
+            {
+              "session_index": 16,
+              "fact_index": 8,
+              "timestamp": "2023/02/10 (Fri) 04:35",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.3753413029106913
+        }
+      ]
+    },
+    "C": {
+      "answer": "6",
+      "retrieved": [
+        {
+          "id": "E13_3",
+          "text": "Going back to my former manager Rachel's team, I'm curious to know more about the women on her team.",
+          "status": "tentative",
+          "timestamp": "2023/01/18 (Wed) 13:09",
+          "provenance": [
+            {
+              "session_index": 13,
+              "fact_index": 3,
+              "timestamp": "2023/01/18 (Wed) 13:09",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.8524897153266602
+        },
+        {
+          "id": "E13_1",
+          "text": "Speaking of diverse teams, I just caught up with my former manager, Rachel, who's now leading a team of 10 people, and I was impressed to learn that half of them are women.",
+          "status": "current",
+          "timestamp": "2023/01/18 (Wed) 13:09",
+          "provenance": [
+            {
+              "session_index": 13,
+              "fact_index": 1,
+              "timestamp": "2023/01/18 (Wed) 13:09",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.8404166492029606
+        },
+        {
+          "id": "E41_0",
+          "text": "By the way, it's interesting to think about this in the context of my own experiences - for instance, my former manager Rachel's team is a great example of a diverse team, with 6 women out of 10 people.",
+          "status": "historical",
+          "timestamp": "2023/07/20 (Thu) 16:38",
+          "provenance": [
+            {
+              "session_index": 41,
+              "fact_index": 0,
+              "timestamp": "2023/07/20 (Thu) 16:38",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7609169336530981
+        },
+        {
+          "id": "M122",
+          "text": "By the way, it's interesting to think about this in the context of my own experiences - for instance, my former manager Rachel's team is a great example of a diverse team, with 6 women out of 10 people.",
+          "status": "active",
+          "timestamp": "2023/07/20 (Thu) 16:38",
+          "provenance": [
+            {
+              "session_index": 41,
+              "fact_index": 0,
+              "timestamp": "2023/07/20 (Thu) 16:38",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7609169336530981
+        },
+        {
+          "id": "E16_5",
+          "text": "I'll just check with her and get back to you.",
+          "status": "tentative",
+          "timestamp": "2023/02/10 (Fri) 04:35",
+          "provenance": [
+            {
+              "session_index": 16,
+              "fact_index": 5,
+              "timestamp": "2023/02/10 (Fri) 04:35",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.3810323199471296
+        },
+        {
+          "id": "E26_11",
+          "text": "I've been trying to do too many things at once and it's not working out.",
+          "status": "current",
+          "timestamp": "2023/04/15 (Sat) 23:50",
+          "provenance": [
+            {
+              "session_index": 26,
+              "fact_index": 11,
+              "timestamp": "2023/04/15 (Sat) 23:50",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.3808437184555073
+        },
+        {
+          "id": "E13_0",
+          "text": "I'm looking to learn more about the importance of diversity in the workplace.",
+          "status": "tentative",
+          "timestamp": "2023/01/18 (Wed) 13:09",
+          "provenance": [
+            {
+              "session_index": 13,
+              "fact_index": 0,
+              "timestamp": "2023/01/18 (Wed) 13:09",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.37581409073558814
+        },
+        {
+          "id": "M29",
+          "text": "I'm looking to learn more about the importance of diversity in the workplace.",
+          "status": "active",
+          "timestamp": "2023/01/18 (Wed) 13:09",
+          "provenance": [
+            {
+              "session_index": 13,
+              "fact_index": 0,
+              "timestamp": "2023/01/18 (Wed) 13:09",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.37581409073558814
+        },
+        {
+          "id": "E16_10",
+          "text": "I'll ask my mom about the address and other details.",
+          "status": "tentative",
+          "timestamp": "2023/02/10 (Fri) 04:35",
+          "provenance": [
+            {
+              "session_index": 16,
+              "fact_index": 10,
+              "timestamp": "2023/02/10 (Fri) 04:35",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.3753413029106913
+        },
+        {
+          "id": "E16_8",
+          "text": "I'll ask my mom about the address and other details.",
+          "status": "tentative",
+          "timestamp": "2023/02/10 (Fri) 04:35",
+          "provenance": [
+            {
+              "session_index": 16,
+              "fact_index": 8,
+              "timestamp": "2023/02/10 (Fri) 04:35",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.3753413029106913
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "Yes",
+      "correct": true
+    },
+    "C": {
+      "raw": "Yes",
+      "correct": true
+    }
+  },
+  "rubric": "official knowledge-update"
+}

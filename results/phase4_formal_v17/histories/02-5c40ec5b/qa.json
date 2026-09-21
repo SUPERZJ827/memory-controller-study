@@ -1,0 +1,388 @@
+{
+  "question_id": "5c40ec5b",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "How many times have I met up with Alex from Germany?",
+    "question_date": "2023/10/30 (Mon) 13:39"
+  },
+  "reference_answer": "We've met up twice.",
+  "answers": {
+    "B": {
+      "answer": "2",
+      "retrieved": [
+        {
+          "id": "E50_5",
+          "text": "I'm also planning to meet up with my friend Alex from Germany while I'm in Berlin, we've met up twice before and it'll be great to catch up with him again.",
+          "status": "tentative",
+          "timestamp": "2023/09/30 (Sat) 12:23",
+          "provenance": [
+            {
+              "session_index": 50,
+              "fact_index": 5,
+              "timestamp": "2023/09/30 (Sat) 12:23",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.8130497437234387
+        },
+        {
+          "id": "E50_1",
+          "text": "By the way, speaking of Germany, I've got a friend Alex from there who I met at a music festival, and we've met up twice already - he's really cool.",
+          "status": "historical",
+          "timestamp": "2023/09/30 (Sat) 12:23",
+          "provenance": [
+            {
+              "session_index": 50,
+              "fact_index": 1,
+              "timestamp": "2023/09/30 (Sat) 12:23",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7977730694931324
+        },
+        {
+          "id": "M27",
+          "text": "I met this guy Alex from Germany at a music festival a few weeks ago, and we bonded over our shared love of indie rock music. By the way, speaking of Germany, I've got a friend Alex from there who I met at a music festival, and we've met up twice already - he's really cool. I'm more into the lo-fi and garage rock scene.",
+          "status": "active",
+          "timestamp": "2023/09/30 (Sat) 12:23",
+          "provenance": [
+            {
+              "session_index": 15,
+              "fact_index": 6,
+              "timestamp": "2023/08/11 (Fri) 08:32",
+              "source_turns": [
+                4
+              ]
+            },
+            {
+              "session_index": 50,
+              "fact_index": 1,
+              "timestamp": "2023/09/30 (Sat) 12:23",
+              "source_turns": [
+                0
+              ]
+            },
+            {
+              "session_index": 50,
+              "fact_index": 2,
+              "timestamp": "2023/09/30 (Sat) 12:23",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6904696392698128
+        },
+        {
+          "id": "E15_6",
+          "text": "Speaking of which, I met this guy Alex from Germany at a music festival a few weeks ago, and we bonded over our shared love of indie rock music.",
+          "status": "historical",
+          "timestamp": "2023/08/11 (Fri) 08:32",
+          "provenance": [
+            {
+              "session_index": 15,
+              "fact_index": 6,
+              "timestamp": "2023/08/11 (Fri) 08:32",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.6767521240391635
+        },
+        {
+          "id": "E15_8",
+          "text": "Actually, I'm also curious about the music festival where I met Alex.",
+          "status": "current",
+          "timestamp": "2023/08/11 (Fri) 08:32",
+          "provenance": [
+            {
+              "session_index": 15,
+              "fact_index": 8,
+              "timestamp": "2023/08/11 (Fri) 08:32",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6363042583657338
+        },
+        {
+          "id": "E15_9",
+          "text": "I'm going to ask Alex if he has any favorite indie rock bands or musicians.",
+          "status": "tentative",
+          "timestamp": "2023/08/11 (Fri) 08:32",
+          "provenance": [
+            {
+              "session_index": 15,
+              "fact_index": 9,
+              "timestamp": "2023/08/11 (Fri) 08:32",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.5558584039926773
+        },
+        {
+          "id": "E50_4",
+          "text": "I'm thinking of checking out some live music venues in Kreuzberg while I'm in Berlin.",
+          "status": "tentative",
+          "timestamp": "2023/09/30 (Sat) 12:23",
+          "provenance": [
+            {
+              "session_index": 50,
+              "fact_index": 4,
+              "timestamp": "2023/09/30 (Sat) 12:23",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.48786959135708635
+        },
+        {
+          "id": "E18_0",
+          "text": "I'm in the process of buying a home with my partner Alex, and we're getting close to closing.",
+          "status": "current",
+          "timestamp": "2023/08/15 (Tue) 22:18",
+          "provenance": [
+            {
+              "session_index": 18,
+              "fact_index": 0,
+              "timestamp": "2023/08/15 (Tue) 22:18",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.46718890655694667
+        },
+        {
+          "id": "M32",
+          "text": "I'm in the process of buying a home with my partner Alex, and we're getting close to closing.",
+          "status": "active",
+          "timestamp": "2023/08/15 (Tue) 22:18",
+          "provenance": [
+            {
+              "session_index": 18,
+              "fact_index": 0,
+              "timestamp": "2023/08/15 (Tue) 22:18",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.4659650154650616
+        },
+        {
+          "id": "E15_7",
+          "text": "He's actually coming to my city for work soon, and we're planning to meet up.",
+          "status": "tentative",
+          "timestamp": "2023/08/11 (Fri) 08:32",
+          "provenance": [
+            {
+              "session_index": 15,
+              "fact_index": 7,
+              "timestamp": "2023/08/11 (Fri) 08:32",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.46572495861334035
+        }
+      ]
+    },
+    "C": {
+      "answer": "2",
+      "retrieved": [
+        {
+          "id": "E50_5",
+          "text": "I'm also planning to meet up with my friend Alex from Germany while I'm in Berlin, we've met up twice before and it'll be great to catch up with him again.",
+          "status": "tentative",
+          "timestamp": "2023/09/30 (Sat) 12:23",
+          "provenance": [
+            {
+              "session_index": 50,
+              "fact_index": 5,
+              "timestamp": "2023/09/30 (Sat) 12:23",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.8125331560009053
+        },
+        {
+          "id": "M113",
+          "text": "I'm also planning to meet up with my friend Alex from Germany while I'm in Berlin, we've met up twice before and it'll be great to catch up with him again.",
+          "status": "active",
+          "timestamp": "2023/09/30 (Sat) 12:23",
+          "provenance": [
+            {
+              "session_index": 50,
+              "fact_index": 5,
+              "timestamp": "2023/09/30 (Sat) 12:23",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.8125331560009053
+        },
+        {
+          "id": "E50_1",
+          "text": "By the way, speaking of Germany, I've got a friend Alex from there who I met at a music festival, and we've met up twice already - he's really cool.",
+          "status": "historical",
+          "timestamp": "2023/09/30 (Sat) 12:23",
+          "provenance": [
+            {
+              "session_index": 50,
+              "fact_index": 1,
+              "timestamp": "2023/09/30 (Sat) 12:23",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7977200584467714
+        },
+        {
+          "id": "M41",
+          "text": "I met this guy Alex from Germany at a music festival a few weeks ago, and we bonded over our shared love of indie rock music.",
+          "status": "active",
+          "timestamp": "2023/08/11 (Fri) 08:32",
+          "provenance": [
+            {
+              "session_index": 15,
+              "fact_index": 6,
+              "timestamp": "2023/08/11 (Fri) 08:32",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.6981247350381529
+        },
+        {
+          "id": "E15_6",
+          "text": "Speaking of which, I met this guy Alex from Germany at a music festival a few weeks ago, and we bonded over our shared love of indie rock music.",
+          "status": "historical",
+          "timestamp": "2023/08/11 (Fri) 08:32",
+          "provenance": [
+            {
+              "session_index": 15,
+              "fact_index": 6,
+              "timestamp": "2023/08/11 (Fri) 08:32",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.6770816369269995
+        },
+        {
+          "id": "E15_8",
+          "text": "Actually, I'm also curious about the music festival where I met Alex.",
+          "status": "current",
+          "timestamp": "2023/08/11 (Fri) 08:32",
+          "provenance": [
+            {
+              "session_index": 15,
+              "fact_index": 8,
+              "timestamp": "2023/08/11 (Fri) 08:32",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6363042583657338
+        },
+        {
+          "id": "E15_9",
+          "text": "I'm going to ask Alex if he has any favorite indie rock bands or musicians.",
+          "status": "tentative",
+          "timestamp": "2023/08/11 (Fri) 08:32",
+          "provenance": [
+            {
+              "session_index": 15,
+              "fact_index": 9,
+              "timestamp": "2023/08/11 (Fri) 08:32",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.5553954833382492
+        },
+        {
+          "id": "E50_4",
+          "text": "I'm thinking of checking out some live music venues in Kreuzberg while I'm in Berlin.",
+          "status": "tentative",
+          "timestamp": "2023/09/30 (Sat) 12:23",
+          "provenance": [
+            {
+              "session_index": 50,
+              "fact_index": 4,
+              "timestamp": "2023/09/30 (Sat) 12:23",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.48719899513580484
+        },
+        {
+          "id": "E18_0",
+          "text": "I'm in the process of buying a home with my partner Alex, and we're getting close to closing.",
+          "status": "current",
+          "timestamp": "2023/08/15 (Tue) 22:18",
+          "provenance": [
+            {
+              "session_index": 18,
+              "fact_index": 0,
+              "timestamp": "2023/08/15 (Tue) 22:18",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.4659650154650616
+        },
+        {
+          "id": "M47",
+          "text": "I'm in the process of buying a home with my partner Alex, and we're getting close to closing.",
+          "status": "active",
+          "timestamp": "2023/08/15 (Tue) 22:18",
+          "provenance": [
+            {
+              "session_index": 18,
+              "fact_index": 0,
+              "timestamp": "2023/08/15 (Tue) 22:18",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.4659650154650616
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "Yes.",
+      "correct": true
+    },
+    "C": {
+      "raw": "Yes.",
+      "correct": true
+    }
+  },
+  "rubric": "official knowledge-update"
+}

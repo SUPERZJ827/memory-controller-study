@@ -1,0 +1,256 @@
+[
+  {
+    "dataset": "phase2_layer_a",
+    "id": "memops-t036",
+    "family": null,
+    "gold_operation": "ADD",
+    "gold_target": "NONE",
+    "pred_operation": "NOOP",
+    "pred_target": "NONE",
+    "confidence": 1,
+    "current_memory_state": [
+      {
+        "id": "M4",
+        "content": "Karen Liu's work shift schedule: 12-hour shifts at OHSU, 7 AM to 7 PM"
+      },
+      {
+        "id": "M3",
+        "content": "Date HR emergency contact form was submitted: March 5th"
+      },
+      {
+        "id": "M5",
+        "content": "Date emergency contact was listed at CoreFit gym: March 18th"
+      },
+      {
+        "id": "M2",
+        "content": "Primary emergency contact phone number: 503-461-2283"
+      },
+      {
+        "id": "M1",
+        "content": "Primary emergency contact name: Karen Liu"
+      }
+    ],
+    "current_evidence": "I'm considering adding my coworker Priya Nair as a secondary emergency contact since she sits right next to me at work"
+  },
+  {
+    "dataset": "phase2_layer_a",
+    "id": "memops-t076",
+    "family": null,
+    "gold_operation": "UPDATE",
+    "gold_target": "M1",
+    "pred_operation": "NOOP",
+    "pred_target": "NONE",
+    "confidence": 0.98,
+    "current_memory_state": [
+      {
+        "id": "M2",
+        "content": "Chase Sapphire card payment due date: 15th of each month"
+      },
+      {
+        "id": "M4",
+        "content": "Second monthly paycheck deposit date: 16th of each month"
+      },
+      {
+        "id": "M3",
+        "content": "Google Calendar reminder offset before due dates: 3 days before each due date"
+      },
+      {
+        "id": "M1",
+        "content": "Citi Double Cash card payment due date: 18th of every month"
+      }
+    ],
+    "current_evidence": "I decided to keep the Citi due date at the 18th after all"
+  },
+  {
+    "dataset": "phase2_layer_a",
+    "id": "memops-t104",
+    "family": null,
+    "gold_operation": "UPDATE",
+    "gold_target": "M1",
+    "pred_operation": "ADD",
+    "pred_target": "NONE",
+    "confidence": 0.91,
+    "current_memory_state": [
+      {
+        "id": "M1",
+        "content": "new health insurance policy number: HX-440812"
+      },
+      {
+        "id": "M2",
+        "content": "daily water intake target: 2.5 liters per day"
+      }
+    ],
+    "current_evidence": "I called the insurance company and they confirmed the correct policy number is HX-440812. They also told me my coverage effective date was February 1st"
+  },
+  {
+    "dataset": "phase2_layer_a",
+    "id": "memops-t111",
+    "family": null,
+    "gold_operation": "NOOP",
+    "gold_target": "NONE",
+    "pred_operation": "UPDATE",
+    "pred_target": "M1",
+    "confidence": 0.95,
+    "current_memory_state": [
+      {
+        "id": "M3",
+        "content": "Karen Liu's phone number: 503-461-2283"
+      },
+      {
+        "id": "M1",
+        "content": "primary emergency contact name: Priya Nair"
+      },
+      {
+        "id": "M2",
+        "content": "emergency contact phone number: 520-334-7190"
+      }
+    ],
+    "current_evidence": "My friend Tom actually volunteered to be my emergency contact going forward. He confirmed it yesterday, so I'll be switching to Tom Brennan as my primary"
+  },
+  {
+    "dataset": "phase2_layer_a",
+    "id": "memops-t146",
+    "family": null,
+    "gold_operation": "UPDATE",
+    "gold_target": "M1",
+    "pred_operation": "NOOP",
+    "pred_target": "NONE",
+    "confidence": 0.97,
+    "current_memory_state": [
+      {
+        "id": "M1",
+        "content": "primary payment method for everyday purchases: Apple Pay linked to Chase Freedom Unlimited"
+      },
+      {
+        "id": "M2",
+        "content": "monthly rent amount paid via Zelle: $1,850"
+      }
+    ],
+    "current_evidence": "I looked into the Discover thing more and realized a lot of places near me don't accept Discover, so I'm sticking with the Chase Freedom Unlimited for Apple Pay after all"
+  },
+  {
+    "dataset": "phase2_layer_a",
+    "id": "memops-t188",
+    "family": null,
+    "gold_operation": "ADD",
+    "gold_target": "NONE",
+    "pred_operation": "UPDATE",
+    "pred_target": "M1",
+    "confidence": 0.97,
+    "current_memory_state": [
+      {
+        "id": "M2",
+        "content": "C11 exam center location: Pearson VUE, 250 Yonge Street, Toronto"
+      },
+      {
+        "id": "M1",
+        "content": "C11 exam date: May 10"
+      },
+      {
+        "id": "M3",
+        "content": "C11 exam flashcard purchase details: Physical flashcard set from CSI, $45"
+      }
+    ],
+    "current_evidence": "Kevin moved his C11 exam to May 24"
+  },
+  {
+    "dataset": "phase2_layer_a",
+    "id": "memops-t192",
+    "family": null,
+    "gold_operation": "UPDATE",
+    "gold_target": "M1",
+    "pred_operation": "NOOP",
+    "pred_target": "NONE",
+    "confidence": 0.95,
+    "current_memory_state": [
+      {
+        "id": "M2",
+        "content": "L6 compensation band floor: $185,000"
+      },
+      {
+        "id": "M3",
+        "content": "current base salary after promotion adjustment: $191,500"
+      },
+      {
+        "id": "M1",
+        "content": "current job level and title grade: L6, Senior Software Engineer"
+      }
+    ],
+    "current_evidence": "I just checked the HRIS portal and my official title still shows L6, Senior Software Engineer. Nothing about L6 Plus has been formalized yet, so for the record my level is still plain L6"
+  },
+  {
+    "dataset": "phase2_layer_a",
+    "id": "memops-t218",
+    "family": null,
+    "gold_operation": "ADD",
+    "gold_target": "NONE",
+    "pred_operation": "NOOP",
+    "pred_target": "NONE",
+    "confidence": 0.91,
+    "current_memory_state": [
+      {
+        "id": "M4",
+        "content": "Current preferred hotel brand: Hilton"
+      },
+      {
+        "id": "M3",
+        "content": "Goal to reach Delta Gold Medallion by year end: Reach Delta Gold Medallion by end of year"
+      },
+      {
+        "id": "M1",
+        "content": "Delta SkyMiles membership number: 2847301566"
+      },
+      {
+        "id": "M2",
+        "content": "Current Delta Medallion tier status: Silver Medallion"
+      }
+    ],
+    "current_evidence": "my Marriott Bonvoy Gold status lapsed — I think it was earlier this year or maybe late last year, I'm not exactly sure when"
+  },
+  {
+    "dataset": "phase2_layer_a",
+    "id": "memops-t246",
+    "family": null,
+    "gold_operation": "UPDATE",
+    "gold_target": "M1",
+    "pred_operation": "NOOP",
+    "pred_target": "NONE",
+    "confidence": 0.98,
+    "current_memory_state": [
+      {
+        "id": "M2",
+        "content": "12-week training block end date: July 7th"
+      },
+      {
+        "id": "M1",
+        "content": "personal trainer session cost: $80"
+      },
+      {
+        "id": "M3",
+        "content": "total sessions in 12-week training block: 24 sessions"
+      }
+    ],
+    "current_evidence": "I just confirmed with Marcus and the rate stays at $80 for now since I haven't signed the 24-week extension yet"
+  },
+  {
+    "dataset": "phase2_layer_a",
+    "id": "memops-t279",
+    "family": null,
+    "gold_operation": "UPDATE",
+    "gold_target": "M1",
+    "pred_operation": "NOOP",
+    "pred_target": "NONE",
+    "confidence": 0.95,
+    "current_memory_state": [
+      {
+        "id": "M2",
+        "content": "Mochi's next vet appointment date: May 10th"
+      },
+      {
+        "id": "M1",
+        "content": "Mochi's current kitten food: Royal Canin Kitten dry food (breeder-recommended)"
+      }
+    ],
+    "current_evidence": "So I looked into Orijen more and it turns out the protein content might actually be too high for a kitten Mochi's age. The vet's office confirmed that what she's on now is perfectly fine. So I'm sticking with Royal Canin Kitten after all"
+  }
+]

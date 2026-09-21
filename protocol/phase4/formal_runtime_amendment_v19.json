@@ -1,0 +1,38 @@
+{
+  "schema": "phase4-formal-runtime-amendment-v19",
+  "scope": "uniform executor failure semantics required to finish the already-started system experiment",
+  "post_start": true,
+  "disclosure_required": true,
+  "base_authorization": "phase4/formal_run_authorization_v17.json",
+  "base_authorization_sha256": "b09cce9457ad6414dc17182a33c4ce0420e3081478c054bbe50d9e6b5a57ec32",
+  "supersedes": "phase4/formal_runtime_amendment_v18.json",
+  "supersedes_sha256": "80e3a24ca56205282ce6d679cb1642682ea33284d242e175265ecd4c7f533758",
+  "prior_status_sha256": "452534b095045a1b69069f7e33cdf304fab398fb9a6900a3f939b513510a8c9b",
+  "evidence": {
+    "histories_completed": 0,
+    "successful_paid_calls": 277,
+    "successful_paid_cost_usd": 0.246771148,
+    "max_completed_controller_step": 135,
+    "failed_stage": "shared local writer",
+    "affected_arms": [
+      "B",
+      "C"
+    ],
+    "same_malformed_output": true,
+    "held_usd": 0,
+    "unknown_usd": 0
+  },
+  "change": "After a valid controller prediction, if the common local applyDecision writer or its content embedding throws, record execution_error and preserve the post-ingest/pre-mutation state. Do not retry, repair, or reinterpret the controller prediction or writer output.",
+  "unchanged": [
+    "completed controller predictions",
+    "sample membership/order",
+    "controller prompts/models",
+    "writer prompt/model",
+    "retrieval",
+    "QA scoring",
+    "budgets",
+    "no semantic retry"
+  ],
+  "interpretation": "This is a disclosed full-system reliability failure and must not be counted as a successful mutation.",
+  "revised_runner_sha256": "d21f2fc38d208119ca3e3eb1eb11d9d122da2ffa5f2c80c88148ccd5cae7b208"
+}

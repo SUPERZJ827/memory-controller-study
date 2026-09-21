@@ -1,0 +1,388 @@
+{
+  "question_id": "852ce960",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?",
+    "question_date": "2023/12/18 (Mon) 04:17"
+  },
+  "reference_answer": "$400,000",
+  "answers": {
+    "B": {
+      "answer": "400000",
+      "retrieved": [
+        {
+          "id": "M7",
+          "text": "I'm actually buying a $325,000 house, and I got pre-approved for $400,000 from Wells Fargo.",
+          "status": "active",
+          "timestamp": "2023/11/30 (Thu) 00:36",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 1,
+              "timestamp": "2023/08/11 (Fri) 00:01",
+              "source_turns": [
+                2
+              ]
+            },
+            {
+              "session_index": 36,
+              "fact_index": 1,
+              "timestamp": "2023/11/30 (Thu) 00:36",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.8508360712860765
+        },
+        {
+          "id": "E2_1",
+          "text": "I'm actually buying a $325,000 house, and I got pre-approved for $350,000 from Wells Fargo.",
+          "status": "historical",
+          "timestamp": "2023/08/11 (Fri) 00:01",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 1,
+              "timestamp": "2023/08/11 (Fri) 00:01",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.8506885061089445
+        },
+        {
+          "id": "E36_1",
+          "text": "By the way, I'm really looking forward to finally owning a home, it's been a long process, but it'll be worth it to have a backyard like the one I'll have - remember when I got pre-approved for $400,000 from Wells Fargo?",
+          "status": "historical",
+          "timestamp": "2023/11/30 (Thu) 00:36",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 1,
+              "timestamp": "2023/11/30 (Thu) 00:36",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7588367996251094
+        },
+        {
+          "id": "E2_0",
+          "text": "I'm in the process of buying a new home and I'm trying to finalize my budget.",
+          "status": "current",
+          "timestamp": "2023/08/11 (Fri) 00:01",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 0,
+              "timestamp": "2023/08/11 (Fri) 00:01",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5307941933861194
+        },
+        {
+          "id": "E25_3",
+          "text": "Thanks, this conversation was super helpful, and I am now content!",
+          "status": "current",
+          "timestamp": "2023/11/01 (Wed) 08:51",
+          "provenance": [
+            {
+              "session_index": 25,
+              "fact_index": 3,
+              "timestamp": "2023/11/01 (Wed) 08:51",
+              "source_turns": [
+                5
+              ]
+            }
+          ],
+          "score": 0.5092671721230424
+        },
+        {
+          "id": "E22_4",
+          "text": "I apologize for the inconvenience.",
+          "status": "current",
+          "timestamp": "2023/10/27 (Fri) 18:02",
+          "provenance": [
+            {
+              "session_index": 22,
+              "fact_index": 4,
+              "timestamp": "2023/10/27 (Fri) 18:02",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.4859123942231152
+        },
+        {
+          "id": "E36_7",
+          "text": "I'll make sure to review the policy documents carefully.",
+          "status": "tentative",
+          "timestamp": "2023/11/30 (Thu) 00:36",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 7,
+              "timestamp": "2023/11/30 (Thu) 00:36",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.48366572389599866
+        },
+        {
+          "id": "E28_8",
+          "text": "I've got a price alert set up, and I've been getting notifications every few days.",
+          "status": "current",
+          "timestamp": "2023/11/20 (Mon) 07:10",
+          "provenance": [
+            {
+              "session_index": 28,
+              "fact_index": 8,
+              "timestamp": "2023/11/20 (Mon) 07:10",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.4819053245285405
+        },
+        {
+          "id": "E25_2",
+          "text": "This helped.",
+          "status": "historical",
+          "timestamp": "2023/11/01 (Wed) 08:51",
+          "provenance": [
+            {
+              "session_index": 25,
+              "fact_index": 2,
+              "timestamp": "2023/11/01 (Wed) 08:51",
+              "source_turns": [
+                3
+              ]
+            }
+          ],
+          "score": 0.48125870476652505
+        },
+        {
+          "id": "E17_3",
+          "text": "I'd love to snag a good deal on it.",
+          "status": "tentative",
+          "timestamp": "2023/09/18 (Mon) 18:36",
+          "provenance": [
+            {
+              "session_index": 17,
+              "fact_index": 3,
+              "timestamp": "2023/09/18 (Mon) 18:36",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.47915830020708755
+        }
+      ]
+    },
+    "C": {
+      "answer": "400000",
+      "retrieved": [
+        {
+          "id": "E2_1",
+          "text": "I'm actually buying a $325,000 house, and I got pre-approved for $350,000 from Wells Fargo.",
+          "status": "historical",
+          "timestamp": "2023/08/11 (Fri) 00:01",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 1,
+              "timestamp": "2023/08/11 (Fri) 00:01",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.8504709768619155
+        },
+        {
+          "id": "M7",
+          "text": "I'm actually buying a $325,000 house, and I got pre-approved for $400,000 from Wells Fargo.",
+          "status": "active",
+          "timestamp": "2023/11/30 (Thu) 00:36",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 1,
+              "timestamp": "2023/08/11 (Fri) 00:01",
+              "source_turns": [
+                2
+              ]
+            },
+            {
+              "session_index": 36,
+              "fact_index": 1,
+              "timestamp": "2023/11/30 (Thu) 00:36",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.8499682340952986
+        },
+        {
+          "id": "E36_1",
+          "text": "By the way, I'm really looking forward to finally owning a home, it's been a long process, but it'll be worth it to have a backyard like the one I'll have - remember when I got pre-approved for $400,000 from Wells Fargo?",
+          "status": "historical",
+          "timestamp": "2023/11/30 (Thu) 00:36",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 1,
+              "timestamp": "2023/11/30 (Thu) 00:36",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7571990071942611
+        },
+        {
+          "id": "E2_0",
+          "text": "I'm in the process of buying a new home and I'm trying to finalize my budget.",
+          "status": "current",
+          "timestamp": "2023/08/11 (Fri) 00:01",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 0,
+              "timestamp": "2023/08/11 (Fri) 00:01",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5319304067504567
+        },
+        {
+          "id": "M6",
+          "text": "I'm in the process of buying a new home and I'm trying to finalize my budget.",
+          "status": "active",
+          "timestamp": "2023/08/11 (Fri) 00:01",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 0,
+              "timestamp": "2023/08/11 (Fri) 00:01",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5319304067504567
+        },
+        {
+          "id": "E25_3",
+          "text": "Thanks, this conversation was super helpful, and I am now content!",
+          "status": "current",
+          "timestamp": "2023/11/01 (Wed) 08:51",
+          "provenance": [
+            {
+              "session_index": 25,
+              "fact_index": 3,
+              "timestamp": "2023/11/01 (Wed) 08:51",
+              "source_turns": [
+                5
+              ]
+            }
+          ],
+          "score": 0.5102352909635037
+        },
+        {
+          "id": "E22_4",
+          "text": "I apologize for the inconvenience.",
+          "status": "current",
+          "timestamp": "2023/10/27 (Fri) 18:02",
+          "provenance": [
+            {
+              "session_index": 22,
+              "fact_index": 4,
+              "timestamp": "2023/10/27 (Fri) 18:02",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.48750858508595923
+        },
+        {
+          "id": "E36_7",
+          "text": "I'll make sure to review the policy documents carefully.",
+          "status": "tentative",
+          "timestamp": "2023/11/30 (Thu) 00:36",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 7,
+              "timestamp": "2023/11/30 (Thu) 00:36",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.48459948849615564
+        },
+        {
+          "id": "M99",
+          "text": "I'll make sure to review the policy documents carefully.",
+          "status": "active",
+          "timestamp": "2023/11/30 (Thu) 00:36",
+          "provenance": [
+            {
+              "session_index": 36,
+              "fact_index": 7,
+              "timestamp": "2023/11/30 (Thu) 00:36",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.48459948849615564
+        },
+        {
+          "id": "E25_2",
+          "text": "This helped.",
+          "status": "historical",
+          "timestamp": "2023/11/01 (Wed) 08:51",
+          "provenance": [
+            {
+              "session_index": 25,
+              "fact_index": 2,
+              "timestamp": "2023/11/01 (Wed) 08:51",
+              "source_turns": [
+                3
+              ]
+            }
+          ],
+          "score": 0.48250489581616046
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "Yes.",
+      "correct": true
+    },
+    "C": {
+      "raw": "Yes",
+      "correct": true
+    }
+  },
+  "rubric": "official knowledge-update"
+}

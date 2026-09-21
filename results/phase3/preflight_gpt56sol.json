@@ -1,0 +1,634 @@
+{
+  "pass": true,
+  "parse_successes": 5,
+  "total": 5,
+  "protocol_sha256": "7be699ffa443845699a893b10709f7491c39a0ee2abd09fad2dad5f21840185b",
+  "protocol_file": "phase3/gpt56sol_protocol.json",
+  "records": [
+    {
+      "id": "memops-t001",
+      "controller": "gpt56sol",
+      "model": "openai/gpt-5.6-sol",
+      "gold_operation": "NOOP",
+      "gold_target": "NONE",
+      "pred_operation": "UPDATE",
+      "pred_target": "M1",
+      "operation_correct": false,
+      "target_correct": false,
+      "joint_correct": false,
+      "slices": {
+        "ADD": false,
+        "UPDATE": false,
+        "DELETE": false,
+        "NOOP": true,
+        "tentative": true,
+        "retraction": false,
+        "recency_trap": true,
+        "multi_target": true,
+        "candidate_disambiguation": false,
+        "update_chain": true,
+        "negative_seed": true
+      },
+      "source": {
+        "file": "E03_update.json",
+        "family": "Update",
+        "operation_id": "op4",
+        "validity": "tentative",
+        "trigger_span": {
+          "segment_index": 3,
+          "turn_index": 7,
+          "quote": "HR sent a memo saying her records will be listed as Rebecca Lee going forward because of some policy about using the most recent legal surname."
+        }
+      },
+      "input": {
+        "existing_memories": [
+          {
+            "id": "M2",
+            "content": "Rebecca's start date on analytics team: February 26th"
+          },
+          {
+            "id": "M1",
+            "content": "Name of new colleague on analytics team: Rebecca Thornton"
+          },
+          {
+            "id": "M4",
+            "content": "Name of neighbor's daughter who babysits: Priya Rao"
+          },
+          {
+            "id": "M3",
+            "content": "Rebecca's probation period duration: 90 days"
+          }
+        ],
+        "new_fact": "HR sent a memo saying her records will be listed as Rebecca Lee going forward because of some policy about using the most recent legal surname."
+      },
+      "prediction": {
+        "operation": "UPDATE",
+        "target": "M1"
+      },
+      "raw_output": "{\"operation\":\"UPDATE\",\"target\":\"M1\"}",
+      "raw_response_safe": {
+        "id": "gen-1789896674-cDeK9aPF0YIoCAG4WFnW",
+        "model": "openai/gpt-5.6-sol",
+        "provider": "OpenAI",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"operation\":\"UPDATE\",\"target\":\"M1\"}",
+              "refusal": null,
+              "reasoning": null
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 428,
+          "completion_tokens": 19,
+          "total_tokens": 447,
+          "cost": 0.001046,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001046,
+            "upstream_inference_prompt_cost": 0.000856,
+            "upstream_inference_completions_cost": 0.00019
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      "latency_ms": 2204.36,
+      "usage": {
+        "input_tokens": 428,
+        "output_tokens": 19,
+        "reasoning_tokens": 0,
+        "cost_usd": 0.001046
+      },
+      "provider_metadata_safe": {
+        "id": "gen-1789896674-cDeK9aPF0YIoCAG4WFnW",
+        "model": "openai/gpt-5.6-sol",
+        "provider": "OpenAI",
+        "finish_reason": "stop"
+      },
+      "parse_error": null,
+      "attempts": 1
+    },
+    {
+      "id": "memops-t002",
+      "controller": "gpt56sol",
+      "model": "openai/gpt-5.6-sol",
+      "gold_operation": "DELETE",
+      "gold_target": "M6",
+      "pred_operation": "DELETE",
+      "pred_target": "M6",
+      "operation_correct": true,
+      "target_correct": true,
+      "joint_correct": true,
+      "slices": {
+        "ADD": false,
+        "UPDATE": false,
+        "DELETE": true,
+        "NOOP": false,
+        "tentative": false,
+        "retraction": false,
+        "recency_trap": false,
+        "multi_target": true,
+        "candidate_disambiguation": true,
+        "update_chain": false,
+        "negative_seed": true
+      },
+      "source": {
+        "file": "F15_forget.json",
+        "family": "Forget",
+        "operation_id": "op7",
+        "validity": "confirmed",
+        "trigger_span": {
+          "segment_index": 2,
+          "turn_index": 5,
+          "quote": "please remove the colon cancer note from my family history entirely. It was never cancer, just a benign polyp, and I don't want that misinformation sitting in my records"
+        }
+      },
+      "input": {
+        "existing_memories": [
+          {
+            "id": "M2",
+            "content": "Aunt Linda's breast cancer diagnosis: Breast cancer diagnosed about three years ago; had lumpectomy and chemo, doing okay now"
+          },
+          {
+            "id": "M4",
+            "content": "Paternal grandmother's stroke and possible hypertension: Died of stroke at age 71; possibly had hypertension (unconfirmed)"
+          },
+          {
+            "id": "M6",
+            "content": "Previously believed paternal colon cancer history: Believed colon cancer history on dad's side; actually a benign polyp removed from dad's brother"
+          },
+          {
+            "id": "M5",
+            "content": "Maternal grandmother's osteoporosis diagnosis: Osteoporosis, diagnosed in her late sixties"
+          },
+          {
+            "id": "M3",
+            "content": "Dad's high cholesterol and statin medication: High cholesterol; started statins at age 48; currently 67"
+          },
+          {
+            "id": "M1",
+            "content": "Maternal grandfather's type 2 diabetes diagnosis: Type 2 diabetes, diagnosed around age 52"
+          }
+        ],
+        "new_fact": "please remove the colon cancer note from my family history entirely. It was never cancer, just a benign polyp, and I don't want that misinformation sitting in my records"
+      },
+      "prediction": {
+        "operation": "DELETE",
+        "target": "M6"
+      },
+      "raw_output": "{\"operation\":\"DELETE\",\"target\":\"M6\"}",
+      "raw_response_safe": {
+        "id": "gen-1789896676-44SnUfk74aSLKAgSRPDW",
+        "model": "openai/gpt-5.6-sol",
+        "provider": "OpenAI",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"operation\":\"DELETE\",\"target\":\"M6\"}",
+              "refusal": null,
+              "reasoning": null
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 558,
+          "completion_tokens": 19,
+          "total_tokens": 577,
+          "cost": 0.001306,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001306,
+            "upstream_inference_prompt_cost": 0.001116,
+            "upstream_inference_completions_cost": 0.00019
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      "latency_ms": 1312.89,
+      "usage": {
+        "input_tokens": 558,
+        "output_tokens": 19,
+        "reasoning_tokens": 0,
+        "cost_usd": 0.001306
+      },
+      "provider_metadata_safe": {
+        "id": "gen-1789896676-44SnUfk74aSLKAgSRPDW",
+        "model": "openai/gpt-5.6-sol",
+        "provider": "OpenAI",
+        "finish_reason": "stop"
+      },
+      "parse_error": null,
+      "attempts": 1
+    },
+    {
+      "id": "memops-t003",
+      "controller": "gpt56sol",
+      "model": "openai/gpt-5.6-sol",
+      "gold_operation": "UPDATE",
+      "gold_target": "M1",
+      "pred_operation": "UPDATE",
+      "pred_target": "M1",
+      "operation_correct": true,
+      "target_correct": true,
+      "joint_correct": true,
+      "slices": {
+        "ADD": false,
+        "UPDATE": true,
+        "DELETE": false,
+        "NOOP": false,
+        "tentative": false,
+        "retraction": false,
+        "recency_trap": false,
+        "multi_target": true,
+        "candidate_disambiguation": true,
+        "update_chain": true,
+        "negative_seed": true
+      },
+      "source": {
+        "file": "E03_update.json",
+        "family": "Update",
+        "operation_id": "op3",
+        "validity": "confirmed",
+        "trigger_span": {
+          "segment_index": 2,
+          "turn_index": 3,
+          "quote": "Rebecca told me she's dropping the hyphenated name at work. She filed the paperwork to go back to just Rebecca Thornton in all our internal systems."
+        }
+      },
+      "input": {
+        "existing_memories": [
+          {
+            "id": "M1",
+            "content": "Name of new colleague on analytics team: Rebecca Anne Thornton-Lee"
+          },
+          {
+            "id": "M4",
+            "content": "Name of neighbor's daughter who babysits: Priya Rao"
+          },
+          {
+            "id": "M2",
+            "content": "Rebecca's start date on analytics team: February 26th"
+          },
+          {
+            "id": "M3",
+            "content": "Rebecca's probation period duration: 90 days"
+          }
+        ],
+        "new_fact": "Rebecca told me she's dropping the hyphenated name at work. She filed the paperwork to go back to just Rebecca Thornton in all our internal systems."
+      },
+      "prediction": {
+        "operation": "UPDATE",
+        "target": "M1"
+      },
+      "raw_output": "{\"operation\":\"UPDATE\",\"target\":\"M1\"}",
+      "raw_response_safe": {
+        "id": "gen-1789896677-rA1w118Fav3tY8A24uvA",
+        "model": "openai/gpt-5.6-sol",
+        "provider": "OpenAI",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"operation\":\"UPDATE\",\"target\":\"M1\"}",
+              "refusal": null,
+              "reasoning": null,
+              "reasoning_details": [
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqr6fmcZDmoeO2SFaLonPNGh0bExbLD44ZYsMwNZlCkVf8KadEcOQFuiswEAopziXXZrR9rWZqbBSxjhkgwuNLft6hbKGq7_9vCUFFhfDBvgsCnBNUNrrInX0lyuM4NYevZoMfTSQEIobhA9I4uMUNigRvjD3Oxcbe2zyeir8gfgIF2FqCzB1tsn0XpXctVq_sMRRPEXySMG-ywO_U4Bp1_NtiSe4p80q1DsHJh6-mj4EUL-kv7t7CnqrhE5qWbASN2ZzFTgEptHYRemoGVE3cBNV-xavCutHtAE3MNOzcm8l9clSWuS09LV1XCrigkgva5mBKfg9zOQHBFZLpCddWVz7DhugJIFcXuKt5HRSX4fL0NEI3dObpY7NykYhWl8ylJxRRAfLfWWbgu1iR2sxOikEuylolBSUtGFN5mgSl6PJNnfRPaOZOefFql-J8BEz1XfhMnPS_xQSM7SGBTxlEeSlqWvlEOC5_agWFyxXYtm2RhMLkKMyB3pVQgxkxjhedA4T6rKyxTLVjZUwYCUkNyI89UdzCvk9KwSj_SoptO2zqgc6e6mu-fv3Od8LKNMiplZmCUJy2bURkEaCe_zAlPkyYut15Ptn-lA2neis_St3zdeuRBbd6rltfxdJ1j3LE6AI6Bevqf16SitOCwuPzsDhZAiiRHxKU7IQrMzHTIENNPGqG-68wVeOHjWGMm5tQCs8RLPxHmfsHbJvqmn2kcJxHernIfYDYWeXNsOs__k6EUxbIlCFhkWGq5wVPdLC8rZyZVijRnaVkRs5P0Vu-NnJa81c1po9uMDYaLHucFvGLmUdrVzA8dGbW7Gde3iYALZtjSKr8NmPcktzMcaGXh4OxJ_3cI7wrE6pM3WgKfN4HDBgAFSmL_AmMRQxNXFhvcuDFkAEE9UEI5ZSouumiNDfkf8gLKTycUTuuRNPUWOuJI0zaU_Hrjqg4wEUT1daZ_ixC28856XoPsYgRp6bLfw1kINDciDHli04vjJvVQtjWYwnxKblL4dYjz1YRKlcFQGn6gufoaUTDlN9420jct_Y2uwo9KTD6ouUj5JlAAxuC3L5om1x-i1B720rb-kewprPHfynWR170Q84pEAgB26fbRl839mhD5W3FLbH-WPfq_YtZxTtb6clYB6S3suIWo3PNbvmg_vvVtfGDoeY9idDgiNU_JQhXzKB1Xmrs8OIBfkAms848dAILYF7Dgji16IwzE3SgpHlLp2acwxyYwYfMs4orqff5Tgg1zEgEsPosB8ZPC9yChmSiWwT6OfQ9Vu3uhOvY20zig2_9lizQr24UJPP_Tj7awhqCmoyWv6lTLyJWCyg_Y9Sb_pmviY54PVvAXdPSWMf2Na3Nd_mbDeVIXV7DBCeHZdao2uxMkFqCr_LHfh2w_uuksl1853_52SpRIs3pdppMXsuz8LrfDro86w==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjYtc29sLTIwMjYwNzA5fG9wZW5haSJ9",
+                  "format": "openai-responses-v1",
+                  "id": "rs_02ff789b9ae3b47a016aafa7e666f887d1b64a75516595d7aa",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 434,
+          "completion_tokens": 39,
+          "total_tokens": 473,
+          "cost": 0.001258,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001258,
+            "upstream_inference_prompt_cost": 0.000868,
+            "upstream_inference_completions_cost": 0.00039
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 18,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      "latency_ms": 1694.5,
+      "usage": {
+        "input_tokens": 434,
+        "output_tokens": 39,
+        "reasoning_tokens": 18,
+        "cost_usd": 0.001258
+      },
+      "provider_metadata_safe": {
+        "id": "gen-1789896677-rA1w118Fav3tY8A24uvA",
+        "model": "openai/gpt-5.6-sol",
+        "provider": "OpenAI",
+        "finish_reason": "stop"
+      },
+      "parse_error": null,
+      "attempts": 1
+    },
+    {
+      "id": "memops-t004",
+      "controller": "gpt56sol",
+      "model": "openai/gpt-5.6-sol",
+      "gold_operation": "DELETE",
+      "gold_target": "M3",
+      "pred_operation": "DELETE",
+      "pred_target": "M3",
+      "operation_correct": true,
+      "target_correct": true,
+      "joint_correct": true,
+      "slices": {
+        "ADD": false,
+        "UPDATE": false,
+        "DELETE": true,
+        "NOOP": false,
+        "tentative": false,
+        "retraction": false,
+        "recency_trap": false,
+        "multi_target": true,
+        "candidate_disambiguation": true,
+        "update_chain": false,
+        "negative_seed": true
+      },
+      "source": {
+        "file": "B14_forget.json",
+        "family": "Forget",
+        "operation_id": "op6",
+        "validity": "confirmed",
+        "trigger_span": {
+          "segment_index": 2,
+          "turn_index": 7,
+          "quote": "Actually, can you forget that Kevin lived in Portland? He asked me not to share that with anyone and I feel weird having it stored"
+        }
+      },
+      "input": {
+        "existing_memories": [
+          {
+            "id": "M4",
+            "content": "Kevin's favorite cuisine for dining out: Mediterranean"
+          },
+          {
+            "id": "M2",
+            "content": "Kevin's girlfriend's name: Mia"
+          },
+          {
+            "id": "M5",
+            "content": "When Kevin and user started regular dinners: early March, first dinner March 8th at Thai place on Elm Street"
+          },
+          {
+            "id": "M1",
+            "content": "Kevin's dietary classification: vegan"
+          },
+          {
+            "id": "M3",
+            "content": "Kevin's previous city of residence: Portland, until 2022"
+          }
+        ],
+        "new_fact": "Actually, can you forget that Kevin lived in Portland? He asked me not to share that with anyone and I feel weird having it stored"
+      },
+      "prediction": {
+        "operation": "DELETE",
+        "target": "M3"
+      },
+      "raw_output": "{\"operation\":\"DELETE\",\"target\":\"M3\"}",
+      "raw_response_safe": {
+        "id": "gen-1789896679-MtF9XCPGcDnXkmCEfUQ8",
+        "model": "openai/gpt-5.6-sol",
+        "provider": "OpenAI",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"operation\":\"DELETE\",\"target\":\"M3\"}",
+              "refusal": null,
+              "reasoning": null
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 458,
+          "completion_tokens": 19,
+          "total_tokens": 477,
+          "cost": 0.001106,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001106,
+            "upstream_inference_prompt_cost": 0.000916,
+            "upstream_inference_completions_cost": 0.00019
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      "latency_ms": 1336.24,
+      "usage": {
+        "input_tokens": 458,
+        "output_tokens": 19,
+        "reasoning_tokens": 0,
+        "cost_usd": 0.001106
+      },
+      "provider_metadata_safe": {
+        "id": "gen-1789896679-MtF9XCPGcDnXkmCEfUQ8",
+        "model": "openai/gpt-5.6-sol",
+        "provider": "OpenAI",
+        "finish_reason": "stop"
+      },
+      "parse_error": null,
+      "attempts": 1
+    },
+    {
+      "id": "memops-t005",
+      "controller": "gpt56sol",
+      "model": "openai/gpt-5.6-sol",
+      "gold_operation": "ADD",
+      "gold_target": "NONE",
+      "pred_operation": "ADD",
+      "pred_target": "NONE",
+      "operation_correct": true,
+      "target_correct": true,
+      "joint_correct": true,
+      "slices": {
+        "ADD": true,
+        "UPDATE": false,
+        "DELETE": false,
+        "NOOP": false,
+        "tentative": false,
+        "retraction": false,
+        "recency_trap": false,
+        "multi_target": true,
+        "candidate_disambiguation": false,
+        "update_chain": false,
+        "negative_seed": true
+      },
+      "source": {
+        "file": "B29_remember.json",
+        "family": "Remember",
+        "operation_id": "op5",
+        "validity": "confirmed",
+        "trigger_span": {
+          "segment_index": 2,
+          "turn_index": 3,
+          "quote": "Tuesdays are at 6:30 AM and Thursdays are still at 7 AM"
+        }
+      },
+      "input": {
+        "existing_memories": [
+          {
+            "id": "M4",
+            "content": "number of training sessions per week: 2 sessions per week"
+          },
+          {
+            "id": "M2",
+            "content": "per-session training cost with Marcus: $75 per session"
+          },
+          {
+            "id": "M1",
+            "content": "personal/fitness trainer name: Marcus Delgado"
+          },
+          {
+            "id": "M3",
+            "content": "12-week training block start date: April 14th"
+          }
+        ],
+        "new_fact": "Tuesdays are at 6:30 AM and Thursdays are still at 7 AM"
+      },
+      "prediction": {
+        "operation": "ADD",
+        "target": "NONE"
+      },
+      "raw_output": "{\"operation\":\"ADD\",\"target\":\"NONE\"}",
+      "raw_response_safe": {
+        "id": "gen-1789896680-18Al0A19HSQ3J1CLfl9J",
+        "model": "openai/gpt-5.6-sol",
+        "provider": "OpenAI",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"operation\":\"ADD\",\"target\":\"NONE\"}",
+              "refusal": null,
+              "reasoning": null,
+              "reasoning_details": [
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqr6fqs-5btonvARmoRj10BYCsTzLClaIIFfdql-T7FB0WXpFsQ7c5dIZ9_hlmtP61nMTyPWTEWmXloONvHZaj4vGSrmihyN4xJU95sXAuYOTMc7d_-GkvklnPHutbLdxgmsvNvsq2CIhC13fs94xj6gMFgwQrGmU5xwrp1RwOpSgrNnda27pZ0sYHWW2uTvFG27ZDb6YSmXKv87HGxpz7cwd-Egzm0QY_6kFQ4XrDaQpLuEx0BV0ysfnZVN6FWjI_eQJ9GarGVtbyAuiit6dq6Do66dRg8vA6X_bW35oATNd1UP3w1bdbH58ciITCIrzvF-hKBsSYznLXmrlWTNHMwQH7eIyyzyzRP90wfwQY9LXsSzyIJVZdk5n1eatfWqmx_aTArFT5uHqZdQih31wzZeJ8Fz1hUmU-1nIVkRqNbxnsStqKOG4mkmNW0CUqEFNfj1oQk8wqRSEWje-wCMfnun7szLzLZEtp1G7vF2Q51fJzHFhZbQDEW5G4iQvENGdAaWipgSrQpRX4gXXVjT5cV07s-M1GfeBjzJ7083vBGN58P0Y0s5dINMyXu_XTzxd8QtdltVzbtMySJfrtzcTCe6P_pnlv998WyLBJAr3x6p9550NFVt7Px216hv1to7_e7__V_8ttCbAnX49Q6t2SHAtRdUYdzbPAntr3ktWHwq8ZhMpQ4oCw55zxhRb6vqGFGipI6jQ8FHlESPDhnuAFxr59n0VIXaSZmOhVqmqY-ZIvVAeHnFPmh5t89dW1OykEXUfJHFwRzF_YJCri2skRtgnJhCYk6UhVJn9nHNniTKGUqOImG2as9CxwfOZNrOf77thGjiYEo8jKUCCaa4nnt0jUmceXMAHZhLmzFRNQmep_H4lmKnqFQbt59OARWm7Fsd4UxWxy5OCkqoq8HvteSWwYt5-Z-gkUbOy61DviwJBvZTJCYRU2DhqiXyMlQyw2PTOSp5Yq2-Qz8Wg1GRBjEvoq59CJe8Lq_TfgQKhdi7bRTY43j3CPB5viWkb3xa1GM9Gxh0lOMZ-Au6K-gkPOB0eVZf4fqen4ErHJF6KThm0qo2ic4CFxIMlwRcpwzI9z2AnHX6H2OQ4pLQSKYXEYysPR5athOmX18inRriprxZosOA4AFJxNJYffaBZnoYPEQ9ljITuiD9G3XZbNcElGpBdHprOLq2o9IOO02Il7YofkxBeckPyGUnG0T77MPEqLMScA0Rfz5PjZ2j_EwGMKjTJP_UdoML6ou9tF2wAl2ZsSX-tM4NwGEX6aoyeAWGHSQFq59kfJh7toUcJcz3EMcxWRKMzZ6ArFaduKeQg5iqZf0YpB33jc5ZnBx79WRZvIrfTsv7Lbcv9vqAxLbUJvRFq96SnMnWagXZ4CTwBIvyWiRK2rMc7mC3A88TNKzrJ9eHVxrsKidabwyzqBTbmqbF-MAtFyT4ARDn-LdnFqD2Y3YxVmZUqH2K0_ChtipG3cS7CLr4a3Z2dRLf7CJE5oMxpGzuuHlY7BS1bNvqBlLxWArS7I3fvvIF33KULbt_a_AfAePCOwSzKTrBBbw1iTpZD7gg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjYtc29sLTIwMjYwNzA5fG9wZW5haSJ9",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0f33b240d1e7cb9e016aafa7e977e887d1b050ef5aa78512a1",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 419,
+          "completion_tokens": 53,
+          "total_tokens": 472,
+          "cost": 0.001368,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001368,
+            "upstream_inference_prompt_cost": 0.000838,
+            "upstream_inference_completions_cost": 0.00053
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 33,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      "latency_ms": 1857.07,
+      "usage": {
+        "input_tokens": 419,
+        "output_tokens": 53,
+        "reasoning_tokens": 33,
+        "cost_usd": 0.001368
+      },
+      "provider_metadata_safe": {
+        "id": "gen-1789896680-18Al0A19HSQ3J1CLfl9J",
+        "model": "openai/gpt-5.6-sol",
+        "provider": "OpenAI",
+        "finish_reason": "stop"
+      },
+      "parse_error": null,
+      "attempts": 1
+    }
+  ]
+}

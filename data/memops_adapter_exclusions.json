@@ -1,0 +1,915 @@
+{
+  "source_commit": "312af65e2c7b6d1b70f062ffa8b4cde32aaf6f35",
+  "exclusions": [
+    {
+      "file": "A01_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A01_reflect.json",
+      "operation_id": "op8",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A02_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A02_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A04_reflect.json",
+      "operation_id": "op4",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A05_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A05_reflect.json",
+      "operation_id": "op7",
+      "reason": "invalid_remember_target_active"
+    },
+    {
+      "file": "A06_reflect.json",
+      "operation_id": "op3",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A06_reflect.json",
+      "operation_id": "op4",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A06_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "A06_update.json",
+      "operation_id": "op4",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "A07_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A11_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A11_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A13_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A14_reflect.json",
+      "operation_id": "op8",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A14_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "A16_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A16_reflect.json",
+      "operation_id": "op8",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A19_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A20_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A20_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A20_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "A22_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A26_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A26_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A27_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A28_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A28_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A28_reflect.json",
+      "operation_id": "op8",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A29_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A29_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "A30_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A30_update.json",
+      "operation_id": "op4",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "A31_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A31_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "A32_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "A32_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "A33_reflect.json",
+      "operation_id": "op4",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B01_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B02_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B02_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "B03_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B04_reflect.json",
+      "operation_id": "op4",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B04_trajectory_ops.json",
+      "operation_id": "op4",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "B04_update.json",
+      "operation_id": "op4",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "B05_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B05_reflect.json",
+      "operation_id": "op8",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B05_trajectory_ops.json",
+      "operation_id": "op4",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "B06_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B06_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "B10_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B10_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B10_reflect.json",
+      "operation_id": "op8",
+      "reason": "invalid_remember_target_active"
+    },
+    {
+      "file": "B10_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "B11_reflect.json",
+      "operation_id": "op4",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B11_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B12_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B14_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B14_reflect.json",
+      "operation_id": "op8",
+      "reason": "invalid_remember_old_nonnull"
+    },
+    {
+      "file": "B14_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "B21_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B22_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B23_reflect.json",
+      "operation_id": "op4",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B23_update.json",
+      "operation_id": "op4",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "B24_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B24_reflect.json",
+      "operation_id": "op8",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B24_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "B25_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B26_reflect.json",
+      "operation_id": "op1",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B26_reflect.json",
+      "operation_id": "op3",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B27_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B28_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B28_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "B29_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B29_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B30_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "B30_reflect.json",
+      "operation_id": "op6",
+      "reason": "invalid_remember_target_active"
+    },
+    {
+      "file": "C01_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C02_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C02_reflect.json",
+      "operation_id": "op8",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C03_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C03_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "C04_reflect.json",
+      "operation_id": "op8",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C04_reflect.json",
+      "operation_id": "op10",
+      "reason": "invalid_remember_old_nonnull"
+    },
+    {
+      "file": "C04_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "C05_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C05_update.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "C06_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C06_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C07_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C07_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C10_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C10_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "C11_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C11_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "C21_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C21_reflect.json",
+      "operation_id": "op7",
+      "reason": "invalid_remember_target_active"
+    },
+    {
+      "file": "C22_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C22_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "C23_reflect.json",
+      "operation_id": "op8",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C23_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "C25_reflect.json",
+      "operation_id": "op4",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C25_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C25_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "C26_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C26_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C26_reflect.json",
+      "operation_id": "op8",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C27_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C27_reflect.json",
+      "operation_id": "op8",
+      "reason": "invalid_remember_target_active"
+    },
+    {
+      "file": "C28_reflect.json",
+      "operation_id": "op8",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C28_update.json",
+      "operation_id": "op4",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "C29_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C29_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "C30_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C31_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C31_reflect.json",
+      "operation_id": "op8",
+      "reason": "invalid_remember_target_active"
+    },
+    {
+      "file": "C31_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "C32_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "C32_update.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "D01_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D01_reflect.json",
+      "operation_id": "op8",
+      "reason": "invalid_remember_target_active"
+    },
+    {
+      "file": "D02_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D02_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "D05_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D05_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "D10_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D10_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D10_reflect.json",
+      "operation_id": "op8",
+      "reason": "invalid_remember_target_active"
+    },
+    {
+      "file": "D11_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D14_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D16_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D17_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D17_reflect.json",
+      "operation_id": "op7",
+      "reason": "invalid_remember_target_active"
+    },
+    {
+      "file": "D18_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D19_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D20_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D20_reflect.json",
+      "operation_id": "op8",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D20_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "D21_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "D22_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D22_update.json",
+      "operation_id": "op4",
+      "reason": "invalid_update_old_mismatch"
+    },
+    {
+      "file": "D23_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D24_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D24_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "D25_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D25_reflect.json",
+      "operation_id": "op8",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "D25_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "E01_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "E01_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "E03_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "E07_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "E08_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "E08_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "E08_reflect.json",
+      "operation_id": "op8",
+      "reason": "invalid_remember_target_active"
+    },
+    {
+      "file": "E10_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "E11_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "E12_forget.json",
+      "operation_id": "op6",
+      "reason": "same_turn_target_conflict"
+    },
+    {
+      "file": "E12_reflect.json",
+      "operation_id": "op8",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "E13_reflect.json",
+      "operation_id": "op7",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "E13_reflect.json",
+      "operation_id": "op8",
+      "reason": "invalid_remember_target_active"
+    },
+    {
+      "file": "E14_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "E15_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "F01_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "F01_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "F01_reflect.json",
+      "operation_id": "op7",
+      "reason": "invalid_remember_target_active"
+    },
+    {
+      "file": "F06_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "F06_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "F07_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "F07_reflect.json",
+      "operation_id": "op7",
+      "reason": "invalid_remember_target_active"
+    },
+    {
+      "file": "F08_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "F11_forget.json",
+      "operation_id": "op6",
+      "reason": "forget_target_missing"
+    },
+    {
+      "file": "F12_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "F13_reflect.json",
+      "operation_id": "op4",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "F13_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "F13_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "F13_trajectory_ops.json",
+      "operation_id": "op5",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "F13_update.json",
+      "operation_id": "op4",
+      "reason": "update_old_mismatch"
+    },
+    {
+      "file": "F14_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "F15_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "F16_reflect.json",
+      "operation_id": "op6",
+      "reason": "reflect_excluded"
+    },
+    {
+      "file": "F17_reflect.json",
+      "operation_id": "op5",
+      "reason": "reflect_excluded"
+    }
+  ]
+}

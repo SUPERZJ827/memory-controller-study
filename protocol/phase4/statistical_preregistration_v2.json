@@ -1,0 +1,53 @@
+{
+  "status": "FROZEN_BEFORE_ANY_PHASE4_MODEL_PREDICTION",
+  "version": 2,
+  "supersedes": {
+    "path": "phase4/statistical_preregistration.json",
+    "sha256": "f513ffdcf3e48c1181a9b4f3f6cfb64b015a19b6a7ad44956eb980f67ed7316c",
+    "reason": "A pre-inference leakage audit found source sessions and gold evidence timestamped after question_date. The v1 file is retained unchanged as provenance."
+  },
+  "frozen_date": "2026-09-20",
+  "model_predictions_observed_before_v2": 0,
+  "dataset": {
+    "source_name": "LongMemEval-S cleaned",
+    "source_revision": "98d7416c24c778c2fee6e6f3006e7a073259d48f",
+    "source_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+    "source_n": 500,
+    "primary_projection": "leakage-safe chronological eligibility projection",
+    "primary_n": 456,
+    "eligible_ids_sha256_source_order_newline_delimited": "a481d7557d7336298d2c0a0c52f232370171b192266ddabcf46de44eb7ea32c0",
+    "excluded_future_gold_n": 44,
+    "excluded_ids_sha256_source_order_newline_delimited": "4a9e1dc05f39c20af215d586aa50d73935c9aa71774abc1a0146c3f8d9538de7",
+    "future_non_gold_sessions_omitted": 253,
+    "eligibility_rule": "exclude the entire question if any gold evidence session is after question_date; otherwise omit every non-gold session after question_date",
+    "eligibility_determined_without_predictions": true,
+    "adaptive_sampling": false,
+    "early_stopping_for_positive_results": false,
+    "official_500_case_comparability_note": "The leakage-safe result is not directly comparable to official runs that expose all 500 complete histories. No future-evidence 500-case result will be presented as primary."
+  },
+  "primary_quality_comparison": {
+    "contrast": "C_minus_B",
+    "metric": "official-protocol per-question LongMemEval QA correctness on all 456 leakage-safe eligible questions",
+    "estimand": "paired absolute accuracy difference",
+    "noninferiority_margin_absolute": -0.03,
+    "decision_rule": "noninferior only if the lower endpoint of the two-sided 95% paired-bootstrap confidence interval is greater than -0.03",
+    "bootstrap_resamples": 20000,
+    "bootstrap_seed": 20260920,
+    "resampling_unit": "question",
+    "inconclusive_is_allowed": true
+  },
+  "cost_condition": {
+    "contrast": "C_vs_B",
+    "metric": "counterfactual standalone complete-system variable cost, excluding evaluator",
+    "minimum_relative_reduction": 0.10,
+    "decision_rule": "the quality-cost claim succeeds only if C is noninferior to B and C costs at least 10% less than B",
+    "shared_artifacts": "physically cached common work is charged in full to every arm for standalone attribution"
+  },
+  "inherited_unchanged": {
+    "research_question": true,
+    "arms": true,
+    "secondary_analyses": true,
+    "required_cost_reporting": true,
+    "interpretation_guardrails": true
+  }
+}

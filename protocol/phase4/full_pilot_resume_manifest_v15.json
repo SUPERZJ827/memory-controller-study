@@ -1,0 +1,22 @@
+{
+  "schema_version": "phase4-full-pilot-resume-v15",
+  "parent_manifest_sha256": "9ac2822098c5be211403b578a4b80d2bc2c409717e6fc46f66dc33dbf4084089",
+  "parent_outcome_sha256": "29063a290c3a7eaa96dd4dba5e9f4c5beb53473360f499aa5e4f3ddead4f54fd",
+  "failure": {
+    "stage": "embedding",
+    "arm": "B",
+    "step": 130,
+    "logical_call": "embedding-0",
+    "paid": false,
+    "attempt": 1,
+    "archived_raw_sha256": "be69706225473591d2f4ea3de62b924966e14edd918a1b7278dd2949bb1e24ed"
+  },
+  "authorization_basis": "One infrastructure retry permitted; no semantic/controller retries",
+  "replay": "Same parent manifest and ledger keys; successful calls reused; only failed local call receives attempt 2",
+  "source_hashes": {
+    "src/phase4/resume_full_pilot_v15.ts": "0df696b545fbdf9ddabfd33d5aebc699b4d9a56f6fa41ea33a4816b12f482744",
+    "phase4/full_pilot_manifest_v14.json": "9ac2822098c5be211403b578a4b80d2bc2c409717e6fc46f66dc33dbf4084089",
+    "results/phase4_low_budget_v14/full_pilot/outcome.json": "29063a290c3a7eaa96dd4dba5e9f4c5beb53473360f499aa5e4f3ddead4f54fd",
+    "results/phase4_low_budget_v14/full_pilot/failed_attempts/p4c_01f8435e4847eb49108bb71f790460962a2c387e.attempt1.json": "be69706225473591d2f4ea3de62b924966e14edd918a1b7278dd2949bb1e24ed"
+  }
+}

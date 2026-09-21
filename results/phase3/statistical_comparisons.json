@@ -1,0 +1,244 @@
+{
+  "original_phase2_gold": {
+    "jev_vs_gpt56sol": {
+      "n": 300,
+      "delta_jev_minus_baseline": -0.013333,
+      "bootstrap_resamples": 20000,
+      "bootstrap_95_percentile_ci": [
+        -0.053333,
+        0.026667
+      ],
+      "both_correct": 240,
+      "jev_only_correct": 16,
+      "baseline_only_correct": 20,
+      "both_wrong": 24,
+      "mcnemar_exact_two_sided_p": 0.617719317
+    },
+    "jev_vs_claude": {
+      "n": 300,
+      "delta_jev_minus_baseline": 0.133333,
+      "bootstrap_resamples": 20000,
+      "bootstrap_95_percentile_ci": [
+        0.086667,
+        0.18
+      ],
+      "both_correct": 208,
+      "jev_only_correct": 48,
+      "baseline_only_correct": 8,
+      "both_wrong": 36,
+      "mcnemar_exact_two_sided_p": 4.7e-8
+    }
+  },
+  "construct_validity_sensitivity": {
+    "original_full_300": {
+      "accuracy": {
+        "jev": {
+          "correct": 256,
+          "total": 300,
+          "value": 0.853333
+        },
+        "gpt56sol": {
+          "correct": 260,
+          "total": 300,
+          "value": 0.866667
+        },
+        "claude": {
+          "correct": 216,
+          "total": 300,
+          "value": 0.72
+        },
+        "qwen3_8b": {
+          "correct": 153,
+          "total": 300,
+          "value": 0.51
+        }
+      },
+      "jev_vs_gpt56sol": {
+        "n": 300,
+        "delta_jev_minus_baseline": -0.013333,
+        "bootstrap_resamples": 20000,
+        "bootstrap_95_percentile_ci": [
+          -0.053333,
+          0.026667
+        ],
+        "both_correct": 240,
+        "jev_only_correct": 16,
+        "baseline_only_correct": 20,
+        "both_wrong": 24,
+        "mcnemar_exact_two_sided_p": 0.617719317
+      },
+      "jev_vs_claude": {
+        "n": 300,
+        "delta_jev_minus_baseline": 0.133333,
+        "bootstrap_resamples": 20000,
+        "bootstrap_95_percentile_ci": [
+          0.086667,
+          0.18
+        ],
+        "both_correct": 208,
+        "jev_only_correct": 48,
+        "baseline_only_correct": 8,
+        "both_wrong": 36,
+        "mcnemar_exact_two_sided_p": 4.7e-8
+      }
+    },
+    "strict_consensus_audited_only": {
+      "note": "Only audited packets where both reviewers found the policy applicable and matched benchmark operation+target.",
+      "accuracy": {
+        "jev": {
+          "correct": 45,
+          "total": 52,
+          "value": 0.865385
+        },
+        "gpt56sol": {
+          "correct": 49,
+          "total": 52,
+          "value": 0.942308
+        },
+        "claude": {
+          "correct": 34,
+          "total": 52,
+          "value": 0.653846
+        },
+        "qwen3_8b": {
+          "correct": 24,
+          "total": 52,
+          "value": 0.461538
+        }
+      },
+      "jev_vs_gpt56sol": {
+        "n": 52,
+        "delta_jev_minus_baseline": -0.076923,
+        "bootstrap_resamples": 20000,
+        "bootstrap_95_percentile_ci": [
+          -0.192308,
+          0.019231
+        ],
+        "both_correct": 43,
+        "jev_only_correct": 2,
+        "baseline_only_correct": 6,
+        "both_wrong": 1,
+        "mcnemar_exact_two_sided_p": 0.2890625
+      },
+      "jev_vs_claude": {
+        "n": 52,
+        "delta_jev_minus_baseline": 0.211538,
+        "bootstrap_resamples": 20000,
+        "bootstrap_95_percentile_ci": [
+          0.038462,
+          0.365385
+        ],
+        "both_correct": 29,
+        "jev_only_correct": 16,
+        "baseline_only_correct": 5,
+        "both_wrong": 2,
+        "mcnemar_exact_two_sided_p": 0.026603699
+      }
+    },
+    "strict_consensus_full_conservative": {
+      "note": "All unaudited cases are retained because they are triple-correct and cannot change paired disagreement counts; audited cases are retained only under strict consensus.",
+      "accuracy": {
+        "jev": {
+          "correct": 221,
+          "total": 228,
+          "value": 0.969298
+        },
+        "gpt56sol": {
+          "correct": 225,
+          "total": 228,
+          "value": 0.986842
+        },
+        "claude": {
+          "correct": 210,
+          "total": 228,
+          "value": 0.921053
+        },
+        "qwen3_8b": {
+          "correct": 150,
+          "total": 228,
+          "value": 0.657895
+        }
+      },
+      "jev_vs_gpt56sol": {
+        "n": 228,
+        "delta_jev_minus_baseline": -0.017544,
+        "bootstrap_resamples": 20000,
+        "bootstrap_95_percentile_ci": [
+          -0.04386,
+          0.004386
+        ],
+        "both_correct": 219,
+        "jev_only_correct": 2,
+        "baseline_only_correct": 6,
+        "both_wrong": 1,
+        "mcnemar_exact_two_sided_p": 0.2890625
+      },
+      "jev_vs_claude": {
+        "n": 228,
+        "delta_jev_minus_baseline": 0.048246,
+        "bootstrap_resamples": 20000,
+        "bootstrap_95_percentile_ci": [
+          0.008772,
+          0.087719
+        ],
+        "both_correct": 205,
+        "jev_only_correct": 16,
+        "baseline_only_correct": 5,
+        "both_wrong": 2,
+        "mcnemar_exact_two_sided_p": 0.026603699
+      }
+    },
+    "material_ambiguity_excluded_full": {
+      "accuracy": {
+        "jev": {
+          "correct": 256,
+          "total": 299,
+          "value": 0.856187
+        },
+        "gpt56sol": {
+          "correct": 259,
+          "total": 299,
+          "value": 0.866221
+        },
+        "claude": {
+          "correct": 216,
+          "total": 299,
+          "value": 0.722408
+        },
+        "qwen3_8b": {
+          "correct": 153,
+          "total": 299,
+          "value": 0.511706
+        }
+      },
+      "jev_vs_gpt56sol": {
+        "n": 299,
+        "delta_jev_minus_baseline": -0.010033,
+        "bootstrap_resamples": 20000,
+        "bootstrap_95_percentile_ci": [
+          -0.046823,
+          0.026839
+        ],
+        "both_correct": 240,
+        "jev_only_correct": 16,
+        "baseline_only_correct": 19,
+        "both_wrong": 24,
+        "mcnemar_exact_two_sided_p": 0.735878801
+      },
+      "jev_vs_claude": {
+        "n": 299,
+        "delta_jev_minus_baseline": 0.133779,
+        "bootstrap_resamples": 20000,
+        "bootstrap_95_percentile_ci": [
+          0.086957,
+          0.180602
+        ],
+        "both_correct": 208,
+        "jev_only_correct": 48,
+        "baseline_only_correct": 8,
+        "both_wrong": 35,
+        "mcnemar_exact_two_sided_p": 4.7e-8
+      }
+    }
+  }
+}

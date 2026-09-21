@@ -1,0 +1,372 @@
+{
+  "question_id": "72e3ee87",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "How many episodes of the Science series have I completed on Crash Course?",
+    "question_date": "2023/06/27 (Tue) 19:26"
+  },
+  "reference_answer": "50",
+  "answers": {
+    "B": {
+      "answer": "50",
+      "retrieved": [
+        {
+          "id": "E42_6",
+          "text": "By the way, I've been watching Crash Course's Science series, and I just completed 50 episodes - it's been really helpful in understanding the basics of science.",
+          "status": "historical",
+          "timestamp": "2023/05/29 (Mon) 03:31",
+          "provenance": [
+            {
+              "session_index": 42,
+              "fact_index": 6,
+              "timestamp": "2023/05/29 (Mon) 03:31",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.8294320955826026
+        },
+        {
+          "id": "M49",
+          "text": "By the way, I've been watching Crash Course's Science series, and I just completed 50 episodes - it's been really helpful in understanding the basics of science.",
+          "status": "active",
+          "timestamp": "2023/05/29 (Mon) 03:31",
+          "provenance": [
+            {
+              "session_index": 42,
+              "fact_index": 6,
+              "timestamp": "2023/05/29 (Mon) 03:31",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.8289019212247888
+        },
+        {
+          "id": "E19_5",
+          "text": "I want to watch 1 Crash Course episode daily.",
+          "status": "tentative",
+          "timestamp": "2023/05/24 (Wed) 01:00",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 5,
+              "timestamp": "2023/05/24 (Wed) 01:00",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.7256795568168586
+        },
+        {
+          "id": "M17",
+          "text": "I want to watch 1 Crash Course episode daily.",
+          "status": "active",
+          "timestamp": "2023/05/24 (Wed) 01:00",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 5,
+              "timestamp": "2023/05/24 (Wed) 01:00",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.7256795568168586
+        },
+        {
+          "id": "E19_1",
+          "text": "Oh, and by the way, I'm currently on episode 10 of the Science series!",
+          "status": "current",
+          "timestamp": "2023/05/24 (Wed) 01:00",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 1,
+              "timestamp": "2023/05/24 (Wed) 01:00",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.667400099021123
+        },
+        {
+          "id": "E19_12",
+          "text": "I'm thinking of taking an online course on Data Science with Python.",
+          "status": "tentative",
+          "timestamp": "2023/05/24 (Wed) 01:00",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 12,
+              "timestamp": "2023/05/24 (Wed) 01:00",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.5282995582221357
+        },
+        {
+          "id": "E42_0",
+          "text": "I've been taking a course on Coursera and I want to supplement my learning with some books.",
+          "status": "tentative",
+          "timestamp": "2023/05/29 (Mon) 03:31",
+          "provenance": [
+            {
+              "session_index": 42,
+              "fact_index": 0,
+              "timestamp": "2023/05/29 (Mon) 03:31",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5145843544084342
+        },
+        {
+          "id": "E19_11",
+          "text": "I've been watching tutorials on LinkedIn Learning, but I'd like to explore more options.",
+          "status": "tentative",
+          "timestamp": "2023/05/24 (Wed) 01:00",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 11,
+              "timestamp": "2023/05/24 (Wed) 01:00",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.5016351163431794
+        },
+        {
+          "id": "E19_9",
+          "text": "I'd like to focus on books that are related to science, history, or self-improvement.",
+          "status": "tentative",
+          "timestamp": "2023/05/24 (Wed) 01:00",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 9,
+              "timestamp": "2023/05/24 (Wed) 01:00",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.45362737065939646
+        },
+        {
+          "id": "M20",
+          "text": "I'd like to focus on books that are related to science, history, or self-improvement.",
+          "status": "active",
+          "timestamp": "2023/05/24 (Wed) 01:00",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 9,
+              "timestamp": "2023/05/24 (Wed) 01:00",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.45293935496582993
+        }
+      ]
+    },
+    "C": {
+      "answer": "50",
+      "retrieved": [
+        {
+          "id": "E42_6",
+          "text": "By the way, I've been watching Crash Course's Science series, and I just completed 50 episodes - it's been really helpful in understanding the basics of science.",
+          "status": "historical",
+          "timestamp": "2023/05/29 (Mon) 03:31",
+          "provenance": [
+            {
+              "session_index": 42,
+              "fact_index": 6,
+              "timestamp": "2023/05/29 (Mon) 03:31",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.8289019212247888
+        },
+        {
+          "id": "M93",
+          "text": "By the way, I've been watching Crash Course's Science series, and I just completed 50 episodes - it's been really helpful in understanding the basics of science.",
+          "status": "active",
+          "timestamp": "2023/05/29 (Mon) 03:31",
+          "provenance": [
+            {
+              "session_index": 42,
+              "fact_index": 6,
+              "timestamp": "2023/05/29 (Mon) 03:31",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.8289019212247888
+        },
+        {
+          "id": "E19_5",
+          "text": "I want to watch 1 Crash Course episode daily.",
+          "status": "tentative",
+          "timestamp": "2023/05/24 (Wed) 01:00",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 5,
+              "timestamp": "2023/05/24 (Wed) 01:00",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.7256795568168586
+        },
+        {
+          "id": "M32",
+          "text": "I want to watch 1 Crash Course episode daily.",
+          "status": "active",
+          "timestamp": "2023/05/24 (Wed) 01:00",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 5,
+              "timestamp": "2023/05/24 (Wed) 01:00",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.7256795568168586
+        },
+        {
+          "id": "E19_1",
+          "text": "Oh, and by the way, I'm currently on episode 10 of the Science series!",
+          "status": "current",
+          "timestamp": "2023/05/24 (Wed) 01:00",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 1,
+              "timestamp": "2023/05/24 (Wed) 01:00",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6660796018723139
+        },
+        {
+          "id": "E19_12",
+          "text": "I'm thinking of taking an online course on Data Science with Python.",
+          "status": "tentative",
+          "timestamp": "2023/05/24 (Wed) 01:00",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 12,
+              "timestamp": "2023/05/24 (Wed) 01:00",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.5282995582221357
+        },
+        {
+          "id": "E42_0",
+          "text": "I've been taking a course on Coursera and I want to supplement my learning with some books.",
+          "status": "tentative",
+          "timestamp": "2023/05/29 (Mon) 03:31",
+          "provenance": [
+            {
+              "session_index": 42,
+              "fact_index": 0,
+              "timestamp": "2023/05/29 (Mon) 03:31",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5144024933866976
+        },
+        {
+          "id": "M91",
+          "text": "I've been taking a course on Coursera and I want to supplement my learning with some books.",
+          "status": "active",
+          "timestamp": "2023/05/29 (Mon) 03:31",
+          "provenance": [
+            {
+              "session_index": 42,
+              "fact_index": 0,
+              "timestamp": "2023/05/29 (Mon) 03:31",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5144024933866976
+        },
+        {
+          "id": "E19_11",
+          "text": "I've been watching tutorials on LinkedIn Learning, but I'd like to explore more options.",
+          "status": "tentative",
+          "timestamp": "2023/05/24 (Wed) 01:00",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 11,
+              "timestamp": "2023/05/24 (Wed) 01:00",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.5010314554063665
+        },
+        {
+          "id": "M38",
+          "text": "I've been watching tutorials on LinkedIn Learning, but I'd like to explore more options.",
+          "status": "active",
+          "timestamp": "2023/05/24 (Wed) 01:00",
+          "provenance": [
+            {
+              "session_index": 19,
+              "fact_index": 11,
+              "timestamp": "2023/05/24 (Wed) 01:00",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.5010314554063665
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "Yes",
+      "correct": true
+    },
+    "C": {
+      "raw": "Yes",
+      "correct": true
+    }
+  },
+  "rubric": "official knowledge-update"
+}

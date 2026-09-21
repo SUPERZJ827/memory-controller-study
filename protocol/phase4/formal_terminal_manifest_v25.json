@@ -1,0 +1,233 @@
+{
+  "schema": "phase4-formal-terminal-manifest-v25",
+  "generated_at": "2026-09-21T05:36:59.279Z",
+  "status": "COMPLETE_VERIFIED",
+  "experiment": {
+    "histories": 24,
+    "sessions": 1106,
+    "facts_per_arm": 6912,
+    "completed_at": "2026-09-21T05:24:11.544Z"
+  },
+  "ledger": {
+    "successful_attempts": 55098,
+    "error_attempts": 32,
+    "running_attempts": 0
+  },
+  "budget": {
+    "hard_cap_usd": 28,
+    "campaign_provider_exact_known_usd": 13.41144549,
+    "campaign_guard_settled_usd": 13.415175,
+    "unknown_holds_usd": 0.004032,
+    "campaign_committed_usd": 13.419207
+  },
+  "validations": {
+    "outcome_complete": true,
+    "status_complete": true,
+    "analysis_complete": true,
+    "no_running_attempts": true,
+    "budget_not_halted": true,
+    "campaign_under_hard_cap": true,
+    "budget_reconciliation_matches_guard": true,
+    "controller_pool_within_cap": true,
+    "qa_pool_within_cap": true,
+    "auxiliary_pool_within_cap": true,
+    "development_pool_within_cap": true
+  },
+  "preservation": {
+    "status": "PASS_WITH_DISCLOSED_AUTHORIZED_SOURCE_CHANGE",
+    "checked_artifacts": 3032,
+    "failed_artifacts": 0,
+    "artifact": {
+      "path": "phase4/preservation_check_post_phase4_v25.json",
+      "bytes": 1510,
+      "sha256": "d247dd56241a86d2fb17b70dfdb763c1f7ed0df83f6d99eb3c56b2a2283aa25c"
+    }
+  },
+  "protocol_artifacts": [
+    {
+      "path": "phase4/formal_freeze_v15.json",
+      "bytes": 7968,
+      "sha256": "43035baddce5a2d73c658e4c8431c953d2412a4e1f7a3ade60729d4402406a1a"
+    },
+    {
+      "path": "phase4/formal_readiness_v15.json",
+      "bytes": 627,
+      "sha256": "e5c58f08ea1cfbfbc15b108ae371d13eb9a36b9a04dc74fef182d744e6ff575e"
+    },
+    {
+      "path": "phase4/formal_run_authorization_v16.json",
+      "bytes": 181642,
+      "sha256": "49c3d797a306f658b12c372098e69f88dd1d697f91b75ebd20df4c30a07a236c"
+    },
+    {
+      "path": "phase4/formal_run_authorization_v17.json",
+      "bytes": 181884,
+      "sha256": "b09cce9457ad6414dc17182a33c4ce0420e3081478c054bbe50d9e6b5a57ec32"
+    },
+    {
+      "path": "phase4/formal_runtime_amendment_v18.json",
+      "bytes": 1170,
+      "sha256": "80e3a24ca56205282ce6d679cb1642682ea33284d242e175265ecd4c7f533758"
+    },
+    {
+      "path": "phase4/formal_runtime_amendment_v19.json",
+      "bytes": 1691,
+      "sha256": "d12b0ebac8b723b40586ee1c3c194870c9d76f72c1e789106188a790a3bfddaf"
+    },
+    {
+      "path": "phase4/formal_runtime_amendment_v20.json",
+      "bytes": 846,
+      "sha256": "abcf6efbcfe51d7136da0add7e0cdb9fffb9523515d09a4ccd137972dbc58c6a"
+    },
+    {
+      "path": "phase4/formal_runtime_amendment_v21.json",
+      "bytes": 1529,
+      "sha256": "49a90f1264da3a998a10250e2e290714c976799015d96b8a830023e1d82ac16a"
+    },
+    {
+      "path": "phase4/formal_runtime_amendment_v22.json",
+      "bytes": 2343,
+      "sha256": "c662e0b7143458d63c0ce3725ec48ee923a3052b284b2b1211a3223049ac4eea"
+    },
+    {
+      "path": "phase4/formal_runtime_recovery_v22.json",
+      "bytes": 972,
+      "sha256": "f1e387494a77038822bcd967d6cf06ff428c9e2d38faa9a2bb86353d6855b484"
+    },
+    {
+      "path": "phase4/formal_runtime_amendment_v23.json",
+      "bytes": 2422,
+      "sha256": "ca03ad930165d9edae205fa242726858ce9615180c423b0b3bb93236b2aaabd0"
+    },
+    {
+      "path": "phase4/formal_runtime_amendment_v24.json",
+      "bytes": 2419,
+      "sha256": "fc85b0f59387a492fc66c1b0d0fe268aaf33cada057105ad782e7d4bfb33c62f"
+    },
+    {
+      "path": "phase4/formal_runtime_amendment_v25.json",
+      "bytes": 2574,
+      "sha256": "b6a77672c847052218c7e542e0b7ce1a3ba96702efc756ab604b66a9d94648ff"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "path": "src/phase4/run_formal_v16.ts",
+      "bytes": 16138,
+      "sha256": "d11217d9a9b9cc7c0888cc4ab6bbf6d86a536cbc7687412bcdc176b25e39cbd4"
+    },
+    {
+      "path": "src/phase4/formal_transport_v16.ts",
+      "bytes": 10377,
+      "sha256": "4c58f54612977b8819db27719de103d6d1bc918a2b97175682297a4d5161bd21"
+    },
+    {
+      "path": "src/phase4/ledger.ts",
+      "bytes": 24386,
+      "sha256": "1fa7d83a12d10bc4b774b73436f51466324b9dca6ee961902276a7cd37d14335"
+    },
+    {
+      "path": "src/phase4/local_extractor_v14.ts",
+      "bytes": 3941,
+      "sha256": "043d624eef1777c6a4fad93cb856f0674a15b5b66dd548fe108ab1f7e1b7c2b1"
+    },
+    {
+      "path": "src/phase4/analyze_formal_v22.ts",
+      "bytes": 33462,
+      "sha256": "41b4c4d2e14f8d53c6f275cab7de22e660ec1d58fa5c95f9d91fbdeedc345a2b"
+    },
+    {
+      "path": "src/phase4/finalize_formal_v25.ts",
+      "bytes": 10919,
+      "sha256": "a616921fce39379e91c2fb4f84bf7eaecb3960e7ea093830aafbf629f0ef4007"
+    }
+  ],
+  "result_artifacts": [
+    {
+      "path": "results/phase4_formal_v17/outcome.json",
+      "bytes": 4601423,
+      "sha256": "445d4da8882c166f914a3e864f955cc5aba0f41d4a85f30ff87991aa0c9c34fc"
+    },
+    {
+      "path": "results/phase4_formal_v17/status.json",
+      "bytes": 1153,
+      "sha256": "73cb859fc41725e59b716db64c43d387083ab5f42dac1002e841cd2363375156"
+    },
+    {
+      "path": "results/phase4_formal_v17/ledger.sqlite",
+      "bytes": 2049757184,
+      "sha256": "601b3d14434abd5e7eecd883a04be8c3ca8f964911be5e3484c2a7302a235af2"
+    },
+    {
+      "path": "results/phase4_formal_v17/analysis.json",
+      "bytes": 24870,
+      "sha256": "15f1569bb7019baa6f31090e853478a79a4aa3b70ed5f0fb82f3a9cd049e9a34"
+    },
+    {
+      "path": "results/phase4_formal_v17/analysis_history_outcomes.csv",
+      "bytes": 5257,
+      "sha256": "c1e83d73e222c2a51507ad3e236e0d77b06cd848c01cf04d63587099da572739"
+    },
+    {
+      "path": "results/phase4_formal_v17/analysis_controller_steps.csv",
+      "bytes": 1070884,
+      "sha256": "dc6891e96d23f5ed46322606ff3b82f27e5e6e2198f706aee5eeed1cd110d426"
+    },
+    {
+      "path": "results/phase4_formal_v17/analysis_cost_breakdown.csv",
+      "bytes": 2434,
+      "sha256": "d5d23cd16f4b0f8106200e69762fb31965c4f1eb1641b8a9d7a64f208623b32f"
+    },
+    {
+      "path": "results/phase4_formal_v17/analysis_operation_breakdown.csv",
+      "bytes": 783,
+      "sha256": "e24cd9590f5266652bc863a373efb8488edfd886f36b062499ebd280da193409"
+    },
+    {
+      "path": "results/phase4_formal_v17/budget_reconciliation.json",
+      "bytes": 1619,
+      "sha256": "e15379832dc1f04c4c32742968b0147f0a9c1d04943998a6fa7b6e2030b67a8a"
+    },
+    {
+      "path": "RESULT_PHASE4_LOW_BUDGET.md",
+      "bytes": 11355,
+      "sha256": "7cc4e5497787cadbcaebc852d586ee200c36dd5c7139a209f73155baa342c39d"
+    },
+    {
+      "path": "phase4/preservation_check_post_phase4_v25.json",
+      "bytes": 1510,
+      "sha256": "d247dd56241a86d2fb17b70dfdb763c1f7ed0df83f6d99eb3c56b2a2283aa25c"
+    }
+  ],
+  "raw_artifact_groups": [
+    {
+      "path": "results/phase4_formal_v17/calls",
+      "file_count": 55098,
+      "bytes": 2900585505,
+      "inventory_sha256": "5d9f4b21119cf09730dd9b5b90bc05a299adf872ccfe902abf61990561eea243",
+      "inventory_definition": "sha256 over sorted UTF-8 lines: relative_path TAB bytes TAB content_sha256 NEWLINE"
+    },
+    {
+      "path": "results/phase4_formal_v17/failed_attempts",
+      "file_count": 31,
+      "bytes": 209621,
+      "inventory_sha256": "3a60b16096efa73e550043380529a9fbdacd7ad904cadb26d8ca52d3d5c72708",
+      "inventory_definition": "sha256 over sorted UTF-8 lines: relative_path TAB bytes TAB content_sha256 NEWLINE"
+    },
+    {
+      "path": "results/phase4_formal_v17/failures",
+      "file_count": 32,
+      "bytes": 38856,
+      "inventory_sha256": "f7d9a9368c8e01607107e83f1667782abe8c24e11703a71e7766ce902739aa94",
+      "inventory_definition": "sha256 over sorted UTF-8 lines: relative_path TAB bytes TAB content_sha256 NEWLINE"
+    },
+    {
+      "path": "results/phase4_formal_v17/histories",
+      "file_count": 15026,
+      "bytes": 2579170783,
+      "inventory_sha256": "4508177f0fc8d259df59f64d0b221f6e49555f5fe528a53d33a2c426089b72be",
+      "inventory_definition": "sha256 over sorted UTF-8 lines: relative_path TAB bytes TAB content_sha256 NEWLINE"
+    }
+  ],
+  "note": "Raw-group digests commit to every file path, byte length, and content hash without expanding the terminal manifest to tens of thousands of rows."
+}

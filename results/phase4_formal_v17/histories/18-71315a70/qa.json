@@ -1,0 +1,396 @@
+{
+  "question_id": "71315a70",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "How many hours have I spent on my abstract ocean sculpture?",
+    "question_date": "2023/06/18 (Sun) 19:47"
+  },
+  "reference_answer": "10-12 hours",
+  "answers": {
+    "B": {
+      "answer": "10-12",
+      "retrieved": [
+        {
+          "id": "E3_2",
+          "text": "I've been working on an abstract ocean sculpture at home, and I've spent around 5-6 hours on it so far.",
+          "status": "current",
+          "timestamp": "2023/06/11 (Sun) 03:51",
+          "provenance": [
+            {
+              "session_index": 3,
+              "fact_index": 2,
+              "timestamp": "2023/06/11 (Sun) 03:51",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.8977980187087713
+        },
+        {
+          "id": "E30_1",
+          "text": "By the way, I've been spending a lot of time on my abstract ocean sculpture lately - I've already put in 10-12 hours, and it's still a work in progress.",
+          "status": "current",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 30,
+              "fact_index": 1,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.8691589032834096
+        },
+        {
+          "id": "E30_6",
+          "text": "I've already spent 10-12 hours on my abstract ocean sculpture, and I'm excited to explore new techniques and materials for my next piece.",
+          "status": "historical",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 30,
+              "fact_index": 6,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.8175263200330756
+        },
+        {
+          "id": "M8",
+          "text": "I've been working on an abstract ocean sculpture at home, and I've spent around 10-12 hours on it so far. I want to experiment with different resin techniques to achieve a translucent, ocean-like effect in my sculptures.",
+          "status": "active",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 3,
+              "fact_index": 2,
+              "timestamp": "2023/06/11 (Sun) 03:51",
+              "source_turns": [
+                4
+              ]
+            },
+            {
+              "session_index": 3,
+              "fact_index": 5,
+              "timestamp": "2023/06/11 (Sun) 03:51",
+              "source_turns": [
+                10
+              ]
+            },
+            {
+              "session_index": 30,
+              "fact_index": 1,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7495033095221534
+        },
+        {
+          "id": "E30_3",
+          "text": "I've been thinking of using some natural materials like seashells or driftwood in my abstract ocean sculpture.",
+          "status": "tentative",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 30,
+              "fact_index": 3,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.6881812422165652
+        },
+        {
+          "id": "E3_3",
+          "text": "I've been thinking about creating a series of ocean-inspired sculptures, and I'd like to explore different materials and techniques.",
+          "status": "tentative",
+          "timestamp": "2023/06/11 (Sun) 03:51",
+          "provenance": [
+            {
+              "session_index": 3,
+              "fact_index": 3,
+              "timestamp": "2023/06/11 (Sun) 03:51",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6860858611952146
+        },
+        {
+          "id": "E30_7",
+          "text": "I think I'll try incorporating some found ocean objects, like sea glass or beach stones, into my next sculpture.",
+          "status": "tentative",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 30,
+              "fact_index": 7,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.6610370414247014
+        },
+        {
+          "id": "E30_0",
+          "text": "I'm thinking of creating a sculpture inspired by the sunset.",
+          "status": "tentative",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 30,
+              "fact_index": 0,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6532974029296963
+        },
+        {
+          "id": "E30_5",
+          "text": "I'm thinking of creating a series of sculptures inspired by the ocean, and I'd like to explore different techniques and materials for each piece.",
+          "status": "tentative",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 30,
+              "fact_index": 5,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.6418264828257038
+        },
+        {
+          "id": "E3_1",
+          "text": "I'm also thinking of creating a series of sculptures inspired by the ocean, and I'd like to experiment with different materials and finishes.",
+          "status": "tentative",
+          "timestamp": "2023/06/11 (Sun) 03:51",
+          "provenance": [
+            {
+              "session_index": 3,
+              "fact_index": 1,
+              "timestamp": "2023/06/11 (Sun) 03:51",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6252224767043558
+        }
+      ]
+    },
+    "C": {
+      "answer": "10-12",
+      "retrieved": [
+        {
+          "id": "E3_2",
+          "text": "I've been working on an abstract ocean sculpture at home, and I've spent around 5-6 hours on it so far.",
+          "status": "current",
+          "timestamp": "2023/06/11 (Sun) 03:51",
+          "provenance": [
+            {
+              "session_index": 3,
+              "fact_index": 2,
+              "timestamp": "2023/06/11 (Sun) 03:51",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.8979939216093836
+        },
+        {
+          "id": "M12",
+          "text": "I've been working on an abstract ocean sculpture at home, and I've spent around 10-12 hours on it so far.",
+          "status": "active",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 3,
+              "fact_index": 2,
+              "timestamp": "2023/06/11 (Sun) 03:51",
+              "source_turns": [
+                4
+              ]
+            },
+            {
+              "session_index": 30,
+              "fact_index": 1,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.8946340632854715
+        },
+        {
+          "id": "E30_1",
+          "text": "By the way, I've been spending a lot of time on my abstract ocean sculpture lately - I've already put in 10-12 hours, and it's still a work in progress.",
+          "status": "current",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 30,
+              "fact_index": 1,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.8690460750121324
+        },
+        {
+          "id": "E30_6",
+          "text": "I've already spent 10-12 hours on my abstract ocean sculpture, and I'm excited to explore new techniques and materials for my next piece.",
+          "status": "historical",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 30,
+              "fact_index": 6,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.8184614635679592
+        },
+        {
+          "id": "E30_3",
+          "text": "I've been thinking of using some natural materials like seashells or driftwood in my abstract ocean sculpture.",
+          "status": "tentative",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 30,
+              "fact_index": 3,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.6890494871697279
+        },
+        {
+          "id": "M80",
+          "text": "I've been thinking of using some natural materials like seashells or driftwood in my abstract ocean sculpture.",
+          "status": "active",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 30,
+              "fact_index": 3,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.6890494871697279
+        },
+        {
+          "id": "E3_3",
+          "text": "I've been thinking about creating a series of ocean-inspired sculptures, and I'd like to explore different materials and techniques.",
+          "status": "tentative",
+          "timestamp": "2023/06/11 (Sun) 03:51",
+          "provenance": [
+            {
+              "session_index": 3,
+              "fact_index": 3,
+              "timestamp": "2023/06/11 (Sun) 03:51",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6861288748832258
+        },
+        {
+          "id": "E30_7",
+          "text": "I think I'll try incorporating some found ocean objects, like sea glass or beach stones, into my next sculpture.",
+          "status": "tentative",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 30,
+              "fact_index": 7,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.6613119709971798
+        },
+        {
+          "id": "E30_0",
+          "text": "I'm thinking of creating a sculpture inspired by the sunset.",
+          "status": "tentative",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 30,
+              "fact_index": 0,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6532974029296963
+        },
+        {
+          "id": "E30_5",
+          "text": "I'm thinking of creating a series of sculptures inspired by the ocean, and I'd like to explore different techniques and materials for each piece.",
+          "status": "tentative",
+          "timestamp": "2023/06/17 (Sat) 09:26",
+          "provenance": [
+            {
+              "session_index": 30,
+              "fact_index": 5,
+              "timestamp": "2023/06/17 (Sat) 09:26",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.641925990505629
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "Yes",
+      "correct": true
+    },
+    "C": {
+      "raw": "Yes.",
+      "correct": true
+    }
+  },
+  "rubric": "official knowledge-update"
+}

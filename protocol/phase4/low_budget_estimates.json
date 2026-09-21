@@ -1,0 +1,231 @@
+{
+  "status": "PLANNING_ONLY_NO_INFERENCE_AUTHORIZED",
+  "new_inference_calls": 0,
+  "method": "uncached tariff arithmetic; facts/session and tokens/decision are scenario assumptions, not pilot observations",
+  "price_snapshot": {
+    "checked_at_utc": "2026-09-20T10:38:51.698Z",
+    "sources": [
+      "https://openrouter.ai/api/v1/models",
+      "https://openrouter.ai/api/v1/models/typesafe/jev-1.13/endpoints"
+    ],
+    "gpt_input_per_million_usd": 2,
+    "gpt_output_per_million_usd": 10,
+    "judge_input_per_million_usd": 2.5,
+    "judge_output_per_million_usd": 10,
+    "jev_input_per_million_usd": 0.042,
+    "jev_output_per_million_usd": 0,
+    "jev_context_tokens": 32000
+  },
+  "caps_usd": {
+    "total": 20,
+    "development": 1,
+    "formal_controllers": 16,
+    "formal_judges": 1,
+    "formal_failures_retries_auxiliary": 2
+  },
+  "expected_vs_reserved": "scenario averages never substitute for request upper-bound reservations",
+  "jev_full_context_reservation_usd_per_request": 0.001344,
+  "formal_judge_pair_assumption_usd": 0.0052,
+  "estimates": [
+    {
+      "name": "low",
+      "sessions": 48,
+      "facts_per_session": 1.5,
+      "gpt_input": 650,
+      "gpt_completion_including_reasoning": 60,
+      "jev_pair_cost": 0.00006,
+      "assumption_only_not_measurement": true,
+      "facts_per_history": 72,
+      "gpt_cost_per_decision_usd": 0.0019,
+      "B_plus_C_controller_cost_per_history_usd": 0.14112,
+      "dev_full_history_including_two_judges_usd": 0.14632,
+      "dev_fits_1_usd_before_retries": true,
+      "formal_n_by_1point5_planning_allowance": 24,
+      "formal_n_rule_outcome": "ESTIMATE_ONLY_FREEZE_AFTER_PILOT",
+      "formal_sizes": [
+        {
+          "n": 12,
+          "B_plus_C_decisions": 1728,
+          "B_input_tokens": 561600,
+          "B_completion_tokens_including_reasoning": 51840,
+          "formal_controllers_usd": 1.69344,
+          "formal_judges_usd": 0.0624,
+          "projected_invoice_with_full_1_usd_dev_and_2_usd_failure_allowance": 4.75584,
+          "controller_forecast_with_50_percent_allowance_fits_16_usd": true
+        },
+        {
+          "n": 18,
+          "B_plus_C_decisions": 2592,
+          "B_input_tokens": 842400,
+          "B_completion_tokens_including_reasoning": 77760,
+          "formal_controllers_usd": 2.54016,
+          "formal_judges_usd": 0.0936,
+          "projected_invoice_with_full_1_usd_dev_and_2_usd_failure_allowance": 5.63376,
+          "controller_forecast_with_50_percent_allowance_fits_16_usd": true
+        },
+        {
+          "n": 24,
+          "B_plus_C_decisions": 3456,
+          "B_input_tokens": 1123200,
+          "B_completion_tokens_including_reasoning": 103680,
+          "formal_controllers_usd": 3.38688,
+          "formal_judges_usd": 0.1248,
+          "projected_invoice_with_full_1_usd_dev_and_2_usd_failure_allowance": 6.51168,
+          "controller_forecast_with_50_percent_allowance_fits_16_usd": true
+        }
+      ]
+    },
+    {
+      "name": "base",
+      "sessions": 48,
+      "facts_per_session": 2.5,
+      "gpt_input": 1200,
+      "gpt_completion_including_reasoning": 140,
+      "jev_pair_cost": 0.0001,
+      "assumption_only_not_measurement": true,
+      "facts_per_history": 120,
+      "gpt_cost_per_decision_usd": 0.0038,
+      "B_plus_C_controller_cost_per_history_usd": 0.468,
+      "dev_full_history_including_two_judges_usd": 0.4732,
+      "dev_fits_1_usd_before_retries": true,
+      "formal_n_by_1point5_planning_allowance": 22,
+      "formal_n_rule_outcome": "ESTIMATE_ONLY_FREEZE_AFTER_PILOT",
+      "formal_sizes": [
+        {
+          "n": 12,
+          "B_plus_C_decisions": 2880,
+          "B_input_tokens": 1728000,
+          "B_completion_tokens_including_reasoning": 201600,
+          "formal_controllers_usd": 5.616,
+          "formal_judges_usd": 0.0624,
+          "projected_invoice_with_full_1_usd_dev_and_2_usd_failure_allowance": 8.6784,
+          "controller_forecast_with_50_percent_allowance_fits_16_usd": true
+        },
+        {
+          "n": 18,
+          "B_plus_C_decisions": 4320,
+          "B_input_tokens": 2592000,
+          "B_completion_tokens_including_reasoning": 302400,
+          "formal_controllers_usd": 8.424,
+          "formal_judges_usd": 0.0936,
+          "projected_invoice_with_full_1_usd_dev_and_2_usd_failure_allowance": 11.5176,
+          "controller_forecast_with_50_percent_allowance_fits_16_usd": true
+        },
+        {
+          "n": 24,
+          "B_plus_C_decisions": 5760,
+          "B_input_tokens": 3456000,
+          "B_completion_tokens_including_reasoning": 403200,
+          "formal_controllers_usd": 11.232,
+          "formal_judges_usd": 0.1248,
+          "projected_invoice_with_full_1_usd_dev_and_2_usd_failure_allowance": 14.3568,
+          "controller_forecast_with_50_percent_allowance_fits_16_usd": false
+        }
+      ]
+    },
+    {
+      "name": "high",
+      "sessions": 48,
+      "facts_per_session": 4,
+      "gpt_input": 2200,
+      "gpt_completion_including_reasoning": 320,
+      "jev_pair_cost": 0.0002,
+      "assumption_only_not_measurement": true,
+      "facts_per_history": 192,
+      "gpt_cost_per_decision_usd": 0.0076,
+      "B_plus_C_controller_cost_per_history_usd": 1.4976,
+      "dev_full_history_including_two_judges_usd": 1.5028,
+      "dev_fits_1_usd_before_retries": false,
+      "formal_n_by_1point5_planning_allowance": null,
+      "formal_n_rule_outcome": "STOP_IF_PILOT_RESEMBLES_THIS",
+      "formal_sizes": [
+        {
+          "n": 12,
+          "B_plus_C_decisions": 4608,
+          "B_input_tokens": 5068800,
+          "B_completion_tokens_including_reasoning": 737280,
+          "formal_controllers_usd": 17.9712,
+          "formal_judges_usd": 0.0624,
+          "projected_invoice_with_full_1_usd_dev_and_2_usd_failure_allowance": 21.0336,
+          "controller_forecast_with_50_percent_allowance_fits_16_usd": false
+        },
+        {
+          "n": 18,
+          "B_plus_C_decisions": 6912,
+          "B_input_tokens": 7603200,
+          "B_completion_tokens_including_reasoning": 1105920,
+          "formal_controllers_usd": 26.9568,
+          "formal_judges_usd": 0.0936,
+          "projected_invoice_with_full_1_usd_dev_and_2_usd_failure_allowance": 30.0504,
+          "controller_forecast_with_50_percent_allowance_fits_16_usd": false
+        },
+        {
+          "n": 24,
+          "B_plus_C_decisions": 9216,
+          "B_input_tokens": 10137600,
+          "B_completion_tokens_including_reasoning": 1474560,
+          "formal_controllers_usd": 35.9424,
+          "formal_judges_usd": 0.1248,
+          "projected_invoice_with_full_1_usd_dev_and_2_usd_failure_allowance": 39.0672,
+          "controller_forecast_with_50_percent_allowance_fits_16_usd": false
+        }
+      ]
+    }
+  ],
+  "local_compute": "API charge absent; tokens, local service time, queueing and resource limitations still reported",
+  "legacy": {
+    "source": "results/phase3/main_results.json",
+    "sha256": "a114b6d8415ef64b7fd01c0aaf67d6188bfa5af2ceeb52d7e8cb8bfc316f7e68",
+    "scope": "Phase 3 main 433 controller-only decisions per method; reused, not part of the new $20 spend",
+    "methods": {
+      "jev": {
+        "decisions": 433,
+        "median_latency_ms": 538.95,
+        "mean_latency_ms": 605.837,
+        "p90_latency_ms": 855.984,
+        "input_tokens": 401962,
+        "output_tokens": 29283,
+        "reasoning_tokens": null,
+        "controller_only_cost_usd": 0.016882404,
+        "parse_errors": 0,
+        "retried_decisions": 0
+      },
+      "gpt56sol": {
+        "decisions": 433,
+        "median_latency_ms": 1541.28,
+        "mean_latency_ms": 1830.044,
+        "p90_latency_ms": 2827.99,
+        "input_tokens": 180308,
+        "output_tokens": 16308,
+        "reasoning_tokens": 7799,
+        "controller_only_cost_usd": 0.523696,
+        "parse_errors": 0,
+        "retried_decisions": 0
+      },
+      "claude": {
+        "decisions": 433,
+        "median_latency_ms": 1391.61,
+        "mean_latency_ms": 1475.345,
+        "p90_latency_ms": 1719.828,
+        "input_tokens": 273488,
+        "output_tokens": 5951,
+        "reasoning_tokens": null,
+        "controller_only_cost_usd": 0.909729,
+        "parse_errors": 0,
+        "retried_decisions": 0
+      },
+      "qwen3_8b": {
+        "decisions": 433,
+        "median_latency_ms": 258.08,
+        "mean_latency_ms": 275.208,
+        "p90_latency_ms": 310.892,
+        "input_tokens": 158758,
+        "output_tokens": 4879,
+        "reasoning_tokens": null,
+        "controller_only_cost_usd": 0,
+        "parse_errors": 0,
+        "retried_decisions": 0
+      }
+    }
+  }
+}

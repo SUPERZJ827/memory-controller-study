@@ -1,0 +1,5202 @@
+[
+  {
+    "arm": "C",
+    "step": 0,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 0
+  },
+  {
+    "arm": "B",
+    "step": 0,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 0
+  },
+  {
+    "arm": "C",
+    "step": 1,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 0
+  },
+  {
+    "arm": "B",
+    "step": 1,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 1
+  },
+  {
+    "arm": "C",
+    "step": 2,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 0
+  },
+  {
+    "arm": "B",
+    "step": 2,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 2
+  },
+  {
+    "arm": "C",
+    "step": 3,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 0
+  },
+  {
+    "arm": "B",
+    "step": 3,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 2
+  },
+  {
+    "arm": "C",
+    "step": 4,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 0
+  },
+  {
+    "arm": "B",
+    "step": 4,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 2
+  },
+  {
+    "arm": "C",
+    "step": 5,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 0
+  },
+  {
+    "arm": "B",
+    "step": 5,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 2
+  },
+  {
+    "arm": "C",
+    "step": 6,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 0
+  },
+  {
+    "arm": "B",
+    "step": 6,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 2
+  },
+  {
+    "arm": "C",
+    "step": 7,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 1
+  },
+  {
+    "arm": "B",
+    "step": 7,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 2
+  },
+  {
+    "arm": "C",
+    "step": 8,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 2
+  },
+  {
+    "arm": "B",
+    "step": 8,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 3
+  },
+  {
+    "arm": "C",
+    "step": 9,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 3
+  },
+  {
+    "arm": "B",
+    "step": 9,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 4
+  },
+  {
+    "arm": "C",
+    "step": 10,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 3
+  },
+  {
+    "arm": "B",
+    "step": 10,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 4
+  },
+  {
+    "arm": "C",
+    "step": 11,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 3
+  },
+  {
+    "arm": "B",
+    "step": 11,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 4
+  },
+  {
+    "arm": "C",
+    "step": 12,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 4
+  },
+  {
+    "arm": "B",
+    "step": 12,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 4
+  },
+  {
+    "arm": "C",
+    "step": 13,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 4
+  },
+  {
+    "arm": "B",
+    "step": 13,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 4
+  },
+  {
+    "arm": "C",
+    "step": 14,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 5
+  },
+  {
+    "arm": "B",
+    "step": 14,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 5
+  },
+  {
+    "arm": "C",
+    "step": 15,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 6
+  },
+  {
+    "arm": "B",
+    "step": 15,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 6
+  },
+  {
+    "arm": "C",
+    "step": 16,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 6
+  },
+  {
+    "arm": "B",
+    "step": 16,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 6
+  },
+  {
+    "arm": "C",
+    "step": 17,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 7
+  },
+  {
+    "arm": "B",
+    "step": 17,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 7
+  },
+  {
+    "arm": "C",
+    "step": 18,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 8
+  },
+  {
+    "arm": "B",
+    "step": 18,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 7
+  },
+  {
+    "arm": "C",
+    "step": 19,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 9
+  },
+  {
+    "arm": "B",
+    "step": 19,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 8
+  },
+  {
+    "arm": "C",
+    "step": 20,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 9
+  },
+  {
+    "arm": "B",
+    "step": 20,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 8
+  },
+  {
+    "arm": "C",
+    "step": 21,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 9
+  },
+  {
+    "arm": "B",
+    "step": 21,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 8
+  },
+  {
+    "arm": "C",
+    "step": 22,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 9
+  },
+  {
+    "arm": "B",
+    "step": 22,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 8
+  },
+  {
+    "arm": "C",
+    "step": 23,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 9
+  },
+  {
+    "arm": "B",
+    "step": 23,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 8
+  },
+  {
+    "arm": "C",
+    "step": 24,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 10
+  },
+  {
+    "arm": "B",
+    "step": 24,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 9
+  },
+  {
+    "arm": "C",
+    "step": 25,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 10
+  },
+  {
+    "arm": "B",
+    "step": 25,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 9
+  },
+  {
+    "arm": "C",
+    "step": 26,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 11
+  },
+  {
+    "arm": "B",
+    "step": 26,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 10
+  },
+  {
+    "arm": "C",
+    "step": 27,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 12
+  },
+  {
+    "arm": "B",
+    "step": 27,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M10"
+    },
+    "valid": true,
+    "active": 10
+  },
+  {
+    "arm": "C",
+    "step": 28,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 13
+  },
+  {
+    "arm": "B",
+    "step": 28,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 11
+  },
+  {
+    "arm": "C",
+    "step": 29,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 13
+  },
+  {
+    "arm": "B",
+    "step": 29,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 11
+  },
+  {
+    "arm": "C",
+    "step": 30,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 13
+  },
+  {
+    "arm": "B",
+    "step": 30,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 11
+  },
+  {
+    "arm": "C",
+    "step": 31,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 13
+  },
+  {
+    "arm": "B",
+    "step": 31,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 11
+  },
+  {
+    "arm": "C",
+    "step": 32,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 13
+  },
+  {
+    "arm": "B",
+    "step": 32,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 11
+  },
+  {
+    "arm": "C",
+    "step": 33,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 13
+  },
+  {
+    "arm": "B",
+    "step": 33,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 11
+  },
+  {
+    "arm": "C",
+    "step": 34,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 14
+  },
+  {
+    "arm": "B",
+    "step": 34,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 12
+  },
+  {
+    "arm": "C",
+    "step": 35,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 15
+  },
+  {
+    "arm": "B",
+    "step": 35,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 13
+  },
+  {
+    "arm": "C",
+    "step": 36,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 15
+  },
+  {
+    "arm": "B",
+    "step": 36,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 13
+  },
+  {
+    "arm": "C",
+    "step": 37,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 16
+  },
+  {
+    "arm": "B",
+    "step": 37,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 14
+  },
+  {
+    "arm": "C",
+    "step": 38,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 16
+  },
+  {
+    "arm": "B",
+    "step": 38,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 14
+  },
+  {
+    "arm": "C",
+    "step": 39,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 17
+  },
+  {
+    "arm": "B",
+    "step": 39,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 15
+  },
+  {
+    "arm": "C",
+    "step": 40,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 18
+  },
+  {
+    "arm": "B",
+    "step": 40,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 16
+  },
+  {
+    "arm": "C",
+    "step": 41,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 19
+  },
+  {
+    "arm": "B",
+    "step": 41,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 17
+  },
+  {
+    "arm": "C",
+    "step": 42,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 20
+  },
+  {
+    "arm": "B",
+    "step": 42,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M17"
+    },
+    "valid": true,
+    "active": 17
+  },
+  {
+    "arm": "C",
+    "step": 43,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 21
+  },
+  {
+    "arm": "B",
+    "step": 43,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 18
+  },
+  {
+    "arm": "C",
+    "step": 44,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 21
+  },
+  {
+    "arm": "B",
+    "step": 44,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 18
+  },
+  {
+    "arm": "C",
+    "step": 45,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 22
+  },
+  {
+    "arm": "B",
+    "step": 45,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 19
+  },
+  {
+    "arm": "C",
+    "step": 46,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 23
+  },
+  {
+    "arm": "B",
+    "step": 46,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 19
+  },
+  {
+    "arm": "C",
+    "step": 47,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 23
+  },
+  {
+    "arm": "B",
+    "step": 47,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 19
+  },
+  {
+    "arm": "C",
+    "step": 48,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 24
+  },
+  {
+    "arm": "B",
+    "step": 48,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 19
+  },
+  {
+    "arm": "C",
+    "step": 49,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 24
+  },
+  {
+    "arm": "B",
+    "step": 49,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 19
+  },
+  {
+    "arm": "C",
+    "step": 50,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 24
+  },
+  {
+    "arm": "B",
+    "step": 50,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 19
+  },
+  {
+    "arm": "C",
+    "step": 51,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 25
+  },
+  {
+    "arm": "B",
+    "step": 51,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 20
+  },
+  {
+    "arm": "C",
+    "step": 52,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 25
+  },
+  {
+    "arm": "B",
+    "step": 52,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 20
+  },
+  {
+    "arm": "C",
+    "step": 53,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 25
+  },
+  {
+    "arm": "B",
+    "step": 53,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 20
+  },
+  {
+    "arm": "C",
+    "step": 54,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 26
+  },
+  {
+    "arm": "B",
+    "step": 54,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 20
+  },
+  {
+    "arm": "C",
+    "step": 55,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 26
+  },
+  {
+    "arm": "B",
+    "step": 55,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 20
+  },
+  {
+    "arm": "C",
+    "step": 56,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 27
+  },
+  {
+    "arm": "B",
+    "step": 56,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 21
+  },
+  {
+    "arm": "C",
+    "step": 57,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 28
+  },
+  {
+    "arm": "B",
+    "step": 57,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 22
+  },
+  {
+    "arm": "C",
+    "step": 58,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 28
+  },
+  {
+    "arm": "B",
+    "step": 58,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 22
+  },
+  {
+    "arm": "C",
+    "step": 59,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 28
+  },
+  {
+    "arm": "B",
+    "step": 59,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 22
+  },
+  {
+    "arm": "C",
+    "step": 60,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 28
+  },
+  {
+    "arm": "B",
+    "step": 60,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 22
+  },
+  {
+    "arm": "C",
+    "step": 61,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 29
+  },
+  {
+    "arm": "B",
+    "step": 61,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 23
+  },
+  {
+    "arm": "C",
+    "step": 62,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 29
+  },
+  {
+    "arm": "B",
+    "step": 62,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 23
+  },
+  {
+    "arm": "C",
+    "step": 63,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 30
+  },
+  {
+    "arm": "B",
+    "step": 63,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 23
+  },
+  {
+    "arm": "C",
+    "step": 64,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 30
+  },
+  {
+    "arm": "B",
+    "step": 64,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 24
+  },
+  {
+    "arm": "C",
+    "step": 65,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 31
+  },
+  {
+    "arm": "B",
+    "step": 65,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 25
+  },
+  {
+    "arm": "C",
+    "step": 66,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 32
+  },
+  {
+    "arm": "B",
+    "step": 66,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 26
+  },
+  {
+    "arm": "C",
+    "step": 67,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 32
+  },
+  {
+    "arm": "B",
+    "step": 67,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 26
+  },
+  {
+    "arm": "C",
+    "step": 68,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 33
+  },
+  {
+    "arm": "B",
+    "step": 68,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 27
+  },
+  {
+    "arm": "C",
+    "step": 69,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 34
+  },
+  {
+    "arm": "B",
+    "step": 69,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 28
+  },
+  {
+    "arm": "C",
+    "step": 70,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 34
+  },
+  {
+    "arm": "B",
+    "step": 70,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 28
+  },
+  {
+    "arm": "C",
+    "step": 71,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 35
+  },
+  {
+    "arm": "B",
+    "step": 71,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 28
+  },
+  {
+    "arm": "C",
+    "step": 72,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 35
+  },
+  {
+    "arm": "B",
+    "step": 72,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 28
+  },
+  {
+    "arm": "C",
+    "step": 73,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 35
+  },
+  {
+    "arm": "B",
+    "step": 73,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 28
+  },
+  {
+    "arm": "C",
+    "step": 74,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 35
+  },
+  {
+    "arm": "B",
+    "step": 74,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 28
+  },
+  {
+    "arm": "C",
+    "step": 75,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 36
+  },
+  {
+    "arm": "B",
+    "step": 75,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 29
+  },
+  {
+    "arm": "C",
+    "step": 76,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 37
+  },
+  {
+    "arm": "B",
+    "step": 76,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 29
+  },
+  {
+    "arm": "C",
+    "step": 77,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 37
+  },
+  {
+    "arm": "B",
+    "step": 77,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 29
+  },
+  {
+    "arm": "C",
+    "step": 78,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 37
+  },
+  {
+    "arm": "B",
+    "step": 78,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 29
+  },
+  {
+    "arm": "C",
+    "step": 79,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 37
+  },
+  {
+    "arm": "B",
+    "step": 79,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 29
+  },
+  {
+    "arm": "C",
+    "step": 80,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 38
+  },
+  {
+    "arm": "B",
+    "step": 80,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 29
+  },
+  {
+    "arm": "C",
+    "step": 81,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 39
+  },
+  {
+    "arm": "B",
+    "step": 81,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 30
+  },
+  {
+    "arm": "C",
+    "step": 82,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 40
+  },
+  {
+    "arm": "B",
+    "step": 82,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 30
+  },
+  {
+    "arm": "C",
+    "step": 83,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 41
+  },
+  {
+    "arm": "B",
+    "step": 83,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 30
+  },
+  {
+    "arm": "C",
+    "step": 84,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 41
+  },
+  {
+    "arm": "B",
+    "step": 84,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 30
+  },
+  {
+    "arm": "C",
+    "step": 85,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 41
+  },
+  {
+    "arm": "B",
+    "step": 85,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 30
+  },
+  {
+    "arm": "C",
+    "step": 86,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 42
+  },
+  {
+    "arm": "B",
+    "step": 86,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 31
+  },
+  {
+    "arm": "C",
+    "step": 87,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 42
+  },
+  {
+    "arm": "B",
+    "step": 87,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 31
+  },
+  {
+    "arm": "C",
+    "step": 88,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 43
+  },
+  {
+    "arm": "B",
+    "step": 88,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 32
+  },
+  {
+    "arm": "C",
+    "step": 89,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 43
+  },
+  {
+    "arm": "B",
+    "step": 89,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 32
+  },
+  {
+    "arm": "C",
+    "step": 90,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 44
+  },
+  {
+    "arm": "B",
+    "step": 90,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 33
+  },
+  {
+    "arm": "C",
+    "step": 91,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 45
+  },
+  {
+    "arm": "B",
+    "step": 91,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 33
+  },
+  {
+    "arm": "C",
+    "step": 92,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 45
+  },
+  {
+    "arm": "B",
+    "step": 92,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 33
+  },
+  {
+    "arm": "C",
+    "step": 93,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 46
+  },
+  {
+    "arm": "B",
+    "step": 93,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 33
+  },
+  {
+    "arm": "C",
+    "step": 94,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 47
+  },
+  {
+    "arm": "B",
+    "step": 94,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 34
+  },
+  {
+    "arm": "C",
+    "step": 95,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 47
+  },
+  {
+    "arm": "B",
+    "step": 95,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 34
+  },
+  {
+    "arm": "C",
+    "step": 96,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 47
+  },
+  {
+    "arm": "B",
+    "step": 96,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 34
+  },
+  {
+    "arm": "C",
+    "step": 97,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 47
+  },
+  {
+    "arm": "B",
+    "step": 97,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 34
+  },
+  {
+    "arm": "C",
+    "step": 98,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 47
+  },
+  {
+    "arm": "B",
+    "step": 98,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 34
+  },
+  {
+    "arm": "C",
+    "step": 99,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 47
+  },
+  {
+    "arm": "B",
+    "step": 99,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 34
+  },
+  {
+    "arm": "C",
+    "step": 100,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 48
+  },
+  {
+    "arm": "B",
+    "step": 100,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 35
+  },
+  {
+    "arm": "C",
+    "step": 101,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M48"
+    },
+    "valid": true,
+    "active": 48
+  },
+  {
+    "arm": "B",
+    "step": 101,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 35
+  },
+  {
+    "arm": "C",
+    "step": 102,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 48
+  },
+  {
+    "arm": "B",
+    "step": 102,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 35
+  },
+  {
+    "arm": "C",
+    "step": 103,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 49
+  },
+  {
+    "arm": "B",
+    "step": 103,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M35"
+    },
+    "valid": true,
+    "active": 35
+  },
+  {
+    "arm": "C",
+    "step": 104,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 50
+  },
+  {
+    "arm": "B",
+    "step": 104,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 36
+  },
+  {
+    "arm": "C",
+    "step": 105,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 51
+  },
+  {
+    "arm": "B",
+    "step": 105,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 36
+  },
+  {
+    "arm": "C",
+    "step": 106,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 52
+  },
+  {
+    "arm": "B",
+    "step": 106,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 37
+  },
+  {
+    "arm": "C",
+    "step": 107,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 52
+  },
+  {
+    "arm": "B",
+    "step": 107,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 37
+  },
+  {
+    "arm": "C",
+    "step": 108,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 52
+  },
+  {
+    "arm": "B",
+    "step": 108,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 37
+  },
+  {
+    "arm": "C",
+    "step": 109,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 52
+  },
+  {
+    "arm": "B",
+    "step": 109,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 37
+  },
+  {
+    "arm": "C",
+    "step": 110,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 52
+  },
+  {
+    "arm": "B",
+    "step": 110,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 37
+  },
+  {
+    "arm": "C",
+    "step": 111,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 53
+  },
+  {
+    "arm": "B",
+    "step": 111,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 38
+  },
+  {
+    "arm": "C",
+    "step": 112,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 54
+  },
+  {
+    "arm": "B",
+    "step": 112,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 39
+  },
+  {
+    "arm": "C",
+    "step": 113,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 55
+  },
+  {
+    "arm": "B",
+    "step": 113,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 40
+  },
+  {
+    "arm": "C",
+    "step": 114,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 56
+  },
+  {
+    "arm": "B",
+    "step": 114,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 41
+  },
+  {
+    "arm": "C",
+    "step": 115,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 56
+  },
+  {
+    "arm": "B",
+    "step": 115,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 41
+  },
+  {
+    "arm": "C",
+    "step": 116,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 57
+  },
+  {
+    "arm": "B",
+    "step": 116,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 41
+  },
+  {
+    "arm": "C",
+    "step": 117,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 58
+  },
+  {
+    "arm": "B",
+    "step": 117,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 42
+  },
+  {
+    "arm": "C",
+    "step": 118,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 58
+  },
+  {
+    "arm": "B",
+    "step": 118,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 42
+  },
+  {
+    "arm": "C",
+    "step": 119,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 59
+  },
+  {
+    "arm": "B",
+    "step": 119,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M42"
+    },
+    "valid": true,
+    "active": 42
+  },
+  {
+    "arm": "C",
+    "step": 120,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 59
+  },
+  {
+    "arm": "B",
+    "step": 120,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 42
+  },
+  {
+    "arm": "C",
+    "step": 121,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 60
+  },
+  {
+    "arm": "B",
+    "step": 121,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 42
+  },
+  {
+    "arm": "C",
+    "step": 122,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 61
+  },
+  {
+    "arm": "B",
+    "step": 122,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 43
+  },
+  {
+    "arm": "C",
+    "step": 123,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 61
+  },
+  {
+    "arm": "B",
+    "step": 123,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 43
+  },
+  {
+    "arm": "C",
+    "step": 124,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 61
+  },
+  {
+    "arm": "B",
+    "step": 124,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 44
+  },
+  {
+    "arm": "C",
+    "step": 125,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 62
+  },
+  {
+    "arm": "B",
+    "step": 125,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 44
+  },
+  {
+    "arm": "C",
+    "step": 126,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 63
+  },
+  {
+    "arm": "B",
+    "step": 126,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 45
+  },
+  {
+    "arm": "C",
+    "step": 127,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 63
+  },
+  {
+    "arm": "B",
+    "step": 127,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 45
+  },
+  {
+    "arm": "C",
+    "step": 128,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 64
+  },
+  {
+    "arm": "B",
+    "step": 128,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 46
+  },
+  {
+    "arm": "C",
+    "step": 129,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 65
+  },
+  {
+    "arm": "B",
+    "step": 129,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M45"
+    },
+    "valid": true,
+    "active": 46
+  },
+  {
+    "arm": "C",
+    "step": 130,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 65
+  },
+  {
+    "arm": "B",
+    "step": 130,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 46
+  },
+  {
+    "arm": "C",
+    "step": 131,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 65
+  },
+  {
+    "arm": "B",
+    "step": 131,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 46
+  },
+  {
+    "arm": "C",
+    "step": 132,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 66
+  },
+  {
+    "arm": "B",
+    "step": 132,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 47
+  },
+  {
+    "arm": "C",
+    "step": 133,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 66
+  },
+  {
+    "arm": "B",
+    "step": 133,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 47
+  },
+  {
+    "arm": "C",
+    "step": 134,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 67
+  },
+  {
+    "arm": "B",
+    "step": 134,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 48
+  },
+  {
+    "arm": "C",
+    "step": 135,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 68
+  },
+  {
+    "arm": "B",
+    "step": 135,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 49
+  },
+  {
+    "arm": "C",
+    "step": 136,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 69
+  },
+  {
+    "arm": "B",
+    "step": 136,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 50
+  },
+  {
+    "arm": "C",
+    "step": 137,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 70
+  },
+  {
+    "arm": "B",
+    "step": 137,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 50
+  },
+  {
+    "arm": "C",
+    "step": 138,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 71
+  },
+  {
+    "arm": "B",
+    "step": 138,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 51
+  },
+  {
+    "arm": "C",
+    "step": 139,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 72
+  },
+  {
+    "arm": "B",
+    "step": 139,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M51"
+    },
+    "valid": true,
+    "active": 51
+  },
+  {
+    "arm": "C",
+    "step": 140,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 73
+  },
+  {
+    "arm": "B",
+    "step": 140,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 52
+  },
+  {
+    "arm": "C",
+    "step": 141,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 74
+  },
+  {
+    "arm": "B",
+    "step": 141,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 52
+  },
+  {
+    "arm": "C",
+    "step": 142,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 75
+  },
+  {
+    "arm": "B",
+    "step": 142,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 53
+  },
+  {
+    "arm": "C",
+    "step": 143,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 75
+  },
+  {
+    "arm": "B",
+    "step": 143,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 53
+  },
+  {
+    "arm": "C",
+    "step": 144,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 76
+  },
+  {
+    "arm": "B",
+    "step": 144,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 54
+  },
+  {
+    "arm": "C",
+    "step": 145,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 76
+  },
+  {
+    "arm": "B",
+    "step": 145,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 54
+  },
+  {
+    "arm": "C",
+    "step": 146,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 77
+  },
+  {
+    "arm": "B",
+    "step": 146,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 55
+  },
+  {
+    "arm": "C",
+    "step": 147,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 78
+  },
+  {
+    "arm": "B",
+    "step": 147,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 55
+  },
+  {
+    "arm": "C",
+    "step": 148,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 79
+  },
+  {
+    "arm": "B",
+    "step": 148,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M55"
+    },
+    "valid": true,
+    "active": 55
+  },
+  {
+    "arm": "C",
+    "step": 149,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 79
+  },
+  {
+    "arm": "B",
+    "step": 149,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 55
+  },
+  {
+    "arm": "C",
+    "step": 150,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 80
+  },
+  {
+    "arm": "B",
+    "step": 150,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 56
+  },
+  {
+    "arm": "C",
+    "step": 151,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 80
+  },
+  {
+    "arm": "B",
+    "step": 151,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 56
+  },
+  {
+    "arm": "C",
+    "step": 152,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 80
+  },
+  {
+    "arm": "B",
+    "step": 152,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 56
+  },
+  {
+    "arm": "C",
+    "step": 153,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 80
+  },
+  {
+    "arm": "B",
+    "step": 153,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 56
+  },
+  {
+    "arm": "C",
+    "step": 154,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 80
+  },
+  {
+    "arm": "B",
+    "step": 154,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 56
+  },
+  {
+    "arm": "C",
+    "step": 155,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 80
+  },
+  {
+    "arm": "B",
+    "step": 155,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 56
+  },
+  {
+    "arm": "C",
+    "step": 156,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 81
+  },
+  {
+    "arm": "B",
+    "step": 156,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 56
+  },
+  {
+    "arm": "C",
+    "step": 157,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 82
+  },
+  {
+    "arm": "B",
+    "step": 157,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 57
+  },
+  {
+    "arm": "C",
+    "step": 158,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 82
+  },
+  {
+    "arm": "B",
+    "step": 158,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 57
+  },
+  {
+    "arm": "C",
+    "step": 159,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 83
+  },
+  {
+    "arm": "B",
+    "step": 159,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 58
+  },
+  {
+    "arm": "C",
+    "step": 160,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 83
+  },
+  {
+    "arm": "B",
+    "step": 160,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 58
+  },
+  {
+    "arm": "C",
+    "step": 161,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 84
+  },
+  {
+    "arm": "B",
+    "step": 161,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 59
+  },
+  {
+    "arm": "C",
+    "step": 162,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 84
+  },
+  {
+    "arm": "B",
+    "step": 162,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 59
+  },
+  {
+    "arm": "C",
+    "step": 163,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 85
+  },
+  {
+    "arm": "B",
+    "step": 163,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 59
+  },
+  {
+    "arm": "C",
+    "step": 164,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 85
+  },
+  {
+    "arm": "B",
+    "step": 164,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 60
+  },
+  {
+    "arm": "C",
+    "step": 165,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 86
+  },
+  {
+    "arm": "B",
+    "step": 165,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 60
+  },
+  {
+    "arm": "C",
+    "step": 166,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 86
+  },
+  {
+    "arm": "B",
+    "step": 166,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 60
+  },
+  {
+    "arm": "C",
+    "step": 167,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 87
+  },
+  {
+    "arm": "B",
+    "step": 167,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 61
+  },
+  {
+    "arm": "C",
+    "step": 168,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 87
+  },
+  {
+    "arm": "B",
+    "step": 168,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 61
+  },
+  {
+    "arm": "C",
+    "step": 169,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 87
+  },
+  {
+    "arm": "B",
+    "step": 169,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 61
+  },
+  {
+    "arm": "C",
+    "step": 170,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 88
+  },
+  {
+    "arm": "B",
+    "step": 170,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M61"
+    },
+    "valid": true,
+    "active": 61
+  },
+  {
+    "arm": "C",
+    "step": 171,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 89
+  },
+  {
+    "arm": "B",
+    "step": 171,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 62
+  },
+  {
+    "arm": "C",
+    "step": 172,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M89"
+    },
+    "valid": true,
+    "active": 89
+  },
+  {
+    "arm": "B",
+    "step": 172,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 62
+  },
+  {
+    "arm": "C",
+    "step": 173,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 89
+  },
+  {
+    "arm": "B",
+    "step": 173,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 62
+  },
+  {
+    "arm": "C",
+    "step": 174,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 89
+  },
+  {
+    "arm": "B",
+    "step": 174,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 62
+  },
+  {
+    "arm": "C",
+    "step": 175,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 90
+  },
+  {
+    "arm": "B",
+    "step": 175,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 63
+  },
+  {
+    "arm": "C",
+    "step": 176,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 90
+  },
+  {
+    "arm": "B",
+    "step": 176,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 63
+  },
+  {
+    "arm": "C",
+    "step": 177,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 91
+  },
+  {
+    "arm": "B",
+    "step": 177,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 64
+  },
+  {
+    "arm": "C",
+    "step": 178,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 91
+  },
+  {
+    "arm": "B",
+    "step": 178,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 64
+  },
+  {
+    "arm": "C",
+    "step": 179,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 91
+  },
+  {
+    "arm": "B",
+    "step": 179,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 64
+  },
+  {
+    "arm": "C",
+    "step": 180,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 91
+  },
+  {
+    "arm": "B",
+    "step": 180,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 64
+  },
+  {
+    "arm": "C",
+    "step": 181,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 91
+  },
+  {
+    "arm": "B",
+    "step": 181,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 64
+  },
+  {
+    "arm": "C",
+    "step": 182,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 92
+  },
+  {
+    "arm": "B",
+    "step": 182,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 65
+  },
+  {
+    "arm": "C",
+    "step": 183,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 92
+  },
+  {
+    "arm": "B",
+    "step": 183,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 65
+  },
+  {
+    "arm": "C",
+    "step": 184,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 93
+  },
+  {
+    "arm": "B",
+    "step": 184,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 65
+  },
+  {
+    "arm": "C",
+    "step": 185,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 94
+  },
+  {
+    "arm": "B",
+    "step": 185,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 65
+  },
+  {
+    "arm": "C",
+    "step": 186,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 94
+  },
+  {
+    "arm": "B",
+    "step": 186,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 65
+  },
+  {
+    "arm": "C",
+    "step": 187,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 95
+  },
+  {
+    "arm": "B",
+    "step": 187,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 66
+  },
+  {
+    "arm": "C",
+    "step": 188,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 95
+  },
+  {
+    "arm": "B",
+    "step": 188,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 66
+  },
+  {
+    "arm": "C",
+    "step": 189,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 96
+  },
+  {
+    "arm": "B",
+    "step": 189,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 67
+  },
+  {
+    "arm": "C",
+    "step": 190,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 97
+  },
+  {
+    "arm": "B",
+    "step": 190,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 68
+  },
+  {
+    "arm": "C",
+    "step": 191,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 98
+  },
+  {
+    "arm": "B",
+    "step": 191,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 69
+  },
+  {
+    "arm": "C",
+    "step": 192,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 99
+  },
+  {
+    "arm": "B",
+    "step": 192,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 70
+  },
+  {
+    "arm": "C",
+    "step": 193,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 100
+  },
+  {
+    "arm": "B",
+    "step": 193,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 71
+  },
+  {
+    "arm": "C",
+    "step": 194,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 101
+  },
+  {
+    "arm": "B",
+    "step": 194,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 72
+  },
+  {
+    "arm": "C",
+    "step": 195,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 102
+  },
+  {
+    "arm": "B",
+    "step": 195,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 73
+  },
+  {
+    "arm": "C",
+    "step": 196,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 103
+  },
+  {
+    "arm": "B",
+    "step": 196,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 73
+  },
+  {
+    "arm": "C",
+    "step": 197,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 104
+  },
+  {
+    "arm": "B",
+    "step": 197,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 73
+  },
+  {
+    "arm": "C",
+    "step": 198,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 104
+  },
+  {
+    "arm": "B",
+    "step": 198,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 73
+  },
+  {
+    "arm": "C",
+    "step": 199,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 104
+  },
+  {
+    "arm": "B",
+    "step": 199,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 73
+  },
+  {
+    "arm": "C",
+    "step": 200,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 104
+  },
+  {
+    "arm": "B",
+    "step": 200,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 74
+  },
+  {
+    "arm": "C",
+    "step": 201,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 105
+  },
+  {
+    "arm": "B",
+    "step": 201,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M74"
+    },
+    "valid": true,
+    "active": 74
+  },
+  {
+    "arm": "C",
+    "step": 202,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 105
+  },
+  {
+    "arm": "B",
+    "step": 202,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 74
+  },
+  {
+    "arm": "C",
+    "step": 203,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 105
+  },
+  {
+    "arm": "B",
+    "step": 203,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 74
+  },
+  {
+    "arm": "C",
+    "step": 204,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 106
+  },
+  {
+    "arm": "B",
+    "step": 204,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 75
+  },
+  {
+    "arm": "C",
+    "step": 205,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 107
+  },
+  {
+    "arm": "B",
+    "step": 205,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M75"
+    },
+    "valid": true,
+    "active": 75
+  },
+  {
+    "arm": "C",
+    "step": 206,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 107
+  },
+  {
+    "arm": "B",
+    "step": 206,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 75
+  },
+  {
+    "arm": "C",
+    "step": 207,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 107
+  },
+  {
+    "arm": "B",
+    "step": 207,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 75
+  },
+  {
+    "arm": "C",
+    "step": 208,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 108
+  },
+  {
+    "arm": "B",
+    "step": 208,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 76
+  },
+  {
+    "arm": "C",
+    "step": 209,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 108
+  },
+  {
+    "arm": "B",
+    "step": 209,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 76
+  },
+  {
+    "arm": "C",
+    "step": 210,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 109
+  },
+  {
+    "arm": "B",
+    "step": 210,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 76
+  },
+  {
+    "arm": "C",
+    "step": 211,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 110
+  },
+  {
+    "arm": "B",
+    "step": 211,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 77
+  },
+  {
+    "arm": "C",
+    "step": 212,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 111
+  },
+  {
+    "arm": "B",
+    "step": 212,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 78
+  },
+  {
+    "arm": "C",
+    "step": 213,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 111
+  },
+  {
+    "arm": "B",
+    "step": 213,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M78"
+    },
+    "valid": true,
+    "active": 78
+  },
+  {
+    "arm": "C",
+    "step": 214,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 112
+  },
+  {
+    "arm": "B",
+    "step": 214,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 79
+  },
+  {
+    "arm": "C",
+    "step": 215,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 112
+  },
+  {
+    "arm": "B",
+    "step": 215,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 79
+  },
+  {
+    "arm": "C",
+    "step": 216,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 112
+  },
+  {
+    "arm": "B",
+    "step": 216,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 79
+  },
+  {
+    "arm": "C",
+    "step": 217,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 112
+  },
+  {
+    "arm": "B",
+    "step": 217,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 79
+  },
+  {
+    "arm": "C",
+    "step": 218,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 113
+  },
+  {
+    "arm": "B",
+    "step": 218,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 80
+  },
+  {
+    "arm": "C",
+    "step": 219,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 114
+  },
+  {
+    "arm": "B",
+    "step": 219,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 81
+  },
+  {
+    "arm": "C",
+    "step": 220,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 114
+  },
+  {
+    "arm": "B",
+    "step": 220,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 81
+  },
+  {
+    "arm": "C",
+    "step": 221,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 114
+  },
+  {
+    "arm": "B",
+    "step": 221,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 81
+  },
+  {
+    "arm": "C",
+    "step": 222,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 115
+  },
+  {
+    "arm": "B",
+    "step": 222,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 82
+  },
+  {
+    "arm": "C",
+    "step": 223,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 116
+  },
+  {
+    "arm": "B",
+    "step": 223,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M82"
+    },
+    "valid": true,
+    "active": 82
+  },
+  {
+    "arm": "C",
+    "step": 224,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 116
+  },
+  {
+    "arm": "B",
+    "step": 224,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 82
+  },
+  {
+    "arm": "C",
+    "step": 225,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 117
+  },
+  {
+    "arm": "B",
+    "step": 225,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M82"
+    },
+    "valid": true,
+    "active": 82
+  },
+  {
+    "arm": "C",
+    "step": 226,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 118
+  },
+  {
+    "arm": "B",
+    "step": 226,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M81"
+    },
+    "valid": true,
+    "active": 82
+  },
+  {
+    "arm": "C",
+    "step": 227,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 119
+  },
+  {
+    "arm": "B",
+    "step": 227,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 83
+  },
+  {
+    "arm": "C",
+    "step": 228,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 120
+  },
+  {
+    "arm": "B",
+    "step": 228,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 84
+  },
+  {
+    "arm": "C",
+    "step": 229,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 121
+  },
+  {
+    "arm": "B",
+    "step": 229,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M84"
+    },
+    "valid": true,
+    "active": 84
+  },
+  {
+    "arm": "C",
+    "step": 230,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 122
+  },
+  {
+    "arm": "B",
+    "step": 230,
+    "prediction": {
+      "operation": "UPDATE",
+      "target": "M24"
+    },
+    "valid": true,
+    "active": 84
+  },
+  {
+    "arm": "C",
+    "step": 231,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 123
+  },
+  {
+    "arm": "B",
+    "step": 231,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 85
+  },
+  {
+    "arm": "C",
+    "step": 232,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 123
+  },
+  {
+    "arm": "B",
+    "step": 232,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 85
+  },
+  {
+    "arm": "C",
+    "step": 233,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 123
+  },
+  {
+    "arm": "B",
+    "step": 233,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 85
+  },
+  {
+    "arm": "C",
+    "step": 234,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 123
+  },
+  {
+    "arm": "B",
+    "step": 234,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 85
+  },
+  {
+    "arm": "C",
+    "step": 235,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 123
+  },
+  {
+    "arm": "B",
+    "step": 235,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 85
+  },
+  {
+    "arm": "C",
+    "step": 236,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 124
+  },
+  {
+    "arm": "B",
+    "step": 236,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 86
+  },
+  {
+    "arm": "C",
+    "step": 237,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 124
+  },
+  {
+    "arm": "B",
+    "step": 237,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 86
+  },
+  {
+    "arm": "C",
+    "step": 238,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 125
+  },
+  {
+    "arm": "B",
+    "step": 238,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 87
+  },
+  {
+    "arm": "C",
+    "step": 239,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 125
+  },
+  {
+    "arm": "B",
+    "step": 239,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 87
+  },
+  {
+    "arm": "C",
+    "step": 240,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 126
+  },
+  {
+    "arm": "B",
+    "step": 240,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 87
+  },
+  {
+    "arm": "C",
+    "step": 241,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 126
+  },
+  {
+    "arm": "B",
+    "step": 241,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 87
+  },
+  {
+    "arm": "C",
+    "step": 242,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 126
+  },
+  {
+    "arm": "B",
+    "step": 242,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 87
+  },
+  {
+    "arm": "C",
+    "step": 243,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 126
+  },
+  {
+    "arm": "B",
+    "step": 243,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 87
+  },
+  {
+    "arm": "C",
+    "step": 244,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 126
+  },
+  {
+    "arm": "B",
+    "step": 244,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 87
+  },
+  {
+    "arm": "C",
+    "step": 245,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 126
+  },
+  {
+    "arm": "B",
+    "step": 245,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 87
+  },
+  {
+    "arm": "C",
+    "step": 246,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 126
+  },
+  {
+    "arm": "B",
+    "step": 246,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 88
+  },
+  {
+    "arm": "C",
+    "step": 247,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 127
+  },
+  {
+    "arm": "B",
+    "step": 247,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 89
+  },
+  {
+    "arm": "C",
+    "step": 248,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 127
+  },
+  {
+    "arm": "B",
+    "step": 248,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 89
+  },
+  {
+    "arm": "C",
+    "step": 249,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 128
+  },
+  {
+    "arm": "B",
+    "step": 249,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 89
+  },
+  {
+    "arm": "C",
+    "step": 250,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 129
+  },
+  {
+    "arm": "B",
+    "step": 250,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 89
+  },
+  {
+    "arm": "C",
+    "step": 251,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 129
+  },
+  {
+    "arm": "B",
+    "step": 251,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 89
+  },
+  {
+    "arm": "C",
+    "step": 252,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 130
+  },
+  {
+    "arm": "B",
+    "step": 252,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 89
+  },
+  {
+    "arm": "C",
+    "step": 253,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 131
+  },
+  {
+    "arm": "B",
+    "step": 253,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 90
+  },
+  {
+    "arm": "C",
+    "step": 254,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 132
+  },
+  {
+    "arm": "B",
+    "step": 254,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 91
+  },
+  {
+    "arm": "C",
+    "step": 255,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 133
+  },
+  {
+    "arm": "B",
+    "step": 255,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 91
+  },
+  {
+    "arm": "C",
+    "step": 256,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 133
+  },
+  {
+    "arm": "B",
+    "step": 256,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 91
+  },
+  {
+    "arm": "C",
+    "step": 257,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 134
+  },
+  {
+    "arm": "B",
+    "step": 257,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 91
+  },
+  {
+    "arm": "C",
+    "step": 258,
+    "prediction": {
+      "operation": "ADD",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 135
+  },
+  {
+    "arm": "B",
+    "step": 258,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 91
+  },
+  {
+    "arm": "C",
+    "step": 259,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 135
+  },
+  {
+    "arm": "B",
+    "step": 259,
+    "prediction": {
+      "operation": "NOOP",
+      "target": "NONE"
+    },
+    "valid": true,
+    "active": 91
+  }
+]

@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {DatabaseSync} from 'node:sqlite';
+const sha=(p:string)=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const status=JSON.parse(fs.readFileSync('results/phase4_formal_v17/status.json','utf8'));
+if(status.status!=='STOPPED'||!String(status.error).includes('Deterministic replay mismatch'))throw Error('Unexpected replay stop');
+const db=new DatabaseSync('results/phase4_formal_v17/ledger.sqlite',{readOnly:true});
+const paid=db.prepare("select count(*) n,coalesce(sum(actual_physical_cost_usd),0) cost from call_attempts where provider='OpenRouter' and status='success'").get()as any;db.close();
+if(paid.n!==277)throw Error('A paid call occurred during failed replay');
+fs.writeFileSync('phase4/formal_runtime_amendment_v20.json',JSON.stringify({schema:'phase4-formal-runtime-amendment-v20',scope:'zero-call serialization compatibility correction',base_authorization_sha256:sha('phase4/formal_run_authorization_v17.json'),supersedes:'phase4/formal_runtime_amendment_v19.json',supersedes_sha256:sha('phase4/formal_runtime_amendment_v19.json'),prior_status_sha256:sha('results/phase4_formal_v17/status.json'),evidence:{new_paid_calls:0,successful_paid_calls:paid.n,successful_paid_cost_usd:paid.cost},change:'Serialize execution_error only when non-null, keeping all previously successful step artifacts byte-identical. The v19 failure-state rule is unchanged.',revised_runner_sha256:sha('src/phase4/run_formal_v16.ts')},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({status:'ZERO_CALL_COMPATIBILITY_AMENDMENT',paid},null,2));

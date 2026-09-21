@@ -1,0 +1,25 @@
+{
+  "schema_version": "phase4-local-extraction-repair-v14",
+  "development_id": "9bbe84a2",
+  "formal_authorized": false,
+  "model": "Qwen3-8B",
+  "temperature": 0,
+  "thinking": true,
+  "max_tokens": 8192,
+  "batch_size": 6,
+  "session_concurrency": 2,
+  "prompt": "For each immutable USER excerpt, classify it as current, historical, tentative, retracted, or DROP. Think carefully about authorship, completion state, and persistence. Return one verdict for every ID.\n\nKEEP only autobiographical information genuinely asserted by the user: the user's life, preferences, possessions, role, completed experiences, ongoing state, or people/objects directly connected to the user. DROP pure questions, requests with no personal fact, greetings/thanks/reactions, generic topical interest, assistant-provided facts, and pasted/quoted text attributed to other people. First-person testimonials followed by another person's signature are not the user's memories. A resume explicitly introduced as \"my bio\" is user information.\n\nKIND RULES:\n- historical = any completed event/action or former state, even if it happened just now or recently. \"I finished\", \"I bought\", \"I went\", \"I attended\", \"I was prescribed\", and \"I just completed\" are historical, never current.\n- tentative = every uncompleted future plan, intention, aim, option, or consideration: \"I will\", \"I'll\", \"I'm going to\", \"planning\", \"thinking of\", \"might\", or \"want to\".\n- current = a confirmed present/enduring state, possession, role, preference, or genuinely ongoing activity.\n- retracted = only an explicit cancellation, withdrawal, correction, denial, or request to forget. Past is never retracted.\n\nDo not infer an answer from a question and do not rewrite text. End with exactly one compact JSON object {\"verdicts\":{\"ID\":\"current|historical|tentative|retracted|DROP\"}} containing every supplied ID and no text after it.\n\nKeep internal reasoning concise. Resolve each item once, then emit the required final JSON; do not repeatedly reconsider verdicts.",
+  "deterministic_fallback": "If a batch is truncated, log it and classify each item in that batch individually; singleton truncation stops.",
+  "extra_key_policy": "log and ignore unknown keys; every supplied ID required",
+  "resume": "reuse exact durable v12/v13 local responses before sending unsent work",
+  "source_hashes": {
+    "src/phase4/local_extractor_v14.ts": "882e5a99725064dd48d5e82fa8361624e55f1deb41d8b51e1315b2b557874112",
+    "src/phase4/local_extractor_v12.ts": "25857b17a0703fa42981a40169151bef02568a2dda6705c4232cff69fdf37399",
+    "src/phase4/local_extractor_v13.ts": "2ba7c4c9d1f4d0721e56518bdd24af4fe3184e318e134ca9d6013c7798534001",
+    "src/phase4/run_extraction_repair_v14.ts": "6bc3eab8218ad63d722dbc4c722b0ad1299b09f7c95fafcaf340ba7f7606b9e3",
+    "phase4/extraction_repair_manifest_v12.json": "204f18cda83d547442868b6d974b21ad110577866f0d9140a2158e1d1eee9f25",
+    "phase4/extraction_repair_manifest_v13.json": "8228dc6f51ef3a1d77b239d1c5f9f5f2dda69b404d3619974af5ea08b0a689cb",
+    "results/phase4_low_budget_v13/extraction_repair/outcome.json": "21b56776b39e41390902fb43f279ed6a062d15dc1db291ced9b933773642344f",
+    "phase4/budget_config_v2.json": "7275948b6b12164f21604a86f65c450a69d4f2712d4488d8181c21eef4b6a80c"
+  }
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "id": "case_001",
+    "category": "add_clear",
+    "existing_memories": [
+      { "id": "M1", "content": "The user lives in Shanghai." }
+    ],
+    "new_fact": "The user likes black coffee and drinks it every morning.",
+    "gold_operation": "ADD",
+    "gold_target": "NONE",
+    "notes": "New persistent preference not represented by the location memory."
+  },
+  {
+    "id": "case_002",
+    "category": "add_clear",
+    "existing_memories": [
+      { "id": "M1", "content": "The user works at Company A." },
+      { "id": "M2", "content": "The user commutes by subway." }
+    ],
+    "new_fact": "The user is allergic to peanuts.",
+    "gold_operation": "ADD",
+    "gold_target": "NONE",
+    "notes": "New persistent health-related fact with unrelated candidates."
+  },
+  {
+    "id": "case_003",
+    "category": "add_clear",
+    "existing_memories": [],
+    "new_fact": "The user prefers replies in English.",
+    "gold_operation": "ADD",
+    "gold_target": "NONE",
+    "notes": "Persistent interaction preference with no existing memories."
+  },
+  {
+    "id": "case_004",
+    "category": "add_clear",
+    "existing_memories": [
+      { "id": "M1", "content": "The user enjoys hiking." },
+      { "id": "M2", "content": "The user lives in Chengdu." }
+    ],
+    "new_fact": "The user's preferred airline is Singapore Airlines.",
+    "gold_operation": "ADD",
+    "gold_target": "NONE",
+    "notes": "New durable travel preference absent from candidates."
+  },
+  {
+    "id": "case_005",
+    "category": "update_clear",
+    "existing_memories": [
+      { "id": "M1", "content": "The user lives in Shanghai." }
+    ],
+    "new_fact": "The user moved to Beijing last month.",
+    "gold_operation": "UPDATE",
+    "gold_target": "M1",
+    "notes": "Clear replacement of a persistent location fact."
+  },
+  {
+    "id": "case_006",
+    "category": "update_clear",
+    "existing_memories": [
+      { "id": "M1", "content": "The user lives in Shanghai." },
+      { "id": "M2", "content": "The user works at Company A." },
+      { "id": "M3", "content": "The user likes Sichuan food." }
+    ],
+    "new_fact": "The user joined Company B last month.",
+    "gold_operation": "UPDATE",
+    "gold_target": "M2",
+    "notes": "Clear employer replacement among multiple candidates."
+  },
+  {
+    "id": "case_007",
+    "category": "update_clear",
+    "existing_memories": [
+      { "id": "M1", "content": "The user follows a vegetarian diet." },
+      { "id": "M2", "content": "The user prefers window seats." }
+    ],
+    "new_fact": "The user now follows a pescatarian diet instead of a vegetarian diet.",
+    "gold_operation": "UPDATE",
+    "gold_target": "M1",
+    "notes": "Explicit replacement of a persistent dietary state."
+  },
+  {
+    "id": "case_008",
+    "category": "update_clear",
+    "existing_memories": [
+      { "id": "M1", "content": "The user exercises every morning." },
+      { "id": "M2", "content": "The user drinks tea after lunch." }
+    ],
+    "new_fact": "The user has permanently switched the daily exercise routine to evenings.",
+    "gold_operation": "UPDATE",
+    "gold_target": "M1",
+    "notes": "Explicit durable schedule replacement."
+  },
+  {
+    "id": "case_009",
+    "category": "delete_explicit",
+    "existing_memories": [
+      { "id": "M1", "content": "The user's old delivery preference is office delivery." },
+      { "id": "M2", "content": "The user prefers contactless payment." }
+    ],
+    "new_fact": "Forget my office-delivery preference. I don't want that stored anymore.",
+    "gold_operation": "DELETE",
+    "gold_target": "M1",
+    "notes": "Explicit removal request without a replacement value."
+  },
+  {
+    "id": "case_010",
+    "category": "delete_explicit",
+    "existing_memories": [
+      { "id": "M1", "content": "The user's birthday is March 8." },
+      { "id": "M2", "content": "The user prefers concise answers." }
+    ],
+    "new_fact": "Please erase my birthday from memory and do not retain it.",
+    "gold_operation": "DELETE",
+    "gold_target": "M1",
+    "notes": "Direct privacy-motivated deletion request."
+  },
+  {
+    "id": "case_011",
+    "category": "delete_explicit",
+    "existing_memories": [
+      { "id": "M1", "content": "The user works at Northwind Labs." },
+      { "id": "M2", "content": "The user lives in Shenzhen." },
+      { "id": "M3", "content": "The user prefers email communication." }
+    ],
+    "new_fact": "Delete the stored fact about where I work. I do not want my employer remembered.",
+    "gold_operation": "DELETE",
+    "gold_target": "M1",
+    "notes": "Explicit deletion among several candidate memories."
+  },
+  {
+    "id": "case_012",
+    "category": "noop_exact_duplicate",
+    "existing_memories": [
+      { "id": "M1", "content": "The user lives in Shanghai." }
+    ],
+    "new_fact": "The user lives in Shanghai.",
+    "gold_operation": "NOOP",
+    "gold_target": "NONE",
+    "notes": "Exact duplicate should not mutate memory."
+  },
+  {
+    "id": "case_013",
+    "category": "noop_temporary",
+    "existing_memories": [
+      { "id": "M1", "content": "The user lives in Guangzhou." }
+    ],
+    "new_fact": "The user is staying at a hotel in Macau tonight.",
+    "gold_operation": "NOOP",
+    "gold_target": "NONE",
+    "notes": "Clearly temporary location should not replace residence."
+  },
+  {
+    "id": "case_014",
+    "category": "noop_irrelevant",
+    "existing_memories": [
+      { "id": "M1", "content": "The user prefers dark mode." }
+    ],
+    "new_fact": "It is raining heavily outside right now.",
+    "gold_operation": "NOOP",
+    "gold_target": "NONE",
+    "notes": "Transient environmental observation unrelated to long-term user memory."
+  },
+  {
+    "id": "case_015",
+    "category": "noop_hypothetical",
+    "existing_memories": [
+      { "id": "M1", "content": "The user drives a sedan." }
+    ],
+    "new_fact": "If the user bought a bicycle, commuting might be healthier.",
+    "gold_operation": "NOOP",
+    "gold_target": "NONE",
+    "notes": "Hypothetical statement provides no persistent fact."
+  },
+  {
+    "id": "case_016",
+    "category": "boundary_tentative_plan",
+    "existing_memories": [
+      { "id": "M1", "content": "The user lives in Shanghai." },
+      { "id": "M2", "content": "The user works remotely." }
+    ],
+    "new_fact": "The user may move to Beijing next year.",
+    "gold_operation": "NOOP",
+    "gold_target": "NONE",
+    "notes": "Tentative future plan must not replace current residence."
+  },
+  {
+    "id": "case_017",
+    "category": "boundary_retraction",
+    "existing_memories": [
+      { "id": "M1", "content": "The user plans to attend the Tokyo conference in November." },
+      { "id": "M2", "content": "The user has a passport." }
+    ],
+    "new_fact": "The user has cancelled the plan to attend the Tokyo conference in November.",
+    "gold_operation": "UPDATE",
+    "gold_target": "M1",
+    "notes": "Retraction changes the state of an existing plan but is not an explicit forget request."
+  },
+  {
+    "id": "case_018",
+    "category": "boundary_duplicate_paraphrase",
+    "existing_memories": [
+      { "id": "M1", "content": "The user avoids dairy products." },
+      { "id": "M2", "content": "The user likes spicy food." }
+    ],
+    "new_fact": "The user does not consume dairy.",
+    "gold_operation": "NOOP",
+    "gold_target": "NONE",
+    "notes": "Semantic duplicate expressed with different wording."
+  },
+  {
+    "id": "case_019",
+    "category": "boundary_target_ambiguity",
+    "existing_memories": [
+      { "id": "M1", "content": "The user's office is at 20 Market Street." },
+      { "id": "M2", "content": "The user's home is at 18 Market Street." },
+      { "id": "M3", "content": "The user commutes by bus." }
+    ],
+    "new_fact": "The user's office has moved to 50 King Street.",
+    "gold_operation": "UPDATE",
+    "gold_target": "M1",
+    "notes": "Two semantically close address memories require precise target selection."
+  },
+  {
+    "id": "case_020",
+    "category": "boundary_partial_update",
+    "existing_memories": [
+      { "id": "M1", "content": "The user lives in Shanghai and works remotely every Friday." },
+      { "id": "M2", "content": "The user prefers morning meetings." }
+    ],
+    "new_fact": "The user moved to Beijing.",
+    "gold_operation": "UPDATE",
+    "gold_target": "M1",
+    "notes": "Only one attribute inside a compound memory changes."
+  }
+]

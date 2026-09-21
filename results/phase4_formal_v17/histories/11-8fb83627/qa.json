@@ -1,0 +1,404 @@
+{
+  "question_id": "8fb83627",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "How many issues of National Geographic have I finished reading?",
+    "question_date": "2023/08/14 (Mon) 23:19"
+  },
+  "reference_answer": "Five",
+  "answers": {
+    "B": {
+      "answer": "5",
+      "retrieved": [
+        {
+          "id": "E42_3",
+          "text": "I've been reading about the Amazon rainforest and its indigenous communities in National Geographic, and I just finished my fifth issue.",
+          "status": "historical",
+          "timestamp": "2023/07/15 (Sat) 22:42",
+          "provenance": [
+            {
+              "session_index": 42,
+              "fact_index": 3,
+              "timestamp": "2023/07/15 (Sat) 22:42",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.7187177684036568
+        },
+        {
+          "id": "E23_7",
+          "text": "I remember finishing three issues and I'm currently on my fourth.",
+          "status": "current",
+          "timestamp": "2023/04/20 (Thu) 21:08",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 7,
+              "timestamp": "2023/04/20 (Thu) 21:08",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.6735982709606266
+        },
+        {
+          "id": "M65",
+          "text": "I've been enjoying The New Yorker for their fiction and National Geographic for their in-depth articles on science and nature - I just finished my fifth issue, and I'm currently on my sixth.",
+          "status": "active",
+          "timestamp": "2023/07/15 (Sat) 22:42",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 3,
+              "timestamp": "2023/04/20 (Thu) 21:08",
+              "source_turns": [
+                2
+              ]
+            },
+            {
+              "session_index": 42,
+              "fact_index": 1,
+              "timestamp": "2023/07/15 (Sat) 22:42",
+              "source_turns": [
+                2
+              ]
+            },
+            {
+              "session_index": 42,
+              "fact_index": 3,
+              "timestamp": "2023/07/15 (Sat) 22:42",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6718657083875885
+        },
+        {
+          "id": "E23_3",
+          "text": "I've been enjoying The New Yorker for their fiction and National Geographic for their in-depth articles on science and nature - I just finished my third issue, and I'm currently on my fourth.",
+          "status": "current",
+          "timestamp": "2023/04/20 (Thu) 21:08",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 3,
+              "timestamp": "2023/04/20 (Thu) 21:08",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6619029639064765
+        },
+        {
+          "id": "E42_1",
+          "text": "I've actually been reading a lot about the Amazon rainforest lately, especially in National Geographic - I've finished five issues so far and they've all had great articles on the region.",
+          "status": "historical",
+          "timestamp": "2023/07/15 (Sat) 22:42",
+          "provenance": [
+            {
+              "session_index": 42,
+              "fact_index": 1,
+              "timestamp": "2023/07/15 (Sat) 22:42",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6422407569507905
+        },
+        {
+          "id": "E23_0",
+          "text": "I'm trying to get more organized with my reading list.",
+          "status": "current",
+          "timestamp": "2023/04/20 (Thu) 21:08",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 0,
+              "timestamp": "2023/04/20 (Thu) 21:08",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6012525988061981
+        },
+        {
+          "id": "M62",
+          "text": "I'm trying to get more organized with my reading list.",
+          "status": "active",
+          "timestamp": "2023/04/20 (Thu) 21:08",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 0,
+              "timestamp": "2023/04/20 (Thu) 21:08",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6012525988061981
+        },
+        {
+          "id": "E42_6",
+          "text": "I've been reading a lot about the Yanomami people and their struggles in National Geographic.",
+          "status": "current",
+          "timestamp": "2023/07/15 (Sat) 22:42",
+          "provenance": [
+            {
+              "session_index": 42,
+              "fact_index": 6,
+              "timestamp": "2023/07/15 (Sat) 22:42",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.573731505796421
+        },
+        {
+          "id": "E23_1",
+          "text": "I usually read news, science, and entertainment magazines.",
+          "status": "current",
+          "timestamp": "2023/04/20 (Thu) 21:08",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 1,
+              "timestamp": "2023/04/20 (Thu) 21:08",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.5648166903528079
+        },
+        {
+          "id": "M63",
+          "text": "I usually read news, science, and entertainment magazines.",
+          "status": "active",
+          "timestamp": "2023/04/20 (Thu) 21:08",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 1,
+              "timestamp": "2023/04/20 (Thu) 21:08",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.5648166903528079
+        }
+      ]
+    },
+    "C": {
+      "answer": "5",
+      "retrieved": [
+        {
+          "id": "E42_3",
+          "text": "I've been reading about the Amazon rainforest and its indigenous communities in National Geographic, and I just finished my fifth issue.",
+          "status": "historical",
+          "timestamp": "2023/07/15 (Sat) 22:42",
+          "provenance": [
+            {
+              "session_index": 42,
+              "fact_index": 3,
+              "timestamp": "2023/07/15 (Sat) 22:42",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.7192424002062663
+        },
+        {
+          "id": "E23_7",
+          "text": "I remember finishing three issues and I'm currently on my fourth.",
+          "status": "current",
+          "timestamp": "2023/04/20 (Thu) 21:08",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 7,
+              "timestamp": "2023/04/20 (Thu) 21:08",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.6735982709606266
+        },
+        {
+          "id": "M92",
+          "text": "I've been enjoying The New Yorker for their fiction and National Geographic for their in-depth articles on science and nature - I just finished my fifth issue, and I'm currently on my sixth.",
+          "status": "active",
+          "timestamp": "2023/07/15 (Sat) 22:42",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 3,
+              "timestamp": "2023/04/20 (Thu) 21:08",
+              "source_turns": [
+                2
+              ]
+            },
+            {
+              "session_index": 42,
+              "fact_index": 1,
+              "timestamp": "2023/07/15 (Sat) 22:42",
+              "source_turns": [
+                2
+              ]
+            },
+            {
+              "session_index": 42,
+              "fact_index": 3,
+              "timestamp": "2023/07/15 (Sat) 22:42",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6721303976071128
+        },
+        {
+          "id": "E23_3",
+          "text": "I've been enjoying The New Yorker for their fiction and National Geographic for their in-depth articles on science and nature - I just finished my third issue, and I'm currently on my fourth.",
+          "status": "current",
+          "timestamp": "2023/04/20 (Thu) 21:08",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 3,
+              "timestamp": "2023/04/20 (Thu) 21:08",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6630433180775606
+        },
+        {
+          "id": "E42_1",
+          "text": "I've actually been reading a lot about the Amazon rainforest lately, especially in National Geographic - I've finished five issues so far and they've all had great articles on the region.",
+          "status": "historical",
+          "timestamp": "2023/07/15 (Sat) 22:42",
+          "provenance": [
+            {
+              "session_index": 42,
+              "fact_index": 1,
+              "timestamp": "2023/07/15 (Sat) 22:42",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6425128872156077
+        },
+        {
+          "id": "E23_0",
+          "text": "I'm trying to get more organized with my reading list.",
+          "status": "current",
+          "timestamp": "2023/04/20 (Thu) 21:08",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 0,
+              "timestamp": "2023/04/20 (Thu) 21:08",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6012525988061981
+        },
+        {
+          "id": "M89",
+          "text": "I'm trying to get more organized with my reading list.",
+          "status": "active",
+          "timestamp": "2023/04/20 (Thu) 21:08",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 0,
+              "timestamp": "2023/04/20 (Thu) 21:08",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6012525988061981
+        },
+        {
+          "id": "E42_6",
+          "text": "I've been reading a lot about the Yanomami people and their struggles in National Geographic.",
+          "status": "current",
+          "timestamp": "2023/07/15 (Sat) 22:42",
+          "provenance": [
+            {
+              "session_index": 42,
+              "fact_index": 6,
+              "timestamp": "2023/07/15 (Sat) 22:42",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.5748110977718556
+        },
+        {
+          "id": "M163",
+          "text": "I've been reading a lot about the Yanomami people and their struggles in National Geographic.",
+          "status": "active",
+          "timestamp": "2023/07/15 (Sat) 22:42",
+          "provenance": [
+            {
+              "session_index": 42,
+              "fact_index": 6,
+              "timestamp": "2023/07/15 (Sat) 22:42",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.5748110977718556
+        },
+        {
+          "id": "E23_1",
+          "text": "I usually read news, science, and entertainment magazines.",
+          "status": "current",
+          "timestamp": "2023/04/20 (Thu) 21:08",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 1,
+              "timestamp": "2023/04/20 (Thu) 21:08",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.5648166903528079
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "Yes",
+      "correct": true
+    },
+    "C": {
+      "raw": "Yes",
+      "correct": true
+    }
+  },
+  "rubric": "official knowledge-update"
+}

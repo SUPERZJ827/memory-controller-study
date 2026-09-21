@@ -1,0 +1,53 @@
+{
+  "schema": "phase4-budget-guard-v2-simulation",
+  "passed": true,
+  "paidCalls": 0,
+  "apiCostUsd": 0,
+  "finishedAt": "2026-09-20T10:58:00.552Z",
+  "tests": [
+    {
+      "name": "Production allocation is $28 total and $1/$24/$1/$2 immutable pools",
+      "passed": true
+    },
+    {
+      "name": "Transport uses text-byte input upper envelope, bounded output and frozen maximum prices",
+      "passed": true
+    },
+    {
+      "name": "Exact boundary accepted; +1 microUSD denied; unknown request consumes reservation",
+      "passed": true
+    },
+    {
+      "name": "Global cap enforced separately from pool limits",
+      "passed": true
+    },
+    {
+      "name": "Unknown and dispatched holds survive close/reopen; config cannot change",
+      "passed": true
+    },
+    {
+      "name": "Only known invoice releases excess; duplicate settlement cannot change bill",
+      "passed": true
+    },
+    {
+      "name": "Duplicate reserve and duplicate dispatch prohibited, retry has independent hold",
+      "passed": true
+    },
+    {
+      "name": "Cannot cancel dispatched/unknown; unsent cancellation needs explicit attestation",
+      "passed": true
+    },
+    {
+      "name": "Over-bound invoice is committed and campaign remains halted after restart",
+      "passed": true
+    },
+    {
+      "name": "Unsafe integer, negative, fractional and NaN amounts rejected",
+      "passed": true
+    },
+    {
+      "name": "12 OS processes / 240 attempts cannot over-reserve or lose holds",
+      "passed": true
+    }
+  ]
+}

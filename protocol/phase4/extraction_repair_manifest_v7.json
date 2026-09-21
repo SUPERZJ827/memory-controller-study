@@ -1,0 +1,26 @@
+{
+  "schema_version": "phase4-local-extraction-repair-v7",
+  "development_id": "9bbe84a2",
+  "formal_authorized": false,
+  "model": "Qwen3-8B",
+  "prompt": "Select only user-authored claim fragments worth preserving as faithful memory evidence. Text is immutable; never add an answer or rewrite a claim.\n\nPositive examples:\n- \"I live in Berlin.\" -> current\n- \"I bought a bicycle last week.\" -> historical\n- \"I might move to Berlin next year.\" -> tentative\n- \"The Berlin move is cancelled.\" -> retracted\n\nNegative examples (do not select):\n- \"Do you know where Acme is based?\" (question, not an asserted answer)\n- \"Thanks, that's interesting.\" (conversation only)\n- first-person testimonials, resumes, reviews, or other text pasted/quoted by the user but explicitly attributed to somebody else\n- requests for recommendations/advice with no durable personal fact\n- facts stated only by the assistant\n\nScope is the user, the user's life, or people/objects directly connected to the user. A question about a public topic does not prove enduring interest. Assistant text is context only.\n\nKind is semantic state, not grammatical tense: current is confirmed present/ongoing; historical is completed past; tentative includes every not-yet-completed plan, intention, aim, option, or consideration (including \"I will\", \"I'm going to\", \"planning\", \"thinking of\"); retracted is only explicit cancellation, withdrawal, correction, denial, or request to forget. Never call a past event retracted. Return IDs and kinds only. Empty selections are normal.",
+  "temperature": 0,
+  "thinking": true,
+  "max_tokens": 4096,
+  "representation": "deterministic verbatim USER fragments; local model selects ID and semantic kind",
+  "deterministic_prefilter": [
+    "pure leading-interrogative sentences",
+    "non-user-subject sentences beginning You",
+    "narrow conversation-only acknowledgments"
+  ],
+  "source_hashes": {
+    "src/phase4/local_extractor_v7.ts": "854e3a1a4a19738373be26fc551e56ab9da7300367bdbe45d8f2109790720d61",
+    "src/phase4/local_extractor_v6.ts": "552091f523778ca311b52bb77cada4259cecd74697edfbbe78db549675556083",
+    "src/phase4/run_extraction_repair_v7.ts": "569f1ec2601c705515beb35d9f4bf20b587721c2e0416a782adcfb09bddae87c",
+    "src/phase4/longmemeval_adapter.ts": "801c3d283066882504839bc1c5b501e289395c2e46346274cae669079d9c53ba",
+    "src/phase4/local_memory_v2.ts": "7e6deb1970eb0af5798e3d2b50988419467e2f6fb70684206bc363297323d408",
+    "phase4/budget_config_v2.json": "7275948b6b12164f21604a86f65c450a69d4f2712d4488d8181c21eef4b6a80c",
+    "phase4/budget_guard_v2_simulation.json": "db45339e65576d93edbc6ce14d09d97bad45e38c8658f8cf61e107de9d53224c",
+    "phase4/local_weights_v2.json": "763576e265fdee1c8b2b5936403525b95ea14483d24d781463aa4d5442431c3e"
+  }
+}

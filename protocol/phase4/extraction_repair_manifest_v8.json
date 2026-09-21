@@ -1,0 +1,23 @@
+{
+  "schema_version": "phase4-local-extraction-repair-v8",
+  "development_id": "9bbe84a2",
+  "formal_authorized": false,
+  "model": "Qwen3-8B",
+  "temperature": 0,
+  "thinking": false,
+  "proposal_max_tokens": 2048,
+  "verifier_max_tokens": 2048,
+  "proposal_prompt": "Select only memory-relevant autobiographical claims explicitly asserted by the USER. Candidate text is immutable user text; never add or rewrite facts.\n\nSelect a candidate only when it contains a claim about the user, the user's own life, or a person/object directly connected to the user's life. Do not select public/company/general facts supplied by the assistant, a question's unknown answer, generic requests for advice, or conversational reactions such as thanks, \"interesting\", \"good to hear\", and hopes about an unrelated third party. Assistant turns are context only for resolving what a user's reply refers to.\n\nAssign kind precisely:\n- current: a confirmed present state, enduring preference, possession, role, or ongoing activity.\n- historical: a completed past event or former state. A past event is NOT retracted.\n- tentative: considering, maybe, aiming, intending, planning, or a future action that has not yet occurred. Definite-sounding future plans remain tentative until completed.\n- retracted: only an explicit cancellation, withdrawal, correction, denial, or request to forget a previously held fact. Never use retracted merely because something happened in the past.\n\nReturn selected claim IDs and kinds only. If no candidate qualifies, return {\"selections\":[]}. Empty output is normal and preferable to unsupported or transient memory.",
+  "verifier_prompt": "You are the faithfulness gate for user memory extraction. For every immutable user-text candidate, return exactly one verdict: current, historical, tentative, retracted, or DROP.\n\nKeep only a claim genuinely asserted as the USER's own information, or information about a person/object directly connected to the user's life, and useful as autobiographical evidence. DROP pure questions, advice requests, thanks/reactions, generic topical interest, assistant-supplied answers, and quotations/pasted material attributed to someone else. In particular, first-person text followed by another person's signature (for example \"... – Janelle\") is that person's testimonial, not the user's memory. A resume or bio explicitly introduced by the user as \"my bio\" is user information and may be kept.\n\nKinds: current = confirmed present/enduring/ongoing; historical = completed past; tentative = any uncompleted plan/intention/aim/option/consideration, including \"I will\", \"I'm going to\", \"planning\", and \"thinking of\"; retracted = only explicit cancellation, withdrawal, correction, denial, or request to forget. Past never means retracted. Judge only supplied text and context; do not fill in a question's answer.",
+  "representation": "proposal selects deterministic verbatim USER fragments; verifier can only classify or DROP; neither generates fact text",
+  "source_hashes": {
+    "src/phase4/local_extractor_v8.ts": "7f85840cd22c2dcca8ac2e6174bfe1b9720b9f6f6cbf39e65159545e50f79dbc",
+    "src/phase4/local_extractor_v6.ts": "552091f523778ca311b52bb77cada4259cecd74697edfbbe78db549675556083",
+    "src/phase4/run_extraction_repair_v8.ts": "c3ae36d31740421105625e8f93890789d24c758ea9d9b59a47b82b22127eccc8",
+    "src/phase4/longmemeval_adapter.ts": "801c3d283066882504839bc1c5b501e289395c2e46346274cae669079d9c53ba",
+    "src/phase4/local_memory_v2.ts": "7e6deb1970eb0af5798e3d2b50988419467e2f6fb70684206bc363297323d408",
+    "phase4/budget_config_v2.json": "7275948b6b12164f21604a86f65c450a69d4f2712d4488d8181c21eef4b6a80c",
+    "phase4/budget_guard_v2_simulation.json": "db45339e65576d93edbc6ce14d09d97bad45e38c8658f8cf61e107de9d53224c",
+    "phase4/local_weights_v2.json": "763576e265fdee1c8b2b5936403525b95ea14483d24d781463aa4d5442431c3e"
+  }
+}

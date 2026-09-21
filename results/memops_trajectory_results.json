@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-09-20T08:52:32.554Z",
+  "memops_commit": "312af65e2c7b6d1b70f062ffa8b4cde32aaf6f35",
+  "transition_cases_sha256": "6156f02056c9dcf5d890cbcdc5c3db7a33698b4a5ba2fa0283da668b5d475447",
+  "trajectories_sha256": "92b27bdacba25fc7631b77ddc9b913ef2ef8b640fd2c702a445ba3996a439ca0",
+  "executor_spec_sha256": "25a4cd733d03fb27bbfcf8a931632b095eff38ebec798f46a81ff7cc19fc2f22",
+  "adapter_audit_sha256": "4251ec466c087305a47cdab84cd76f90ecdf1c4ee3b04764975671c44e25a875",
+  "jev_policy_sha256": "e824dfdeffe485ddde0fa6fbe5500c73874335c9ec57f473f74e463b4bdc2393",
+  "controller_models": {
+    "jev": "typesafe/jev-1.13",
+    "strong": "anthropic/claude-sonnet-4.6",
+    "local": "Qwen3-8B"
+  },
+  "controllers": {
+    "jev": {
+      "trajectories": 25,
+      "steps": 133,
+      "step_accuracy": {
+        "correct": 119,
+        "total": 133,
+        "value": 0.894737
+      },
+      "operation_accuracy": {
+        "correct": 119,
+        "total": 133,
+        "value": 0.894737
+      },
+      "intermediate_state_accuracy": {
+        "correct": 104,
+        "total": 108,
+        "value": 0.962963
+      },
+      "final_state_accuracy": {
+        "correct": 22,
+        "total": 25,
+        "value": 0.88
+      },
+      "error_propagation_rate": {
+        "correct": 2,
+        "total": 5,
+        "value": 0.4
+      }
+    },
+    "strong": {
+      "trajectories": 25,
+      "steps": 133,
+      "step_accuracy": {
+        "correct": 97,
+        "total": 133,
+        "value": 0.729323
+      },
+      "operation_accuracy": {
+        "correct": 97,
+        "total": 133,
+        "value": 0.729323
+      },
+      "intermediate_state_accuracy": {
+        "correct": 46,
+        "total": 108,
+        "value": 0.425926
+      },
+      "final_state_accuracy": {
+        "correct": 6,
+        "total": 25,
+        "value": 0.24
+      },
+      "error_propagation_rate": {
+        "correct": 62,
+        "total": 63,
+        "value": 0.984127
+      }
+    },
+    "local": {
+      "trajectories": 25,
+      "steps": 133,
+      "step_accuracy": {
+        "correct": 70,
+        "total": 133,
+        "value": 0.526316
+      },
+      "operation_accuracy": {
+        "correct": 71,
+        "total": 133,
+        "value": 0.533835
+      },
+      "intermediate_state_accuracy": {
+        "correct": 27,
+        "total": 108,
+        "value": 0.25
+      },
+      "final_state_accuracy": {
+        "correct": 0,
+        "total": 25,
+        "value": 0
+      },
+      "error_propagation_rate": {
+        "correct": 81,
+        "total": 81,
+        "value": 1
+      }
+    }
+  }
+}

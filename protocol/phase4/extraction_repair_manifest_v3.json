@@ -1,0 +1,25 @@
+{
+  "schema_version": "phase4-local-extraction-repair-v3",
+  "development_id": "9bbe84a2",
+  "formal_authorized": false,
+  "api_budget_same_campaign": true,
+  "prompt": "Extract persistent or otherwise memory-relevant autobiographical facts asserted by the USER in this current session.\n\nHard source rule:\n- A fact must be about the user, the user's own life, or a person/object directly connected to the user's life.\n- Public/company/general information that the assistant supplies is never a user memory.\n- A user's question about a topic does not assert the answer and does not by itself establish an enduring personal interest.\n- Conversational reactions such as \"interesting\", \"good to hear\", or \"I hope they succeed\" are not persistent autobiographical facts.\n- Assistant turns may only resolve the referent of an explicit user assertion (for example, an assistant asks \"Do you live in Paris?\" and the user says \"Yes\"). Never copy facts asserted only by the assistant.\n\nFor every fact, copy one or more exact, nonempty support quotes from USER turns. Each quote must directly support the complete fact; do not use a question as evidence for its unknown answer. Preserve negation, uncertainty, attribution, time, numbers, and whether something is planned, historical, retracted, or current. Do not infer. If the user supplies no qualifying fact, return {\"facts\":[]}. Empty output is normal and preferable to unsupported memory. Return only the schema JSON.",
+  "model": "Qwen3-8B",
+  "temperature": 0,
+  "thinking": false,
+  "max_tokens": 4096,
+  "validation": [
+    "source index is USER",
+    "support quote is nonempty normalized-verbatim substring of cited USER turn",
+    "empty facts accepted"
+  ],
+  "source_hashes": {
+    "src/phase4/local_extractor_v3.ts": "2c1128fb1272a577c56baa7018041b29acb35f9d0f2cae526c3528074f77a905",
+    "src/phase4/run_extraction_repair_v3.ts": "403c111a7487fe1774b22c38de39685f211ad1a468e230b359bcb99c878ed65f",
+    "src/phase4/longmemeval_adapter.ts": "801c3d283066882504839bc1c5b501e289395c2e46346274cae669079d9c53ba",
+    "src/phase4/local_memory_v2.ts": "7e6deb1970eb0af5798e3d2b50988419467e2f6fb70684206bc363297323d408",
+    "phase4/budget_config_v2.json": "7275948b6b12164f21604a86f65c450a69d4f2712d4488d8181c21eef4b6a80c",
+    "phase4/budget_guard_v2_simulation.json": "db45339e65576d93edbc6ce14d09d97bad45e38c8658f8cf61e107de9d53224c",
+    "phase4/local_weights_v2.json": "763576e265fdee1c8b2b5936403525b95ea14483d24d781463aa4d5442431c3e"
+  }
+}

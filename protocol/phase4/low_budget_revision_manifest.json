@@ -1,0 +1,29 @@
+{
+  "status": "PROPOSAL_ONLY_NO_PAID_RUN_APPROVED",
+  "new_model_inference_calls": 0,
+  "new_model_api_spend_usd": 0,
+  "total_future_round_cap_usd": 20,
+  "pilot_future_subcap_usd": 1,
+  "old_phase3_manifest_checks": 34,
+  "old_phase4_pre_run_manifest_checks": 31,
+  "old_hash_mismatches": [],
+  "validation": [
+    "offline estimator executed",
+    "TypeScript noEmit PASS",
+    "local models metadata endpoints HTTP200, no inference",
+    "public pricing metadata inspected, no inference"
+  ],
+  "artifacts": {
+    "PHASE4_LOW_BUDGET_REVISION.md": "31d98a59a1107c9684c2f2d06862b46c9b5d2acbfc68c41be6d7d47130ba0b49",
+    "phase4/low_budget_protocol_proposal.json": "a190c261591fb7d096fbf13c1e8c5fa559157b03bd26dc487481efe229a0058e",
+    "phase4/LOW_BUDGET_EVIDENCE_PLAN.md": "41867bfb0f8826b4cd9735752ca6ee2ec3a0c83d4a0f631e1c92b9bf2e5746d6",
+    "phase4/low_budget_estimates.json": "47e077b67dd352cae85806151e7cd9ab5e684da3bb4150ed1e053d99ff79c1df",
+    "phase4/legacy_controller_usage.csv": "65956d15f728db25a85fefba514f33b4d0f5b651f3452e3b385d8c1c35663201",
+    "phase4/low_budget_development_selection.json": "ef4759b961f089fe1a119a2138848c42deff01da59e0fb50d4515f103f75a53d",
+    "src/phase4/estimate_low_budget.ts": "b5ab99f41369b9bcb9d8eb86639560dcd202fbe83c3c5fb5680d9ed0e233470f"
+  },
+  "formal_case_ids_frozen": false,
+  "formal_sample_size_frozen": false,
+  "dev_case_id": "9bbe84a2",
+  "reservation_guard_implemented": false
+}

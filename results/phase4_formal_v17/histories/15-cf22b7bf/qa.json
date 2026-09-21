@@ -1,0 +1,388 @@
+{
+  "question_id": "cf22b7bf",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "How much weight have I lost since I started going to the gym consistently?",
+    "question_date": "2023/06/23 (Fri) 03:15"
+  },
+  "reference_answer": "10 pounds",
+  "answers": {
+    "B": {
+      "answer": "10 pounds",
+      "retrieved": [
+        {
+          "id": "E50_2",
+          "text": "By the way, speaking of my cardio days, I've been doing great and I just realized I've lost 10 pounds since I started going consistently to the gym 3 months ago.",
+          "status": "historical",
+          "timestamp": "2023/06/21 (Wed) 05:37",
+          "provenance": [
+            {
+              "session_index": 50,
+              "fact_index": 2,
+              "timestamp": "2023/06/21 (Wed) 05:37",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.7736613258604814
+        },
+        {
+          "id": "E28_19",
+          "text": "I've lost 5 pounds in the past month, which is slow but steady progress.",
+          "status": "historical",
+          "timestamp": "2023/05/21 (Sun) 12:29",
+          "provenance": [
+            {
+              "session_index": 28,
+              "fact_index": 19,
+              "timestamp": "2023/05/21 (Sun) 12:29",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.7172713640496203
+        },
+        {
+          "id": "M36",
+          "text": "I've also lost about 10 pounds in the past 3 months, which is slow progress, but I'm okay with that.",
+          "status": "active",
+          "timestamp": "2023/06/21 (Wed) 05:37",
+          "provenance": [
+            {
+              "session_index": 28,
+              "fact_index": 8,
+              "timestamp": "2023/05/21 (Sun) 12:29",
+              "source_turns": [
+                2
+              ]
+            },
+            {
+              "session_index": 50,
+              "fact_index": 2,
+              "timestamp": "2023/06/21 (Wed) 05:37",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6704279373838916
+        },
+        {
+          "id": "E28_8",
+          "text": "I've also lost about 5 pounds in the past month, which is slow progress, but I'm okay with that.",
+          "status": "historical",
+          "timestamp": "2023/05/21 (Sun) 12:29",
+          "provenance": [
+            {
+              "session_index": 28,
+              "fact_index": 8,
+              "timestamp": "2023/05/21 (Sun) 12:29",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6596814292637243
+        },
+        {
+          "id": "E28_0",
+          "text": "I'm trying to plan out my workout routine for the next month.",
+          "status": "tentative",
+          "timestamp": "2023/05/21 (Sun) 12:29",
+          "provenance": [
+            {
+              "session_index": 28,
+              "fact_index": 0,
+              "timestamp": "2023/05/21 (Sun) 12:29",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.601725290816872
+        },
+        {
+          "id": "E48_0",
+          "text": "I'm thinking of trying a new workout routine.",
+          "status": "tentative",
+          "timestamp": "2023/06/17 (Sat) 11:00",
+          "provenance": [
+            {
+              "session_index": 48,
+              "fact_index": 0,
+              "timestamp": "2023/06/17 (Sat) 11:00",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6010363952960099
+        },
+        {
+          "id": "E23_2",
+          "text": "I've been doing pretty well, just trying to stay consistent with my training.",
+          "status": "current",
+          "timestamp": "2023/05/18 (Thu) 20:51",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 2,
+              "timestamp": "2023/05/18 (Thu) 20:51",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.5954454697584644
+        },
+        {
+          "id": "E50_8",
+          "text": "I've been doing some yoga and Pilates, but I need to be more consistent with it.",
+          "status": "current",
+          "timestamp": "2023/06/21 (Wed) 05:37",
+          "provenance": [
+            {
+              "session_index": 50,
+              "fact_index": 8,
+              "timestamp": "2023/06/21 (Wed) 05:37",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.5885937413516543
+        },
+        {
+          "id": "M70",
+          "text": "I've been doing some yoga and Pilates, but I need to be more consistent with it.",
+          "status": "active",
+          "timestamp": "2023/06/21 (Wed) 05:37",
+          "provenance": [
+            {
+              "session_index": 50,
+              "fact_index": 8,
+              "timestamp": "2023/06/21 (Wed) 05:37",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.5885481649950371
+        },
+        {
+          "id": "M35",
+          "text": "I've been tracking my progress using a fitness app, and I've burned an average of 2500 calories per week, which is higher than my goal.",
+          "status": "active",
+          "timestamp": "2023/05/21 (Sun) 12:29",
+          "provenance": [
+            {
+              "session_index": 28,
+              "fact_index": 7,
+              "timestamp": "2023/05/21 (Sun) 12:29",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.5856539042653013
+        }
+      ]
+    },
+    "C": {
+      "answer": "10 pounds",
+      "retrieved": [
+        {
+          "id": "E50_2",
+          "text": "By the way, speaking of my cardio days, I've been doing great and I just realized I've lost 10 pounds since I started going consistently to the gym 3 months ago.",
+          "status": "historical",
+          "timestamp": "2023/06/21 (Wed) 05:37",
+          "provenance": [
+            {
+              "session_index": 50,
+              "fact_index": 2,
+              "timestamp": "2023/06/21 (Wed) 05:37",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.7726730319560765
+        },
+        {
+          "id": "E28_19",
+          "text": "I've lost 5 pounds in the past month, which is slow but steady progress.",
+          "status": "historical",
+          "timestamp": "2023/05/21 (Sun) 12:29",
+          "provenance": [
+            {
+              "session_index": 28,
+              "fact_index": 19,
+              "timestamp": "2023/05/21 (Sun) 12:29",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.7176426878428674
+        },
+        {
+          "id": "M59",
+          "text": "I've also lost about 10 pounds in the past 3 months, which is slow progress, but I'm okay with that.",
+          "status": "active",
+          "timestamp": "2023/06/21 (Wed) 05:37",
+          "provenance": [
+            {
+              "session_index": 28,
+              "fact_index": 8,
+              "timestamp": "2023/05/21 (Sun) 12:29",
+              "source_turns": [
+                2
+              ]
+            },
+            {
+              "session_index": 50,
+              "fact_index": 2,
+              "timestamp": "2023/06/21 (Wed) 05:37",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6702210098574525
+        },
+        {
+          "id": "E28_8",
+          "text": "I've also lost about 5 pounds in the past month, which is slow progress, but I'm okay with that.",
+          "status": "historical",
+          "timestamp": "2023/05/21 (Sun) 12:29",
+          "provenance": [
+            {
+              "session_index": 28,
+              "fact_index": 8,
+              "timestamp": "2023/05/21 (Sun) 12:29",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6604539121971933
+        },
+        {
+          "id": "E28_0",
+          "text": "I'm trying to plan out my workout routine for the next month.",
+          "status": "tentative",
+          "timestamp": "2023/05/21 (Sun) 12:29",
+          "provenance": [
+            {
+              "session_index": 28,
+              "fact_index": 0,
+              "timestamp": "2023/05/21 (Sun) 12:29",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.601725290816872
+        },
+        {
+          "id": "M54",
+          "text": "I'm trying to plan out my workout routine for the next month.",
+          "status": "active",
+          "timestamp": "2023/05/21 (Sun) 12:29",
+          "provenance": [
+            {
+              "session_index": 28,
+              "fact_index": 0,
+              "timestamp": "2023/05/21 (Sun) 12:29",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.601725290816872
+        },
+        {
+          "id": "E48_0",
+          "text": "I'm thinking of trying a new workout routine.",
+          "status": "tentative",
+          "timestamp": "2023/06/17 (Sat) 11:00",
+          "provenance": [
+            {
+              "session_index": 48,
+              "fact_index": 0,
+              "timestamp": "2023/06/17 (Sat) 11:00",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6010363952960099
+        },
+        {
+          "id": "E23_2",
+          "text": "I've been doing pretty well, just trying to stay consistent with my training.",
+          "status": "current",
+          "timestamp": "2023/05/18 (Thu) 20:51",
+          "provenance": [
+            {
+              "session_index": 23,
+              "fact_index": 2,
+              "timestamp": "2023/05/18 (Thu) 20:51",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.5954361282744267
+        },
+        {
+          "id": "E50_8",
+          "text": "I've been doing some yoga and Pilates, but I need to be more consistent with it.",
+          "status": "current",
+          "timestamp": "2023/06/21 (Wed) 05:37",
+          "provenance": [
+            {
+              "session_index": 50,
+              "fact_index": 8,
+              "timestamp": "2023/06/21 (Wed) 05:37",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.5885481649950371
+        },
+        {
+          "id": "M118",
+          "text": "I've been doing some yoga and Pilates, but I need to be more consistent with it.",
+          "status": "active",
+          "timestamp": "2023/06/21 (Wed) 05:37",
+          "provenance": [
+            {
+              "session_index": 50,
+              "fact_index": 8,
+              "timestamp": "2023/06/21 (Wed) 05:37",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.5885481649950371
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "yes",
+      "correct": true
+    },
+    "C": {
+      "raw": "yes",
+      "correct": true
+    }
+  },
+  "rubric": "official knowledge-update"
+}

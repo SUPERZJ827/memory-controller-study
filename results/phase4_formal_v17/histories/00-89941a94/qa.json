@@ -1,0 +1,396 @@
+{
+  "question_id": "89941a94",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "Before I purchased the gravel bike, do I have other bikes in addition to my mountain bike and my commuter bike?",
+    "question_date": "2023/06/21 (Wed) 02:24"
+  },
+  "reference_answer": "Yes. (You have a road bike too.)",
+  "answers": {
+    "B": {
+      "answer": "Yes",
+      "retrieved": [
+        {
+          "id": "M57",
+          "text": "And by the way, I've been using it along with my other three bikes, a mountain bike, a commuter bike, and a new hybrid bike I just purchased.",
+          "status": "active",
+          "timestamp": "2023/05/28 (Sun) 13:41",
+          "provenance": [
+            {
+              "session_index": 31,
+              "fact_index": 4,
+              "timestamp": "2023/05/25 (Thu) 15:36",
+              "source_turns": [
+                4
+              ]
+            },
+            {
+              "session_index": 31,
+              "fact_index": 6,
+              "timestamp": "2023/05/25 (Thu) 15:36",
+              "source_turns": [
+                6
+              ]
+            },
+            {
+              "session_index": 41,
+              "fact_index": 8,
+              "timestamp": "2023/05/28 (Sun) 13:41",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.7269414945820826
+        },
+        {
+          "id": "E31_4",
+          "text": "And by the way, I've been using it along with my other two bikes, a mountain bike and a commuter bike.",
+          "status": "current",
+          "timestamp": "2023/05/25 (Thu) 15:36",
+          "provenance": [
+            {
+              "session_index": 31,
+              "fact_index": 4,
+              "timestamp": "2023/05/25 (Thu) 15:36",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.7227081783864103
+        },
+        {
+          "id": "E41_8",
+          "text": "By the way, speaking of bikes, I just got a new one recently, so I'll actually have four bikes with me on this trip - my road bike, mountain bike, commuter bike, and a new hybrid bike I just purchased.",
+          "status": "current",
+          "timestamp": "2023/05/28 (Sun) 13:41",
+          "provenance": [
+            {
+              "session_index": 41,
+              "fact_index": 8,
+              "timestamp": "2023/05/28 (Sun) 13:41",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.7009530570141677
+        },
+        {
+          "id": "E31_6",
+          "text": "I've also been using my mountain bike for trail rides and my commuter bike for daily commutes.",
+          "status": "current",
+          "timestamp": "2023/05/25 (Thu) 15:36",
+          "provenance": [
+            {
+              "session_index": 31,
+              "fact_index": 6,
+              "timestamp": "2023/05/25 (Thu) 15:36",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.676880831699228
+        },
+        {
+          "id": "E41_17",
+          "text": "I'll make sure to go through it before the trip to ensure my road bike is in top condition.",
+          "status": "tentative",
+          "timestamp": "2023/05/28 (Sun) 13:41",
+          "provenance": [
+            {
+              "session_index": 41,
+              "fact_index": 17,
+              "timestamp": "2023/05/28 (Sun) 13:41",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.6209473026943332
+        },
+        {
+          "id": "E31_7",
+          "text": "By the way, I currently have three bikes, and I'm wondering if that's too many.",
+          "status": "current",
+          "timestamp": "2023/05/25 (Thu) 15:36",
+          "provenance": [
+            {
+              "session_index": 31,
+              "fact_index": 7,
+              "timestamp": "2023/05/25 (Thu) 15:36",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6013339984419511
+        },
+        {
+          "id": "E41_1",
+          "text": "I'd love to bring my road bike and get some exercise on the trip.",
+          "status": "tentative",
+          "timestamp": "2023/05/28 (Sun) 13:41",
+          "provenance": [
+            {
+              "session_index": 41,
+              "fact_index": 1,
+              "timestamp": "2023/05/28 (Sun) 13:41",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5978653810020321
+        },
+        {
+          "id": "E31_5",
+          "text": "I'm planning to use my road bike for the century ride, and I've been using it for long rides on the weekends.",
+          "status": "current",
+          "timestamp": "2023/05/25 (Thu) 15:36",
+          "provenance": [
+            {
+              "session_index": 31,
+              "fact_index": 5,
+              "timestamp": "2023/05/25 (Thu) 15:36",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.582053620469365
+        },
+        {
+          "id": "M58",
+          "text": "I'm planning to use my road bike for the century ride, and I've been using it for long rides on the weekends.",
+          "status": "active",
+          "timestamp": "2023/05/25 (Thu) 15:36",
+          "provenance": [
+            {
+              "session_index": 31,
+              "fact_index": 5,
+              "timestamp": "2023/05/25 (Thu) 15:36",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.5811068909123208
+        },
+        {
+          "id": "E41_5",
+          "text": "By the way, I'll have my road bike, and I'm planning to bring all my bikes,l, so I'll need to find accommodations with bike storage.",
+          "status": "tentative",
+          "timestamp": "2023/05/28 (Sun) 13:41",
+          "provenance": [
+            {
+              "session_index": 41,
+              "fact_index": 5,
+              "timestamp": "2023/05/28 (Sun) 13:41",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.5746161070400265
+        }
+      ]
+    },
+    "C": {
+      "answer": "Yes",
+      "retrieved": [
+        {
+          "id": "M107",
+          "text": "And by the way, I've been using it along with my other three bikes, a mountain bike, a commuter bike, and a new hybrid bike I just purchased.",
+          "status": "active",
+          "timestamp": "2023/05/28 (Sun) 13:41",
+          "provenance": [
+            {
+              "session_index": 31,
+              "fact_index": 4,
+              "timestamp": "2023/05/25 (Thu) 15:36",
+              "source_turns": [
+                4
+              ]
+            },
+            {
+              "session_index": 41,
+              "fact_index": 8,
+              "timestamp": "2023/05/28 (Sun) 13:41",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.7267750806620672
+        },
+        {
+          "id": "E31_4",
+          "text": "And by the way, I've been using it along with my other two bikes, a mountain bike and a commuter bike.",
+          "status": "current",
+          "timestamp": "2023/05/25 (Thu) 15:36",
+          "provenance": [
+            {
+              "session_index": 31,
+              "fact_index": 4,
+              "timestamp": "2023/05/25 (Thu) 15:36",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.7226529766905024
+        },
+        {
+          "id": "E41_8",
+          "text": "By the way, speaking of bikes, I just got a new one recently, so I'll actually have four bikes with me on this trip - my road bike, mountain bike, commuter bike, and a new hybrid bike I just purchased.",
+          "status": "current",
+          "timestamp": "2023/05/28 (Sun) 13:41",
+          "provenance": [
+            {
+              "session_index": 41,
+              "fact_index": 8,
+              "timestamp": "2023/05/28 (Sun) 13:41",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.6997979757484589
+        },
+        {
+          "id": "E31_6",
+          "text": "I've also been using my mountain bike for trail rides and my commuter bike for daily commutes.",
+          "status": "current",
+          "timestamp": "2023/05/25 (Thu) 15:36",
+          "provenance": [
+            {
+              "session_index": 31,
+              "fact_index": 6,
+              "timestamp": "2023/05/25 (Thu) 15:36",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6758945286781436
+        },
+        {
+          "id": "E41_17",
+          "text": "I'll make sure to go through it before the trip to ensure my road bike is in top condition.",
+          "status": "tentative",
+          "timestamp": "2023/05/28 (Sun) 13:41",
+          "provenance": [
+            {
+              "session_index": 41,
+              "fact_index": 17,
+              "timestamp": "2023/05/28 (Sun) 13:41",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.6199600071943032
+        },
+        {
+          "id": "E31_7",
+          "text": "By the way, I currently have three bikes, and I'm wondering if that's too many.",
+          "status": "current",
+          "timestamp": "2023/05/25 (Thu) 15:36",
+          "provenance": [
+            {
+              "session_index": 31,
+              "fact_index": 7,
+              "timestamp": "2023/05/25 (Thu) 15:36",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6006500913022963
+        },
+        {
+          "id": "E41_1",
+          "text": "I'd love to bring my road bike and get some exercise on the trip.",
+          "status": "tentative",
+          "timestamp": "2023/05/28 (Sun) 13:41",
+          "provenance": [
+            {
+              "session_index": 41,
+              "fact_index": 1,
+              "timestamp": "2023/05/28 (Sun) 13:41",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5960181434727821
+        },
+        {
+          "id": "E31_5",
+          "text": "I'm planning to use my road bike for the century ride, and I've been using it for long rides on the weekends.",
+          "status": "current",
+          "timestamp": "2023/05/25 (Thu) 15:36",
+          "provenance": [
+            {
+              "session_index": 31,
+              "fact_index": 5,
+              "timestamp": "2023/05/25 (Thu) 15:36",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.5795186312903022
+        },
+        {
+          "id": "M108",
+          "text": "I'm planning to use my road bike for the century ride, and I've been using it for long rides on the weekends.",
+          "status": "active",
+          "timestamp": "2023/05/25 (Thu) 15:36",
+          "provenance": [
+            {
+              "session_index": 31,
+              "fact_index": 5,
+              "timestamp": "2023/05/25 (Thu) 15:36",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.5795186312903022
+        },
+        {
+          "id": "E41_5",
+          "text": "By the way, I'll have my road bike, and I'm planning to bring all my bikes,l, so I'll need to find accommodations with bike storage.",
+          "status": "tentative",
+          "timestamp": "2023/05/28 (Sun) 13:41",
+          "provenance": [
+            {
+              "session_index": 41,
+              "fact_index": 5,
+              "timestamp": "2023/05/28 (Sun) 13:41",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.5749180651194291
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "Yes",
+      "correct": true
+    },
+    "C": {
+      "raw": "Yes",
+      "correct": true
+    }
+  },
+  "rubric": "official knowledge-update"
+}

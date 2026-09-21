@@ -1,0 +1,380 @@
+{
+  "question_id": "dad224aa",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "What time do I wake up on Saturday mornings?",
+    "question_date": "2023/06/24 (Sat) 03:58"
+  },
+  "reference_answer": "7:30 am",
+  "answers": {
+    "B": {
+      "answer": "8:30 am",
+      "retrieved": [
+        {
+          "id": "E9_3",
+          "text": "I've been waking up around 8:30 am on Saturdays, which gives me enough time to fit in a 30-minute jog before showering and getting ready for the day.",
+          "status": "historical",
+          "timestamp": "2023/05/23 (Tue) 14:12",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 3,
+              "timestamp": "2023/05/23 (Tue) 14:12",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.7245919948702951
+        },
+        {
+          "id": "E2_1",
+          "text": "By the way, I've been doing pretty well on weekdays, but weekends are a different story - like the previous Saturday, I woke up at 7:30 am, which was a good start to the day.",
+          "status": "historical",
+          "timestamp": "2023/05/23 (Tue) 01:43",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 1,
+              "timestamp": "2023/05/23 (Tue) 01:43",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7201886005837399
+        },
+        {
+          "id": "E2_2",
+          "text": "For weekdays, I'd like to wake up at 7:15 am, and on weekends, I'd like to wake up at 8:00 am.",
+          "status": "tentative",
+          "timestamp": "2023/05/23 (Tue) 01:43",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 2,
+              "timestamp": "2023/05/23 (Tue) 01:43",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.7084526525132357
+        },
+        {
+          "id": "E9_0",
+          "text": "I'm trying to get into a consistent morning routine on weekends.",
+          "status": "tentative",
+          "timestamp": "2023/05/23 (Tue) 14:12",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 0,
+              "timestamp": "2023/05/23 (Tue) 14:12",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6968779270280311
+        },
+        {
+          "id": "E2_3",
+          "text": "As for my current sleep schedule, I usually go to bed at 11:00 pm every night, and on weekdays, I wake up at 7:15 am, but on weekends, it varies - like I mentioned, on the previous Saturday, I woke up at 7:30 am, and last Saturday, I woke up at 9:30 am.",
+          "status": "current",
+          "timestamp": "2023/05/23 (Tue) 01:43",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 3,
+              "timestamp": "2023/05/23 (Tue) 01:43",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6938997302523355
+        },
+        {
+          "id": "E37_0",
+          "text": "I'm planning to go for a jog on Saturday morning, what's the weather forecast like for this weekend?",
+          "status": "tentative",
+          "timestamp": "2023/05/27 (Sat) 02:31",
+          "provenance": [
+            {
+              "session_index": 37,
+              "fact_index": 0,
+              "timestamp": "2023/05/27 (Sat) 02:31",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6524537696222251
+        },
+        {
+          "id": "E2_0",
+          "text": "I've been trying to establish a consistent wake-up time, and I was wondering if you could help me track my progress.",
+          "status": "tentative",
+          "timestamp": "2023/05/23 (Tue) 01:43",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 0,
+              "timestamp": "2023/05/23 (Tue) 01:43",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6038833501813694
+        },
+        {
+          "id": "E9_6",
+          "text": "Since I'm already waking up at 8:30 am on Saturdays, do you think it's possible to fit in a 30-minute yoga or stretching routine on Sundays, followed by a quick breakfast and then meal prep for the week?",
+          "status": "tentative",
+          "timestamp": "2023/05/23 (Tue) 14:12",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 6,
+              "timestamp": "2023/05/23 (Tue) 14:12",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.592407984090235
+        },
+        {
+          "id": "E9_1",
+          "text": "Maybe something that doesn't require me to wake up too early, since I like sleeping in a bit later on weekends.",
+          "status": "tentative",
+          "timestamp": "2023/05/23 (Tue) 14:12",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 1,
+              "timestamp": "2023/05/23 (Tue) 14:12",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5723900639290082
+        },
+        {
+          "id": "E2_13",
+          "text": "I'll send you a reminder to share your sleep and wake-up times with me every few days.",
+          "status": "tentative",
+          "timestamp": "2023/05/23 (Tue) 01:43",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 13,
+              "timestamp": "2023/05/23 (Tue) 01:43",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.5718710323794777
+        }
+      ]
+    },
+    "C": {
+      "answer": "8:30 am",
+      "retrieved": [
+        {
+          "id": "E9_3",
+          "text": "I've been waking up around 8:30 am on Saturdays, which gives me enough time to fit in a 30-minute jog before showering and getting ready for the day.",
+          "status": "historical",
+          "timestamp": "2023/05/23 (Tue) 14:12",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 3,
+              "timestamp": "2023/05/23 (Tue) 14:12",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.7250373658400655
+        },
+        {
+          "id": "E2_1",
+          "text": "By the way, I've been doing pretty well on weekdays, but weekends are a different story - like the previous Saturday, I woke up at 7:30 am, which was a good start to the day.",
+          "status": "historical",
+          "timestamp": "2023/05/23 (Tue) 01:43",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 1,
+              "timestamp": "2023/05/23 (Tue) 01:43",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7202180086443924
+        },
+        {
+          "id": "E2_2",
+          "text": "For weekdays, I'd like to wake up at 7:15 am, and on weekends, I'd like to wake up at 8:00 am.",
+          "status": "tentative",
+          "timestamp": "2023/05/23 (Tue) 01:43",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 2,
+              "timestamp": "2023/05/23 (Tue) 01:43",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.7082646998808555
+        },
+        {
+          "id": "E9_0",
+          "text": "I'm trying to get into a consistent morning routine on weekends.",
+          "status": "tentative",
+          "timestamp": "2023/05/23 (Tue) 14:12",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 0,
+              "timestamp": "2023/05/23 (Tue) 14:12",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6968779270280311
+        },
+        {
+          "id": "M43",
+          "text": "I'm trying to get into a consistent morning routine on weekends.",
+          "status": "active",
+          "timestamp": "2023/05/23 (Tue) 14:12",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 0,
+              "timestamp": "2023/05/23 (Tue) 14:12",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6968779270280311
+        },
+        {
+          "id": "E2_3",
+          "text": "As for my current sleep schedule, I usually go to bed at 11:00 pm every night, and on weekdays, I wake up at 7:15 am, but on weekends, it varies - like I mentioned, on the previous Saturday, I woke up at 7:30 am, and last Saturday, I woke up at 9:30 am.",
+          "status": "current",
+          "timestamp": "2023/05/23 (Tue) 01:43",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 3,
+              "timestamp": "2023/05/23 (Tue) 01:43",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6951953122751307
+        },
+        {
+          "id": "E37_0",
+          "text": "I'm planning to go for a jog on Saturday morning, what's the weather forecast like for this weekend?",
+          "status": "tentative",
+          "timestamp": "2023/05/27 (Sat) 02:31",
+          "provenance": [
+            {
+              "session_index": 37,
+              "fact_index": 0,
+              "timestamp": "2023/05/27 (Sat) 02:31",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6530097037127078
+        },
+        {
+          "id": "M8",
+          "text": "{\"operation\":\"UPDATE\",\"timestamp\":\"2023/05/23 (Tue) 14:12\",\"evidence\":\"I've been waking up around 8:30 am on Saturdays, which gives me enough time to fit in a 30-minute jog before showering and getting ready for the day.\",\"target\":{\"id\":\"M8\",\"content\":\"{\"operation\":\"ADD\",\"timestamp\":\"2023/05/23 (Tue) 01:43\",\"evidence\":\"As for my current sleep schedule, I usually go to bed at 11:00 pm every night, and on weekdays, I wake up at 7:15 am, but on weekends, it varies - like I mentioned, on the previous Saturday, I woke up at 7:30 am, and last Saturday, I woke up at 9:30 am.\",\"target\":null}\",\"updated_at\":\"2023/05/23 (Tue) 01:43\"}",
+          "status": "active",
+          "timestamp": "2023/05/23 (Tue) 14:12",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 3,
+              "timestamp": "2023/05/23 (Tue) 01:43",
+              "source_turns": [
+                2
+              ]
+            },
+            {
+              "session_index": 9,
+              "fact_index": 3,
+              "timestamp": "2023/05/23 (Tue) 14:12",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.642738993068535
+        },
+        {
+          "id": "E2_0",
+          "text": "I've been trying to establish a consistent wake-up time, and I was wondering if you could help me track my progress.",
+          "status": "tentative",
+          "timestamp": "2023/05/23 (Tue) 01:43",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 0,
+              "timestamp": "2023/05/23 (Tue) 01:43",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6040718563284966
+        },
+        {
+          "id": "M11",
+          "text": "I've been trying to establish a consistent wake-up time for weeks now. I used to wake up at 8:30 am on weekdays, but since I started my new job three weeks ago, I've been waking up at 7:15 am to have enough time to get ready and catch the bus at 8:00 am.",
+          "status": "active",
+          "timestamp": "2023/05/23 (Tue) 01:43",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 11,
+              "timestamp": "2023/05/23 (Tue) 01:43",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.600898459712481
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "No.",
+      "correct": false
+    },
+    "C": {
+      "raw": "No.",
+      "correct": false
+    }
+  },
+  "rubric": "official knowledge-update"
+}

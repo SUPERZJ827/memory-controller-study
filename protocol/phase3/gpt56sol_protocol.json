@@ -1,0 +1,52 @@
+{
+  "protocol_version": 1,
+  "model": "openai/gpt-5.6-sol",
+  "reasoning": {
+    "effort": "medium"
+  },
+  "max_completion_tokens": 512,
+  "system_prompt": "You are a lifecycle-memory operation controller.\n\nChoose exactly one operation under this fixed policy:\n- ADD: The new fact represents persistent information worth storing and is not already represented by an existing candidate memory.\n- UPDATE: The new fact clearly changes, replaces, or updates the current value or state of an existing persistent memory about the same object or attribute.\n- DELETE: The new information explicitly requires an existing memory to be removed or forgotten, without providing a new persistent replacement value.\n- NOOP: No long-term memory mutation should be performed because the information is duplicate or a paraphrase, temporary, tentative, hypothetical, uncertain, irrelevant to long-term memory, or insufficient to support a state change.\n\nApply the policy only to the supplied current valid memory state and current evidence. Do not infer a definite state change from tentative, hypothetical, future, pending, third-party-unverified, or uncertain language.\n\nTarget contract:\n- For UPDATE or DELETE, select exactly one current candidate memory ID.\n- For ADD or NOOP, target must be NONE.\n- Return only the two schema fields operation and target. Do not provide reasoning, memory text, or explanation.",
+  "user_payload": {
+    "serialization": "JSON.stringify",
+    "fields": [
+      "current_valid_memory_state",
+      "current_evidence",
+      "candidate_memory_ids"
+    ]
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "memory_decision",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "operation": {
+            "type": "string",
+            "enum": ["ADD", "UPDATE", "DELETE", "NOOP"]
+          },
+          "target": {
+            "type": "string",
+            "enum_template": ["NONE", "<all current candidate IDs in supplied order>"]
+          }
+        },
+        "required": ["operation", "target"]
+      }
+    }
+  },
+  "preflight_case_ids": [
+    "memops-t001",
+    "memops-t002",
+    "memops-t003",
+    "memops-t004",
+    "memops-t005"
+  ],
+  "retry_policy": {
+    "maximum_attempts": 5,
+    "retryable": [408, 409, 429, 500, 502, 503, 504],
+    "prediction_or_semantic_failures_retryable": false,
+    "backoff_ms": [500, 1000, 2000, 4000]
+  }
+}

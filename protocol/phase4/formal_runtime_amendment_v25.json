@@ -1,0 +1,39 @@
+{
+  "schema": "phase4-formal-runtime-amendment-v25",
+  "scope": "bounded recovery from the first paid provider infrastructure failure",
+  "base_authorization_sha256": "b09cce9457ad6414dc17182a33c4ce0420e3081478c054bbe50d9e6b5a57ec32",
+  "supersedes": "phase4/formal_runtime_amendment_v24.json",
+  "supersedes_sha256": "fc85b0f59387a492fc66c1b0d0fe268aaf33cada057105ad782e7d4bfb33c62f",
+  "trigger": {
+    "call_key": "p4c_ca0f6c095a97a05289ff44b02230c03aa31cbbc5",
+    "history": "603deb26",
+    "step_index": 246,
+    "scope": "C",
+    "model": "typesafe/jev-1.13",
+    "failure": "HTTP 520 with no response usage or known charge",
+    "original_reservation_pool": "formal_controllers",
+    "original_unknown_hold_micro_usd": 1344
+  },
+  "authorization_basis": {
+    "protocol": "phase4/low_budget_protocol_v2.json",
+    "max_transport_retries_per_logical_call": 1,
+    "semantic_retries": 0,
+    "retry_pool": "formal_aux",
+    "retry_pool_cap_usd": 2
+  },
+  "change": "On a fresh resumed run, permit at most one paid infrastructure retry for a logical call whose only prior dispatched attempt failed with a transport exception or HTTP 5xx. The retry must use byte-identical request JSON and request hash, receives a distinct reservation in formal_aux, and leaves the original unknown reservation fully held. A second retry, HTTP 4xx retry, semantic/parse retry, or prediction repair is forbidden.",
+  "unchanged": [
+    "models, prompts, schemas, reasoning settings, token budgets, sample, order, scoring, and independent B/C states",
+    "semantic retries remain zero",
+    "formal controller and QA pools are not used for retry reservations",
+    "all prior failed raw output, ledger rows, and budget reservations remain immutable",
+    "local extraction recovery rules from v24"
+  ],
+  "revised_source_hashes": {
+    "src/phase4/run_formal_v16.ts": "d11217d9a9b9cc7c0888cc4ab6bbf6d86a536cbc7687412bcdc176b25e39cbd4",
+    "src/phase4/formal_transport_v16.ts": "4c58f54612977b8819db27719de103d6d1bc918a2b97175682297a4d5161bd21",
+    "src/phase4/ledger.ts": "1fa7d83a12d10bc4b774b73436f51466324b9dca6ee961902276a7cd37d14335",
+    "src/phase4/local_extractor_v14.ts": "043d624eef1777c6a4fad93cb856f0674a15b5b66dd548fe108ab1f7e1b7c2b1"
+  },
+  "disclosure": "This amendment was frozen after the run encountered the stated HTTP 520 and before dispatching its retry. It activates a retry already allowed by the pre-run low-budget protocol but stricter than the initial formal transport implementation. It is operational recovery, not an outcome-based model or task change."
+}

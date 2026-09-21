@@ -1,0 +1,23 @@
+{
+  "schema": "phase4-formal-readiness-v2",
+  "status": "NOT_READY",
+  "development_result": "results/phase4_low_budget_v2/development/reconciled_summary.json",
+  "development_result_sha256": "09044747567080bde59d9ed8fde8d0a76e2fdf7eaf2aed74b3021ee83f4c5adf",
+  "formal_authorized": false,
+  "n": null,
+  "ids": null,
+  "permitted_n": [
+    12,
+    24
+  ],
+  "selection_seed": "phase4-low-budget-test-v1",
+  "budget_usd": {
+    "campaign": 28,
+    "development": 1,
+    "formal_controllers": 24,
+    "formal_QA": 1,
+    "formal_auxiliary": 2
+  },
+  "blocker": "Local extraction rejected assistant-sourced non-autobiographical facts at first fixed session; no full-history cost measurement available.",
+  "next_scope": "Repair/check existing local extraction on the SAME development history under unchanged cumulative $1 development pool; no automatic invocation, new model, new method, extra task, or funds."
+}

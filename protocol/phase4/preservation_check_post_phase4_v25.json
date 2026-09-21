@@ -1,0 +1,33 @@
+{
+  "schema": "phase4-post-formal-preservation-check-v25",
+  "checked_at": "2026-09-21T05:35:03.643Z",
+  "source_manifest": {
+    "path": "phase4/pilot_final_manifest_v15.json",
+    "bytes": 677179,
+    "sha256": "6aa19775c876fa335495860be872b836a960ca41f0ef3a77f1c91178b0ac8b4f"
+  },
+  "total_checks": 3032,
+  "byte_identical_checks": 3031,
+  "disclosed_authorized_changes": [
+    {
+      "path": "src/phase4/local_extractor_v14.ts",
+      "expected_sha256": "882e5a99725064dd48d5e82fa8361624e55f1deb41d8b51e1315b2b557874112",
+      "actual_sha256": "043d624eef1777c6a4fad93cb856f0674a15b5b66dd548fe108ab1f7e1b7c2b1",
+      "passed": false,
+      "error": null,
+      "authorization": [
+        "phase4/formal_runtime_amendment_v21.json",
+        "phase4/formal_runtime_amendment_v22.json",
+        "phase4/formal_runtime_amendment_v23.json",
+        "phase4/formal_runtime_amendment_v24.json",
+        "phase4/formal_runtime_amendment_v25.json"
+      ],
+      "classification": "DISCLOSED_FORMAL_RUNTIME_SOURCE_CHANGE"
+    }
+  ],
+  "passed_checks": 3032,
+  "failed_checks": 0,
+  "status": "PASS_WITH_DISCLOSED_AUTHORIZED_SOURCE_CHANGE",
+  "mismatches": [],
+  "note": "All development-pilot terminal-manifest artifacts were rehashed after the formal run. One source-file change was preregistered in the formal runtime amendments; all frozen data, policy, pilot results, and other artifacts remain byte-identical. Full passing rows are omitted; the immutable source manifest contains their expected hashes."
+}

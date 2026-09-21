@@ -1,0 +1,39 @@
+{
+  "schema": "phase4-formal-runtime-amendment-v24",
+  "scope": "prediction-blind singleton truncation completion",
+  "post_start": true,
+  "disclosure_required": true,
+  "base_authorization_sha256": "b09cce9457ad6414dc17182a33c4ce0420e3081478c054bbe50d9e6b5a57ec32",
+  "supersedes": "phase4/formal_runtime_amendment_v23.json",
+  "supersedes_sha256": "ca03ad930165d9edae205fa242726858ce9615180c423b0b3bb93236b2aaabd0",
+  "prior_status_sha256": "e16ddd41d356345c49ce049f9aa5acd440eaa9489d6ce6e981b92543d2856b67",
+  "evidence": {
+    "histories_completed": 13,
+    "history": "603deb26",
+    "session_index": 31,
+    "logical_call_id": "extraction-1",
+    "initial_call_key": "p4c_3cdc70a39afe7d39a0f58e7882aff133c738f53a",
+    "retry1_call_key": "p4c_1efe123471e67452e92477bfb614e18322e766a8",
+    "initial_finish_reason": "length",
+    "retry1_finish_reason": "length",
+    "output_tokens_each": 8192,
+    "semantic_verdict_received": false,
+    "paid_cost_usd_at_stop_guard": 6.982004,
+    "held_usd": 0,
+    "unknown_usd": 0
+  },
+  "change": "For a singleton extraction request only, if both its initial response and the existing one retry end with finish_reason=length, permit one final request with the identical model, messages, temperature, and thinking setting but max_tokens increased from 8192 to 16384. Accept the first complete parseable response; no content-based choice among complete outputs is allowed.",
+  "rationale": "The frozen singleton request produced no usable verdict because both permitted outputs ended exactly at the 8192-token ceiling. Extending only the output ceiling allows the same deterministic decoding task to terminate without dropping or guessing the user fragment.",
+  "unchanged": [
+    "extractor model, prompt, input fragments, temperature, and thinking mode",
+    "controller and QA prompts, models, schemas, and paid no-retry protocol",
+    "sample, order, scoring, and budgets",
+    "independent B/C state execution"
+  ],
+  "revised_source_hashes": {
+    "src/phase4/run_formal_v16.ts": "3187cde5a2097432028d8de4232d6536375dd8a035b122103b31db8b577d87af",
+    "src/phase4/formal_transport_v16.ts": "97b03206d603d467b57d10ecc2bb0af3d9911b53b404e6fc689c51a3fa2757c2",
+    "src/phase4/ledger.ts": "1fa7d83a12d10bc4b774b73436f51466324b9dca6ee961902276a7cd37d14335",
+    "src/phase4/local_extractor_v14.ts": "043d624eef1777c6a4fad93cb856f0674a15b5b66dd548fe108ab1f7e1b7c2b1"
+  }
+}

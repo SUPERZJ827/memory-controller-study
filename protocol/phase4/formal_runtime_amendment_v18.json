@@ -1,0 +1,26 @@
+{
+  "schema": "phase4-formal-runtime-amendment-v18",
+  "scope": "implementation reliability only before any formal prediction",
+  "base_authorization": "phase4/formal_run_authorization_v17.json",
+  "base_authorization_sha256": "b09cce9457ad6414dc17182a33c4ce0420e3081478c054bbe50d9e6b5a57ec32",
+  "prior_status_sha256": "e1e3c8e3d7449ec76c0980cabbeedb53b900223ae04f93c710d94495454dfc77",
+  "evidence": {
+    "histories_completed": 0,
+    "paid_calls": 0,
+    "formal_spend_usd": 0,
+    "local_successful_calls": 47,
+    "stopped_error": "Error: Truncated"
+  },
+  "change": "For an extraction request containing exactly one immutable USER fragment, retry the exact same local request once only when the first response finish_reason is length. Batch truncation still uses the frozen deterministic split; a second singleton truncation still stops.",
+  "unchanged": [
+    "sample membership and order",
+    "extractor prompt",
+    "local model and temperature",
+    "fact text immutability",
+    "controller protocols",
+    "scoring",
+    "budgets",
+    "paid concurrency"
+  ],
+  "revised_runner_sha256": "f09f805130993216d605e22dec3fe88c66e630a016d2d0ca4b2f5b497b79854d"
+}

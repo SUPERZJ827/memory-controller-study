@@ -1,0 +1,87 @@
+{
+  "status": "FROZEN_BEFORE_ANY_PHASE4_MODEL_PREDICTION",
+  "frozen_date": "2026-09-20",
+  "research_question": "Can separating lifecycle-operation decisions from memory-content generation reduce complete-system cost while preserving question-answering quality and evidence-traceable memory state in natural-language interaction?",
+  "dataset": {
+    "name": "LongMemEval-S cleaned",
+    "revision": "98d7416c24c778c2fee6e6f3006e7a073259d48f",
+    "sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+    "n": 500,
+    "include_all_cases": true,
+    "includes_abstention_cases": 30,
+    "oracle_is_primary": false,
+    "adaptive_sampling": false,
+    "early_stopping_for_positive_results": false
+  },
+  "arms": {
+    "A": "strong LLM joint operation-target-content update",
+    "B": "same strong LLM operation-target decision plus common writer",
+    "C": "frozen Jev operation-target decision plus the exact B writer",
+    "D": "timestamped append-only reference; secondary only"
+  },
+  "primary_quality_comparison": {
+    "contrast": "C_minus_B",
+    "metric": "official-protocol per-question LongMemEval QA correctness over all 500 questions",
+    "estimand": "paired absolute accuracy difference",
+    "noninferiority_margin_absolute": -0.03,
+    "decision_rule": "noninferior only if the lower endpoint of the two-sided 95% paired-bootstrap confidence interval is greater than -0.03",
+    "bootstrap_resamples": 20000,
+    "bootstrap_seed": 20260920,
+    "resampling_unit": "question",
+    "inconclusive_is_allowed": true
+  },
+  "cost_condition": {
+    "contrast": "C_vs_B",
+    "metric": "counterfactual standalone complete-system variable cost, excluding evaluator",
+    "minimum_relative_reduction": 0.10,
+    "decision_rule": "the quality-cost claim succeeds only if C is noninferior to B and C costs at least 10% less than B",
+    "shared_artifacts": "physically cached common work is charged in full to every arm for standalone attribution"
+  },
+  "secondary_analyses": [
+    "A vs B isolates decision-generation separation",
+    "C vs A reports the complete architectural replacement contrast",
+    "task-macro and per-task QA accuracy",
+    "abstention accuracy",
+    "paired McNemar tests with effect sizes and confidence intervals",
+    "evidence-traceable state contamination and omission on a prediction-blinded, preselected audit sample",
+    "complete-system p50, mean, and p90 stage and end-to-end latency",
+    "append-only reference arm D"
+  ],
+  "required_cost_reporting": {
+    "stages": [
+      "fact_extraction",
+      "embedding_indexing",
+      "ingest_retrieval",
+      "operation_decision",
+      "content_rewrite_or_joint_update",
+      "answer_retrieval",
+      "answer_generation",
+      "evaluation_judge"
+    ],
+    "usage": [
+      "input_tokens",
+      "output_tokens",
+      "reasoning_tokens",
+      "cache_read_tokens",
+      "cache_write_tokens",
+      "provider_reported_cost_usd",
+      "latency_ms",
+      "attempt_count"
+    ],
+    "totals": [
+      "actual_experiment_spend",
+      "standalone_attributed_cost_per_arm",
+      "controller_only_cost",
+      "complete_system_cost_excluding_evaluator",
+      "evaluator_cost_reported_separately"
+    ],
+    "local_compute_rule": "report model, hardware, calls, tokens if available, and device time; do not label unmonetized local compute as free"
+  },
+  "interpretation_guardrails": [
+    "Failure to reject a difference is not evidence of equivalence.",
+    "A numerical final-state advantage is not a stability advantage without paired uncertainty.",
+    "Controller-only cost ratios are not complete-system savings.",
+    "A filtered or construct-consensus subset is sensitivity analysis, not a replacement benchmark.",
+    "No universal Jev-over-frontier-LLM claim is permitted from this experiment."
+  ]
+}

@@ -1,0 +1,1785 @@
+{
+  "analysis": "Jev confidence/error-type overlap with Phase-3 blind construct audit",
+  "generated_without_model_or_api_calls": true,
+  "definitions": {
+    "confidence": "P(predicted operation) × P(predicted target) for predicted UPDATE/DELETE; target factor 1 for ADD/NOOP.",
+    "high_confidence_wrong": "joint_correct=false and confidence>=0.9.",
+    "under_mutation": "gold operation is ADD/UPDATE/DELETE and Jev predicts NOOP.",
+    "over_mutation": "gold operation is NOOP and Jev predicts ADD/UPDATE/DELETE.",
+    "benchmark_supported_by_both_reviewers": "Both reviewers mark policy_applicable=true and independently output the benchmark operation+target (strict_consensus=true).",
+    "reviewer_consensus_mismatch": "Neither reviewer marks MATERIAL ambiguity; both output the same operation+target, which differs from benchmark gold (audit category B).",
+    "caution": "Reviewer consensus is a construct-validity signal, not adjudicated human gold. NOT_IN_BLIND_AUDIT does not imply mismatch or correctness."
+  },
+  "source_counts": {
+    "phase2_layer_a": 300,
+    "boundary_stress_v1": 180,
+    "blind_audit": 124
+  },
+  "validation": {
+    "expected_counts_matched": true,
+    "published_high_confidence_ids_matched": true,
+    "unique_combined_case_ids": 480,
+    "all_audited_error_reviewers_policy_applicable": true
+  },
+  "summary": {
+    "high_confidence_wrong": {
+      "count": 10,
+      "audited_count": 10,
+      "unaudited_count": 0,
+      "unaudited_ids": [],
+      "audit_status_counts": {
+        "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK": 9,
+        "REVIEWER_DISAGREEMENT": 1
+      },
+      "audit_category_counts": {
+        "B": 9,
+        "C": 1
+      },
+      "both_reviewers_policy_applicable": 10,
+      "material_ambiguity_count": 0,
+      "reviewer_consensus_mismatch_count": 9,
+      "jev_matches_both_reviewers_joint_within_consensus_mismatch": 9,
+      "mean_confidence": 0.957,
+      "benchmark_supported_subset": {
+        "count": 0,
+        "ids": [],
+        "mean_confidence": null
+      }
+    },
+    "under_mutation": {
+      "count": 24,
+      "audited_count": 23,
+      "unaudited_count": 1,
+      "unaudited_ids": [
+        "boundary-v1-108"
+      ],
+      "audit_status_counts": {
+        "BENCHMARK_SUPPORTED_BY_BOTH_REVIEWERS": 5,
+        "NOT_IN_BLIND_AUDIT": 1,
+        "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK": 14,
+        "REVIEWER_DISAGREEMENT": 4
+      },
+      "audit_category_counts": {
+        "A": 5,
+        "B": 14,
+        "C": 4,
+        "UNAUDITED": 1
+      },
+      "both_reviewers_policy_applicable": 23,
+      "material_ambiguity_count": 0,
+      "reviewer_consensus_mismatch_count": 14,
+      "jev_matches_both_reviewers_joint_within_consensus_mismatch": 13,
+      "mean_confidence": 0.790833,
+      "benchmark_supported_subset": {
+        "count": 5,
+        "ids": [
+          "memops-t008",
+          "memops-t097",
+          "memops-t236",
+          "memops-t255",
+          "memops-t262"
+        ],
+        "mean_confidence": 0.704
+      }
+    },
+    "over_mutation": {
+      "count": 18,
+      "audited_count": 18,
+      "unaudited_count": 0,
+      "unaudited_ids": [],
+      "audit_status_counts": {
+        "BENCHMARK_SUPPORTED_BY_BOTH_REVIEWERS": 2,
+        "MATERIAL_AMBIGUITY": 1,
+        "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK": 12,
+        "REVIEWER_DISAGREEMENT": 3
+      },
+      "audit_category_counts": {
+        "A": 2,
+        "B": 12,
+        "C": 3,
+        "D": 1
+      },
+      "both_reviewers_policy_applicable": 18,
+      "material_ambiguity_count": 1,
+      "reviewer_consensus_mismatch_count": 12,
+      "jev_matches_both_reviewers_joint_within_consensus_mismatch": 11,
+      "mean_confidence": 0.595556,
+      "benchmark_supported_subset": {
+        "count": 2,
+        "ids": [
+          "memops-t168",
+          "memops-t225"
+        ],
+        "mean_confidence": 0.56
+      }
+    }
+  },
+  "cases": {
+    "high_confidence_wrong": [
+      {
+        "id": "memops-t036",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 1
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-121",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t076",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.98
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-024",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t104",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "ADD",
+          "target": "NONE",
+          "confidence": 0.91
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-037",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "ADD",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "ADD",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t111",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.95
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-084",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t146",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.97
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-009",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t188",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.97
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-025",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t192",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.95
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-026",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t218",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.91
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_DISAGREEMENT",
+        "blind_id": "BA-007",
+        "audit_category": "C",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "ADD",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t246",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.98
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-073",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t279",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.95
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-004",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      }
+    ],
+    "under_mutation": [
+      {
+        "id": "boundary-v1-108",
+        "dataset": "boundary_stress_v1",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M2"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.66
+        },
+        "audit_coverage": false,
+        "audit_status": "NOT_IN_BLIND_AUDIT",
+        "blind_id": null,
+        "audit_category": null,
+        "strict_consensus_with_benchmark": null,
+        "reviewer_A": null,
+        "reviewer_B": null,
+        "jev_matches_reviewer_A_joint": null,
+        "jev_matches_reviewer_B_joint": null
+      },
+      {
+        "id": "memops-t008",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.48
+        },
+        "audit_coverage": true,
+        "audit_status": "BENCHMARK_SUPPORTED_BY_BOTH_REVIEWERS",
+        "blind_id": "BA-104",
+        "audit_category": "A",
+        "strict_consensus_with_benchmark": true,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": false
+      },
+      {
+        "id": "memops-t036",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 1
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-121",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t039",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.79
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-083",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t041",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.87
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-027",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t076",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.98
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-024",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t077",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.83
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-069",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t082",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.88
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-085",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t097",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.75
+        },
+        "audit_coverage": true,
+        "audit_status": "BENCHMARK_SUPPORTED_BY_BOTH_REVIEWERS",
+        "blind_id": "BA-102",
+        "audit_category": "A",
+        "strict_consensus_with_benchmark": true,
+        "reviewer_A": {
+          "operation": "ADD",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "reviewer_B": {
+          "operation": "ADD",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": false
+      },
+      {
+        "id": "memops-t131",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.8
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-001",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t138",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.58
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_DISAGREEMENT",
+        "blind_id": "BA-080",
+        "audit_category": "C",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "ADD",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t146",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.97
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-009",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t155",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.76
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-018",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t166",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.57
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_DISAGREEMENT",
+        "blind_id": "BA-076",
+        "audit_category": "C",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "ADD",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": false
+      },
+      {
+        "id": "memops-t191",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.57
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-050",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t192",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.95
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-026",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t218",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.91
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_DISAGREEMENT",
+        "blind_id": "BA-007",
+        "audit_category": "C",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "ADD",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t232",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.74
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_DISAGREEMENT",
+        "blind_id": "BA-097",
+        "audit_category": "C",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "ADD",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t236",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.73
+        },
+        "audit_coverage": true,
+        "audit_status": "BENCHMARK_SUPPORTED_BY_BOTH_REVIEWERS",
+        "blind_id": "BA-087",
+        "audit_category": "A",
+        "strict_consensus_with_benchmark": true,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": false
+      },
+      {
+        "id": "memops-t246",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.98
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-073",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t254",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "ADD",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.67
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-005",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": false
+      },
+      {
+        "id": "memops-t255",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.67
+        },
+        "audit_coverage": true,
+        "audit_status": "BENCHMARK_SUPPORTED_BY_BOTH_REVIEWERS",
+        "blind_id": "BA-019",
+        "audit_category": "A",
+        "strict_consensus_with_benchmark": true,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": false
+      },
+      {
+        "id": "memops-t262",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.89
+        },
+        "audit_coverage": true,
+        "audit_status": "BENCHMARK_SUPPORTED_BY_BOTH_REVIEWERS",
+        "blind_id": "BA-123",
+        "audit_category": "A",
+        "strict_consensus_with_benchmark": true,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": false
+      },
+      {
+        "id": "memops-t279",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "UPDATE",
+          "target": "M1"
+        },
+        "jev": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "confidence": 0.95
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-004",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      }
+    ],
+    "over_mutation": [
+      {
+        "id": "memops-t001",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.42
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-017",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t010",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "ADD",
+          "target": "NONE",
+          "confidence": 0.64
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_DISAGREEMENT",
+        "blind_id": "BA-034",
+        "audit_category": "C",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "ADD",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": false
+      },
+      {
+        "id": "memops-t023",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.56
+        },
+        "audit_coverage": true,
+        "audit_status": "MATERIAL_AMBIGUITY",
+        "blind_id": "BA-038",
+        "audit_category": "D",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "MATERIAL"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t027",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.46
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-109",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t033",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.62
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-060",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t086",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.81
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-049",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t094",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.46
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-031",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t111",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.95
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-084",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t126",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "ADD",
+          "target": "NONE",
+          "confidence": 0.62
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-030",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "ADD",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "reviewer_B": {
+          "operation": "ADD",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t141",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.5
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_DISAGREEMENT",
+        "blind_id": "BA-103",
+        "audit_category": "C",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "ADD",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t151",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.67
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-066",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t168",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "ADD",
+          "target": "NONE",
+          "confidence": 0.57
+        },
+        "audit_coverage": true,
+        "audit_status": "BENCHMARK_SUPPORTED_BY_BOTH_REVIEWERS",
+        "blind_id": "BA-124",
+        "audit_category": "A",
+        "strict_consensus_with_benchmark": true,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": false
+      },
+      {
+        "id": "memops-t183",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.49
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_DISAGREEMENT",
+        "blind_id": "BA-041",
+        "audit_category": "C",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t210",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.7
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-054",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t225",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "ADD",
+          "target": "NONE",
+          "confidence": 0.55
+        },
+        "audit_coverage": true,
+        "audit_status": "BENCHMARK_SUPPORTED_BY_BOTH_REVIEWERS",
+        "blind_id": "BA-075",
+        "audit_category": "A",
+        "strict_consensus_with_benchmark": true,
+        "reviewer_A": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "reviewer_B": {
+          "operation": "NOOP",
+          "target": "NONE",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": false
+      },
+      {
+        "id": "memops-t234",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "ADD",
+          "target": "NONE",
+          "confidence": 0.43
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-106",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "LOW"
+        },
+        "jev_matches_reviewer_A_joint": false,
+        "jev_matches_reviewer_B_joint": false
+      },
+      {
+        "id": "memops-t258",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.58
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-062",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      },
+      {
+        "id": "memops-t259",
+        "dataset": "phase2_layer_a",
+        "gold": {
+          "operation": "NOOP",
+          "target": "NONE"
+        },
+        "jev": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "confidence": 0.69
+        },
+        "audit_coverage": true,
+        "audit_status": "REVIEWER_CONSENSUS_MISMATCH_WITH_BENCHMARK",
+        "blind_id": "BA-057",
+        "audit_category": "B",
+        "strict_consensus_with_benchmark": false,
+        "reviewer_A": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "reviewer_B": {
+          "operation": "UPDATE",
+          "target": "M1",
+          "policy_applicable": true,
+          "ambiguity": "NONE"
+        },
+        "jev_matches_reviewer_A_joint": true,
+        "jev_matches_reviewer_B_joint": true
+      }
+    ]
+  },
+  "input_sha256": {
+    "phase2_jev": "7140e470e5b1396cf88bc9af47ce315478c1fed7d9fdc8900b82dfe0cce43f40",
+    "stress_jev": "f808bffcde283b0f24928ffe1f2fec728ac9c6324a8c1b7e508d8f22882ca69b",
+    "construct_audit": "e4e46be7f989ae8dac003cc63ef468010c8fb4d3b990aeec65fb07993d8b8f34",
+    "published_high_confidence": "2a69e3d500335f0c88b81918d19f93bb6370c09c5b1cda22dade0df519cadf37"
+  }
+}

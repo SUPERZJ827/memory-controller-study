@@ -1,0 +1,10 @@
+{
+  "frozen_after_preflight": true,
+  "protocol_sha256": "7be699ffa443845699a893b10709f7491c39a0ee2abd09fad2dad5f21840185b",
+  "preflight_result_sha256": "ce12698a8cb29cef5d9bd1a8468ab56651773c52c6f587c8a9c74f43becf7424",
+  "model": "openai/gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "max_completion_tokens": 512,
+  "transition_cases_sha256": "6156f02056c9dcf5d890cbcdc5c3db7a33698b4a5ba2fa0283da668b5d475447",
+  "trajectories_sha256": "92b27bdacba25fc7631b77ddc9b913ef2ef8b640fd2c702a445ba3996a439ca0"
+}

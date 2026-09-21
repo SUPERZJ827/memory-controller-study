@@ -1,0 +1,5 @@
+method,decisions,input_tokens,output_tokens,reasoning_tokens,api_cost_usd,median_latency_ms,scope
+jev,433,401962,29283,,0.016882404,538.95,legacy_controller_only
+gpt56sol,433,180308,16308,7799,0.523696,1541.28,legacy_controller_only
+claude,433,273488,5951,,0.909729,1391.61,legacy_controller_only
+qwen3_8b,433,158758,4879,,0,258.08,legacy_controller_only

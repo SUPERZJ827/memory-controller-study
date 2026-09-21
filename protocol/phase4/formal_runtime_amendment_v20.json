@@ -1,0 +1,15 @@
+{
+  "schema": "phase4-formal-runtime-amendment-v20",
+  "scope": "zero-call serialization compatibility correction",
+  "base_authorization_sha256": "b09cce9457ad6414dc17182a33c4ce0420e3081478c054bbe50d9e6b5a57ec32",
+  "supersedes": "phase4/formal_runtime_amendment_v19.json",
+  "supersedes_sha256": "d12b0ebac8b723b40586ee1c3c194870c9d76f72c1e789106188a790a3bfddaf",
+  "prior_status_sha256": "b14582e07f0038bb6460cf59a714eb8de11f5b45cc9ff85e354bf2f546bf9179",
+  "evidence": {
+    "new_paid_calls": 0,
+    "successful_paid_calls": 277,
+    "successful_paid_cost_usd": 0.246771148
+  },
+  "change": "Serialize execution_error only when non-null, keeping all previously successful step artifacts byte-identical. The v19 failure-state rule is unchanged.",
+  "revised_runner_sha256": "14df50a095852c96768ff59128ce24b5c169177d2d77fef49a54e52f6dc07673"
+}

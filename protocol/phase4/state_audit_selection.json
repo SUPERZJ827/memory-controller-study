@@ -1,0 +1,488 @@
+{
+  "schema_version": "phase4-state-audit-public-selection-v1",
+  "status": "FROZEN_BEFORE_FORMAL_MODEL_PREDICTIONS",
+  "purpose": "targeted state-error audit; not a prevalence sample",
+  "n": 120,
+  "audit_cases": [
+    {
+      "audit_id": "SA-35E5B7F6DF079F9C6D2A",
+      "selection_stratum": "single_session_remainder"
+    },
+    {
+      "audit_id": "SA-273306B18AD715FF2A33",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-89CFEF5A29AEBD1674C4",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-571F4C3E9F9148706EFD",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-F636621DEF28FB167147",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-CD1B00D837D1EFB9D90B",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-77A63E1F9543F4646085",
+      "selection_stratum": "multi_session_remainder"
+    },
+    {
+      "audit_id": "SA-CA7CEDED4D9B467D14E2",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-CC453944B28204BFC288",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-0B1D972C864BF7845D32",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-02A19D9F0E759848C195",
+      "selection_stratum": "multi_session_remainder"
+    },
+    {
+      "audit_id": "SA-608163E296260F3F5017",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-F09C16395D08787A6762",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-B577098F1F3CC12938D2",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-493780527CF0CF802931",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-CEBC15568A4C01381C84",
+      "selection_stratum": "single_session_remainder"
+    },
+    {
+      "audit_id": "SA-7F6F45704CCB48B09ED0",
+      "selection_stratum": "single_session_remainder"
+    },
+    {
+      "audit_id": "SA-C8F3C496AC27FB3D4E1F",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-D656DB217F699101CCFC",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-B78BBD4C74885B994AB4",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-006E18D7877FC2EB2C3D",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-21E90E02F03EF6F44D93",
+      "selection_stratum": "multi_session_remainder"
+    },
+    {
+      "audit_id": "SA-FB0BBF04BEBEBD032BAC",
+      "selection_stratum": "multi_session_remainder"
+    },
+    {
+      "audit_id": "SA-C1ED0EE13CA776641ED1",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-BAED1880177B3F5B742C",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-F4791FB687573530947C",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-57803DF02880598DD315",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-2951AC5570D211DA4D18",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-3A5CF88F739687598E55",
+      "selection_stratum": "multi_session_remainder"
+    },
+    {
+      "audit_id": "SA-905822A7638357A9825B",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-BF39222FEE37429B951D",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-ACED53185FCE8FB6FB15",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-D3C3CE6B34C6E8B2C388",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-BD2DEC4BFDEBBC690FB1",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-E208433E5B819AA65520",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-FF98B35782008D4BC600",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-115ABD21B57DE0D1E5D9",
+      "selection_stratum": "single_session_remainder"
+    },
+    {
+      "audit_id": "SA-AB57F701B75327DF53A5",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-CCE7D4B2E822D2EA8F14",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-CBB602183A7C9756D433",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-BC431727419D16712453",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-B3A835F1C0DC56E94F08",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-ADF695DEC84F9199910B",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-F69C5622A0BE2AEAA075",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-11A6E10B61FF8D685FDD",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-8B747D8572D344B166A0",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-B460266770AD1F9F63D1",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-C2A9CDF3EB6BA8B9F40A",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-A968F887F9CAD2A2F020",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-7A896F67C5AA78AC7316",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-9D0B49A5C0A98701DD1E",
+      "selection_stratum": "multi_session_remainder"
+    },
+    {
+      "audit_id": "SA-D7AB02805D85AA78D6EC",
+      "selection_stratum": "multi_session_remainder"
+    },
+    {
+      "audit_id": "SA-DE8F9551137582E02657",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-B0AB9B88963DD9FD5461",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-CD3E8926C3347D45CDED",
+      "selection_stratum": "single_session_remainder"
+    },
+    {
+      "audit_id": "SA-5CFD4303F033ACE18355",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-C3B0112F6CC538586D49",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-1AB09F2437E88D09A4F5",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-22F602D73D960FF66721",
+      "selection_stratum": "single_session_remainder"
+    },
+    {
+      "audit_id": "SA-8BC62235D869283A90A8",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-30495DE50104F236D308",
+      "selection_stratum": "single_session_remainder"
+    },
+    {
+      "audit_id": "SA-12DB97C3CDE7461BF40C",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-EB01E996FEDD94B858AC",
+      "selection_stratum": "multi_session_remainder"
+    },
+    {
+      "audit_id": "SA-0A35526329DA93A39473",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-3C5063C9670C9FC902F8",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-7609DCEC23560A9A51A6",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-7745EFD3380C2576D7D2",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-5FFB2630065F025B822D",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-FF47E896CCBD760B3142",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-B2686D0E653F166F1152",
+      "selection_stratum": "multi_session_remainder"
+    },
+    {
+      "audit_id": "SA-18D13A7A5E57A13F460A",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-30DA5E65E19FA553B325",
+      "selection_stratum": "multi_session_remainder"
+    },
+    {
+      "audit_id": "SA-059D61B2B17460541B14",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-938AF7F342019DC8099F",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-5AA8057948B3391A8559",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-79EB7F1F49EBF0EDA353",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-D7427C213972A89E7055",
+      "selection_stratum": "single_session_remainder"
+    },
+    {
+      "audit_id": "SA-95D30BDCF858EA46FB22",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-1D921E2E774405B2C4C3",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-0C2817E99781E081B3EF",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-1D41F88C697547B9A335",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-28A346A3343E1AB60064",
+      "selection_stratum": "multi_session_remainder"
+    },
+    {
+      "audit_id": "SA-AE38E2EBF7489FC103E7",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-D9315DC6DB9F6BC4D9B5",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-FD1C3BEBC43702C815E0",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-3FAEE4698574CF74C2C1",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-164AD098D8E69EDF7433",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-5EAD02BBDB9366766AE3",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-0606547EFC0964F995BB",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-223F5A0AACF6DFBD5A26",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-FC0B77EAC9863FCB6D24",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-F66C8720DD29160F8288",
+      "selection_stratum": "single_session_remainder"
+    },
+    {
+      "audit_id": "SA-E40FED5E3687EA575F28",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-C68D721FC57541DA50A3",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-4726012E3678F3904CB9",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-D62E65E9B630329FE41E",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-DA8AFE23F9F9B5503A7F",
+      "selection_stratum": "multi_session_remainder"
+    },
+    {
+      "audit_id": "SA-982D0FA9DBCCF5127C79",
+      "selection_stratum": "single_session_remainder"
+    },
+    {
+      "audit_id": "SA-B2B09A17FA6163F6C8B0",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-89D9027797253CE1ED24",
+      "selection_stratum": "single_session_remainder"
+    },
+    {
+      "audit_id": "SA-2CBA78B0458771CF06FF",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-BF0A9E2E724D561A15C5",
+      "selection_stratum": "single_session_remainder"
+    },
+    {
+      "audit_id": "SA-D960B69CB248DEE75DDB",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-97068B18C40A9FC07730",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-80687054D7154DE172B5",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-0ED36A806BC69E7B2227",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-F33A1C8A085F18E324EE",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-2CC1E4465B88607D60A2",
+      "selection_stratum": "multi_session_remainder"
+    },
+    {
+      "audit_id": "SA-DB4B32AB49FCC8D9DFFB",
+      "selection_stratum": "single_session_remainder"
+    },
+    {
+      "audit_id": "SA-A32F312180D5853E83E1",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-3778D58ABABD54C99086",
+      "selection_stratum": "multi_session_remainder"
+    },
+    {
+      "audit_id": "SA-3A8144278042C4BA47FF",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-1474AC4B10412D0E33DF",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-9A2BF0898FE5A54253D1",
+      "selection_stratum": "temporal_remainder"
+    },
+    {
+      "audit_id": "SA-A6F12518A80D2578C623",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-A47C0BFE4EE0407EAE84",
+      "selection_stratum": "single_session_remainder"
+    },
+    {
+      "audit_id": "SA-2DA85980C9ECF447B06A",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-008F0883278158D72830",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-B0E60F8D1EA26B8A7446",
+      "selection_stratum": "knowledge_update_census"
+    },
+    {
+      "audit_id": "SA-8DA552C8A841D03BA47A",
+      "selection_stratum": "knowledge_update_census"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "phase": 3,
+  "completed_at": "2026-09-20",
+  "decision": "GO",
+  "phase2_frozen_artifacts_verified_unchanged": {
+    "data/memops_transition_cases.json": "6156f02056c9dcf5d890cbcdc5c3db7a33698b4a5ba2fa0283da668b5d475447",
+    "data/memops_trajectories.json": "92b27bdacba25fc7631b77ddc9b913ef2ef8b640fd2c702a445ba3996a439ca0",
+    "results/raw/transitions_jev.jsonl": "7140e470e5b1396cf88bc9af47ce315478c1fed7d9fdc8900b82dfe0cce43f40",
+    "results/raw/transitions_strong.jsonl": "218a760a10e77941c4418c5dfd7a69da53c091b18a8835c76e282235f3639866",
+    "results/raw/transitions_local.jsonl": "c90b00d424878085fd74c45a822e05673964d5503fb2aca0dc74261948b47e56",
+    "results/raw/trajectories_jev.jsonl": "479eefbea68c086b2f393bf3921dca15beb002beb8f897e32aa9863a299cecc1",
+    "results/raw/trajectories_strong.jsonl": "6154908d0da56bd690fae7f2fdbc0877869486005e0dc2c4d072705c264f9680",
+    "results/raw/trajectories_local.jsonl": "ad3c8519bbb2d91fafd24a45362e19b79538f49911c03612d647d403367ba424",
+    "RESULT_PHASE2.md": "88f8b382e98d7d8ad0fafedf2e4b7af81212893932eff6369da6a7718720de21",
+    "MEMOPS_ADAPTER_AUDIT.md": "4251ec466c087305a47cdab84cd76f90ecdf1c4ee3b04764975671c44e25a875",
+    "EXECUTOR_SPEC.md": "25a4cd733d03fb27bbfcf8a931632b095eff38ebec798f46a81ff7cc19fc2f22"
+  },
+  "phase3_artifacts": {
+    "RESULT_PHASE3.md": "deb68be5543d9d02bc83c7dee21c7c866bb2ee23e30dbde18d311dfd37b8235d",
+    "phase3/gpt56sol_protocol.json": "7be699ffa443845699a893b10709f7491c39a0ee2abd09fad2dad5f21840185b",
+    "phase3/gpt56sol_frozen_manifest.json": "912491ce83913022f3db0f1c3fc6b0b80423bc43029c40c9f4c4e7c00e0bebc7",
+    "phase3/reviewer_protocols.json": "b8d72ca0886861f4cf4a62971c0dfa1bed3da551fe079651b8199df2166fb6d9",
+    "data/boundary_stress_v1.json": "eddfea9d2a331a0698a47fed4f11a731a640febb8a47520d1a5ce6945e208c06",
+    "audit/blind_packets.json": "0703e54d9ee5f700d53405cdb47f1f1579df8590e6a9f6749d9aeb8db412bf0d",
+    "audit/blind_mapping_private.json": "adf510b4103cc75f7729e66f89b24ec8ca6fb9833618ace8c9a1cd9b465e85c1",
+    "audit/reviewer_A_raw.jsonl": "44513e1d8103c7434f3329f062fddb77016438a2f8e020f88035a29d6d0e8037",
+    "audit/reviewer_B_raw.jsonl": "8bc4889286fb453a650b2b0128ba5c433038a04e6af24454f81f24dfe957ae13",
+    "audit/construct_mismatch_cases.md": "58d7b9c6815862257ce182118a67e88517ab10d404c1d504eb68fdb2aa4c635c",
+    "results/phase3/preflight_gpt56sol.json": "ce12698a8cb29cef5d9bd1a8468ab56651773c52c6f587c8a9c74f43becf7424",
+    "results/phase3/raw/transitions_gpt56sol.jsonl": "05392bc90c72ea6c8ce9882ff1ba96871fec6cb6decd3555a217c72a6c54f226",
+    "results/phase3/raw/trajectories_gpt56sol.jsonl": "337195f9e58fe8738491034f1dd25d466c788191c83078368311f5d13deaeca1",
+    "results/phase3/stress_raw/jev.jsonl": "f808bffcde283b0f24928ffe1f2fec728ac9c6324a8c1b7e508d8f22882ca69b",
+    "results/phase3/stress_raw/gpt56sol.jsonl": "c1e26fb5b300e5dac2cba1d6177786787edd13b3bc1ab48d7aa2da90b7cb1b55",
+    "results/phase3/stress_raw/strong.jsonl": "38cb988ad3e14452d06010c9b3dd2bd6ec09fe14a7c46dfc352da0158adf25f4",
+    "results/phase3/stress_raw/local.jsonl": "476c13c55fdc56301c9d600f4c5d1dd055bea42e73144eb132921e4a5eb619f9",
+    "results/phase3/main_results.json": "a114b6d8415ef64b7fd01c0aaf67d6188bfa5af2ceeb52d7e8cb8bfc316f7e68",
+    "results/phase3/statistical_comparisons.json": "3215f3afe7f621e6efa4bfcb8cd0886e137e59a5e857708435bcb7c5285ae18e",
+    "results/phase3/construct_audit.json": "e4e46be7f989ae8dac003cc63ef468010c8fb4d3b990aeec65fb07993d8b8f34",
+    "results/phase3/stress_results.json": "11e83741fdf77da2a5d7ee3b9ed46f98d7e7e218d79304ccec069f3078d15eca",
+    "results/phase3/jev_confidence.json": "681ccc523f7cbe23d2cb2fae68461fc5bd2f27b43c90c76ebc5318e4a0025713",
+    "results/phase3/jev_high_confidence_errors.json": "2a69e3d500335f0c88b81918d19f93bb6370c09c5b1cda22dade0df519cadf37"
+  },
+  "record_counts": {
+    "gpt_transition_predictions": 300,
+    "gpt_trajectory_records": 25,
+    "reviewer_a_records": 124,
+    "reviewer_b_records": 124,
+    "stress_records_per_controller": 180
+  },
+  "validation": {
+    "typescript_no_emit": "PASS",
+    "secret_pattern_scan": "PASS",
+    "formal_gpt_parse_errors": 0,
+    "formal_gpt_retried_decisions": 0,
+    "reviewer_parse_errors": 0,
+    "reviewer_retried_decisions": 0
+  }
+}

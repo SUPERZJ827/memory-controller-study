@@ -1,0 +1,372 @@
+{
+  "question_id": "0977f2af",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "What new kitchen gadget did I invest in before getting the Air Fryer?",
+    "question_date": "2023/05/31 (Wed) 07:54"
+  },
+  "reference_answer": "Instant Pot",
+  "answers": {
+    "B": {
+      "answer": "Instant Pot",
+      "retrieved": [
+        {
+          "id": "M53",
+          "text": "I'm actually thinking of using the Air Fryer I got yesterday to make some crispy sweet potato fries to go with the meals.",
+          "status": "active",
+          "timestamp": "2023/05/21 (Sun) 22:54",
+          "provenance": [
+            {
+              "session_index": 39,
+              "fact_index": 2,
+              "timestamp": "2023/05/21 (Sun) 22:54",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6703028733985278
+        },
+        {
+          "id": "E39_2",
+          "text": "I'm actually thinking of using the Air Fryer I got yesterday to make some crispy sweet potato fries to go with the meals.",
+          "status": "tentative",
+          "timestamp": "2023/05/21 (Sun) 22:54",
+          "provenance": [
+            {
+              "session_index": 39,
+              "fact_index": 2,
+              "timestamp": "2023/05/21 (Sun) 22:54",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6702036816358349
+        },
+        {
+          "id": "E24_0",
+          "text": "I'm actually thinking of using my new Instant Pot to make some of these soups and stews.",
+          "status": "tentative",
+          "timestamp": "2023/05/21 (Sun) 05:48",
+          "provenance": [
+            {
+              "session_index": 24,
+              "fact_index": 0,
+              "timestamp": "2023/05/21 (Sun) 05:48",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6094350008421425
+        },
+        {
+          "id": "E2_12",
+          "text": "I like the idea of having a meal plan and grocery list generated for me.",
+          "status": "current",
+          "timestamp": "2023/04/22 (Sat) 23:57",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 12,
+              "timestamp": "2023/04/22 (Sat) 23:57",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.5967586515406017
+        },
+        {
+          "id": "E9_0",
+          "text": "I'm planning to make a stir-fry for dinner tonight and I need some ingredients.",
+          "status": "tentative",
+          "timestamp": "2023/05/02 (Tue) 02:00",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 0,
+              "timestamp": "2023/05/02 (Tue) 02:00",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5903056282343124
+        },
+        {
+          "id": "E2_0",
+          "text": "I'm trying to get a better grip on my grocery spending.",
+          "status": "current",
+          "timestamp": "2023/04/22 (Sat) 23:57",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 0,
+              "timestamp": "2023/04/22 (Sat) 23:57",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5684372936624287
+        },
+        {
+          "id": "E9_8",
+          "text": "I'm looking forward to making that smoothie for dessert.",
+          "status": "tentative",
+          "timestamp": "2023/05/02 (Tue) 02:00",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 8,
+              "timestamp": "2023/05/02 (Tue) 02:00",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.5658644351865282
+        },
+        {
+          "id": "E21_14",
+          "text": "I've heard so many great things about those dishes.",
+          "status": "historical",
+          "timestamp": "2023/05/21 (Sun) 00:27",
+          "provenance": [
+            {
+              "session_index": 21,
+              "fact_index": 14,
+              "timestamp": "2023/05/21 (Sun) 00:27",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.5646633704468734
+        },
+        {
+          "id": "E24_3",
+          "text": "I haven't cooked with gochujang before, so I'm not sure how spicy it is.",
+          "status": "current",
+          "timestamp": "2023/05/21 (Sun) 05:48",
+          "provenance": [
+            {
+              "session_index": 24,
+              "fact_index": 3,
+              "timestamp": "2023/05/21 (Sun) 05:48",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.5639756054957731
+        },
+        {
+          "id": "E7_0",
+          "text": "I'm looking to plan my next fitness goal.",
+          "status": "tentative",
+          "timestamp": "2023/04/27 (Thu) 13:45",
+          "provenance": [
+            {
+              "session_index": 7,
+              "fact_index": 0,
+              "timestamp": "2023/04/27 (Thu) 13:45",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.562364608875359
+        }
+      ]
+    },
+    "C": {
+      "answer": "Instant Pot",
+      "retrieved": [
+        {
+          "id": "E39_2",
+          "text": "I'm actually thinking of using the Air Fryer I got yesterday to make some crispy sweet potato fries to go with the meals.",
+          "status": "tentative",
+          "timestamp": "2023/05/21 (Sun) 22:54",
+          "provenance": [
+            {
+              "session_index": 39,
+              "fact_index": 2,
+              "timestamp": "2023/05/21 (Sun) 22:54",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6703028733985278
+        },
+        {
+          "id": "M107",
+          "text": "I'm actually thinking of using the Air Fryer I got yesterday to make some crispy sweet potato fries to go with the meals.",
+          "status": "active",
+          "timestamp": "2023/05/21 (Sun) 22:54",
+          "provenance": [
+            {
+              "session_index": 39,
+              "fact_index": 2,
+              "timestamp": "2023/05/21 (Sun) 22:54",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6703028733985278
+        },
+        {
+          "id": "E24_0",
+          "text": "I'm actually thinking of using my new Instant Pot to make some of these soups and stews.",
+          "status": "tentative",
+          "timestamp": "2023/05/21 (Sun) 05:48",
+          "provenance": [
+            {
+              "session_index": 24,
+              "fact_index": 0,
+              "timestamp": "2023/05/21 (Sun) 05:48",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6087806805164151
+        },
+        {
+          "id": "E2_12",
+          "text": "I like the idea of having a meal plan and grocery list generated for me.",
+          "status": "current",
+          "timestamp": "2023/04/22 (Sat) 23:57",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 12,
+              "timestamp": "2023/04/22 (Sat) 23:57",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.597240826781277
+        },
+        {
+          "id": "M9",
+          "text": "I like the idea of having a meal plan and grocery list generated for me.",
+          "status": "active",
+          "timestamp": "2023/04/22 (Sat) 23:57",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 12,
+              "timestamp": "2023/04/22 (Sat) 23:57",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.597240826781277
+        },
+        {
+          "id": "E9_0",
+          "text": "I'm planning to make a stir-fry for dinner tonight and I need some ingredients.",
+          "status": "tentative",
+          "timestamp": "2023/05/02 (Tue) 02:00",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 0,
+              "timestamp": "2023/05/02 (Tue) 02:00",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5901314304109856
+        },
+        {
+          "id": "E2_0",
+          "text": "I'm trying to get a better grip on my grocery spending.",
+          "status": "current",
+          "timestamp": "2023/04/22 (Sat) 23:57",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 0,
+              "timestamp": "2023/04/22 (Sat) 23:57",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5684372936624287
+        },
+        {
+          "id": "M3",
+          "text": "I'm trying to get a better grip on my grocery spending.",
+          "status": "active",
+          "timestamp": "2023/04/22 (Sat) 23:57",
+          "provenance": [
+            {
+              "session_index": 2,
+              "fact_index": 0,
+              "timestamp": "2023/04/22 (Sat) 23:57",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5684372936624287
+        },
+        {
+          "id": "E9_8",
+          "text": "I'm looking forward to making that smoothie for dessert.",
+          "status": "tentative",
+          "timestamp": "2023/05/02 (Tue) 02:00",
+          "provenance": [
+            {
+              "session_index": 9,
+              "fact_index": 8,
+              "timestamp": "2023/05/02 (Tue) 02:00",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.5658644351865282
+        },
+        {
+          "id": "E21_14",
+          "text": "I've heard so many great things about those dishes.",
+          "status": "historical",
+          "timestamp": "2023/05/21 (Sun) 00:27",
+          "provenance": [
+            {
+              "session_index": 21,
+              "fact_index": 14,
+              "timestamp": "2023/05/21 (Sun) 00:27",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.5646633704468734
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "yes",
+      "correct": true
+    },
+    "C": {
+      "raw": "yes",
+      "correct": true
+    }
+  },
+  "rubric": "official knowledge-update"
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "phase4-formal-runtime-amendment-v22",
+  "scope": "prediction-blind local transport recovery",
+  "post_start": true,
+  "disclosure_required": true,
+  "base_authorization_sha256": "b09cce9457ad6414dc17182a33c4ce0420e3081478c054bbe50d9e6b5a57ec32",
+  "supersedes": "phase4/formal_runtime_amendment_v21.json",
+  "supersedes_sha256": "49a90f1264da3a998a10250e2e290714c976799015d96b8a830023e1d82ac16a",
+  "prior_status_sha256": "9741958e65de60fe0534be1016ebd02758e5d322364ca062616959192060fecb",
+  "recovery_record": "phase4/formal_runtime_recovery_v22.json",
+  "recovery_record_sha256": "f1e387494a77038822bcd967d6cf06ff428c9e2d38faa9a2bb86353d6855b484",
+  "evidence": {
+    "histories_completed": 7,
+    "history": "07741c45",
+    "session_index": 28,
+    "logical_call_id": "extraction-0",
+    "completed_extractions": 32,
+    "required_extractions": 49,
+    "two_dispatched_attempts_timed_out": true,
+    "paid_cost_usd_at_stop_guard": 3.924439,
+    "held_usd": 0,
+    "unknown_usd": 0
+  },
+  "change": "For local-vLLM requests only, allow at most three actually dispatched transport attempts instead of two. Check the cap before creating the next ledger attempt. Accept the first successful response without outcome-based selection. Paid requests remain non-retryable.",
+  "rationale": "A fixed-history local extraction request timed out twice, preventing the already-authorized formal run from completing. The extra attempt repeats the identical model, prompt, request body, and timeout and has no API cost. It is an operational recovery, not prompt tuning or prediction repair.",
+  "unchanged": [
+    "extractor/controller/QA prompts, models, temperatures, and schemas",
+    "immutable USER fragments and extraction acceptance rules",
+    "controller results and paid no-retry protocol",
+    "sample, order, scoring, and budgets",
+    "independent B/C state execution"
+  ],
+  "revised_source_hashes": {
+    "src/phase4/run_formal_v16.ts": "a28cceb353ce13e80757ddd708681ef18b68309f1a20166e880c055239fd0bb8",
+    "src/phase4/formal_transport_v16.ts": "5ab9090d98976c5a668d3ee7554c450364aa4a6411c491375fd3c1d1562c05f3",
+    "src/phase4/ledger.ts": "1fa7d83a12d10bc4b774b73436f51466324b9dca6ee961902276a7cd37d14335",
+    "src/phase4/local_extractor_v14.ts": "043d624eef1777c6a4fad93cb856f0674a15b5b66dd548fe108ab1f7e1b7c2b1"
+  }
+}

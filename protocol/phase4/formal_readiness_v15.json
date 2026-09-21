@@ -1,0 +1,16 @@
+{
+  "schema": "phase4-formal-readiness-v15",
+  "status": "READY_AWAITING_EXPLICIT_CONFIRMATION",
+  "formal_authorized": false,
+  "n": 24,
+  "freeze": "phase4/formal_freeze_v15.json",
+  "freeze_sha256": "43035baddce5a2d73c658e4c8431c953d2412a4e1f7a3ade60729d4402406a1a",
+  "development_invoice_usd": 0.58125,
+  "remaining_development_usd": 0.41875,
+  "formal_pools_untouched": true,
+  "notes": [
+    "No formal predictions have been requested or viewed.",
+    "n and membership use cost/seed only, never pilot QA correctness.",
+    "One-history cost extrapolation remains uncertain; runtime budget guard remains binding."
+  ]
+}

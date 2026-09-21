@@ -1,0 +1,37 @@
+{
+  "name": "explore",
+  "version": "1.0.0",
+  "description": "Minimal Jev memory-operation sanity experiment",
+  "scripts": {
+    "smoke": "tsx src/smoke.ts",
+    "sanity": "tsx src/run_sanity.ts",
+    "build:memops": "tsx src/build_memops_cases.ts",
+    "phase2": "tsx src/run_phase2.ts",
+    "analyze:phase2": "tsx src/analyze_phase2.ts",
+    "phase3:gpt": "tsx src/run_phase3_gpt.ts",
+    "phase3:audit:build": "tsx src/build_blind_audit.ts",
+    "phase3:audit:run": "tsx src/run_blind_reviewers.ts",
+    "phase3:stress:build": "tsx src/build_boundary_stress.ts",
+    "phase3:stress:run": "tsx src/run_boundary_stress.ts",
+    "analyze:phase3": "tsx src/analyze_phase3.ts",
+    "phase4:confidence-audit": "tsx src/analyze_confidence_construct_overlap.ts",
+    "phase4:adapter:check": "tsx src/phase4/self_check_longmemeval.ts",
+    "phase4:ledger:check": "tsx src/phase4/self_check.ts",
+    "phase4:state-audit:select": "tsx src/phase4/select_state_audit.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@openrouter/sdk": "^1.3.8",
+    "ai": "^7.0.107",
+    "dotenv": "^18.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

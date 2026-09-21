@@ -1,0 +1,388 @@
+{
+  "question_id": "6071bd76",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?",
+    "question_date": "2023/07/30 (Sun) 05:53"
+  },
+  "reference_answer": "You switched to less water (5 ounces) per tablespoon of coffee.",
+  "answers": {
+    "B": {
+      "answer": "more",
+      "retrieved": [
+        {
+          "id": "E1_1",
+          "text": "By the way, I've been experimenting with my French press and I've found that 1 tablespoon of coffee for every 6 ounces of water is the perfect ratio for me.",
+          "status": "historical",
+          "timestamp": "2023/02/11 (Sat) 11:41",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 1,
+              "timestamp": "2023/02/11 (Sat) 11:41",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.8229377499088495
+        },
+        {
+          "id": "E20_1",
+          "text": "By the way, I'm planning to brew a fresh pot of coffee in the morning, and I'm feeling excited to use my new beans - I've got my French press ratio down to a science: 1 tablespoon of coffee for every 5 ounces of water.",
+          "status": "tentative",
+          "timestamp": "2023/06/30 (Fri) 13:14",
+          "provenance": [
+            {
+              "session_index": 20,
+              "fact_index": 1,
+              "timestamp": "2023/06/30 (Fri) 13:14",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7715717106558022
+        },
+        {
+          "id": "M2",
+          "text": "By the way, I'm planning to brew a fresh pot of coffee in the morning, and I'm feeling excited to use my new beans - I've got my French press ratio down to a science: 1 tablespoon of coffee for every 5 ounces of water.",
+          "status": "active",
+          "timestamp": "2023/06/30 (Fri) 13:14",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 1,
+              "timestamp": "2023/02/11 (Sat) 11:41",
+              "source_turns": [
+                0
+              ]
+            },
+            {
+              "session_index": 20,
+              "fact_index": 1,
+              "timestamp": "2023/06/30 (Fri) 13:14",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7696415335622194
+        },
+        {
+          "id": "E20_8",
+          "text": "I want to make sure I'm getting all the old coffee oils out.",
+          "status": "current",
+          "timestamp": "2023/06/30 (Fri) 13:14",
+          "provenance": [
+            {
+              "session_index": 20,
+              "fact_index": 8,
+              "timestamp": "2023/06/30 (Fri) 13:14",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.6062739210576457
+        },
+        {
+          "id": "E20_7",
+          "text": "By the way, I've been meaning to ask: what's the best way to clean my French press?",
+          "status": "current",
+          "timestamp": "2023/06/30 (Fri) 13:14",
+          "provenance": [
+            {
+              "session_index": 20,
+              "fact_index": 7,
+              "timestamp": "2023/06/30 (Fri) 13:14",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.5957563787084663
+        },
+        {
+          "id": "E1_6",
+          "text": "I'm excited to try out the new beans in my French press, actually.",
+          "status": "current",
+          "timestamp": "2023/02/11 (Sat) 11:41",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 6,
+              "timestamp": "2023/02/11 (Sat) 11:41",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.588315830556976
+        },
+        {
+          "id": "E1_3",
+          "text": "I'll try the Earl Grey tea with my citrus-infused coffee.",
+          "status": "tentative",
+          "timestamp": "2023/02/11 (Sat) 11:41",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 3,
+              "timestamp": "2023/02/11 (Sat) 11:41",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.5232223957994456
+        },
+        {
+          "id": "E1_0",
+          "text": "I'm thinking of trying out a new coffee recipe, but I'm not sure what type of coffee beans would pair well with citrus notes.",
+          "status": "tentative",
+          "timestamp": "2023/02/11 (Sat) 11:41",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 0,
+              "timestamp": "2023/02/11 (Sat) 11:41",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5218147662280598
+        },
+        {
+          "id": "E1_2",
+          "text": "I think I'll try the Kenyan coffee first.",
+          "status": "tentative",
+          "timestamp": "2023/02/11 (Sat) 11:41",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 2,
+              "timestamp": "2023/02/11 (Sat) 11:41",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.5179440610370006
+        },
+        {
+          "id": "E1_4",
+          "text": "I've already signed up for a coffee subscription service last month and got my first shipment of beans yesterday.",
+          "status": "historical",
+          "timestamp": "2023/02/11 (Sat) 11:41",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 4,
+              "timestamp": "2023/02/11 (Sat) 11:41",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.49529421279211977
+        }
+      ]
+    },
+    "C": {
+      "answer": "more water per tablespoon of coffee",
+      "retrieved": [
+        {
+          "id": "E1_1",
+          "text": "By the way, I've been experimenting with my French press and I've found that 1 tablespoon of coffee for every 6 ounces of water is the perfect ratio for me.",
+          "status": "historical",
+          "timestamp": "2023/02/11 (Sat) 11:41",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 1,
+              "timestamp": "2023/02/11 (Sat) 11:41",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.822905358429559
+        },
+        {
+          "id": "E20_1",
+          "text": "By the way, I'm planning to brew a fresh pot of coffee in the morning, and I'm feeling excited to use my new beans - I've got my French press ratio down to a science: 1 tablespoon of coffee for every 5 ounces of water.",
+          "status": "tentative",
+          "timestamp": "2023/06/30 (Fri) 13:14",
+          "provenance": [
+            {
+              "session_index": 20,
+              "fact_index": 1,
+              "timestamp": "2023/06/30 (Fri) 13:14",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7690907624688997
+        },
+        {
+          "id": "M5",
+          "text": "By the way, I'm planning to brew a fresh pot of coffee in the morning, and I'm feeling excited to use my new beans - I've got my French press ratio down to a science: 1 tablespoon of coffee for every 5 ounces of water.",
+          "status": "active",
+          "timestamp": "2023/06/30 (Fri) 13:14",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 1,
+              "timestamp": "2023/02/11 (Sat) 11:41",
+              "source_turns": [
+                0
+              ]
+            },
+            {
+              "session_index": 20,
+              "fact_index": 1,
+              "timestamp": "2023/06/30 (Fri) 13:14",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.7690907624688997
+        },
+        {
+          "id": "E20_8",
+          "text": "I want to make sure I'm getting all the old coffee oils out.",
+          "status": "current",
+          "timestamp": "2023/06/30 (Fri) 13:14",
+          "provenance": [
+            {
+              "session_index": 20,
+              "fact_index": 8,
+              "timestamp": "2023/06/30 (Fri) 13:14",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.6069497115543048
+        },
+        {
+          "id": "M66",
+          "text": "I want to make sure I'm getting all the old coffee oils out.",
+          "status": "active",
+          "timestamp": "2023/06/30 (Fri) 13:14",
+          "provenance": [
+            {
+              "session_index": 20,
+              "fact_index": 8,
+              "timestamp": "2023/06/30 (Fri) 13:14",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.6069497115543048
+        },
+        {
+          "id": "E20_7",
+          "text": "By the way, I've been meaning to ask: what's the best way to clean my French press?",
+          "status": "current",
+          "timestamp": "2023/06/30 (Fri) 13:14",
+          "provenance": [
+            {
+              "session_index": 20,
+              "fact_index": 7,
+              "timestamp": "2023/06/30 (Fri) 13:14",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.595222262061322
+        },
+        {
+          "id": "E1_6",
+          "text": "I'm excited to try out the new beans in my French press, actually.",
+          "status": "current",
+          "timestamp": "2023/02/11 (Sat) 11:41",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 6,
+              "timestamp": "2023/02/11 (Sat) 11:41",
+              "source_turns": [
+                10
+              ]
+            }
+          ],
+          "score": 0.5873953085879005
+        },
+        {
+          "id": "E1_3",
+          "text": "I'll try the Earl Grey tea with my citrus-infused coffee.",
+          "status": "tentative",
+          "timestamp": "2023/02/11 (Sat) 11:41",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 3,
+              "timestamp": "2023/02/11 (Sat) 11:41",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.5232523739625747
+        },
+        {
+          "id": "E1_0",
+          "text": "I'm thinking of trying out a new coffee recipe, but I'm not sure what type of coffee beans would pair well with citrus notes.",
+          "status": "tentative",
+          "timestamp": "2023/02/11 (Sat) 11:41",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 0,
+              "timestamp": "2023/02/11 (Sat) 11:41",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5227962747777749
+        },
+        {
+          "id": "E1_2",
+          "text": "I think I'll try the Kenyan coffee first.",
+          "status": "tentative",
+          "timestamp": "2023/02/11 (Sat) 11:41",
+          "provenance": [
+            {
+              "session_index": 1,
+              "fact_index": 2,
+              "timestamp": "2023/02/11 (Sat) 11:41",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.5181971733761779
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "No.",
+      "correct": false
+    },
+    "C": {
+      "raw": "No.",
+      "correct": false
+    }
+  },
+  "rubric": "official knowledge-update"
+}

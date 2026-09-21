@@ -1,0 +1,388 @@
+{
+  "question_id": "7e974930",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "How much did I earn at the Downtown Farmers Market on my most recent visit?",
+    "question_date": "2023/10/26 (Thu) 11:44"
+  },
+  "reference_answer": "$420",
+  "answers": {
+    "B": {
+      "answer": "420",
+      "retrieved": [
+        {
+          "id": "E44_6",
+          "text": "By the way, speaking of recent sales, I earned $420 at the Downtown Farmers Market on my most recent visit.",
+          "status": "historical",
+          "timestamp": "2023/09/30 (Sat) 15:13",
+          "provenance": [
+            {
+              "session_index": 44,
+              "fact_index": 6,
+              "timestamp": "2023/09/30 (Sat) 15:13",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.8692725865990781
+        },
+        {
+          "id": "M29",
+          "text": "{\"operation\":\"UPDATE\",\"timestamp\":\"2023/09/30 (Sat) 15:13\",\"evidence\":\"March 18th, Downtown Farmers Market, $220; March 25th, Arts and Crafts Fair, $85; April 1st, Earth Day Market, $25; May 6th, Downtown Farmers Market, $350; May 13th, Mother's Day Market, $200; May 20th, Foodie Festival, $400; September 30th, Downtown Farmers Market, $420.\"}",
+          "status": "active",
+          "timestamp": "2023/09/30 (Sat) 15:13",
+          "provenance": [
+            {
+              "session_index": 14,
+              "fact_index": 3,
+              "timestamp": "2023/04/11 (Tue) 00:10",
+              "source_turns": [
+                2
+              ]
+            },
+            {
+              "session_index": 44,
+              "fact_index": 6,
+              "timestamp": "2023/09/30 (Sat) 15:13",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.5568295834026072
+        },
+        {
+          "id": "E14_0",
+          "text": "I'm trying to keep track of my sales and expenses for my small business.",
+          "status": "current",
+          "timestamp": "2023/04/11 (Tue) 00:10",
+          "provenance": [
+            {
+              "session_index": 14,
+              "fact_index": 0,
+              "timestamp": "2023/04/11 (Tue) 00:10",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.537739860006712
+        },
+        {
+          "id": "M28",
+          "text": "I'm trying to keep track of my sales and expenses for my small business.",
+          "status": "active",
+          "timestamp": "2023/04/11 (Tue) 00:10",
+          "provenance": [
+            {
+              "session_index": 14,
+              "fact_index": 0,
+              "timestamp": "2023/04/11 (Tue) 00:10",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.537739860006712
+        },
+        {
+          "id": "E26_0",
+          "text": "I'm trying to reduce my daily commute expenses.",
+          "status": "current",
+          "timestamp": "2023/07/18 (Tue) 23:30",
+          "provenance": [
+            {
+              "session_index": 26,
+              "fact_index": 0,
+              "timestamp": "2023/07/18 (Tue) 23:30",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5172946161254799
+        },
+        {
+          "id": "E39_0",
+          "text": "I'm trying to reduce my daily commute expenses.",
+          "status": "current",
+          "timestamp": "2023/09/07 (Thu) 03:34",
+          "provenance": [
+            {
+              "session_index": 39,
+              "fact_index": 0,
+              "timestamp": "2023/09/07 (Thu) 03:34",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5172946161254799
+        },
+        {
+          "id": "M46",
+          "text": "I'm trying to reduce my daily commute expenses.",
+          "status": "active",
+          "timestamp": "2023/07/18 (Tue) 23:30",
+          "provenance": [
+            {
+              "session_index": 26,
+              "fact_index": 0,
+              "timestamp": "2023/07/18 (Tue) 23:30",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5172946161254799
+        },
+        {
+          "id": "E14_3",
+          "text": "March 18th, Downtown Farmers Market, $220; March 25th, Arts and Crafts Fair, $85; April 1st, Earth Day Market, $25; May 6th, Downtown Farmers Market, $350; May 13th, Mother's Day Market, $200; May 20th, Foodie Festival, $400.",
+          "status": "historical",
+          "timestamp": "2023/04/11 (Tue) 00:10",
+          "provenance": [
+            {
+              "session_index": 14,
+              "fact_index": 3,
+              "timestamp": "2023/04/11 (Tue) 00:10",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.5034572226491644
+        },
+        {
+          "id": "E44_3",
+          "text": "I sell homemade jams, candles, and soaps.",
+          "status": "current",
+          "timestamp": "2023/09/30 (Sat) 15:13",
+          "provenance": [
+            {
+              "session_index": 44,
+              "fact_index": 3,
+              "timestamp": "2023/09/30 (Sat) 15:13",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.48439088958097676
+        },
+        {
+          "id": "M73",
+          "text": "I sell homemade jams, candles, and soaps.",
+          "status": "active",
+          "timestamp": "2023/09/30 (Sat) 15:13",
+          "provenance": [
+            {
+              "session_index": 44,
+              "fact_index": 3,
+              "timestamp": "2023/09/30 (Sat) 15:13",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.48439088958097676
+        }
+      ]
+    },
+    "C": {
+      "answer": "$420",
+      "retrieved": [
+        {
+          "id": "E44_6",
+          "text": "By the way, speaking of recent sales, I earned $420 at the Downtown Farmers Market on my most recent visit.",
+          "status": "historical",
+          "timestamp": "2023/09/30 (Sat) 15:13",
+          "provenance": [
+            {
+              "session_index": 44,
+              "fact_index": 6,
+              "timestamp": "2023/09/30 (Sat) 15:13",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.8692526511802788
+        },
+        {
+          "id": "M33",
+          "text": "{\"operation\":\"UPDATE\",\"timestamp\":\"2023/09/30 (Sat) 15:13\",\"evidence\":\"By the way, speaking of recent sales, I earned $420 at the Downtown Farmers Market on my most recent visit.\",\"updated_at\":\"2023/09/30 (Sat) 15:13\"}",
+          "status": "active",
+          "timestamp": "2023/09/30 (Sat) 15:13",
+          "provenance": [
+            {
+              "session_index": 14,
+              "fact_index": 3,
+              "timestamp": "2023/04/11 (Tue) 00:10",
+              "source_turns": [
+                2
+              ]
+            },
+            {
+              "session_index": 44,
+              "fact_index": 6,
+              "timestamp": "2023/09/30 (Sat) 15:13",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.822582839569251
+        },
+        {
+          "id": "E14_0",
+          "text": "I'm trying to keep track of my sales and expenses for my small business.",
+          "status": "current",
+          "timestamp": "2023/04/11 (Tue) 00:10",
+          "provenance": [
+            {
+              "session_index": 14,
+              "fact_index": 0,
+              "timestamp": "2023/04/11 (Tue) 00:10",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5392737153096799
+        },
+        {
+          "id": "M32",
+          "text": "I'm trying to keep track of my sales and expenses for my small business.",
+          "status": "active",
+          "timestamp": "2023/04/11 (Tue) 00:10",
+          "provenance": [
+            {
+              "session_index": 14,
+              "fact_index": 0,
+              "timestamp": "2023/04/11 (Tue) 00:10",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5384618147804506
+        },
+        {
+          "id": "E26_0",
+          "text": "I'm trying to reduce my daily commute expenses.",
+          "status": "current",
+          "timestamp": "2023/07/18 (Tue) 23:30",
+          "provenance": [
+            {
+              "session_index": 26,
+              "fact_index": 0,
+              "timestamp": "2023/07/18 (Tue) 23:30",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5181170597641318
+        },
+        {
+          "id": "E39_0",
+          "text": "I'm trying to reduce my daily commute expenses.",
+          "status": "current",
+          "timestamp": "2023/09/07 (Thu) 03:34",
+          "provenance": [
+            {
+              "session_index": 39,
+              "fact_index": 0,
+              "timestamp": "2023/09/07 (Thu) 03:34",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5181170597641318
+        },
+        {
+          "id": "M55",
+          "text": "I'm trying to reduce my daily commute expenses.",
+          "status": "active",
+          "timestamp": "2023/07/18 (Tue) 23:30",
+          "provenance": [
+            {
+              "session_index": 26,
+              "fact_index": 0,
+              "timestamp": "2023/07/18 (Tue) 23:30",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.5181170597641318
+        },
+        {
+          "id": "E14_3",
+          "text": "March 18th, Downtown Farmers Market, $220; March 25th, Arts and Crafts Fair, $85; April 1st, Earth Day Market, $25; May 6th, Downtown Farmers Market, $350; May 13th, Mother's Day Market, $200; May 20th, Foodie Festival, $400.",
+          "status": "historical",
+          "timestamp": "2023/04/11 (Tue) 00:10",
+          "provenance": [
+            {
+              "session_index": 14,
+              "fact_index": 3,
+              "timestamp": "2023/04/11 (Tue) 00:10",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.5026132118503314
+        },
+        {
+          "id": "E44_3",
+          "text": "I sell homemade jams, candles, and soaps.",
+          "status": "current",
+          "timestamp": "2023/09/30 (Sat) 15:13",
+          "provenance": [
+            {
+              "session_index": 44,
+              "fact_index": 3,
+              "timestamp": "2023/09/30 (Sat) 15:13",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.4856263556570499
+        },
+        {
+          "id": "M116",
+          "text": "I sell homemade jams, candles, and soaps.",
+          "status": "active",
+          "timestamp": "2023/09/30 (Sat) 15:13",
+          "provenance": [
+            {
+              "session_index": 44,
+              "fact_index": 3,
+              "timestamp": "2023/09/30 (Sat) 15:13",
+              "source_turns": [
+                4
+              ]
+            }
+          ],
+          "score": 0.4856263556570499
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "Yes",
+      "correct": true
+    },
+    "C": {
+      "raw": "yes",
+      "correct": true
+    }
+  },
+  "rubric": "official knowledge-update"
+}

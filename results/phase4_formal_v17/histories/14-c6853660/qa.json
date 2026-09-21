@@ -1,0 +1,388 @@
+{
+  "question_id": "c6853660",
+  "question_type": "knowledge-update",
+  "query": {
+    "question": "Did I mostly recently increase or decrease the limit on the number of cups of coffee in the morning?",
+    "question_date": "2023/06/11 (Sun) 21:37"
+  },
+  "reference_answer": "You increased the limit (from one cup to two cups)",
+  "answers": {
+    "B": {
+      "answer": "decrease",
+      "retrieved": [
+        {
+          "id": "E12_2",
+          "text": "By the way, I'm thinking of changing my morning coffee limit to two cups, do you think that's a good idea?",
+          "status": "tentative",
+          "timestamp": "2023/05/26 (Fri) 19:25",
+          "provenance": [
+            {
+              "session_index": 12,
+              "fact_index": 2,
+              "timestamp": "2023/05/26 (Fri) 19:25",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.8107721519164713
+        },
+        {
+          "id": "E12_6",
+          "text": "Speaking of my morning coffee, I have increased the limit to two cups, and I'm thinking of experimenting with different sweeteners, like stevia or honey.",
+          "status": "tentative",
+          "timestamp": "2023/05/26 (Fri) 19:25",
+          "provenance": [
+            {
+              "session_index": 12,
+              "fact_index": 6,
+              "timestamp": "2023/05/26 (Fri) 19:25",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.749681592594064
+        },
+        {
+          "id": "M10",
+          "text": "By the way, I've switched to a darker roast and cut back to just one cup in the morning, which has been really helping me feel more focused.",
+          "status": "active",
+          "timestamp": "2023/05/26 (Fri) 19:25",
+          "provenance": [
+            {
+              "session_index": 6,
+              "fact_index": 1,
+              "timestamp": "2023/05/25 (Thu) 12:35",
+              "source_turns": [
+                0
+              ]
+            },
+            {
+              "session_index": 12,
+              "fact_index": 6,
+              "timestamp": "2023/05/26 (Fri) 19:25",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6903064218228713
+        },
+        {
+          "id": "E6_1",
+          "text": "By the way, I've switched to a darker roast and cut back to just one cup in the morning, which has been really helping me feel more focused.",
+          "status": "historical",
+          "timestamp": "2023/05/25 (Thu) 12:35",
+          "provenance": [
+            {
+              "session_index": 6,
+              "fact_index": 1,
+              "timestamp": "2023/05/25 (Thu) 12:35",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6887973185686853
+        },
+        {
+          "id": "E6_0",
+          "text": "I'm trying to make my morning routine more efficient.",
+          "status": "current",
+          "timestamp": "2023/05/25 (Thu) 12:35",
+          "provenance": [
+            {
+              "session_index": 6,
+              "fact_index": 0,
+              "timestamp": "2023/05/25 (Thu) 12:35",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6839020694575044
+        },
+        {
+          "id": "M9",
+          "text": "I'm trying to make my morning routine more efficient.",
+          "status": "active",
+          "timestamp": "2023/05/25 (Thu) 12:35",
+          "provenance": [
+            {
+              "session_index": 6,
+              "fact_index": 0,
+              "timestamp": "2023/05/25 (Thu) 12:35",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6839020694575044
+        },
+        {
+          "id": "E6_7",
+          "text": "I've been trying to make my morning routine more intentional, you know?",
+          "status": "current",
+          "timestamp": "2023/05/25 (Thu) 12:35",
+          "provenance": [
+            {
+              "session_index": 6,
+              "fact_index": 7,
+              "timestamp": "2023/05/25 (Thu) 12:35",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.6690855748058231
+        },
+        {
+          "id": "E6_2",
+          "text": "I've been using a French press, but I'm thinking of going back to my drip coffee maker.",
+          "status": "tentative",
+          "timestamp": "2023/05/25 (Thu) 12:35",
+          "provenance": [
+            {
+              "session_index": 6,
+              "fact_index": 2,
+              "timestamp": "2023/05/25 (Thu) 12:35",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6671805623791807
+        },
+        {
+          "id": "M17",
+          "text": "I'm currently using a drip coffee maker, but I'm open to exploring other options.",
+          "status": "active",
+          "timestamp": "2023/05/26 (Fri) 19:25",
+          "provenance": [
+            {
+              "session_index": 12,
+              "fact_index": 1,
+              "timestamp": "2023/05/26 (Fri) 19:25",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6496837539778506
+        },
+        {
+          "id": "E12_1",
+          "text": "I'm currently using a drip coffee maker, but I'm open to exploring other options.",
+          "status": "current",
+          "timestamp": "2023/05/26 (Fri) 19:25",
+          "provenance": [
+            {
+              "session_index": 12,
+              "fact_index": 1,
+              "timestamp": "2023/05/26 (Fri) 19:25",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.649625760017619
+        }
+      ]
+    },
+    "C": {
+      "answer": "increase",
+      "retrieved": [
+        {
+          "id": "E12_2",
+          "text": "By the way, I'm thinking of changing my morning coffee limit to two cups, do you think that's a good idea?",
+          "status": "tentative",
+          "timestamp": "2023/05/26 (Fri) 19:25",
+          "provenance": [
+            {
+              "session_index": 12,
+              "fact_index": 2,
+              "timestamp": "2023/05/26 (Fri) 19:25",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.8121407908937956
+        },
+        {
+          "id": "E12_6",
+          "text": "Speaking of my morning coffee, I have increased the limit to two cups, and I'm thinking of experimenting with different sweeteners, like stevia or honey.",
+          "status": "tentative",
+          "timestamp": "2023/05/26 (Fri) 19:25",
+          "provenance": [
+            {
+              "session_index": 12,
+              "fact_index": 6,
+              "timestamp": "2023/05/26 (Fri) 19:25",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.750165029331249
+        },
+        {
+          "id": "E6_1",
+          "text": "By the way, I've switched to a darker roast and cut back to just one cup in the morning, which has been really helping me feel more focused.",
+          "status": "historical",
+          "timestamp": "2023/05/25 (Thu) 12:35",
+          "provenance": [
+            {
+              "session_index": 6,
+              "fact_index": 1,
+              "timestamp": "2023/05/25 (Thu) 12:35",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6903293057133474
+        },
+        {
+          "id": "M12",
+          "text": "By the way, I've switched to a darker roast and cut back to just one cup in the morning, which has been really helping me feel more focused.",
+          "status": "active",
+          "timestamp": "2023/05/26 (Fri) 19:25",
+          "provenance": [
+            {
+              "session_index": 6,
+              "fact_index": 1,
+              "timestamp": "2023/05/25 (Thu) 12:35",
+              "source_turns": [
+                0
+              ]
+            },
+            {
+              "session_index": 12,
+              "fact_index": 6,
+              "timestamp": "2023/05/26 (Fri) 19:25",
+              "source_turns": [
+                6
+              ]
+            }
+          ],
+          "score": 0.6903293057133474
+        },
+        {
+          "id": "E6_0",
+          "text": "I'm trying to make my morning routine more efficient.",
+          "status": "current",
+          "timestamp": "2023/05/25 (Thu) 12:35",
+          "provenance": [
+            {
+              "session_index": 6,
+              "fact_index": 0,
+              "timestamp": "2023/05/25 (Thu) 12:35",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6842032803641109
+        },
+        {
+          "id": "M11",
+          "text": "I'm trying to make my morning routine more efficient.",
+          "status": "active",
+          "timestamp": "2023/05/25 (Thu) 12:35",
+          "provenance": [
+            {
+              "session_index": 6,
+              "fact_index": 0,
+              "timestamp": "2023/05/25 (Thu) 12:35",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6842032803641109
+        },
+        {
+          "id": "E6_7",
+          "text": "I've been trying to make my morning routine more intentional, you know?",
+          "status": "current",
+          "timestamp": "2023/05/25 (Thu) 12:35",
+          "provenance": [
+            {
+              "session_index": 6,
+              "fact_index": 7,
+              "timestamp": "2023/05/25 (Thu) 12:35",
+              "source_turns": [
+                8
+              ]
+            }
+          ],
+          "score": 0.6690604197305005
+        },
+        {
+          "id": "E6_2",
+          "text": "I've been using a French press, but I'm thinking of going back to my drip coffee maker.",
+          "status": "tentative",
+          "timestamp": "2023/05/25 (Thu) 12:35",
+          "provenance": [
+            {
+              "session_index": 6,
+              "fact_index": 2,
+              "timestamp": "2023/05/25 (Thu) 12:35",
+              "source_turns": [
+                2
+              ]
+            }
+          ],
+          "score": 0.6685990391100919
+        },
+        {
+          "id": "E12_1",
+          "text": "I'm currently using a drip coffee maker, but I'm open to exploring other options.",
+          "status": "current",
+          "timestamp": "2023/05/26 (Fri) 19:25",
+          "provenance": [
+            {
+              "session_index": 12,
+              "fact_index": 1,
+              "timestamp": "2023/05/26 (Fri) 19:25",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6501936956651079
+        },
+        {
+          "id": "M24",
+          "text": "I'm currently using a drip coffee maker, but I'm open to exploring other options.",
+          "status": "active",
+          "timestamp": "2023/05/26 (Fri) 19:25",
+          "provenance": [
+            {
+              "session_index": 12,
+              "fact_index": 1,
+              "timestamp": "2023/05/26 (Fri) 19:25",
+              "source_turns": [
+                0
+              ]
+            }
+          ],
+          "score": 0.6501936956651079
+        }
+      ]
+    }
+  },
+  "grades": {
+    "B": {
+      "raw": "No.",
+      "correct": false
+    },
+    "C": {
+      "raw": "Yes.",
+      "correct": true
+    }
+  },
+  "rubric": "official knowledge-update"
+}

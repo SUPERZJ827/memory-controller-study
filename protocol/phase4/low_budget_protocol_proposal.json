@@ -1,0 +1,23 @@
+{
+  "status": "PROPOSAL_NOT_AUTHORIZED_TO_RUN",
+  "revision": "low-budget-v1",
+  "paid_inference_authorized": false,
+  "pilot_requires_explicit_approval": true,
+  "formal_run_requires_separate_approval_and_frozen_manifest": true,
+  "prior_preregistrations_preserved": true,
+  "new_round_global_hard_cap_usd": 20,
+  "budget_pools_usd": {"development_all_in": 1, "formal_controllers": 16, "formal_qa_judges": 1, "formal_failures_retries_auxiliary": 2},
+  "arms": {"B": "GPT-5.6 Sol decision plus common local writer", "C": "Frozen Jev decision plus identical common local writer"},
+  "paid_new_A_or_D_or_other_baselines": false,
+  "controller_settings": {"B_model": "openai/gpt-5.6-sol", "B_reasoning": "medium", "B_max_completion_tokens": 512, "C_model": "typesafe/jev-1.13", "C_policy_sha256": "e824dfdeffe485ddde0fa6fbe5500c73874335c9ec57f473f74e463b4bdc2393"},
+  "local_modules": {"extractor_writer_reader": "Qwen3-8B", "embeddings": "Qwen3-Embedding-4B", "availability_checked_without_inference": true, "weights_and_settings_to_freeze_before_pilot": true},
+  "judge": {"model": "openai/gpt-4o-2024-08-06", "max_completion_tokens": 10, "temperature": 0, "rubric": "pinned official knowledge-update rubric", "human_gold": false},
+  "data": {"source_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442", "population": "77 knowledge-update histories in existing conservative timestamp-eligible projection", "dev_n": 1, "formal_pool_n": 76, "formal_n_range": [12,24], "formal_n_frozen": null, "formal_ids_frozen": false, "history_truncation": false, "official_full_benchmark_score": false},
+  "selection": {"development_seed": "phase4-low-budget-dev-v1", "test_seed": "phase4-low-budget-test-v1", "algorithm": "ascending SHA256(seed NUL question_id), disjoint development and test", "sample_size_criterion": "largest n in 12..24 with 1.5 times estimated complete-pair controller cost fitting 16 USD; costs only, no formal predictions", "if_n12_unaffordable": "STOP"},
+  "primary_analysis": {"metric": "C_minus_B_paired_QA_accuracy", "bootstrap_resamples": 20000, "bootstrap_seed": 20260920, "confidence_level": 0.95, "noninferiority_margin": null, "fixed_saving_threshold": null, "report_disagreements": true, "small_sample_limits_required": true},
+  "budget_guard": {"implemented": false, "must_pass_fake_concurrency_tests_before_any_paid_call": true, "equation": "settled + unknown_holds + inflight + next_reservation <= applicable_cap", "unit": "integer micro-USD", "sdk_automatic_retries": 0, "max_transport_retries_per_logical_call": 1, "semantic_retries": 0, "unknown_cost_policy": "retain full upper-bound hold until reconciled", "release_on_timeout": false, "max_total_paid_requests_inflight": 2},
+  "cost_attribution": {"actual_spend_counts_physical_call_once": true, "standalone_charges_common_work_to_each_arm": true, "local_compute_is_free": false, "unmeasured_hardware_cost": "report unmonetized, do not infer fully monetized system savings"},
+  "stop_conditions": ["budget cannot reserve next request", "no defensible request cost bound", "pilot cannot finish inside 1 USD", "formal sample not affordable", "invalid protocol or local pipeline prevents attribution"],
+  "automatic_expansion_or_next_phase": false,
+  "end_of_round_deliverables": ["RESULT_PHASE4_LOW_BUDGET.md", "contribution and evidence table", "write_or_stop_recommendation", "raw outputs and module usage", "budget reconciliation and frozen hashes"]
+}

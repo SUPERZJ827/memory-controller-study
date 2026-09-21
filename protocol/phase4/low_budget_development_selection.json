@@ -1,0 +1,15 @@
+{
+  "status": "FIXED_DEVELOPMENT_MEMBERSHIP_NOT_AUTHORIZED_TO_RUN",
+  "source": "data/longmemeval/longmemeval_s_cleaned.json",
+  "source_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "seed": "phase4-low-budget-dev-v1",
+  "algorithm": "ascending SHA256(seed NUL question_id)",
+  "eligible_knowledge_update_count": 77,
+  "formal_pool_after_development": 76,
+  "development_question_id": "9bbe84a2",
+  "selection_digest": "00904589155de3aec3b70b5b9c9235abd8ec0de6f89bc695244c92a358c9ee8e",
+  "chronological_sessions_to_ingest": 47,
+  "hard_cap_including_judges_retries_and_failures_usd": 1,
+  "formal_membership_frozen": false,
+  "controller_payload_excludes_question_id": true
+}
